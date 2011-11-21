@@ -1,15 +1,17 @@
  \begin 
  {document} 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (0) 
+DEBUG: GET PAGE NUMBER
+DEBUG: INCR PAGE NUMBER
  \pagenumbering 
  {arabic} 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (1) 
+DEBUG: GET PAGE NUMBER
  \arabic 
  { 
- 5 
-DEBUG: SET PAGE NUMBER } 
+ 1 
+DEBUG: SET PAGE NUMBER
+ } 
 ws-- 
 --ws
  \renewcommand 
@@ -19,8 +21,8 @@ ws--
  { 
  2 
  } 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (2) 
+DEBUG: GET PAGE NUMBER
  \tableofcontents 
 ws--     
 
@@ -31,9 +33,12 @@ ws--
  } 
 DEBUG: generate_sec_header
 DEBUG: PRINT TOC TO FILE!!
-DEBUG: GET PAGE NUMBERws--
+DEBUG: GET PAGE NUMBER
+ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (3) 
+DEBUG: GET PAGE NUMBER
  This 
 ws-- --ws
  is 
@@ -61,8 +66,8 @@ ws-- --ws
  paragraph 
 ws-- --ws
  in 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (4) 
+DEBUG: GET PAGE NUMBER
  latex. 
 ws--  --ws
  Blank 
@@ -241,8 +246,8 @@ ws-- --ws
  the 
 ws-- --ws
  paragraph 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (5) 
+DEBUG: GET PAGE NUMBER
  is 
 ws-- --ws
  performed. 
@@ -275,8 +280,8 @@ ws-- --ws
  the 
 ws-- --ws
  paragraph. 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (6) 
+DEBUG: GET PAGE NUMBER
  When 
 ws-- --ws
  the 
@@ -302,8 +307,8 @@ ws-- --ws
  the 
 ws-- --ws
  paragraph 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (7) 
+DEBUG: GET PAGE NUMBER
  is 
 ws-- --ws
  performed. 
@@ -339,10 +344,12 @@ ws-- --ws
 ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (8) 
+DEBUG: GET PAGE NUMBER
  \begin 
  {single} 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (9) 
+DEBUG: GET PAGE NUMBER
  Now, 
 ws-- --ws
  its 
@@ -366,8 +373,8 @@ ws-- --ws
  and 
 ws-- --ws
  can 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (10) 
+DEBUG: GET PAGE NUMBER
  be 
 ws-- --ws
  used 
@@ -418,14 +425,16 @@ ws-- --ws
  single 
 ws-- --ws
  spacing. 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (11) 
+DEBUG: GET PAGE NUMBER
  \end 
 single or verb
  {single} 
 ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (12) 
+DEBUG: GET PAGE NUMBER
  \subsection 
  { 
  A 
@@ -435,9 +444,12 @@ ws-- --ws
  Processor 
  } 
 DEBUG: generate_subsec_header
-DEBUG: GET PAGE NUMBERws--
+DEBUG: GET PAGE NUMBER
+ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (13) 
+DEBUG: GET PAGE NUMBER
  A 
 ws-- --ws
  text 
@@ -468,8 +480,8 @@ ws-- --ws
  us 
 ws-- --ws
  to 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (14) 
+DEBUG: GET PAGE NUMBER
  develop 
 ws-- --ws
  formatted 
@@ -488,6 +500,8 @@ ws-- --ws
 ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (15) 
+DEBUG: GET PAGE NUMBER
  A 
 ws-- --ws
  text 
@@ -513,8 +527,8 @@ ws-- --ws
  us 
 ws-- --ws
  to 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (16) 
+DEBUG: GET PAGE NUMBER
  develop 
 ws-- --ws
  formatted 
@@ -533,6 +547,8 @@ ws-- --ws
 ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (17) 
+DEBUG: GET PAGE NUMBER
  \vspace 
  { 
  7 
@@ -540,6 +556,8 @@ ws--
 ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (18) 
+DEBUG: GET PAGE NUMBER
  A 
 ws-- --ws
  text 
@@ -565,8 +583,8 @@ ws-- --ws
  us 
 ws-- --ws
  to 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (19) 
+DEBUG: GET PAGE NUMBER
  develop 
 ws-- --ws
  formatted 
@@ -585,6 +603,8 @@ ws-- --ws
 ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (20) 
+DEBUG: GET PAGE NUMBER
  \subsection 
  { 
  Legal 
@@ -594,9 +614,12 @@ ws-- --ws
  Commands 
  } 
 DEBUG: generate_subsec_header
-DEBUG: GET PAGE NUMBERws--
+DEBUG: GET PAGE NUMBER
+ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (21) 
+DEBUG: GET PAGE NUMBER
  We 
 ws-- --ws
  have 
@@ -624,8 +647,8 @@ ws-- --ws
  be 
 ws-- --ws
  used 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (22) 
+DEBUG: GET PAGE NUMBER
  in 
 ws-- --ws
  many 
@@ -651,8 +674,8 @@ ws-- --ws
  character 
 ws-- --ws
  to 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (23) 
+DEBUG: GET PAGE NUMBER
  mean 
 ws-- --ws
  itself, 
@@ -674,8 +697,8 @@ ws-- --ws
  to 
 ws-- --ws
  use 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (24) 
+DEBUG: GET PAGE NUMBER
  curly 
 ws-- --ws
  braces, 
@@ -698,6 +721,8 @@ ws-- --ws
 ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (25) 
+DEBUG: GET PAGE NUMBER
  \subsection 
  { 
  Again 
@@ -709,9 +734,12 @@ ws-- --ws
  Commands 
  } 
 DEBUG: generate_subsec_header
-DEBUG: GET PAGE NUMBERws--
+DEBUG: GET PAGE NUMBER
+ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (26) 
+DEBUG: GET PAGE NUMBER
  We 
 ws-- --ws
  have 
@@ -739,8 +767,8 @@ ws-- --ws
  be 
 ws-- --ws
  used 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (27) 
+DEBUG: GET PAGE NUMBER
  in 
 ws-- --ws
  many 
@@ -766,8 +794,8 @@ ws-- --ws
  character 
 ws-- --ws
  to 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (28) 
+DEBUG: GET PAGE NUMBER
  mean 
 ws-- --ws
  itself, 
@@ -789,8 +817,8 @@ ws-- --ws
  to 
 ws-- --ws
  use 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (29) 
+DEBUG: GET PAGE NUMBER
  curly 
 ws-- --ws
  braces, 
@@ -813,6 +841,8 @@ ws-- --ws
 ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (30) 
+DEBUG: GET PAGE NUMBER
  \subsection 
  { 
  Yet 
@@ -828,13 +858,16 @@ ws-- --ws
  Commands 
  } 
 DEBUG: generate_subsec_header
-DEBUG: GET PAGE NUMBERws--
+DEBUG: GET PAGE NUMBER
+ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (31) 
+DEBUG: GET PAGE NUMBER
  \begin 
  {single} 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (32) 
+DEBUG: GET PAGE NUMBER
  We 
 ws-- --ws
  have 
@@ -862,8 +895,8 @@ ws-- --ws
  be 
 ws-- --ws
  used 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (33) 
+DEBUG: GET PAGE NUMBER
  in 
 ws-- --ws
  many 
@@ -889,8 +922,8 @@ ws-- --ws
  character 
 ws-- --ws
  to 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (34) 
+DEBUG: GET PAGE NUMBER
  mean 
 ws-- --ws
  itself, 
@@ -912,8 +945,8 @@ ws-- --ws
  to 
 ws-- --ws
  use 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (35) 
+DEBUG: GET PAGE NUMBER
  curly 
 ws-- --ws
  braces, 
@@ -933,14 +966,16 @@ ws-- --ws
  of 
 ws-- --ws
  integers. 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (36) 
+DEBUG: GET PAGE NUMBER
  \end 
 single or verb
  {single} 
 ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (37) 
+DEBUG: GET PAGE NUMBER
  \section 
  { 
  Using 
@@ -949,9 +984,12 @@ ws-- --ws
  } 
 DEBUG: generate_sec_header
 DEBUG: PRINT TOC TO FILE!!
-DEBUG: GET PAGE NUMBERws--
+DEBUG: GET PAGE NUMBER
+ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (38) 
+DEBUG: GET PAGE NUMBER
  Finally, 
 ws-- --ws
  there 
@@ -979,8 +1017,8 @@ ws-- --ws
  end 
 ws-- --ws
  blocks, 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (39) 
+DEBUG: GET PAGE NUMBER
  that 
 ws-- --ws
  establish 
@@ -1004,8 +1042,9 @@ ws-- --ws
  fashion 
 ws-- --ws
  to 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (40) 
+DEBUG: GET PAGE NUMBER
+DEBUG: INCR PAGE NUMBER
  begin 
 ws-- --ws
  end 
@@ -1031,8 +1070,8 @@ ws-- --ws
  scope. 
 ws--  --ws
  We 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (41) 
+DEBUG: GET PAGE NUMBER
  have 
 ws-- --ws
  discussed 
@@ -1047,9 +1086,11 @@ ws-- --ws
 ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (42) 
+DEBUG: GET PAGE NUMBER
  \it 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (43) 
+DEBUG: GET PAGE NUMBER
  It 
 ws-- --ws
  is 
@@ -1079,8 +1120,8 @@ ws-- --ws
  be 
 ws-- --ws
  created 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (44) 
+DEBUG: GET PAGE NUMBER
  within 
 ws-- --ws
  lists, 
@@ -1098,12 +1139,14 @@ ws-- --ws
  and 
 ws-- --ws
  environments. 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (45) 
+DEBUG: GET PAGE NUMBER
  \rm 
 ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (46) 
+DEBUG: GET PAGE NUMBER
  It 
 ws-- --ws
  is 
@@ -1136,6 +1179,8 @@ ws-- --ws
 ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (47) 
+DEBUG: GET PAGE NUMBER
  \subsection 
  { 
  Check 
@@ -1145,25 +1190,18 @@ ws-- --ws
  Out 
  } 
 DEBUG: generate_subsec_header
-DEBUG: GET PAGE NUMBERws--
+DEBUG: GET PAGE NUMBER
+ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (48) 
+DEBUG: GET PAGE NUMBER
  Finally, 
 ws-- --ws
  there 
 ws-- --ws
  are 
-ws-- --ws
- { 
- \it 
-ws-- --ws
- many 
-ws-- --ws
- other 
-ws-- --ws
- useful 
- } 
-ws-- --ws
+ws--  --ws
  commands 
 ws-- --ws
  that 
@@ -1175,8 +1213,8 @@ ws-- --ws
  end 
 ws-- --ws
  blocks, 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (49) 
+DEBUG: GET PAGE NUMBER
  that 
 ws-- --ws
  establish 
@@ -1200,8 +1238,8 @@ ws-- --ws
  fashion 
 ws-- --ws
  to 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (50) 
+DEBUG: GET PAGE NUMBER
  begin 
 ws-- --ws
  end 
@@ -1227,8 +1265,8 @@ ws-- --ws
  scope. 
 ws--  --ws
  We 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (51) 
+DEBUG: GET PAGE NUMBER
  have 
 ws-- --ws
  discussed 
@@ -1243,6 +1281,8 @@ ws-- --ws
 ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (52) 
+DEBUG: GET PAGE NUMBER
  \subsection 
  { 
  Check 
@@ -1256,24 +1296,17 @@ ws-- --ws
  2 
  } 
 DEBUG: generate_subsec_header
-DEBUG: GET PAGE NUMBERws--
+DEBUG: GET PAGE NUMBER
+ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (53) 
+DEBUG: GET PAGE NUMBER
  Finally, 
 ws-- --ws
  there 
 ws-- --ws
  are 
-ws-- --ws
- { 
- \it 
-ws-- --ws
- many 
-ws-- --ws
- other 
-ws-- --ws
- useful 
- } 
 ws-- --ws
  commands 
 ws-- --ws
@@ -1286,8 +1319,8 @@ ws-- --ws
  end 
 ws-- --ws
  blocks, 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (54) 
+DEBUG: GET PAGE NUMBER
  that 
 ws-- --ws
  establish 
@@ -1311,8 +1344,8 @@ ws-- --ws
  fashion 
 ws-- --ws
  to 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (55) 
+DEBUG: GET PAGE NUMBER
  begin 
 ws-- --ws
  end 
@@ -1338,8 +1371,8 @@ ws-- --ws
  scope. 
 ws--  --ws
  We 
-ws--
---ws
+DEBUG: INCR LINE NUMBER (56) 
+DEBUG: GET PAGE NUMBER
  have 
 ws-- --ws
  discussed 
@@ -1354,19 +1387,372 @@ ws-- --ws
 ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (57) 
+DEBUG: GET PAGE NUMBER
+ Finally, 
+ws-- --ws
+ there 
+ws-- --ws
+ are 
+ws-- --ws
+ commands 
+ws-- --ws
+ that 
+ws-- --ws
+ involve 
+ws-- --ws
+ begin 
+ws-- --ws
+ end 
+ws-- --ws
+ blocks, 
+DEBUG: INCR LINE NUMBER (58) 
+DEBUG: GET PAGE NUMBER
+ that 
+ws-- --ws
+ establish 
+ws-- --ws
+ an 
+ws-- --ws
+ environment. 
+ws-- --ws
+ These 
+ws-- --ws
+ blocks 
+ws-- --ws
+ behave 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ similar 
+ws-- --ws
+ fashion 
+ws-- --ws
+ to 
+DEBUG: INCR LINE NUMBER (59) 
+DEBUG: GET PAGE NUMBER
+ begin 
+ws-- --ws
+ end 
+ws-- --ws
+ blocks 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ programming 
+ws-- --ws
+ language, 
+ws-- --ws
+ since 
+ws-- --ws
+ they 
+ws-- --ws
+ set 
+ws-- --ws
+ a 
+ws-- --ws
+ scope. 
+ws--  --ws
+ We 
+DEBUG: INCR LINE NUMBER (60) 
+DEBUG: GET PAGE NUMBER
+ have 
+ws-- --ws
+ discussed 
+ws-- --ws
+ a 
+ws-- --ws
+ number 
+ws-- --ws
+ of 
+ws-- --ws
+ examples. 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (61) 
+DEBUG: GET PAGE NUMBER
+ Finally, 
+ws-- --ws
+ there 
+ws-- --ws
+ are 
+ws-- --ws
+ commands 
+ws-- --ws
+ that 
+ws-- --ws
+ involve 
+ws-- --ws
+ begin 
+ws-- --ws
+ end 
+ws-- --ws
+ blocks, 
+DEBUG: INCR LINE NUMBER (62) 
+DEBUG: GET PAGE NUMBER
+ that 
+ws-- --ws
+ establish 
+ws-- --ws
+ an 
+ws-- --ws
+ environment. 
+ws-- --ws
+ These 
+ws-- --ws
+ blocks 
+ws-- --ws
+ behave 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ similar 
+ws-- --ws
+ fashion 
+ws-- --ws
+ to 
+DEBUG: INCR LINE NUMBER (63) 
+DEBUG: GET PAGE NUMBER
+ begin 
+ws-- --ws
+ end 
+ws-- --ws
+ blocks 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ programming 
+ws-- --ws
+ language, 
+ws-- --ws
+ since 
+ws-- --ws
+ they 
+ws-- --ws
+ set 
+ws-- --ws
+ a 
+ws-- --ws
+ scope. 
+ws--  --ws
+ We 
+DEBUG: INCR LINE NUMBER (64) 
+DEBUG: GET PAGE NUMBER
+ have 
+ws-- --ws
+ discussed 
+ws-- --ws
+ a 
+ws-- --ws
+ number 
+ws-- --ws
+ of 
+ws-- --ws
+ examples. 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (65) 
+DEBUG: GET PAGE NUMBER
+ Finally, 
+ws-- --ws
+ there 
+ws-- --ws
+ are 
+ws-- --ws
+ commands 
+ws-- --ws
+ that 
+ws-- --ws
+ involve 
+ws-- --ws
+ begin 
+ws-- --ws
+ end 
+ws-- --ws
+ blocks, 
+DEBUG: INCR LINE NUMBER (66) 
+DEBUG: GET PAGE NUMBER
+ that 
+ws-- --ws
+ establish 
+ws-- --ws
+ an 
+ws-- --ws
+ environment. 
+ws-- --ws
+ These 
+ws-- --ws
+ blocks 
+ws-- --ws
+ behave 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ similar 
+ws-- --ws
+ fashion 
+ws-- --ws
+ to 
+DEBUG: INCR LINE NUMBER (67) 
+DEBUG: GET PAGE NUMBER
+ begin 
+ws-- --ws
+ end 
+ws-- --ws
+ blocks 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ programming 
+ws-- --ws
+ language, 
+ws-- --ws
+ since 
+ws-- --ws
+ they 
+ws-- --ws
+ set 
+ws-- --ws
+ a 
+ws-- --ws
+ scope. 
+ws--  --ws
+ We 
+DEBUG: INCR LINE NUMBER (68) 
+DEBUG: GET PAGE NUMBER
+ have 
+ws-- --ws
+ discussed 
+ws-- --ws
+ a 
+ws-- --ws
+ number 
+ws-- --ws
+ of 
+ws-- --ws
+ examples. 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (69) 
+DEBUG: GET PAGE NUMBER
+ Finally, 
+ws-- --ws
+ there 
+ws-- --ws
+ are 
+ws-- --ws
+ commands 
+ws-- --ws
+ that 
+ws-- --ws
+ involve 
+ws-- --ws
+ begin 
+ws-- --ws
+ end 
+ws-- --ws
+ blocks, 
+DEBUG: INCR LINE NUMBER (70) 
+DEBUG: GET PAGE NUMBER
+ that 
+ws-- --ws
+ establish 
+ws-- --ws
+ an 
+ws-- --ws
+ environment. 
+ws-- --ws
+ These 
+ws-- --ws
+ blocks 
+ws-- --ws
+ behave 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ similar 
+ws-- --ws
+ fashion 
+ws-- --ws
+ to 
+DEBUG: INCR LINE NUMBER (71) 
+DEBUG: GET PAGE NUMBER
+ begin 
+ws-- --ws
+ end 
+ws-- --ws
+ blocks 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ programming 
+ws-- --ws
+ language, 
+ws-- --ws
+ since 
+ws-- --ws
+ they 
+ws-- --ws
+ set 
+ws-- --ws
+ a 
+ws-- --ws
+ scope. 
+ws--  --ws
+ We 
+DEBUG: INCR LINE NUMBER (72) 
+DEBUG: GET PAGE NUMBER
+ have 
+ws-- --ws
+ discussed 
+ws-- --ws
+ a 
+ws-- --ws
+ number 
+ws-- --ws
+ of 
+ws-- --ws
+ examples. 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (73) 
+DEBUG: GET PAGE NUMBER
  \section 
  { 
  What 
 ws-- --ws
  about 
 ws-- --ws
- this? 
+ this1? 
  } 
 DEBUG: generate_sec_header
 DEBUG: PRINT TOC TO FILE!!
-DEBUG: GET PAGE NUMBERws--
+DEBUG: GET PAGE NUMBER
+ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (74) 
+DEBUG: GET PAGE NUMBER
  When 
 ws-- --ws
  things 
@@ -1387,19 +1773,112 @@ ws-- --ws
 ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (75) 
+DEBUG: GET PAGE NUMBER
+ Finally, 
+ws-- --ws
+ there 
+ws-- --ws
+ are 
+ws-- --ws
+ commands 
+ws-- --ws
+ that 
+ws-- --ws
+ involve 
+ws-- --ws
+ begin 
+ws-- --ws
+ end 
+ws-- --ws
+ blocks, 
+DEBUG: INCR LINE NUMBER (76) 
+DEBUG: GET PAGE NUMBER
+ that 
+ws-- --ws
+ establish 
+ws-- --ws
+ an 
+ws-- --ws
+ environment. 
+ws-- --ws
+ These 
+ws-- --ws
+ blocks 
+ws-- --ws
+ behave 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ similar 
+ws-- --ws
+ fashion 
+ws-- --ws
+ to 
+DEBUG: INCR LINE NUMBER (77) 
+DEBUG: GET PAGE NUMBER
+ begin 
+ws-- --ws
+ end 
+ws-- --ws
+ blocks 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ programming 
+ws-- --ws
+ language, 
+ws-- --ws
+ since 
+ws-- --ws
+ they 
+ws-- --ws
+ set 
+ws-- --ws
+ a 
+ws-- --ws
+ scope. 
+ws--  --ws
+ We 
+DEBUG: INCR LINE NUMBER (78) 
+DEBUG: GET PAGE NUMBER
+ have 
+ws-- --ws
+ discussed 
+ws-- --ws
+ a 
+ws-- --ws
+ number 
+ws-- --ws
+ of 
+ws-- --ws
+ examples. 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (79) 
+DEBUG: GET PAGE NUMBER
  \section 
  { 
  What 
 ws-- --ws
  about 
 ws-- --ws
- this? 
+ this2? 
  } 
 DEBUG: generate_sec_header
 DEBUG: PRINT TOC TO FILE!!
-DEBUG: GET PAGE NUMBERws--
+DEBUG: GET PAGE NUMBER
+ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (80) 
+DEBUG: GET PAGE NUMBER
+DEBUG: INCR PAGE NUMBER
  When 
 ws-- --ws
  things 
@@ -1420,6 +1899,666 @@ ws-- --ws
 ws--
 
 --ws
+DEBUG: INCR LINE NUMBER (81) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this3? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (82) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (83) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this4? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (84) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (85) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this5? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (86) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (87) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this6? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (88) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (89) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this7? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (90) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (91) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ Goes 
+ws-- --ws
+ to 
+ws-- --ws
+ 10! 
+ws-- --ws
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (92) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (93) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this8? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (94) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (95) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this9? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (96) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (97) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this11? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (98) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (99) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this12? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (100) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (101) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this13? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (102) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (103) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this14? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (104) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (105) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this15? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (106) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (107) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ Goes 
+ws-- --ws
+ to 
+ws-- --ws
+ 10! 
+ws-- --ws
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (108) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (109) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this16? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (110) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (111) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this17? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (112) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (113) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this18? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (114) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (115) 
+DEBUG: GET PAGE NUMBER
  \section 
  { 
  What 
@@ -1428,4 +2567,505 @@ ws-- --ws
 ws-- --ws
  this? 
  } 
-DEBUG: generate_sec_
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (116) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (117) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this19? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (118) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (119) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this20? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (120) 
+DEBUG: GET PAGE NUMBER
+DEBUG: INCR PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (121) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this21? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (122) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (123) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ Goes 
+ws-- --ws
+ to 
+ws-- --ws
+ 10! 
+ws-- --ws
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (124) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+
+--ws
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this22? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (125) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (126) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this23? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (127) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (128) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this24? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (129) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (130) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this25? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (131) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (132) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this26? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (133) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (134) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this27? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (135) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (136) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this28? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (137) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (138) 
+DEBUG: GET PAGE NUMBER
+ \section 
+ { 
+ Goes 
+ws-- --ws
+ to 
+ws-- --ws
+ 10! 
+ws-- --ws
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBER
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (139) 
+DEBUG: GET PAGE NUMBER
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (140) 
+DEBUG: GET PAGE NUMBER
+ \end 
+ {document} 
+DEBUG: INCR LINE NUMBER (141) 
+DEBUG: GET PAGE NUMBER

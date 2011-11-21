@@ -9,6 +9,7 @@ special         (\%|\_|\&|\$|\#)
 cols            (r|l|c)*
 
 %%
+\n {incr_lines_so_far();}
 "\\\\" 			{printf(" %s \n", yytext);return(DBLBS);}
 {special}		{printf(" %s \n", yytext);return(SPECCHAR);}
 "["			{printf(" %s \n", yytext);return(LSQRB);}
@@ -56,13 +57,14 @@ cols            (r|l|c)*
 "{"			{printf(" %s \n", yytext);return(LCURLYB);}
 "}"			{printf(" %s \n", yytext);return(RCURLYB);}
 
-		
+
+
 {word}			{printf(" %s \n", yytext);return(WORD);}
 
-{ws}			{printf("ws--%s--ws\n", yytext); 
-                         if ((strcmp(yytext, "\n\n") == 0) && (ws_flag == 0))
-                            return(WS);
-                         else if (ws_flag == 1) return(WS);}
+{ws}			{printf("ws--%s--ws\n", yytext);
+                         if ((strcmp(yytext, "\n\n") == 0) && (ws_flag == 0)){
+                            incr_lines_so_far();return(WS);}
+                         else if (ws_flag == 1){ return(WS);}}
 
 %%
 

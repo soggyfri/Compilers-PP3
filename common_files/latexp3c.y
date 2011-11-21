@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
-#define  BUF_SIZE       512
+#define  BUF_SIZE      40768
 
 int ws_flag = 0;
 #define YYDEBUG 1
@@ -193,7 +193,7 @@ sectionoptions   :  SECTION  LCURLYB  textoption  RCURLYB
                     }
                  |  SUBSEC  LCURLYB  textoption  RCURLYB
                     {
-                      generate_subsec_header(get_sec_ctr(), get_subsec_ctr(), $3);
+                      generate_subsec_header(get_sec_ctr() -1, get_subsec_ctr(), $3);
                       incr_subsec_ctr();
                     }
                  ;

@@ -21,14 +21,14 @@ fprintf(stdout, "DEBUG: generate_sec_header\n");
 
 void  generate_subsec_header(int i, int j, char *s)
 {
-fprintf(stdout, "DEBUG: generate_subsec_header\n");
-	fprintf(fpout, "\n\n%d.%d %s\n", i, j, s);
-	fflush(fpout);
+    fprintf(stdout, "DEBUG: generate_subsec_header\n");
+    fprintf(fpout, "\n\n%d.%d %s\n", i, j, s);
+    fflush(fpout);
 
-	if (get_gen_toc() == TOC_ON){
-   		fprintf(fptoc, "\n%d.%d %s ---------- PAGE %d\n", 
+    if (get_gen_toc() == TOC_ON){
+        fprintf(fptoc, "\n%d.%d %s ---------- PAGE %d\n", 
                             i, j, s, get_page_no());
-      fflush(fptoc);
+        fflush(fptoc);
   }
   
 }

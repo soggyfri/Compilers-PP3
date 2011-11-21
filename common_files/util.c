@@ -10,6 +10,7 @@ FILE *fptoc;
 
 char  line[OUT_WIDTH + 1];
 int   lines_so_far;
+int   total_pages;
 
 void  init_lines_so_far()
 {
@@ -18,9 +19,9 @@ void  init_lines_so_far()
 
 void  incr_lines_so_far()
 {
-  fprintf(stdout, "DEBUG: INCR LINE NUMBER");
+    fprintf(stdout, "DEBUG: INCR LINE NUMBER (%d) \n", lines_so_far);
   lines_so_far++;
-	if(lines_so_far > LINES_PER_PAGE)
+	if(lines_so_far > LINES_PER_PAGE*get_page_no())
 	{
 	 int discard = inc_page_no();
 	}
@@ -88,19 +89,19 @@ void  set_gen_toc()
 void  set_page_no(p)
 char  p;
 {
-fprintf(stdout, "DEBUG: SET PAGE NUMBER");
+fprintf(stdout, "DEBUG: SET PAGE NUMBER\n");
   DST.page_no_counter = p - '0';
 }
 
 int   get_page_no() /* need this p? */
 {
-fprintf(stdout, "DEBUG: GET PAGE NUMBER");
+fprintf(stdout, "DEBUG: GET PAGE NUMBER\n");
   return DST.page_no_counter;
 }
 
 int   inc_page_no()
 {
-  fprintf(stdout, "DEBUG: INCR PAGE NUMBER");
+  fprintf(stdout, "DEBUG: INCR PAGE NUMBER\n");
   DST.page_no_counter++;
   return (DST.page_no_counter - 1);
 }

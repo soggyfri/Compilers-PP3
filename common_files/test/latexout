@@ -22,8 +22,16 @@ text that would be transformed into a
 paragraph in latex. Blank lines between 
 text in the input cause a new paragraph 
 to be generated. When the blank line
+occurs after a section, no indentation
+of the paragraph is performed. However, 
+all other blanks, would result in a five
+space indent of the paragraph. When the 
+blank line occurs after a section, no
+indentation of the paragraph is
+performed. However, all other blanks,
+would result in a five space indent of
 
-2.1 A Text Processor
+1.1 A Text Processor
 
 
 
@@ -40,7 +48,7 @@ since it allows us to develop formatted
 tool, since it allows us to develop
 formatted documents that are easy to
 
-2.2 Legal Latex Commands
+1.2 Legal Latex Commands
 
 
 
@@ -52,7 +60,7 @@ mean itself, and override its Latex
 interpretation. For example, to use
 curly braces, we employ the backslash a 
 
-2.3 Again Legal Latex Commands
+1.3 Again Legal Latex Commands
 
 
 
@@ -64,7 +72,7 @@ mean itself, and override its Latex
 interpretation. For example, to use
 curly braces, we employ the backslash a 
 
-2.4 Yet Some More Legal Latex Commands
+1.4 Yet Some More Legal Latex Commands
 
 
 2 Using Latex
@@ -82,65 +90,256 @@ within lists, allowing the nesting of
  It is important to note, even at this
 early stage, that lists may be created
 
-3.1 Check this Out
+2.1 Check this Out
 
-commands that involve begin end blocks, 
-that establish an environment. These
-blocks behave in a similar fashion to
-begin end blocks in a programming
+
+
+ Finally, there are commands that
+involve begin end blocks, that establish
+an environment. These blocks behave in a
+similar fashion to begin end blocks in a
+programming language, since they set a
+scope. We have discussed a number of
+
+2.2 Check this Out Part 2
+
+
+
+ Finally, there are commands that
+involve begin end blocks, that establish
+an environment. These blocks behave in a
+similar fashion to begin end blocks in a
+programming language, since they set a
+scope. We have discussed a number of
+examples. 
+
+ Finally, there are commands
+that involve begin end blocks, that
+establish an environment. These blocks
+behave in a similar fashion to begin end
+blocks in a programming language, since 
+they set a scope. We have discussed a
+number of examples. 
+
+ Finally, there
+are commands that involve begin end
+blocks, that establish an environment.
+These blocks behave in a similar fashion
+to begin end blocks in a programming
+language, since they set a scope. We
+have discussed a number of examples. 
+
+ 
+Finally, there are commands that involve
+begin end blocks, that establish an
+environment. These blocks behave in a
+similar fashion to begin end blocks in a
+programming language, since they set a
+scope. We have discussed a number of
+examples. 
+
+ Finally, there are commands
+that involve begin end blocks, that
+establish an environment. These blocks
+behave in a similar fashion to begin end
+blocks in a programming language, since 
+they set a scope. We have discussed a
+
+3 What about this1?
+
+
+
+ When things are switched back is
+everything still ok? 
+
+ Finally, there
+are commands that involve begin end
+blocks, that establish an environment.
+These blocks behave in a similar fashion
+to begin end blocks in a programming
 language, since they set a scope. We
 
-3.2 Check this Out Part 2
-
-commands that involve begin end blocks, 
-that establish an environment. These
-blocks behave in a similar fashion to
-begin end blocks in a programming
-language, since they set a scope. We
-
-3 What about this?
+4 What about this2?
 
 
 
  When things are switched back is
 
-4 What about this?
+5 What about this3?
 
 
 
  When things are switched back is
 
-5 What about this?
+6 What about this4?
 
 
 
  When things are switched back is
 
-6 What about this?
+7 What about this5?
 
 
 
  When things are switched back is
 
-7 What about this?
+8 What about this6?
 
 
 
  When things are switched back is
 
-8 What about this?
-
-
-
- When things are switched back is
-
-9 What about this?
+9 What about this7?
 
 
 
  When things are switched back is
 
 10 Goes to 10! What about this?
+
+
+
+ When things are switched back is
+
+11 What about this8?
+
+
+
+ When things are switched back is
+
+12 What about this9?
+
+
+
+ When things are switched back is
+
+13 What about this11?
+
+
+
+ When things are switched back is
+
+14 What about this12?
+
+
+
+ When things are switched back is
+
+15 What about this13?
+
+
+
+ When things are switched back is
+
+16 What about this14?
+
+
+
+ When things are switched back is
+
+17 What about this15?
+
+
+
+ When things are switched back is
+
+18 Goes to 10! What about this?
+
+
+
+ When things are switched back is
+
+19 What about this16?
+
+
+
+ When things are switched back is
+
+20 What about this17?
+
+
+
+ When things are switched back is
+
+21 What about this18?
+
+
+
+ When things are switched back is
+
+22 What about this?
+
+
+
+ When things are switched back is
+
+23 What about this19?
+
+
+
+ When things are switched back is
+
+24 What about this20?
+
+
+
+ When things are switched back is
+
+25 What about this21?
+
+
+
+ When things are switched back is
+
+26 Goes to 10! What about this?
+
+
+
+ When things are switched back is
+
+27 What about this22?
+
+
+
+ When things are switched back is
+
+28 What about this23?
+
+
+
+ When things are switched back is
+
+29 What about this24?
+
+
+
+ When things are switched back is
+
+30 What about this25?
+
+
+
+ When things are switched back is
+
+31 What about this26?
+
+
+
+ When things are switched back is
+
+32 What about this27?
+
+
+
+ When things are switched back is
+
+33 What about this28?
+
+
+
+ When things are switched back is
+
+34 Goes to 10! What about this?
 
 
 
