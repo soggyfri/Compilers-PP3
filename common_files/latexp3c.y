@@ -31,6 +31,7 @@ int ws_flag = 0;
 %token  LROMAN1   CROMAN1   LALPH1     CALPH1      VSPACE     HSPACE
 %token  RM        IT        NOINDENT   REF 
 %token  ARABIC2   LROMAN2   CROMAN2    LALPH2      CALPH2
+%token  NEWLINE
 
 %type <trans> textoption  wsorword
 %type <val> style2 ARABIC2 LROMAN2 CROMAN2 LALPH2 CALPH2
@@ -222,6 +223,7 @@ style2           :  ARABIC2
 
 pagenuminit      :  style1  LCURLYB  WORD  
                     {
+		      
                       set_page_no(yytext[0]);
                     }
                     RCURLYB
@@ -261,8 +263,9 @@ yyerror(){}
 
 main()
 {
-fpout = fopen("latexout","w");
-fptoc = fopen("latextoc","w");
+yydebug = 1;
+fpout = fopen("test/latexout","w");
+fptoc = fopen("test/latextoc","w");
 init_lines_so_far();
 init_sec_ctr();
 init_output_page();

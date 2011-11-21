@@ -18,7 +18,12 @@ void  init_lines_so_far()
 
 void  incr_lines_so_far()
 {
+  fprintf(stdout, "DEBUG: INCR LINE NUMBER");
   lines_so_far++;
+	if(lines_so_far > LINES_PER_PAGE)
+	{
+	 int discard = inc_page_no();
+	}
 }
 
 int   check_done_page()
@@ -83,16 +88,19 @@ void  set_gen_toc()
 void  set_page_no(p)
 char  p;
 {
+fprintf(stdout, "DEBUG: SET PAGE NUMBER");
   DST.page_no_counter = p - '0';
 }
 
-int   get_page_no(p)
+int   get_page_no() /* need this p? */
 {
+fprintf(stdout, "DEBUG: GET PAGE NUMBER");
   return DST.page_no_counter;
 }
 
 int   inc_page_no()
 {
+  fprintf(stdout, "DEBUG: INCR PAGE NUMBER");
   DST.page_no_counter++;
   return (DST.page_no_counter - 1);
 }

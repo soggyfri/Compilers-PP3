@@ -1105,13 +1105,13 @@ YY_RULE_SETUP
 	YY_BREAK
 case 46:
 YY_RULE_SETUP
-#line 59 "latex.l"
+#line 60 "latex.l"
 {printf(" %s \n", yytext);return(WORD);}
 	YY_BREAK
 case 47:
 /* rule 47 can match eol */
 YY_RULE_SETUP
-#line 60 "latex.l"
+#line 62 "latex.l"
 {printf("ws--%s--ws\n", yytext); 
                          if ((strcmp(yytext, "\n\n") == 0) && (ws_flag == 0))
                             return(WS);
@@ -1119,7 +1119,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 48:
 YY_RULE_SETUP
-#line 65 "latex.l"
+#line 67 "latex.l"
 ECHO;
 	YY_BREAK
 #line 1126 "lex.yy.c"
@@ -2120,7 +2120,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 65 "latex.l"
+#line 67 "latex.l"
 
 
 

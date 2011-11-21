@@ -1,6 +1,6 @@
 \begin{document}
 \pagenumbering{arabic}
-\arabic{5} 
+\arabic{1} 
 \renewcommand{\baselinestretch}{2}
 \tableofcontents     
 

@@ -56,7 +56,9 @@ cols            (r|l|c)*
 "{"			{printf(" %s \n", yytext);return(LCURLYB);}
 "}"			{printf(" %s \n", yytext);return(RCURLYB);}
 
+		
 {word}			{printf(" %s \n", yytext);return(WORD);}
+
 {ws}			{printf("ws--%s--ws\n", yytext); 
                          if ((strcmp(yytext, "\n\n") == 0) && (ws_flag == 0))
                             return(WS);

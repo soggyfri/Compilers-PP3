@@ -1,36 +1,39 @@
 /* THIS IS THE generate.c FILE */
 init_output_page()
 {
-fprintf(fpout, "\n\n\n\n\n");
-fflush(fpout);
+	fprintf(fpout, "\n\n\n\n\n");
+	fflush(fpout);
 }
 
-void  generate_sec_header(i, s)
-int  i;
-char *s;
+void  generate_sec_header(int i,char* s)
 {
-fprintf(fpout, "\n\n%d %s\n", i, s);
-fflush(fpout);
+fprintf(stdout, "DEBUG: generate_sec_header\n");
+	fprintf(fpout, "\n\n%d %s\n", i, s);
+	fflush(fpout);
 
-if (get_gen_toc() == TOC_ON)
-   fprintf(fptoc, "\n%d %s ---------- PAGE %d\n", 
+	if (get_gen_toc() == TOC_ON){
+      fprintf(stdout, "DEBUG: PRINT TOC TO FILE!!\n");
+   		fprintf(fptoc, "\n%d %s ---------- PAGE %d\n", 
                             i, s, get_page_no());
+      fflush(fptoc);
+  }
 }
 
-void  generate_subsec_header(i, j, s)
-int  i,j;
-char *s;
+void  generate_subsec_header(int i, int j, char *s)
 {
-fprintf(fpout, "\n\n%d.%d %s\n", i, j, s);
-fflush(fpout);
+fprintf(stdout, "DEBUG: generate_subsec_header\n");
+	fprintf(fpout, "\n\n%d.%d %s\n", i, j, s);
+	fflush(fpout);
 
-if (get_gen_toc() == TOC_ON)
-   fprintf(fptoc, "\n%d.%d %s ---------- PAGE %d\n", 
+	if (get_gen_toc() == TOC_ON){
+   		fprintf(fptoc, "\n%d.%d %s ---------- PAGE %d\n", 
                             i, j, s, get_page_no());
+      fflush(fptoc);
+  }
+  
 }
 
-void  generate_formatted_text(s)
-char *s;
+void  generate_formatted_text(char *s)
 {
 int slen = strlen(s);
 int i, j, k, r;

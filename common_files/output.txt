@@ -1,0 +1,1431 @@
+ \begin 
+ {document} 
+ws--
+--ws
+ \pagenumbering 
+ {arabic} 
+ws--
+--ws
+ \arabic 
+ { 
+ 5 
+DEBUG: SET PAGE NUMBER } 
+ws-- 
+--ws
+ \renewcommand 
+ { 
+ \baselinestretch 
+ } 
+ { 
+ 2 
+ } 
+ws--
+--ws
+ \tableofcontents 
+ws--     
+
+--ws
+ \section 
+ { 
+ Introduction 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBERws--
+
+--ws
+ This 
+ws-- --ws
+ is 
+ws-- --ws
+ an 
+ws-- --ws
+ example 
+ws-- --ws
+ of 
+ws-- --ws
+ text 
+ws-- --ws
+ that 
+ws-- --ws
+ would 
+ws-- --ws
+ be 
+ws-- --ws
+ transformed 
+ws-- --ws
+ into 
+ws-- --ws
+ a 
+ws-- --ws
+ paragraph 
+ws-- --ws
+ in 
+ws--
+--ws
+ latex. 
+ws--  --ws
+ Blank 
+ws-- --ws
+ lines 
+ws-- --ws
+ between 
+ws-- --ws
+ text 
+ws-- --ws
+ in 
+ws-- --ws
+ the 
+ws-- --ws
+ input 
+ws-- --ws
+ cause 
+ws-- --ws
+ a 
+ws-- --ws
+ new 
+ws-- --ws
+ paragraph 
+ws-- --ws
+ to 
+ws-- --ws
+ be 
+ws-- 
+--ws
+ generated. 
+ws--  --ws
+ This 
+ws-- --ws
+ is 
+ws-- --ws
+ an 
+ws-- --ws
+ example 
+ws-- --ws
+ of 
+ws-- --ws
+ text 
+ws-- --ws
+ that 
+ws-- --ws
+ would 
+ws-- --ws
+ be 
+ws-- --ws
+ transformed 
+ws-- --ws
+ into 
+ws-- --ws
+ a 
+ws-- 
+--ws
+ paragraph 
+ws-- --ws
+ in 
+ws-- --ws
+ latex. 
+ws--  --ws
+ Blank 
+ws-- --ws
+ lines 
+ws-- --ws
+ between 
+ws-- --ws
+ text 
+ws-- --ws
+ in 
+ws-- --ws
+ the 
+ws-- --ws
+ input 
+ws-- --ws
+ cause 
+ws-- --ws
+ a 
+ws-- --ws
+ new 
+ws-- 
+--ws
+ paragraph 
+ws-- --ws
+ to 
+ws-- --ws
+ be 
+ws-- --ws
+ generated. 
+ws--  --ws
+ This 
+ws-- --ws
+ is 
+ws-- --ws
+ an 
+ws-- --ws
+ example 
+ws-- --ws
+ of 
+ws-- --ws
+ text 
+ws-- --ws
+ that 
+ws-- --ws
+ would 
+ws-- --ws
+ be 
+ws-- 
+--ws
+ transformed 
+ws-- --ws
+ into 
+ws-- --ws
+ a 
+ws-- --ws
+ paragraph 
+ws-- --ws
+ in 
+ws-- --ws
+ latex. 
+ws--  --ws
+ Blank 
+ws-- --ws
+ lines 
+ws-- --ws
+ between 
+ws-- --ws
+ text 
+ws-- --ws
+ in 
+ws-- 
+--ws
+ the 
+ws-- --ws
+ input 
+ws-- --ws
+ cause 
+ws-- --ws
+ a 
+ws-- --ws
+ new 
+ws-- --ws
+ paragraph 
+ws-- --ws
+ to 
+ws-- --ws
+ be 
+ws-- --ws
+ generated. 
+ws--  
+
+--ws
+ When 
+ws-- --ws
+ the 
+ws-- --ws
+ blank 
+ws-- --ws
+ line 
+ws-- --ws
+ occurs 
+ws-- --ws
+ after 
+ws-- --ws
+ a 
+ws-- --ws
+ section, 
+ws-- --ws
+ no 
+ws-- --ws
+ indentation 
+ws-- --ws
+ of 
+ws-- --ws
+ the 
+ws-- --ws
+ paragraph 
+ws--
+--ws
+ is 
+ws-- --ws
+ performed. 
+ws--  --ws
+ However, 
+ws-- --ws
+ all 
+ws-- --ws
+ other 
+ws-- --ws
+ blanks, 
+ws-- --ws
+ would 
+ws-- --ws
+ result 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ five 
+ws-- --ws
+ space 
+ws-- 
+--ws
+ indent 
+ws-- --ws
+ of 
+ws-- --ws
+ the 
+ws-- --ws
+ paragraph. 
+ws--
+--ws
+ When 
+ws-- --ws
+ the 
+ws-- --ws
+ blank 
+ws-- --ws
+ line 
+ws-- --ws
+ occurs 
+ws-- --ws
+ after 
+ws-- --ws
+ a 
+ws-- --ws
+ section, 
+ws-- --ws
+ no 
+ws-- --ws
+ indentation 
+ws-- --ws
+ of 
+ws-- --ws
+ the 
+ws-- --ws
+ paragraph 
+ws--
+--ws
+ is 
+ws-- --ws
+ performed. 
+ws--  --ws
+ However, 
+ws-- --ws
+ all 
+ws-- --ws
+ other 
+ws-- --ws
+ blanks, 
+ws-- --ws
+ would 
+ws-- --ws
+ result 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ five 
+ws-- --ws
+ space 
+ws-- 
+--ws
+ indent 
+ws-- --ws
+ of 
+ws-- --ws
+ the 
+ws-- --ws
+ paragraph. 
+ws--
+
+--ws
+ \begin 
+ {single} 
+ws--
+--ws
+ Now, 
+ws-- --ws
+ its 
+ws-- --ws
+ important 
+ws-- --ws
+ to 
+ws-- --ws
+ make 
+ws-- --ws
+ sure 
+ws-- --ws
+ that 
+ws-- --ws
+ single 
+ws-- --ws
+ works 
+ws-- --ws
+ correctly, 
+ws-- --ws
+ and 
+ws-- --ws
+ can 
+ws--
+--ws
+ be 
+ws-- --ws
+ used 
+ws-- --ws
+ to 
+ws-- --ws
+ change 
+ws-- --ws
+ the 
+ws-- --ws
+ formating 
+ws-- --ws
+ with 
+ws-- --ws
+ respect 
+ws-- --ws
+ to 
+ws-- --ws
+ the 
+ws-- --ws
+ ways 
+ws-- --ws
+ lines 
+ws-- --ws
+ are 
+ws-- 
+--ws
+ output. 
+ws--  --ws
+ In 
+ws-- --ws
+ this 
+ws-- --ws
+ case, 
+ws-- --ws
+ we 
+ws-- --ws
+ are 
+ws-- --ws
+ going 
+ws-- --ws
+ from 
+ws-- --ws
+ double 
+ws-- --ws
+ to 
+ws-- --ws
+ single 
+ws-- --ws
+ spacing. 
+ws--
+--ws
+ \end 
+single or verb
+ {single} 
+ws--
+
+--ws
+ \subsection 
+ { 
+ A 
+ws-- --ws
+ Text 
+ws-- --ws
+ Processor 
+ } 
+DEBUG: generate_subsec_header
+DEBUG: GET PAGE NUMBERws--
+
+--ws
+ A 
+ws-- --ws
+ text 
+ws-- --ws
+ processor 
+ws-- --ws
+ is 
+ws-- --ws
+ a 
+ws-- --ws
+ very 
+ws-- --ws
+ useful 
+ws-- --ws
+ tool, 
+ws-- --ws
+ since 
+ws-- --ws
+ \hspace 
+ { 
+ 10 
+ } 
+ws-- --ws
+ it 
+ws-- --ws
+ allows 
+ws-- --ws
+ us 
+ws-- --ws
+ to 
+ws--
+--ws
+ develop 
+ws-- --ws
+ formatted 
+ws-- --ws
+ documents 
+ws-- --ws
+ that 
+ws-- --ws
+ are 
+ws-- --ws
+ easy 
+ws-- --ws
+ to 
+ws-- --ws
+ read. 
+ws--
+
+--ws
+ A 
+ws-- --ws
+ text 
+ws-- --ws
+ processor 
+ws-- --ws
+ is 
+ws-- --ws
+ a 
+ws-- --ws
+ very 
+ws-- --ws
+ useful 
+ws-- --ws
+ tool, 
+ws-- --ws
+ since 
+ws-- --ws
+ it 
+ws-- --ws
+ allows 
+ws-- --ws
+ us 
+ws-- --ws
+ to 
+ws--
+--ws
+ develop 
+ws-- --ws
+ formatted 
+ws-- --ws
+ documents 
+ws-- --ws
+ that 
+ws-- --ws
+ are 
+ws-- --ws
+ easy 
+ws-- --ws
+ to 
+ws-- --ws
+ read. 
+ws--
+
+--ws
+ \vspace 
+ { 
+ 7 
+ } 
+ws--
+
+--ws
+ A 
+ws-- --ws
+ text 
+ws-- --ws
+ processor 
+ws-- --ws
+ is 
+ws-- --ws
+ a 
+ws-- --ws
+ very 
+ws-- --ws
+ useful 
+ws-- --ws
+ tool, 
+ws-- --ws
+ since 
+ws-- --ws
+ it 
+ws-- --ws
+ allows 
+ws-- --ws
+ us 
+ws-- --ws
+ to 
+ws--
+--ws
+ develop 
+ws-- --ws
+ formatted 
+ws-- --ws
+ documents 
+ws-- --ws
+ that 
+ws-- --ws
+ are 
+ws-- --ws
+ easy 
+ws-- --ws
+ to 
+ws-- --ws
+ read. 
+ws--
+
+--ws
+ \subsection 
+ { 
+ Legal 
+ws-- --ws
+ Latex 
+ws-- --ws
+ Commands 
+ } 
+DEBUG: generate_subsec_header
+DEBUG: GET PAGE NUMBERws--
+
+--ws
+ We 
+ws-- --ws
+ have 
+ws-- --ws
+ seen 
+ws-- --ws
+ that 
+ws-- --ws
+ there 
+ws-- --ws
+ are 
+ws-- --ws
+ many 
+ws-- --ws
+ different 
+ws-- --ws
+ Latex 
+ws-- --ws
+ commands, 
+ws-- --ws
+ that 
+ws-- --ws
+ can 
+ws-- --ws
+ be 
+ws-- --ws
+ used 
+ws--
+--ws
+ in 
+ws-- --ws
+ many 
+ws-- --ws
+ different 
+ws-- --ws
+ ways. 
+ws--  --ws
+ However, 
+ws-- --ws
+ sometimes, 
+ws-- --ws
+ we 
+ws-- --ws
+ wish 
+ws-- --ws
+ to 
+ws-- --ws
+ use 
+ws-- --ws
+ a 
+ws-- --ws
+ character 
+ws-- --ws
+ to 
+ws--
+--ws
+ mean 
+ws-- --ws
+ itself, 
+ws-- --ws
+ and 
+ws-- --ws
+ override 
+ws-- --ws
+ its 
+ws-- --ws
+ Latex 
+ws-- --ws
+ interpretation. 
+ws--  --ws
+ For 
+ws-- --ws
+ example, 
+ws-- --ws
+ to 
+ws-- --ws
+ use 
+ws--
+--ws
+ curly 
+ws-- --ws
+ braces, 
+ws-- --ws
+ we 
+ws-- --ws
+ employ 
+ws-- --ws
+ the 
+ws-- --ws
+ backslash 
+ws-- --ws
+ a 
+ws-- --ws
+ set 
+ws-- --ws
+ of 
+ws-- --ws
+ integers. 
+ws--
+
+--ws
+ \subsection 
+ { 
+ Again 
+ws-- --ws
+ Legal 
+ws-- --ws
+ Latex 
+ws-- --ws
+ Commands 
+ } 
+DEBUG: generate_subsec_header
+DEBUG: GET PAGE NUMBERws--
+
+--ws
+ We 
+ws-- --ws
+ have 
+ws-- --ws
+ seen 
+ws-- --ws
+ that 
+ws-- --ws
+ there 
+ws-- --ws
+ are 
+ws-- --ws
+ many 
+ws-- --ws
+ different 
+ws-- --ws
+ Latex 
+ws-- --ws
+ commands, 
+ws-- --ws
+ that 
+ws-- --ws
+ can 
+ws-- --ws
+ be 
+ws-- --ws
+ used 
+ws--
+--ws
+ in 
+ws-- --ws
+ many 
+ws-- --ws
+ different 
+ws-- --ws
+ ways. 
+ws--  --ws
+ However, 
+ws-- --ws
+ sometimes, 
+ws-- --ws
+ we 
+ws-- --ws
+ wish 
+ws-- --ws
+ to 
+ws-- --ws
+ use 
+ws-- --ws
+ a 
+ws-- --ws
+ character 
+ws-- --ws
+ to 
+ws--
+--ws
+ mean 
+ws-- --ws
+ itself, 
+ws-- --ws
+ and 
+ws-- --ws
+ override 
+ws-- --ws
+ its 
+ws-- --ws
+ Latex 
+ws-- --ws
+ interpretation. 
+ws--  --ws
+ For 
+ws-- --ws
+ example, 
+ws-- --ws
+ to 
+ws-- --ws
+ use 
+ws--
+--ws
+ curly 
+ws-- --ws
+ braces, 
+ws-- --ws
+ we 
+ws-- --ws
+ employ 
+ws-- --ws
+ the 
+ws-- --ws
+ backslash 
+ws-- --ws
+ a 
+ws-- --ws
+ set 
+ws-- --ws
+ of 
+ws-- --ws
+ integers. 
+ws--
+
+--ws
+ \subsection 
+ { 
+ Yet 
+ws-- --ws
+ Some 
+ws-- --ws
+ More 
+ws-- --ws
+ Legal 
+ws-- --ws
+ Latex 
+ws-- --ws
+ Commands 
+ } 
+DEBUG: generate_subsec_header
+DEBUG: GET PAGE NUMBERws--
+
+--ws
+ \begin 
+ {single} 
+ws--
+--ws
+ We 
+ws-- --ws
+ have 
+ws-- --ws
+ seen 
+ws-- --ws
+ that 
+ws-- --ws
+ there 
+ws-- --ws
+ are 
+ws-- --ws
+ many 
+ws-- --ws
+ different 
+ws-- --ws
+ Latex 
+ws-- --ws
+ commands, 
+ws-- --ws
+ that 
+ws-- --ws
+ can 
+ws-- --ws
+ be 
+ws-- --ws
+ used 
+ws--
+--ws
+ in 
+ws-- --ws
+ many 
+ws-- --ws
+ different 
+ws-- --ws
+ ways. 
+ws--  --ws
+ However, 
+ws-- --ws
+ sometimes, 
+ws-- --ws
+ we 
+ws-- --ws
+ wish 
+ws-- --ws
+ to 
+ws-- --ws
+ use 
+ws-- --ws
+ a 
+ws-- --ws
+ character 
+ws-- --ws
+ to 
+ws--
+--ws
+ mean 
+ws-- --ws
+ itself, 
+ws-- --ws
+ and 
+ws-- --ws
+ override 
+ws-- --ws
+ its 
+ws-- --ws
+ Latex 
+ws-- --ws
+ interpretation. 
+ws--  --ws
+ For 
+ws-- --ws
+ example, 
+ws-- --ws
+ to 
+ws-- --ws
+ use 
+ws--
+--ws
+ curly 
+ws-- --ws
+ braces, 
+ws-- --ws
+ we 
+ws-- --ws
+ employ 
+ws-- --ws
+ the 
+ws-- --ws
+ backslash 
+ws-- --ws
+ a 
+ws-- --ws
+ set 
+ws-- --ws
+ of 
+ws-- --ws
+ integers. 
+ws--
+--ws
+ \end 
+single or verb
+ {single} 
+ws--
+
+--ws
+ \section 
+ { 
+ Using 
+ws-- --ws
+ Latex 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBERws--
+
+--ws
+ Finally, 
+ws-- --ws
+ there 
+ws-- --ws
+ are 
+ws-- --ws
+ { 
+ \it 
+ws-- --ws
+ many 
+ws-- --ws
+ other 
+ws-- --ws
+ useful 
+ } 
+ws-- --ws
+ commands 
+ws-- --ws
+ that 
+ws-- --ws
+ involve 
+ws-- --ws
+ begin 
+ws-- --ws
+ end 
+ws-- --ws
+ blocks, 
+ws--
+--ws
+ that 
+ws-- --ws
+ establish 
+ws-- --ws
+ an 
+ws-- --ws
+ environment. 
+ws-- --ws
+ These 
+ws-- --ws
+ blocks 
+ws-- --ws
+ behave 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ similar 
+ws-- --ws
+ fashion 
+ws-- --ws
+ to 
+ws--
+--ws
+ begin 
+ws-- --ws
+ end 
+ws-- --ws
+ blocks 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ programming 
+ws-- --ws
+ language, 
+ws-- --ws
+ since 
+ws-- --ws
+ they 
+ws-- --ws
+ set 
+ws-- --ws
+ a 
+ws-- --ws
+ scope. 
+ws--  --ws
+ We 
+ws--
+--ws
+ have 
+ws-- --ws
+ discussed 
+ws-- --ws
+ a 
+ws-- --ws
+ number 
+ws-- --ws
+ of 
+ws-- --ws
+ examples. 
+ws--
+
+--ws
+ \it 
+ws--
+--ws
+ It 
+ws-- --ws
+ is 
+ws-- --ws
+ important 
+ws-- --ws
+ to 
+ws-- --ws
+ note, 
+ws-- --ws
+ even 
+ws-- --ws
+ at 
+ws-- --ws
+ this 
+ws-- --ws
+ early 
+ws-- --ws
+ stage, 
+ws-- --ws
+ that 
+ws-- --ws
+ lists 
+ws-- --ws
+ may 
+ws-- --ws
+ be 
+ws-- --ws
+ created 
+ws--
+--ws
+ within 
+ws-- --ws
+ lists, 
+ws-- --ws
+ allowing 
+ws-- --ws
+ the 
+ws-- --ws
+ nesting 
+ws-- --ws
+ of 
+ws-- --ws
+ blocks 
+ws-- --ws
+ and 
+ws-- --ws
+ environments. 
+ws--
+--ws
+ \rm 
+ws--
+
+--ws
+ It 
+ws-- --ws
+ is 
+ws-- --ws
+ important 
+ws-- --ws
+ to 
+ws-- --ws
+ note, 
+ws-- --ws
+ even 
+ws-- --ws
+ at 
+ws-- --ws
+ this 
+ws-- --ws
+ early 
+ws-- --ws
+ stage, 
+ws-- --ws
+ that 
+ws-- --ws
+ lists 
+ws-- --ws
+ may 
+ws-- --ws
+ be 
+ws-- --ws
+ created 
+ws--
+
+--ws
+ \subsection 
+ { 
+ Check 
+ws-- --ws
+ this 
+ws-- --ws
+ Out 
+ } 
+DEBUG: generate_subsec_header
+DEBUG: GET PAGE NUMBERws--
+
+--ws
+ Finally, 
+ws-- --ws
+ there 
+ws-- --ws
+ are 
+ws-- --ws
+ { 
+ \it 
+ws-- --ws
+ many 
+ws-- --ws
+ other 
+ws-- --ws
+ useful 
+ } 
+ws-- --ws
+ commands 
+ws-- --ws
+ that 
+ws-- --ws
+ involve 
+ws-- --ws
+ begin 
+ws-- --ws
+ end 
+ws-- --ws
+ blocks, 
+ws--
+--ws
+ that 
+ws-- --ws
+ establish 
+ws-- --ws
+ an 
+ws-- --ws
+ environment. 
+ws-- --ws
+ These 
+ws-- --ws
+ blocks 
+ws-- --ws
+ behave 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ similar 
+ws-- --ws
+ fashion 
+ws-- --ws
+ to 
+ws--
+--ws
+ begin 
+ws-- --ws
+ end 
+ws-- --ws
+ blocks 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ programming 
+ws-- --ws
+ language, 
+ws-- --ws
+ since 
+ws-- --ws
+ they 
+ws-- --ws
+ set 
+ws-- --ws
+ a 
+ws-- --ws
+ scope. 
+ws--  --ws
+ We 
+ws--
+--ws
+ have 
+ws-- --ws
+ discussed 
+ws-- --ws
+ a 
+ws-- --ws
+ number 
+ws-- --ws
+ of 
+ws-- --ws
+ examples. 
+ws--
+
+--ws
+ \subsection 
+ { 
+ Check 
+ws-- --ws
+ this 
+ws-- --ws
+ Out 
+ws-- --ws
+ Part 
+ws-- --ws
+ 2 
+ } 
+DEBUG: generate_subsec_header
+DEBUG: GET PAGE NUMBERws--
+
+--ws
+ Finally, 
+ws-- --ws
+ there 
+ws-- --ws
+ are 
+ws-- --ws
+ { 
+ \it 
+ws-- --ws
+ many 
+ws-- --ws
+ other 
+ws-- --ws
+ useful 
+ } 
+ws-- --ws
+ commands 
+ws-- --ws
+ that 
+ws-- --ws
+ involve 
+ws-- --ws
+ begin 
+ws-- --ws
+ end 
+ws-- --ws
+ blocks, 
+ws--
+--ws
+ that 
+ws-- --ws
+ establish 
+ws-- --ws
+ an 
+ws-- --ws
+ environment. 
+ws-- --ws
+ These 
+ws-- --ws
+ blocks 
+ws-- --ws
+ behave 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ similar 
+ws-- --ws
+ fashion 
+ws-- --ws
+ to 
+ws--
+--ws
+ begin 
+ws-- --ws
+ end 
+ws-- --ws
+ blocks 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ programming 
+ws-- --ws
+ language, 
+ws-- --ws
+ since 
+ws-- --ws
+ they 
+ws-- --ws
+ set 
+ws-- --ws
+ a 
+ws-- --ws
+ scope. 
+ws--  --ws
+ We 
+ws--
+--ws
+ have 
+ws-- --ws
+ discussed 
+ws-- --ws
+ a 
+ws-- --ws
+ number 
+ws-- --ws
+ of 
+ws-- --ws
+ examples. 
+ws--
+
+--ws
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBERws--
+
+--ws
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this? 
+ } 
+DEBUG: generate_sec_header
+DEBUG: PRINT TOC TO FILE!!
+DEBUG: GET PAGE NUMBERws--
+
+--ws
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+ \section 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this? 
+ } 
+DEBUG: generate_sec_

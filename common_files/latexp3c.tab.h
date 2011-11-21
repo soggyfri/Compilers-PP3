@@ -87,7 +87,8 @@
      LROMAN2 = 303,
      CROMAN2 = 304,
      LALPH2 = 305,
-     CALPH2 = 306
+     CALPH2 = 306,
+     NEWLINE = 307
    };
 #endif
 
@@ -106,7 +107,7 @@ typedef union YYSTYPE
 
 
 /* Line 1676 of yacc.c  */
-#line 110 "latexp3c.tab.h"
+#line 111 "latexp3c.tab.h"
 } YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
