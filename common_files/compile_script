@@ -1,5 +1,5 @@
 #/bin/sh
 
-bison -t -v latexp2.y
+bison -t -v latexp3c.y
 flex latex.l
-gcc latexp2.tab.c -lfl
+gcc latexp3c.tab.c -lfl
