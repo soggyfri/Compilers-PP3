@@ -8,7 +8,7 @@ Terminals unused in grammar
 State 7 conflicts: 2 shift/reduce
 State 11 conflicts: 2 shift/reduce
 State 30 conflicts: 2 shift/reduce
-State 58 conflicts: 2 shift/reduce
+State 57 conflicts: 2 shift/reduce
 State 81 conflicts: 4 reduce/reduce
 
 
@@ -136,21 +136,24 @@ Grammar
    84       | LALPH1
    85       | CALPH1
 
-   86 spacing: horvert LCURLYB WORD RCURLYB
+   86 $@2: /* empty */
 
-   87 horvert: VSPACE
-   88        | HSPACE
+   87 spacing: VSPACE LCURLYB WORD $@2 RCURLYB
 
-   89 fonts: RM
-   90      | IT
+   88 $@3: /* empty */
 
-   91 specialchar: SPECCHAR
-   92            | LCURLYB
-   93            | RCURLYB
+   89 spacing: HSPACE LCURLYB WORD $@3 RCURLYB
 
-   94 nonewpara: NOINDENT
+   90 fonts: RM
+   91      | IT
 
-   95 reference: REF LCURLYB WORD RCURLYB
+   92 specialchar: SPECCHAR
+   93            | LCURLYB
+   94            | RCURLYB
+
+   95 nonewpara: NOINDENT
+
+   96 reference: REF LCURLYB WORD RCURLYB
 
 
 Terminals, with rules where they appear
@@ -159,13 +162,13 @@ $end (0) 0
 error (256)
 BACKSL (258)
 LBEGIN (259) 2 28
-LCURLYB (260) 15 59 64 68 69 70 72 80 86 92 95
+LCURLYB (260) 15 59 64 68 69 70 72 80 87 89 93 96
 DOCUMENT (261) 2 3
-RCURLYB (262) 15 59 64 68 69 70 72 80 86 93 95
+RCURLYB (262) 15 59 64 68 69 70 72 80 87 89 94 96
 END (263) 3 36 63 66 68
-WORD (264) 12 68 72 80 86 95
+WORD (264) 12 68 72 80 87 89 96
 WS (265) 11
-SPECCHAR (266) 13 56 91
+SPECCHAR (266) 13 56 92
 CENTER (267) 29 38
 VERBATIM (268) 30 39
 SINGLE (269) 31 40
@@ -196,11 +199,11 @@ CROMAN1 (293) 83
 LALPH1 (294) 84
 CALPH1 (295) 85
 VSPACE (296) 87
-HSPACE (297) 88
-RM (298) 89
-IT (299) 90
-NOINDENT (300) 94
-REF (301) 95
+HSPACE (297) 89
+RM (298) 90
+IT (299) 91
+NOINDENT (300) 95
+REF (301) 96
 ARABIC2 (302) 74
 LROMAN2 (303) 75
 CROMAN2 (304) 76
@@ -284,17 +287,19 @@ $@1 (87)
 style1 (88)
     on left: 81 82 83 84 85, on right: 80
 spacing (89)
-    on left: 86, on right: 23
-horvert (90)
-    on left: 87 88, on right: 86
-fonts (91)
-    on left: 89 90, on right: 16 24
-specialchar (92)
-    on left: 91 92 93, on right: 25
-nonewpara (93)
-    on left: 94, on right: 26
-reference (94)
-    on left: 95, on right: 27
+    on left: 87 89, on right: 23
+$@2 (90)
+    on left: 86, on right: 87
+$@3 (91)
+    on left: 88, on right: 89
+fonts (92)
+    on left: 90 91, on right: 16 24
+specialchar (93)
+    on left: 92 93 94, on right: 25
+nonewpara (94)
+    on left: 95, on right: 26
+reference (95)
+    on left: 96, on right: 27
 
 
 state 0
@@ -363,11 +368,10 @@ state 3
     pagenuminit     go to state 40
     style1          go to state 41
     spacing         go to state 42
-    horvert         go to state 43
-    fonts           go to state 44
-    specialchar     go to state 45
-    nonewpara       go to state 46
-    reference       go to state 47
+    fonts           go to state 43
+    specialchar     go to state 44
+    nonewpara       go to state 45
+    reference       go to state 46
 
 
 state 4
@@ -388,38 +392,38 @@ state 6
 
    28 beginendopts: LBEGIN . begcmds beginblock endbegin
 
-    CENTER     shift, and go to state 48
-    VERBATIM   shift, and go to state 49
-    SINGLE     shift, and go to state 50
-    ITEMIZE    shift, and go to state 51
-    ENUMERATE  shift, and go to state 52
-    TABULAR    shift, and go to state 53
-    TABLE      shift, and go to state 54
+    CENTER     shift, and go to state 47
+    VERBATIM   shift, and go to state 48
+    SINGLE     shift, and go to state 49
+    ITEMIZE    shift, and go to state 50
+    ENUMERATE  shift, and go to state 51
+    TABULAR    shift, and go to state 52
+    TABLE      shift, and go to state 53
 
-    begcmds  go to state 55
+    begcmds  go to state 54
 
 
 state 7
 
    15 latexoptions: LCURLYB . curlyboptions RCURLYB
-   92 specialchar: LCURLYB .
+   93 specialchar: LCURLYB .
 
     RM  shift, and go to state 24
     IT  shift, and go to state 25
 
-    RM        [reduce using rule 92 (specialchar)]
-    IT        [reduce using rule 92 (specialchar)]
-    $default  reduce using rule 92 (specialchar)
+    RM        [reduce using rule 93 (specialchar)]
+    IT        [reduce using rule 93 (specialchar)]
+    $default  reduce using rule 93 (specialchar)
 
-    curlyboptions  go to state 56
-    fonts          go to state 57
+    curlyboptions  go to state 55
+    fonts          go to state 56
 
 
 state 8
 
-   93 specialchar: RCURLYB .
+   94 specialchar: RCURLYB .
 
-    $default  reduce using rule 93 (specialchar)
+    $default  reduce using rule 94 (specialchar)
 
 
 state 9
@@ -439,16 +443,16 @@ state 10
 state 11
 
    13 commentoption: SPECCHAR . textoption
-   91 specialchar: SPECCHAR .
+   92 specialchar: SPECCHAR .
 
     WORD  shift, and go to state 9
     WS    shift, and go to state 10
 
-    WORD      [reduce using rule 91 (specialchar)]
-    WS        [reduce using rule 91 (specialchar)]
-    $default  reduce using rule 91 (specialchar)
+    WORD      [reduce using rule 92 (specialchar)]
+    WS        [reduce using rule 92 (specialchar)]
+    $default  reduce using rule 92 (specialchar)
 
-    textoption  go to state 58
+    textoption  go to state 57
     wsorword    go to state 31
 
 
@@ -456,14 +460,14 @@ state 12
 
    69 sectionoptions: SECTION . LCURLYB textoption RCURLYB
 
-    LCURLYB  shift, and go to state 59
+    LCURLYB  shift, and go to state 58
 
 
 state 13
 
    70 sectionoptions: SUBSEC . LCURLYB textoption RCURLYB
 
-    LCURLYB  shift, and go to state 60
+    LCURLYB  shift, and go to state 59
 
 
 state 14
@@ -477,20 +481,20 @@ state 15
 
    72 linespacing: RENEW . LCURLYB BASELINES RCURLYB LCURLYB WORD RCURLYB
 
-    LCURLYB  shift, and go to state 61
+    LCURLYB  shift, and go to state 60
 
 
 state 16
 
    73 pagenumbers: PAGENUM . style2
 
-    ARABIC2  shift, and go to state 62
-    LROMAN2  shift, and go to state 63
-    CROMAN2  shift, and go to state 64
-    LALPH2   shift, and go to state 65
-    CALPH2   shift, and go to state 66
+    ARABIC2  shift, and go to state 61
+    LROMAN2  shift, and go to state 62
+    CROMAN2  shift, and go to state 63
+    LALPH2   shift, and go to state 64
+    CALPH2   shift, and go to state 65
 
-    style2  go to state 67
+    style2  go to state 66
 
 
 state 17
@@ -530,44 +534,44 @@ state 21
 
 state 22
 
-   87 horvert: VSPACE .
+   87 spacing: VSPACE . LCURLYB WORD $@2 RCURLYB
 
-    $default  reduce using rule 87 (horvert)
+    LCURLYB  shift, and go to state 67
 
 
 state 23
 
-   88 horvert: HSPACE .
+   89 spacing: HSPACE . LCURLYB WORD $@3 RCURLYB
 
-    $default  reduce using rule 88 (horvert)
+    LCURLYB  shift, and go to state 68
 
 
 state 24
 
-   89 fonts: RM .
-
-    $default  reduce using rule 89 (fonts)
-
-
-state 25
-
-   90 fonts: IT .
+   90 fonts: RM .
 
     $default  reduce using rule 90 (fonts)
 
 
+state 25
+
+   91 fonts: IT .
+
+    $default  reduce using rule 91 (fonts)
+
+
 state 26
 
-   94 nonewpara: NOINDENT .
+   95 nonewpara: NOINDENT .
 
-    $default  reduce using rule 94 (nonewpara)
+    $default  reduce using rule 95 (nonewpara)
 
 
 state 27
 
-   95 reference: REF . LCURLYB WORD RCURLYB
+   96 reference: REF . LCURLYB WORD RCURLYB
 
-    LCURLYB  shift, and go to state 68
+    LCURLYB  shift, and go to state 69
 
 
 state 28
@@ -578,7 +582,7 @@ state 28
     LBEGIN    shift, and go to state 6
     LCURLYB   shift, and go to state 7
     RCURLYB   shift, and go to state 8
-    END       shift, and go to state 69
+    END       shift, and go to state 70
     WORD      shift, and go to state 9
     WS        shift, and go to state 10
     SPECCHAR  shift, and go to state 11
@@ -599,8 +603,8 @@ state 28
     NOINDENT  shift, and go to state 26
     REF       shift, and go to state 27
 
-    enddoc          go to state 70
-    mainoption      go to state 71
+    enddoc          go to state 71
+    mainoption      go to state 72
     textoption      go to state 30
     wsorword        go to state 31
     commentoption   go to state 32
@@ -614,11 +618,10 @@ state 28
     pagenuminit     go to state 40
     style1          go to state 41
     spacing         go to state 42
-    horvert         go to state 43
-    fonts           go to state 44
-    specialchar     go to state 45
-    nonewpara       go to state 46
-    reference       go to state 47
+    fonts           go to state 43
+    specialchar     go to state 44
+    nonewpara       go to state 45
+    reference       go to state 46
 
 
 state 29
@@ -640,7 +643,7 @@ state 30
     WS        [reduce using rule 6 (mainoption)]
     $default  reduce using rule 6 (mainoption)
 
-    wsorword  go to state 72
+    wsorword  go to state 73
 
 
 state 31
@@ -717,7 +720,7 @@ state 41
 
    80 pagenuminit: style1 . LCURLYB WORD $@1 RCURLYB
 
-    LCURLYB  shift, and go to state 73
+    LCURLYB  shift, and go to state 74
 
 
 state 42
@@ -729,75 +732,68 @@ state 42
 
 state 43
 
-   86 spacing: horvert . LCURLYB WORD RCURLYB
-
-    LCURLYB  shift, and go to state 74
-
-
-state 44
-
    24 backsoptions: fonts .
 
     $default  reduce using rule 24 (backsoptions)
 
 
-state 45
+state 44
 
    25 backsoptions: specialchar .
 
     $default  reduce using rule 25 (backsoptions)
 
 
-state 46
+state 45
 
    26 backsoptions: nonewpara .
 
     $default  reduce using rule 26 (backsoptions)
 
 
-state 47
+state 46
 
    27 backsoptions: reference .
 
     $default  reduce using rule 27 (backsoptions)
 
 
-state 48
+state 47
 
    29 begcmds: CENTER .
 
     $default  reduce using rule 29 (begcmds)
 
 
-state 49
+state 48
 
    30 begcmds: VERBATIM .
 
     $default  reduce using rule 30 (begcmds)
 
 
-state 50
+state 49
 
    31 begcmds: SINGLE .
 
     $default  reduce using rule 31 (begcmds)
 
 
-state 51
+state 50
 
    32 begcmds: ITEMIZE .
 
     $default  reduce using rule 32 (begcmds)
 
 
-state 52
+state 51
 
    33 begcmds: ENUMERATE .
 
     $default  reduce using rule 33 (begcmds)
 
 
-state 53
+state 52
 
    35 begcmds: TABULAR . begtabularopts
 
@@ -806,7 +802,7 @@ state 53
     begtabularopts  go to state 76
 
 
-state 54
+state 53
 
    34 begcmds: TABLE . begtableopts
 
@@ -815,7 +811,7 @@ state 54
     begtableopts  go to state 78
 
 
-state 55
+state 54
 
    28 beginendopts: LBEGIN begcmds . beginblock endbegin
 
@@ -835,14 +831,14 @@ state 55
     entry         go to state 87
 
 
-state 56
+state 55
 
    15 latexoptions: LCURLYB curlyboptions . RCURLYB
 
     RCURLYB  shift, and go to state 88
 
 
-state 57
+state 56
 
    16 curlyboptions: fonts . textoption
 
@@ -853,7 +849,7 @@ state 57
     wsorword    go to state 31
 
 
-state 58
+state 57
 
     9 textoption: textoption . wsorword
    13 commentoption: SPECCHAR textoption .
@@ -865,10 +861,10 @@ state 58
     WS        [reduce using rule 13 (commentoption)]
     $default  reduce using rule 13 (commentoption)
 
-    wsorword  go to state 72
+    wsorword  go to state 73
 
 
-state 59
+state 58
 
    69 sectionoptions: SECTION LCURLYB . textoption RCURLYB
 
@@ -879,7 +875,7 @@ state 59
     wsorword    go to state 31
 
 
-state 60
+state 59
 
    70 sectionoptions: SUBSEC LCURLYB . textoption RCURLYB
 
@@ -890,109 +886,116 @@ state 60
     wsorword    go to state 31
 
 
-state 61
+state 60
 
    72 linespacing: RENEW LCURLYB . BASELINES RCURLYB LCURLYB WORD RCURLYB
 
     BASELINES  shift, and go to state 92
 
 
-state 62
+state 61
 
    74 style2: ARABIC2 .
 
     $default  reduce using rule 74 (style2)
 
 
-state 63
+state 62
 
    75 style2: LROMAN2 .
 
     $default  reduce using rule 75 (style2)
 
 
-state 64
+state 63
 
    76 style2: CROMAN2 .
 
     $default  reduce using rule 76 (style2)
 
 
-state 65
+state 64
 
    77 style2: LALPH2 .
 
     $default  reduce using rule 77 (style2)
 
 
-state 66
+state 65
 
    78 style2: CALPH2 .
 
     $default  reduce using rule 78 (style2)
 
 
-state 67
+state 66
 
    73 pagenumbers: PAGENUM style2 .
 
     $default  reduce using rule 73 (pagenumbers)
 
 
-state 68
+state 67
 
-   95 reference: REF LCURLYB . WORD RCURLYB
+   87 spacing: VSPACE LCURLYB . WORD $@2 RCURLYB
 
     WORD  shift, and go to state 93
 
 
+state 68
+
+   89 spacing: HSPACE LCURLYB . WORD $@3 RCURLYB
+
+    WORD  shift, and go to state 94
+
+
 state 69
 
-    3 enddoc: END . DOCUMENT
+   96 reference: REF LCURLYB . WORD RCURLYB
 
-    DOCUMENT  shift, and go to state 94
+    WORD  shift, and go to state 95
 
 
 state 70
+
+    3 enddoc: END . DOCUMENT
+
+    DOCUMENT  shift, and go to state 96
+
+
+state 71
 
     1 latexstatement: startdoc mainbody enddoc .
 
     $default  reduce using rule 1 (latexstatement)
 
 
-state 71
+state 72
 
     4 mainbody: mainbody mainoption .
 
     $default  reduce using rule 4 (mainbody)
 
 
-state 72
+state 73
 
     9 textoption: textoption wsorword .
 
     $default  reduce using rule 9 (textoption)
 
 
-state 73
+state 74
 
    80 pagenuminit: style1 LCURLYB . WORD $@1 RCURLYB
 
-    WORD  shift, and go to state 95
-
-
-state 74
-
-   86 spacing: horvert LCURLYB . WORD RCURLYB
-
-    WORD  shift, and go to state 96
+    WORD  shift, and go to state 97
 
 
 state 75
 
    59 begtabularopts: LCURLYB . COLS RCURLYB
 
-    COLS  shift, and go to state 97
+    COLS  shift, and go to state 98
 
 
 state 76
@@ -1006,11 +1009,11 @@ state 77
 
    58 begtableopts: LSQRB . position RSQRB
 
-    H  shift, and go to state 98
-    T  shift, and go to state 99
-    B  shift, and go to state 100
+    H  shift, and go to state 99
+    T  shift, and go to state 100
+    B  shift, and go to state 101
 
-    position  go to state 101
+    position  go to state 102
 
 
 state 78
@@ -1027,7 +1030,7 @@ state 79
     WORD  shift, and go to state 9
     WS    shift, and go to state 10
 
-    textoption  go to state 102
+    textoption  go to state 103
     wsorword    go to state 31
 
 
@@ -1044,7 +1047,7 @@ state 80
     DBLBS     reduce using rule 57 (entry)
     $default  reduce using rule 45 (beginblock)
 
-    wsorword  go to state 72
+    wsorword  go to state 73
 
 
 state 81
@@ -1074,13 +1077,13 @@ state 82
 
    28 beginendopts: LBEGIN begcmds beginblock . endbegin
 
-    END      shift, and go to state 103
-    CAPTION  shift, and go to state 104
-    LABEL    shift, and go to state 105
+    END      shift, and go to state 104
+    CAPTION  shift, and go to state 105
+    LABEL    shift, and go to state 106
 
-    endbegin      go to state 106
-    endtableopts  go to state 107
-    labelrest     go to state 108
+    endbegin      go to state 107
+    endtableopts  go to state 108
+    labelrest     go to state 109
 
 
 state 83
@@ -1093,8 +1096,8 @@ state 83
 
     $default  reduce using rule 47 (beginblock)
 
-    beginendopts  go to state 109
-    anitem        go to state 110
+    beginendopts  go to state 110
+    anitem        go to state 111
 
 
 state 84
@@ -1115,10 +1118,10 @@ state 85
 
     $default  reduce using rule 46 (beginblock)
 
-    textoption    go to state 111
+    textoption    go to state 112
     wsorword      go to state 31
-    beginendopts  go to state 112
-    anentry       go to state 113
+    beginendopts  go to state 113
+    anentry       go to state 114
     entry         go to state 87
 
 
@@ -1134,8 +1137,8 @@ state 87
    54 anentry: entry . DBLBS
    56 entry: entry . SPECCHAR textoption
 
-    SPECCHAR  shift, and go to state 114
-    DBLBS     shift, and go to state 115
+    SPECCHAR  shift, and go to state 115
+    DBLBS     shift, and go to state 116
 
 
 state 88
@@ -1155,7 +1158,7 @@ state 89
 
     $default  reduce using rule 16 (curlyboptions)
 
-    wsorword  go to state 72
+    wsorword  go to state 73
 
 
 state 90
@@ -1163,11 +1166,11 @@ state 90
     9 textoption: textoption . wsorword
    69 sectionoptions: SECTION LCURLYB textoption . RCURLYB
 
-    RCURLYB  shift, and go to state 116
+    RCURLYB  shift, and go to state 117
     WORD     shift, and go to state 9
     WS       shift, and go to state 10
 
-    wsorword  go to state 72
+    wsorword  go to state 73
 
 
 state 91
@@ -1175,86 +1178,97 @@ state 91
     9 textoption: textoption . wsorword
    70 sectionoptions: SUBSEC LCURLYB textoption . RCURLYB
 
-    RCURLYB  shift, and go to state 117
+    RCURLYB  shift, and go to state 118
     WORD     shift, and go to state 9
     WS       shift, and go to state 10
 
-    wsorword  go to state 72
+    wsorword  go to state 73
 
 
 state 92
 
    72 linespacing: RENEW LCURLYB BASELINES . RCURLYB LCURLYB WORD RCURLYB
 
-    RCURLYB  shift, and go to state 118
+    RCURLYB  shift, and go to state 119
 
 
 state 93
 
-   95 reference: REF LCURLYB WORD . RCURLYB
+   87 spacing: VSPACE LCURLYB WORD . $@2 RCURLYB
 
-    RCURLYB  shift, and go to state 119
+    $default  reduce using rule 86 ($@2)
+
+    $@2  go to state 120
 
 
 state 94
+
+   89 spacing: HSPACE LCURLYB WORD . $@3 RCURLYB
+
+    $default  reduce using rule 88 ($@3)
+
+    $@3  go to state 121
+
+
+state 95
+
+   96 reference: REF LCURLYB WORD . RCURLYB
+
+    RCURLYB  shift, and go to state 122
+
+
+state 96
 
     3 enddoc: END DOCUMENT .
 
     $default  reduce using rule 3 (enddoc)
 
 
-state 95
+state 97
 
    80 pagenuminit: style1 LCURLYB WORD . $@1 RCURLYB
 
     $default  reduce using rule 79 ($@1)
 
-    $@1  go to state 120
-
-
-state 96
-
-   86 spacing: horvert LCURLYB WORD . RCURLYB
-
-    RCURLYB  shift, and go to state 121
-
-
-state 97
-
-   59 begtabularopts: LCURLYB COLS . RCURLYB
-
-    RCURLYB  shift, and go to state 122
+    $@1  go to state 123
 
 
 state 98
+
+   59 begtabularopts: LCURLYB COLS . RCURLYB
+
+    RCURLYB  shift, and go to state 124
+
+
+state 99
 
    60 position: H .
 
     $default  reduce using rule 60 (position)
 
 
-state 99
+state 100
 
    61 position: T .
 
     $default  reduce using rule 61 (position)
 
 
-state 100
+state 101
 
    62 position: B .
 
     $default  reduce using rule 62 (position)
 
 
-state 101
+state 102
 
    58 begtableopts: LSQRB position . RSQRB
 
-    RSQRB  shift, and go to state 123
+    RSQRB  shift, and go to state 125
 
 
-state 102
+state 103
 
     9 textoption: textoption . wsorword
    50 anitem: ITEM textoption .
@@ -1264,76 +1278,76 @@ state 102
 
     $default  reduce using rule 50 (anitem)
 
-    wsorword  go to state 72
-
-
-state 103
-
-   36 endbegin: END . endcmds
-   63 endtableopts: END .
-
-    CENTER     shift, and go to state 124
-    VERBATIM   shift, and go to state 125
-    SINGLE     shift, and go to state 126
-    ITEMIZE    shift, and go to state 127
-    ENUMERATE  shift, and go to state 128
-    TABULAR    shift, and go to state 129
-
-    $default  reduce using rule 63 (endtableopts)
-
-    endcmds  go to state 130
+    wsorword  go to state 73
 
 
 state 104
 
-   64 endtableopts: CAPTION . LCURLYB textoption RCURLYB captionrest
+   36 endbegin: END . endcmds
+   63 endtableopts: END .
 
-    LCURLYB  shift, and go to state 131
+    CENTER     shift, and go to state 126
+    VERBATIM   shift, and go to state 127
+    SINGLE     shift, and go to state 128
+    ITEMIZE    shift, and go to state 129
+    ENUMERATE  shift, and go to state 130
+    TABULAR    shift, and go to state 131
+
+    $default  reduce using rule 63 (endtableopts)
+
+    endcmds  go to state 132
 
 
 state 105
 
-   68 labelrest: LABEL . LCURLYB WORD RCURLYB END
+   64 endtableopts: CAPTION . LCURLYB textoption RCURLYB captionrest
 
-    LCURLYB  shift, and go to state 132
+    LCURLYB  shift, and go to state 133
 
 
 state 106
+
+   68 labelrest: LABEL . LCURLYB WORD RCURLYB END
+
+    LCURLYB  shift, and go to state 134
+
+
+state 107
 
    28 beginendopts: LBEGIN begcmds beginblock endbegin .
 
     $default  reduce using rule 28 (beginendopts)
 
 
-state 107
+state 108
 
    37 endbegin: endtableopts . TABLE
 
-    TABLE  shift, and go to state 133
+    TABLE  shift, and go to state 135
 
 
-state 108
+state 109
 
    65 endtableopts: labelrest .
 
     $default  reduce using rule 65 (endtableopts)
 
 
-state 109
+state 110
 
    51 anitem: beginendopts .
 
     $default  reduce using rule 51 (anitem)
 
 
-state 110
+state 111
 
    48 listblock: listblock anitem .
 
     $default  reduce using rule 48 (listblock)
 
 
-state 111
+state 112
 
     9 textoption: textoption . wsorword
    57 entry: textoption .
@@ -1343,172 +1357,179 @@ state 111
 
     $default  reduce using rule 57 (entry)
 
-    wsorword  go to state 72
+    wsorword  go to state 73
 
 
-state 112
+state 113
 
    55 anentry: beginendopts .
 
     $default  reduce using rule 55 (anentry)
 
 
-state 113
+state 114
 
    52 entrylist: entrylist anentry .
 
     $default  reduce using rule 52 (entrylist)
 
 
-state 114
+state 115
 
    56 entry: entry SPECCHAR . textoption
 
     WORD  shift, and go to state 9
     WS    shift, and go to state 10
 
-    textoption  go to state 134
+    textoption  go to state 136
     wsorword    go to state 31
 
 
-state 115
+state 116
 
    54 anentry: entry DBLBS .
 
     $default  reduce using rule 54 (anentry)
 
 
-state 116
+state 117
 
    69 sectionoptions: SECTION LCURLYB textoption RCURLYB .
 
     $default  reduce using rule 69 (sectionoptions)
 
 
-state 117
+state 118
 
    70 sectionoptions: SUBSEC LCURLYB textoption RCURLYB .
 
     $default  reduce using rule 70 (sectionoptions)
 
 
-state 118
+state 119
 
    72 linespacing: RENEW LCURLYB BASELINES RCURLYB . LCURLYB WORD RCURLYB
 
-    LCURLYB  shift, and go to state 135
-
-
-state 119
-
-   95 reference: REF LCURLYB WORD RCURLYB .
-
-    $default  reduce using rule 95 (reference)
+    LCURLYB  shift, and go to state 137
 
 
 state 120
 
-   80 pagenuminit: style1 LCURLYB WORD $@1 . RCURLYB
+   87 spacing: VSPACE LCURLYB WORD $@2 . RCURLYB
 
-    RCURLYB  shift, and go to state 136
+    RCURLYB  shift, and go to state 138
 
 
 state 121
 
-   86 spacing: horvert LCURLYB WORD RCURLYB .
+   89 spacing: HSPACE LCURLYB WORD $@3 . RCURLYB
 
-    $default  reduce using rule 86 (spacing)
+    RCURLYB  shift, and go to state 139
 
 
 state 122
+
+   96 reference: REF LCURLYB WORD RCURLYB .
+
+    $default  reduce using rule 96 (reference)
+
+
+state 123
+
+   80 pagenuminit: style1 LCURLYB WORD $@1 . RCURLYB
+
+    RCURLYB  shift, and go to state 140
+
+
+state 124
 
    59 begtabularopts: LCURLYB COLS RCURLYB .
 
     $default  reduce using rule 59 (begtabularopts)
 
 
-state 123
+state 125
 
    58 begtableopts: LSQRB position RSQRB .
 
     $default  reduce using rule 58 (begtableopts)
 
 
-state 124
+state 126
 
    38 endcmds: CENTER .
 
     $default  reduce using rule 38 (endcmds)
 
 
-state 125
+state 127
 
    39 endcmds: VERBATIM .
 
     $default  reduce using rule 39 (endcmds)
 
 
-state 126
+state 128
 
    40 endcmds: SINGLE .
 
     $default  reduce using rule 40 (endcmds)
 
 
-state 127
+state 129
 
    41 endcmds: ITEMIZE .
 
     $default  reduce using rule 41 (endcmds)
 
 
-state 128
+state 130
 
    42 endcmds: ENUMERATE .
 
     $default  reduce using rule 42 (endcmds)
 
 
-state 129
+state 131
 
    43 endcmds: TABULAR .
 
     $default  reduce using rule 43 (endcmds)
 
 
-state 130
+state 132
 
    36 endbegin: END endcmds .
 
     $default  reduce using rule 36 (endbegin)
 
 
-state 131
+state 133
 
    64 endtableopts: CAPTION LCURLYB . textoption RCURLYB captionrest
 
     WORD  shift, and go to state 9
     WS    shift, and go to state 10
 
-    textoption  go to state 137
+    textoption  go to state 141
     wsorword    go to state 31
 
 
-state 132
+state 134
 
    68 labelrest: LABEL LCURLYB . WORD RCURLYB END
 
-    WORD  shift, and go to state 138
+    WORD  shift, and go to state 142
 
 
-state 133
+state 135
 
    37 endbegin: endtableopts TABLE .
 
     $default  reduce using rule 37 (endbegin)
 
 
-state 134
+state 136
 
     9 textoption: textoption . wsorword
    56 entry: entry SPECCHAR textoption .
@@ -1518,96 +1539,110 @@ state 134
 
     $default  reduce using rule 56 (entry)
 
-    wsorword  go to state 72
+    wsorword  go to state 73
 
 
-state 135
+state 137
 
    72 linespacing: RENEW LCURLYB BASELINES RCURLYB LCURLYB . WORD RCURLYB
 
-    WORD  shift, and go to state 139
+    WORD  shift, and go to state 143
 
 
-state 136
+state 138
+
+   87 spacing: VSPACE LCURLYB WORD $@2 RCURLYB .
+
+    $default  reduce using rule 87 (spacing)
+
+
+state 139
+
+   89 spacing: HSPACE LCURLYB WORD $@3 RCURLYB .
+
+    $default  reduce using rule 89 (spacing)
+
+
+state 140
 
    80 pagenuminit: style1 LCURLYB WORD $@1 RCURLYB .
 
     $default  reduce using rule 80 (pagenuminit)
 
 
-state 137
+state 141
 
     9 textoption: textoption . wsorword
    64 endtableopts: CAPTION LCURLYB textoption . RCURLYB captionrest
 
-    RCURLYB  shift, and go to state 140
+    RCURLYB  shift, and go to state 144
     WORD     shift, and go to state 9
     WS       shift, and go to state 10
 
-    wsorword  go to state 72
-
-
-state 138
-
-   68 labelrest: LABEL LCURLYB WORD . RCURLYB END
-
-    RCURLYB  shift, and go to state 141
-
-
-state 139
-
-   72 linespacing: RENEW LCURLYB BASELINES RCURLYB LCURLYB WORD . RCURLYB
-
-    RCURLYB  shift, and go to state 142
-
-
-state 140
-
-   64 endtableopts: CAPTION LCURLYB textoption RCURLYB . captionrest
-
-    END    shift, and go to state 143
-    LABEL  shift, and go to state 105
-
-    captionrest  go to state 144
-    labelrest    go to state 145
-
-
-state 141
-
-   68 labelrest: LABEL LCURLYB WORD RCURLYB . END
-
-    END  shift, and go to state 146
+    wsorword  go to state 73
 
 
 state 142
+
+   68 labelrest: LABEL LCURLYB WORD . RCURLYB END
+
+    RCURLYB  shift, and go to state 145
+
+
+state 143
+
+   72 linespacing: RENEW LCURLYB BASELINES RCURLYB LCURLYB WORD . RCURLYB
+
+    RCURLYB  shift, and go to state 146
+
+
+state 144
+
+   64 endtableopts: CAPTION LCURLYB textoption RCURLYB . captionrest
+
+    END    shift, and go to state 147
+    LABEL  shift, and go to state 106
+
+    captionrest  go to state 148
+    labelrest    go to state 149
+
+
+state 145
+
+   68 labelrest: LABEL LCURLYB WORD RCURLYB . END
+
+    END  shift, and go to state 150
+
+
+state 146
 
    72 linespacing: RENEW LCURLYB BASELINES RCURLYB LCURLYB WORD RCURLYB .
 
     $default  reduce using rule 72 (linespacing)
 
 
-state 143
+state 147
 
    66 captionrest: END .
 
     $default  reduce using rule 66 (captionrest)
 
 
-state 144
+state 148
 
    64 endtableopts: CAPTION LCURLYB textoption RCURLYB captionrest .
 
     $default  reduce using rule 64 (endtableopts)
 
 
-state 145
+state 149
 
    67 captionrest: labelrest .
 
     $default  reduce using rule 67 (captionrest)
 
 
-state 146
+state 150
 
    68 labelrest: LABEL LCURLYB WORD RCURLYB END .
 

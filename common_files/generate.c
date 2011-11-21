@@ -73,3 +73,14 @@ for (i = 0; i <= slen; )
      }
   }
 }
+
+
+void generate_spacing(int type, char *amount)
+{
+    switch (type) {
+    case HSPACE: fprintf(stdout, "GENERATE HORIZONTAL SPACING of %s", amount); break;
+    case VSPACE: fprintf(stdout, "GENERATE VERTICAL SPACING of %s", amount); break;
+    }
+    
+    
+}

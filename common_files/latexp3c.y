@@ -236,12 +236,18 @@ style1           :  ARABIC1
                  |  CALPH1
                  ;
 
-spacing          :  horvert  LCURLYB  WORD  RCURLYB
+spacing          :  VSPACE LCURLYB  WORD 
+                    {                      
+                        generate_spacing(VSPACE, yytext);
+                    }
+                    RCURLYB
+                 |  HSPACE LCURLYB WORD
+                    {
+                        generate_spacing(HSPACE, yytext);
+                    }
+                    RCURLYB
                  ;
 
-horvert          :  VSPACE  
-                 |  HSPACE
-                 ;
 
 fonts            :  RM  
                  |  IT
