@@ -1,0 +1,5 @@
+#/bin/sh
+
+bison -t -v latexp2.y
+flex latex.l
+gcc latexp2.tab.c -lfl
