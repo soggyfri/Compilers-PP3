@@ -15,7 +15,7 @@ DEBUG: GET PAGE NUMBER
  \vspace 
  { 
  7 
-GENERATE VERTICAL SPACING of 7 } 
+ } 
 ws--
 
 --ws
@@ -26,7 +26,7 @@ ws-- --ws
  \hspace 
  { 
  20 
-GENERATE HORIZONTAL SPACING of 20 } 
+ } 
 ws-- --ws
  this 
 ws-- --ws
