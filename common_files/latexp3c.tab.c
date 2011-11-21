@@ -76,7 +76,7 @@
 #define  BUF_SIZE       512
 
 int ws_flag = 0;
-
+#define YYDEBUG 1
 #include "lex.yy.c"
 #include "util.c"
 #include "generate.c"

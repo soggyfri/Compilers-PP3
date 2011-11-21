@@ -6,13 +6,13 @@
 #define  BUF_SIZE       512
 
 int ws_flag = 0;
-
+#define YYDEBUG 1
 #include "lex.yy.c"
 #include "util.c"
 #include "generate.c"
 
 %}
-
+%defines
 
 %union 
    {
@@ -67,7 +67,7 @@ textoption       :  textoption  wsorword
                       strcpy($$, $1);
                     }
                  ;
-
+
 wsorword         :  WS 
                     {
                       strcpy($$, yytext);
@@ -124,7 +124,7 @@ endcmds          :  CENTER
                  |  ENUMERATE 
                  |  TABULAR
                  ;
-
+
 beginblock       :  beginendopts
                  |  textoption /* FOR single or verbatim */
                                     {printf("single or verb\n");}
@@ -184,7 +184,7 @@ captionrest      :  END
 
 labelrest        :  LABEL  LCURLYB  WORD  RCURLYB  END
                  ;
-
+
 sectionoptions   :  SECTION  LCURLYB  textoption  RCURLYB
                     {
                       generate_sec_header(get_sec_ctr(), $3);
@@ -244,7 +244,7 @@ horvert          :  VSPACE
 fonts            :  RM  
                  |  IT
                  ;
-
+
 specialchar      :  SPECCHAR  
                  |  LCURLYB  
                  |  RCURLYB

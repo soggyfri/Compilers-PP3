@@ -605,7 +605,8 @@ char *yytext;
 #line 1 "latex.l"
 /* THIS IS latex.l */
 #line 3 "latex.l"
-#line 609 "lex.yy.c"
+#include "latexp3c.tab.h"
+#line 610 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -792,9 +793,9 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
     
-#line 10 "latex.l"
+#line 11 "latex.l"
 
-#line 798 "lex.yy.c"
+#line 799 "lex.yy.c"
 
 	if ( !(yy_init) )
 		{
@@ -879,238 +880,238 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 11 "latex.l"
+#line 12 "latex.l"
 {printf(" %s \n", yytext);return(DBLBS);}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 12 "latex.l"
+#line 13 "latex.l"
 {printf(" %s \n", yytext);return(SPECCHAR);}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 13 "latex.l"
+#line 14 "latex.l"
 {printf(" %s \n", yytext);return(LSQRB);}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 14 "latex.l"
+#line 15 "latex.l"
 {printf(" %s \n", yytext);return(RSQRB);}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 16 "latex.l"
+#line 17 "latex.l"
 {printf(" %s \n", yytext);return(LALPH1);}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 17 "latex.l"
+#line 18 "latex.l"
 {printf(" %s \n", yytext);return(LALPH2);}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 18 "latex.l"
+#line 19 "latex.l"
 {printf(" %s \n", yytext);return(CALPH1);}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 19 "latex.l"
+#line 20 "latex.l"
 {printf(" %s \n", yytext);return(CALPH2);}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 20 "latex.l"
+#line 21 "latex.l"
 {printf(" %s \n", yytext);return(ARABIC1);}
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 21 "latex.l"
+#line 22 "latex.l"
 {printf(" %s \n", yytext);return(ARABIC2);}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 22 "latex.l"
+#line 23 "latex.l"
 {printf(" %s \n", yytext);return(BASELINES);}
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 23 "latex.l"
+#line 24 "latex.l"
 {printf(" %s \n", yytext);return(LBEGIN);}
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 24 "latex.l"
+#line 25 "latex.l"
 {printf(" %s \n", yytext);return(CAPTION);}
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 25 "latex.l"
+#line 26 "latex.l"
 {printf(" %s \n", yytext);return(CENTER );}
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 26 "latex.l"
+#line 27 "latex.l"
 {printf(" %s \n", yytext);return(DOCUMENT);}
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 27 "latex.l"
+#line 28 "latex.l"
 {printf(" %s \n", yytext);return(END);}
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 28 "latex.l"
+#line 29 "latex.l"
 {printf(" %s \n", yytext);return(ENUMERATE);}
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 29 "latex.l"
+#line 30 "latex.l"
 {printf(" %s \n", yytext);return(HSPACE);}
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 30 "latex.l"
+#line 31 "latex.l"
 {printf(" %s \n", yytext);return(ITEMIZE);}
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 31 "latex.l"
+#line 32 "latex.l"
 {printf(" %s \n", yytext);return(ITEM);}
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 32 "latex.l"
+#line 33 "latex.l"
 {printf(" %s \n", yytext);return(IT);}
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 33 "latex.l"
+#line 34 "latex.l"
 {printf(" %s \n", yytext);return(LABEL);}
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 34 "latex.l"
+#line 35 "latex.l"
 {printf(" %s \n", yytext);return(NOINDENT);}
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 35 "latex.l"
+#line 36 "latex.l"
 {printf(" %s \n", yytext);return(PAGENUM);}
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 36 "latex.l"
+#line 37 "latex.l"
 {printf(" %s \n", yytext);return(REF);}
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 37 "latex.l"
+#line 38 "latex.l"
 {printf(" %s \n", yytext);return(RENEW);}
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 38 "latex.l"
+#line 39 "latex.l"
 {printf(" %s \n", yytext);return(LROMAN1);}
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 39 "latex.l"
+#line 40 "latex.l"
 {printf(" %s \n", yytext);return(LROMAN2);}
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 40 "latex.l"
+#line 41 "latex.l"
 {printf(" %s \n", yytext);return(CROMAN1);}
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 41 "latex.l"
+#line 42 "latex.l"
 {printf(" %s \n", yytext);return(CROMAN2);}
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 42 "latex.l"
+#line 43 "latex.l"
 {printf(" %s \n", yytext);return(RM);}
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 43 "latex.l"
+#line 44 "latex.l"
 {printf(" %s \n", yytext);return(SECTION);}
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 44 "latex.l"
+#line 45 "latex.l"
 {printf(" %s \n", yytext);return(SINGLE);}
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 45 "latex.l"
+#line 46 "latex.l"
 {printf(" %s \n", yytext);return(SUBSEC);}
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 46 "latex.l"
+#line 47 "latex.l"
 {printf(" %s \n", yytext);return(TABOCON);}
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 47 "latex.l"
+#line 48 "latex.l"
 {printf(" %s \n", yytext);return(TABLE);}
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
-#line 48 "latex.l"
+#line 49 "latex.l"
 {printf(" %s \n", yytext);return(TABULAR);}
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 49 "latex.l"
+#line 50 "latex.l"
 {printf(" %s \n", yytext);return(VERBATIM);}
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-#line 50 "latex.l"
+#line 51 "latex.l"
 {printf(" %s \n", yytext);return(VSPACE);}
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
-#line 51 "latex.l"
+#line 52 "latex.l"
 {printf(" %s \n", yytext);return(B);}
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
-#line 52 "latex.l"
+#line 53 "latex.l"
 {printf(" %s \n", yytext);return(H);}
 	YY_BREAK
 case 42:
 YY_RULE_SETUP
-#line 53 "latex.l"
+#line 54 "latex.l"
 {printf(" %s \n", yytext);return(T);}
 	YY_BREAK
 case 43:
 YY_RULE_SETUP
-#line 54 "latex.l"
+#line 55 "latex.l"
 {printf(" %s \n", yytext);return(COLS);}
 	YY_BREAK
 case 44:
 YY_RULE_SETUP
-#line 55 "latex.l"
+#line 56 "latex.l"
 {printf(" %s \n", yytext);return(LCURLYB);}
 	YY_BREAK
 case 45:
 YY_RULE_SETUP
-#line 56 "latex.l"
+#line 57 "latex.l"
 {printf(" %s \n", yytext);return(RCURLYB);}
 	YY_BREAK
 case 46:
 YY_RULE_SETUP
-#line 58 "latex.l"
+#line 59 "latex.l"
 {printf(" %s \n", yytext);return(WORD);}
 	YY_BREAK
 case 47:
 /* rule 47 can match eol */
 YY_RULE_SETUP
-#line 59 "latex.l"
+#line 60 "latex.l"
 {printf("ws--%s--ws\n", yytext); 
                          if ((strcmp(yytext, "\n\n") == 0) && (ws_flag == 0))
                             return(WS);
@@ -1118,10 +1119,10 @@ YY_RULE_SETUP
 	YY_BREAK
 case 48:
 YY_RULE_SETUP
-#line 64 "latex.l"
+#line 65 "latex.l"
 ECHO;
 	YY_BREAK
-#line 1125 "lex.yy.c"
+#line 1126 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -2119,7 +2120,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 64 "latex.l"
+#line 65 "latex.l"
 
 
 

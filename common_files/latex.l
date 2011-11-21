@@ -1,5 +1,6 @@
 /* THIS IS latex.l */
 %{ /* A LEX FOR PART 3 OF THE PROJECT WHERE VERBATIM WORKS */
+#include "latexp3c.tab.h"
 %}
 ws		[ \t\n]+
 punc            (\.|\,|\!|\?)
