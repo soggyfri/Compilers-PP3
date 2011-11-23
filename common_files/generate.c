@@ -1,4 +1,7 @@
 /* THIS IS THE generate.c FILE */
+
+#include "prototypes.h"
+
 init_output_page()
 {
 	fprintf(fpout, "\n\n\n\n\n");
@@ -89,14 +92,17 @@ void generate_spacing(int type, char *amount)
     }  
 }
 
+
 void print_vert_space(int spacing)
 {
     int i;
     for(i = 0; i < spacing; i++)
         {
             fprintf(fpout, "\n");
+            incr_lines_so_far();
         }
 }
+
 
 void print_hor_space(int spacing)
 {
