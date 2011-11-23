@@ -1,7 +1,19 @@
 #/bin/sh
 
+clear 
+echo "--------------------STARTED FLEX-----------------------"
 flex latex.l
+echo "--------------------END FLEX---------------------------"
+echo 
+echo
 
+echo "--------------------STARTED BISON----------------------"
 bison -t -v latexp3c.y
+echo "--------------------END BISON--------------------------"
+echo 
+echo
 
+echo
+echo "--------------------START GCC--------------------------"
 gcc -g latexp3c.tab.c -lfl
+echo "--------------------END GCC---------------------------"

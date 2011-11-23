@@ -81,14 +81,9 @@ for (i = 0; i <= slen; )
 void generate_spacing(int type, char *amount)
 {
     int spacing = atoi(amount);
-    /* switch (type) { */
-    /* case HSPACE: fprintf(stdout, "GENERATE HORIZONTAL SPACING of %d\n", spacing); break; */
-    /* case VSPACE: fprintf(stdout, "GENERATE VERTICAL SPACING of %d\n", spacing); break; */
-    /* } */
-
- switch (type) {
- case HSPACE: print_hor_space(spacing); break;
- case VSPACE: print_vert_space(spacing); break;
+    switch (type) {
+    case HSPACE: print_hor_space(spacing); break;
+    case VSPACE: print_vert_space(spacing); break;
     }  
 }
 
@@ -110,6 +105,8 @@ void print_hor_space(int spacing)
     for(i = 0; i < spacing; i++)
         {
             fprintf(fpout, " ");
+            /* char *buf =(char *)malloc(spacing*sizeof(char)) ; */
+            /* generate_formatted_text(buf); */
         }
     
 }
