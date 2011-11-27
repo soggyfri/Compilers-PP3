@@ -4,18 +4,18 @@
 
 init_output_page()
 {
-	fprintf(fpout, "\n\n\n\n\n");
+	/* fprintf(fpout, "\n\n\n\n\n"); */
 	fflush(fpout);
 }
 
 void  generate_sec_header(int i,char* s)
 {
-fprintf(stdout, "DEBUG: generate_sec_header\n");
-	fprintf(fpout, "\n\n%d %s\n", i, s);
-	fflush(fpout);
+    if(P_DEBUG) fprintf(stdout, "DEBUG: generate_sec_header\n");
+    fprintf(fpout, "\n\n%d %s\n", i, s);
+    fflush(fpout);
 
 	if (get_gen_toc() == TOC_ON){
-      fprintf(stdout, "DEBUG: PRINT TOC TO FILE!!\n");
+      if(P_DEBUG) fprintf(stdout, "DEBUG: PRINT TOC TO FILE!!\n");
    		fprintf(fptoc, "\n%d %s ---------- PAGE %d\n", 
                             i, s, get_page_no());
       fflush(fptoc);
@@ -24,7 +24,7 @@ fprintf(stdout, "DEBUG: generate_sec_header\n");
 
 void  generate_subsec_header(int i, int j, char *s)
 {
-    fprintf(stdout, "DEBUG: generate_subsec_header\n");
+    if(P_DEBUG) fprintf(stdout, "DEBUG: generate_subsec_header\n");
     fprintf(fpout, "\n\n%d.%d %s\n", i, j, s);
     fflush(fpout);
 
@@ -90,6 +90,7 @@ void generate_spacing(int type, char *amount)
 
 void print_vert_space(int spacing)
 {
+    if(P_DEBUG) fprintf(fpout, "DEBUG: PRINT VERT SPACE\n");
     int i;
     for(i = 0; i < spacing; i++)
         {
@@ -101,7 +102,7 @@ void print_vert_space(int spacing)
 
 void print_hor_space(int spacing)
 {
-    
+    if(P_DEBUG) fprintf(fpout, "DEBUG: HOR SPACE\n");
     /* char *buf = (char *)malloc((spacing+1)*sizeof(char)); */
     /* memset(buf, 64, sizeof(buf)); */
     /* generate_formatted_text(buf);    */
