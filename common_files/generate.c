@@ -101,12 +101,17 @@ void print_vert_space(int spacing)
 
 void print_hor_space(int spacing)
 {
-    int i;
-    for(i = 0; i < spacing; i++)
-        {
-            fprintf(fpout, " ");
-            /* char *buf =(char *)malloc(spacing*sizeof(char)) ; */
-            /* generate_formatted_text(buf); */
-        }
     
+    /* char *buf = (char *)malloc((spacing+1)*sizeof(char)); */
+    /* memset(buf, 64, sizeof(buf)); */
+    /* generate_formatted_text(buf);    */
+    /* free(buf); */
+
+    //TODO: have space printed by formatted_text function.. this way
+    //char per lines and line increment are taken care of
+    int i;
+    for(i =0; i<spacing; i++)
+        {
+            fprintf(fpout, "_");
+        }
 }
