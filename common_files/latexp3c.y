@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
-#define  BUF_SIZE      40768
+#define  BUF_SIZE      512  //40768
 
 int ws_flag = 0;
 #define YYDEBUG 1
@@ -53,6 +53,11 @@ mainbody         :  mainbody  mainoption
 mainoption       :  textoption
                     {
                       generate_formatted_text($1);
+                      if(P_DEBUG){
+                          fprintf(stdout, "---------------------------------------\n");
+                          fprintf(stdout, "DEBUG - GENERATE_FORMATTED_TEXT:\n %s\n", $1);
+                          fprintf(stdout, "---------------------------------------\n");
+                      }
                     }
                  |  commentoption
                  |  latexoptions

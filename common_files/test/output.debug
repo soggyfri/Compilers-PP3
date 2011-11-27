@@ -18,28 +18,28 @@ Entering state 16
 Reading a token: Next token is token ARABIC2 ()
 Shifting token ARABIC2 ()
 Entering state 61
-Reducing stack by rule 74 (line 217):
+Reducing stack by rule 74 (line 222):
    $1 = token ARABIC2 ()
 -> $$ = nterm style2 ()
 Stack now 0 3 16
 Entering state 66
-Reducing stack by rule 73 (line 211):
+Reducing stack by rule 73 (line 216):
    $1 = token PAGENUM ()
    $2 = nterm style2 ()
 -> $$ = nterm pagenumbers ()
 Stack now 0 3
 Entering state 39
-Reducing stack by rule 21 (line 96):
+Reducing stack by rule 21 (line 101):
    $1 = nterm pagenumbers ()
 -> $$ = nterm backsoptions ()
 Stack now 0 3
 Entering state 34
-Reducing stack by rule 14 (line 85):
+Reducing stack by rule 14 (line 90):
    $1 = nterm backsoptions ()
 -> $$ = nterm latexoptions ()
 Stack now 0 3
 Entering state 33
-Reducing stack by rule 8 (line 58):
+Reducing stack by rule 8 (line 63):
    $1 = nterm latexoptions ()
 -> $$ = nterm mainoption ()
 Stack now 0 3
@@ -52,7 +52,7 @@ Entering state 28
 Reading a token: Next token is token ARABIC1 ()
 Shifting token ARABIC1 ()
 Entering state 17
-Reducing stack by rule 81 (line 232):
+Reducing stack by rule 81 (line 237):
    $1 = token ARABIC1 ()
 -> $$ = nterm style1 ()
 Stack now 0 3 28
@@ -63,14 +63,14 @@ Entering state 74
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 97
-Reducing stack by rule 79 (line 225):
+Reducing stack by rule 79 (line 230):
 -> $$ = nterm $@1 ()
 Stack now 0 3 28 41 74 97
 Entering state 123
 Reading a token: Next token is token RCURLYB ()
 Shifting token RCURLYB ()
 Entering state 140
-Reducing stack by rule 80 (line 224):
+Reducing stack by rule 80 (line 229):
    $1 = nterm style1 ()
    $2 = token LCURLYB ()
    $3 = token WORD ()
@@ -79,17 +79,17 @@ Reducing stack by rule 80 (line 224):
 -> $$ = nterm pagenuminit ()
 Stack now 0 3 28
 Entering state 40
-Reducing stack by rule 22 (line 97):
+Reducing stack by rule 22 (line 102):
    $1 = nterm pagenuminit ()
 -> $$ = nterm backsoptions ()
 Stack now 0 3 28
 Entering state 34
-Reducing stack by rule 14 (line 85):
+Reducing stack by rule 14 (line 90):
    $1 = nterm backsoptions ()
 -> $$ = nterm latexoptions ()
 Stack now 0 3 28
 Entering state 33
-Reducing stack by rule 8 (line 58):
+Reducing stack by rule 8 (line 63):
    $1 = nterm latexoptions ()
 -> $$ = nterm mainoption ()
 Stack now 0 3 28
@@ -121,7 +121,7 @@ Entering state 143
 Reading a token: Next token is token RCURLYB ()
 Shifting token RCURLYB ()
 Entering state 146
-Reducing stack by rule 72 (line 207):
+Reducing stack by rule 72 (line 212):
    $1 = token RENEW ()
    $2 = token LCURLYB ()
    $3 = token BASELINES ()
@@ -132,17 +132,17 @@ Reducing stack by rule 72 (line 207):
 -> $$ = nterm linespacing ()
 Stack now 0 3 28
 Entering state 38
-Reducing stack by rule 20 (line 95):
+Reducing stack by rule 20 (line 100):
    $1 = nterm linespacing ()
 -> $$ = nterm backsoptions ()
 Stack now 0 3 28
 Entering state 34
-Reducing stack by rule 14 (line 85):
+Reducing stack by rule 14 (line 90):
    $1 = nterm backsoptions ()
 -> $$ = nterm latexoptions ()
 Stack now 0 3 28
 Entering state 33
-Reducing stack by rule 8 (line 58):
+Reducing stack by rule 8 (line 63):
    $1 = nterm latexoptions ()
 -> $$ = nterm mainoption ()
 Stack now 0 3 28
@@ -156,22 +156,22 @@ Entering state 28
 Reading a token: Next token is token TABOCON ()
 Shifting token TABOCON ()
 Entering state 14
-Reducing stack by rule 71 (line 201):
+Reducing stack by rule 71 (line 206):
    $1 = token TABOCON ()
 -> $$ = nterm tableofcont ()
 Stack now 0 3 28
 Entering state 37
-Reducing stack by rule 19 (line 94):
+Reducing stack by rule 19 (line 99):
    $1 = nterm tableofcont ()
 -> $$ = nterm backsoptions ()
 Stack now 0 3 28
 Entering state 34
-Reducing stack by rule 14 (line 85):
+Reducing stack by rule 14 (line 90):
    $1 = nterm backsoptions ()
 -> $$ = nterm latexoptions ()
 Stack now 0 3 28
 Entering state 33
-Reducing stack by rule 8 (line 58):
+Reducing stack by rule 8 (line 63):
    $1 = nterm latexoptions ()
 -> $$ = nterm mainoption ()
 Stack now 0 3 28
@@ -191,12 +191,12 @@ Entering state 58
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 12 58
 Entering state 31
-Reducing stack by rule 10 (line 66):
+Reducing stack by rule 10 (line 71):
    $1 = nterm wsorword ()
 -> $$ = nterm textoption ()
 Stack now 0 3 28 12 58
@@ -204,7 +204,7 @@ Entering state 90
 Reading a token: Next token is token RCURLYB ()
 Shifting token RCURLYB ()
 Entering state 117
-Reducing stack by rule 69 (line 189):
+Reducing stack by rule 69 (line 194):
    $1 = token SECTION ()
    $2 = token LCURLYB ()
    $3 = nterm textoption ()
@@ -212,17 +212,17 @@ Reducing stack by rule 69 (line 189):
 -> $$ = nterm sectionoptions ()
 Stack now 0 3 28
 Entering state 36
-Reducing stack by rule 18 (line 93):
+Reducing stack by rule 18 (line 98):
    $1 = nterm sectionoptions ()
 -> $$ = nterm backsoptions ()
 Stack now 0 3 28
 Entering state 34
-Reducing stack by rule 14 (line 85):
+Reducing stack by rule 14 (line 90):
    $1 = nterm backsoptions ()
 -> $$ = nterm latexoptions ()
 Stack now 0 3 28
 Entering state 33
-Reducing stack by rule 8 (line 58):
+Reducing stack by rule 8 (line 63):
    $1 = nterm latexoptions ()
 -> $$ = nterm mainoption ()
 Stack now 0 3 28
@@ -236,12 +236,12 @@ Entering state 28
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28
 Entering state 31
-Reducing stack by rule 10 (line 66):
+Reducing stack by rule 10 (line 71):
    $1 = nterm wsorword ()
 -> $$ = nterm textoption ()
 Stack now 0 3 28
@@ -249,12 +249,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -263,12 +263,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -277,12 +277,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -291,12 +291,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -305,12 +305,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -319,12 +319,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -333,12 +333,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -347,12 +347,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -361,12 +361,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -375,12 +375,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -389,12 +389,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -403,12 +403,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -417,12 +417,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -431,12 +431,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -445,12 +445,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -459,12 +459,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -473,12 +473,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -487,12 +487,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -501,12 +501,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -515,12 +515,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -529,12 +529,12 @@ Entering state 30
 Reading a token: Next token is token WS ()
 Shifting token WS ()
 Entering state 10
-Reducing stack by rule 11 (line 72):
+Reducing stack by rule 11 (line 77):
    $1 = token WS ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -561,14 +561,14 @@ Entering state 67
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 93
-Reducing stack by rule 86 (line 240):
+Reducing stack by rule 86 (line 245):
 -> $$ = nterm $@2 ()
 Stack now 0 3 28 22 67 93
 Entering state 120
 Reading a token: Next token is token RCURLYB ()
 Shifting token RCURLYB ()
 Entering state 138
-Reducing stack by rule 87 (line 239):
+Reducing stack by rule 87 (line 244):
    $1 = token VSPACE ()
    $2 = token LCURLYB ()
    $3 = token WORD ()
@@ -577,17 +577,17 @@ Reducing stack by rule 87 (line 239):
 -> $$ = nterm spacing ()
 Stack now 0 3 28
 Entering state 42
-Reducing stack by rule 23 (line 98):
+Reducing stack by rule 23 (line 103):
    $1 = nterm spacing ()
 -> $$ = nterm backsoptions ()
 Stack now 0 3 28
 Entering state 34
-Reducing stack by rule 14 (line 85):
+Reducing stack by rule 14 (line 90):
    $1 = nterm backsoptions ()
 -> $$ = nterm latexoptions ()
 Stack now 0 3 28
 Entering state 33
-Reducing stack by rule 8 (line 58):
+Reducing stack by rule 8 (line 63):
    $1 = nterm latexoptions ()
 -> $$ = nterm mainoption ()
 Stack now 0 3 28
@@ -601,12 +601,12 @@ Entering state 28
 Reading a token: Next token is token WS ()
 Shifting token WS ()
 Entering state 10
-Reducing stack by rule 11 (line 72):
+Reducing stack by rule 11 (line 77):
    $1 = token WS ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28
 Entering state 31
-Reducing stack by rule 10 (line 66):
+Reducing stack by rule 10 (line 71):
    $1 = nterm wsorword ()
 -> $$ = nterm textoption ()
 Stack now 0 3 28
@@ -614,12 +614,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -628,12 +628,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -642,12 +642,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -656,12 +656,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -670,12 +670,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -684,12 +684,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
@@ -698,12 +698,12 @@ Entering state 30
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
-Reducing stack by rule 12 (line 76):
+Reducing stack by rule 12 (line 81):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
 Stack now 0 3 28 30
 Entering state 73
-Reducing stack by rule 9 (line 61):
+Reducing stack by rule 9 (line 66):
    $1 = nterm textoption ()
    $2 = nterm wsorword ()
 -> $$ = nterm textoption ()
