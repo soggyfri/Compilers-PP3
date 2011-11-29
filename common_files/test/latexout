@@ -2,145 +2,15 @@
 
 1 Introduction
 
- This is an example of text that would
- be transformed into a paragraph in late
-x. Blank lines between text in the input
- cause a new paragraph to be generated. 
-This is an example of text that would be
- transformed into a paragraph in latex. 
-Blank lines between text in the input ca
-use a new paragraph to be generated. Thi
-s is an example of text that would be tr
-ansformed into a paragraph in latex. Bla
-nk lines between text in the input cause
- a new paragraph to be generated. When t
-he blank line occurs after a section
-
-
-1.1 A Text Processor
-
- A text processor is a very useful t
-ool, since          it allows
- us to develop formatted documents that 
-are easy to read.  A text processor is
- a very useful tool, since it allows us 
-to develop formatted documents that are 
-easy to read. 
-
-
-
-
-
-
-PAGE (iv)
- A text processor is 
-a very useful tool, since it allows us t
-o develop formatted documents that are e
+A text processor is a very useful tool, 
+since it allows us to develop     
+     formatted documentsthat are e
 asy to read. 
 
-1.2 Legal Latex Commands
-
- We have seen that the
-re are many different Latex commands, th
-at can be used in many different ways. H
-owever, sometimes, we wish to use a char
-acter to mean itself, and override its L
-atex interpretation. For example, to use
- curly braces, we employ the backslash a
- set of integers. 
-
-1.3 Again Legal Latex Commands
-
- We have seen tha
-t there are many different Latex command
-s, that can be used in many different wa
-ys. However, sometimes, we wish to use a
- character to mean itself, and override 
-its Latex interpretation. For example, t
-o use curly braces, we employ the backsl
-ash a set of integers. 
-
-1.4 Yet Some More Legal Latex Commands
 
 
 
-2 Using Latex
-
-PAGE (v)
- Final
-ly, there arecommands that involve begi
-n end blocks, that establish an environm
-ent. These blocks behave in a similar fa
-shion to begin end blocks in a programmi
-ng language, since they set a scope. We 
-have discussed a number of examples. 
-It is important to note, even at this ea
-rly stage, that lists may be created wit
-hin lists, allowing the nesting of block
-s and environments. It is important t
-o note, even at this early stage, that l
-ists may be created 
-
-2.1 Check this Out
-
- Finally, there
- arecommands that involve begin end blo
-cks, that establish an environment. Thes
-e blocks behave in a similar fashion to 
-begin end blocks in a programming langua
-ge, since they set a scope. We have disc
-ussed a number of examples. 
-
-2.2 Check this Out Part 2
-
- Finall
-y, there arecommands that involve begin
- end blocks, that establish an environme
-nt. These blocks behave in a similar fas
-hion to begin end blocks in a programmin
-PAGE (vi)
-g language, since they set a scope. We h
-ave discussed a number of examples. 
-
-3 What about this?
 
 
- When things are switched back is every
-thing still ok? 
-
-4 What about this?
-
- When things are sw
-itched back is everything still ok? 
-
-5 What about this?
-
-
- When things are switched back is every
-thing still ok? 
-
-6 What about this?
-
- When things are sw
-itched back is everything still ok? 
-
-7 What about this?
-
-
- When things are switched back is every
-thing still ok? 
-
-8 What about this?
-
-PAGE (vii)
- When things are sw
-itched back is everything still ok? 
-
-9 What about this?
-
-
- When things are switched back is every
-thing still ok? 
-
-10 Goes to 10! What about this?
-
+ This is <IT>after t
+he</IT> big vertical space

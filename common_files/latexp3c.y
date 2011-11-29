@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
-#define  BUF_SIZE      512  //40768
+#define  BUF_SIZE      1024  //40768
 
 int ws_flag = 0;
 #define YYDEBUG 1
@@ -101,13 +101,15 @@ latexoptions     :  backsoptions
 
 curlyboptions    :  RM  textoption
                         {
-                            fprintf(stdout, "TEMP FONT ROMAN");
-                            debug_print( $2 );
+                            generate_formatted_text(" <RM>");
+                            generate_formatted_text($2);
+                            generate_formatted_text("</RM> ");
                         }
                  | IT textoption
                         {
-                            fprintf(stdout, "TEMP FONT ITALICS");
-                            debug_print($2);
+                            generate_formatted_text(" <IT>");
+                            generate_formatted_text($2);
+                            generate_formatted_text("</IT> ");
                         }
                  ;
 
