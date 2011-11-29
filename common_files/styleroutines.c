@@ -17,7 +17,7 @@ char get_page_no_CALPH2()
         return temp;
 }
 /*  changes retruns the numbers to Roman */
-char* get_page_no_LROMAN2(){
+char* get_page_no_CROMAN2(){
     int num1 = get_page_no();
     char str[80];
     str[0]=0;
@@ -104,7 +104,7 @@ char* get_page_no_LROMAN2(){
 }
 
 /*  changes retruns the numbers to Roman */
-char* get_page_no_CROMAN2(){
+char* get_page_no_LROMAN2(){
     int num1 = get_page_no();
     char str[80];
     str[0]=0;
