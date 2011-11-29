@@ -10,7 +10,7 @@ special         (\%|\_|\&|\$|\#)
 cols            (r|l|c)*
 
 %%
-\n {incr_lines_so_far();}
+\n {/*incr_lines_so_far();*/}
 "\\\\" 			{printf(" %s \n", yytext);return(DBLBS);}
 {special}		{printf(" %s \n", yytext);return(SPECCHAR);}
 "["			{printf(" %s \n", yytext);return(LSQRB);}

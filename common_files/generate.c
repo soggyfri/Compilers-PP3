@@ -13,6 +13,9 @@ void  generate_sec_header(int i,char* s)
 {
     if(P_DEBUG) fprintf(stdout, "DEBUG: generate_sec_header\n");
     fprintf(fpout, "\n\n%d %s\n\n", i, s);
+    int k;
+    for(k=0; k<4; k++)
+         incr_lines_so_far();
     fflush(fpout);
 
 	if (get_gen_toc() == TOC_ON){
@@ -27,6 +30,9 @@ void  generate_subsec_header(int i, int j, char *s)
 {
     if(P_DEBUG) fprintf(stdout, "DEBUG: generate_subsec_header\n");
     fprintf(fpout, "\n\n%d.%d %s\n\n", i, j, s);
+    int k;
+    for(k=0; k<4; k++)
+         incr_lines_so_far();
     fflush(fpout);
 
     if (get_gen_toc() == TOC_ON){
@@ -56,7 +62,9 @@ void generate_formatted_text(char *s)
             else
                 {
                     char_count = 0;
+                    /* fprintf(fpout, "\n%d", lines_so_far); */
                     fprintf(fpout, "\n");
+                    incr_lines_so_far();
                     if(isprint(s[i])) fprintf(fpout, "%c", s[i]);
                     i++;
                     char_count++;

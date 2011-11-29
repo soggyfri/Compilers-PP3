@@ -22,10 +22,13 @@ void  init_lines_so_far()
 
 void  incr_lines_so_far()
 {
-    /* fprintf(stdout, "DEBUG: INCR LINE NUMBER (%d) \n", lines_so_far); */
+    fprintf(stdout, "DEBUG: INCR LINE NUMBER (%d), Page_no = %d \n", lines_so_far, get_page_no());
     lines_so_far++;
     if(lines_so_far > LINES_PER_PAGE*get_page_no())
         {
+            if(get_page_no() > 0)
+                fprintf(fpout, "\n\n\n\nPUT PAGE NUMBER HERE!!!!!!!\n\n");         
+
             int discard = inc_page_no();
         }
 }
