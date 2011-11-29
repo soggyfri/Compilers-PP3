@@ -32,7 +32,7 @@ easy to read.
 
 
 
-(style 304)PAGE NUMBER: (iv)
+PAGE (iv)
  A text processor is 
 a very useful tool, since it allows us t
 o develop formatted documents that are e
@@ -66,7 +66,7 @@ ash a set of integers.
 
 2 Using Latex
 
-(style 304)PAGE NUMBER: (v)
+PAGE (v)
  Final
 ly, there arecommands that involve begi
 n end blocks, that establish an environm
@@ -98,7 +98,7 @@ y, there arecommands that involve begin
  end blocks, that establish an environme
 nt. These blocks behave in a similar fas
 hion to begin end blocks in a programmin
-(style 304)PAGE NUMBER: (vi)
+PAGE (vi)
 g language, since they set a scope. We h
 ave discussed a number of examples. 
 
@@ -132,7 +132,7 @@ thing still ok?
 
 8 What about this?
 
-(style 304)PAGE NUMBER: (vii)
+PAGE (vii)
  When things are sw
 itched back is everything still ok? 
 

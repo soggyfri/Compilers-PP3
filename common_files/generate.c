@@ -20,8 +20,8 @@ void  generate_sec_header(int i,char* s)
 
 	if (get_gen_toc() == TOC_ON){
       /* if(P_DEBUG) fprintf(stdout, "DEBUG: PRINT TOC TO FILE!!\n"); */
-   		fprintf(fptoc, "\n%d %s ---------- PAGE %d\n", 
-                            i, s, get_page_no());
+   		fprintf(fptoc, "\n%d %s ----------", i, s);
+      printPageNumber(fptoc);
       fflush(fptoc);
   }
 }
@@ -36,8 +36,8 @@ void  generate_subsec_header(int i, int j, char *s)
     fflush(fpout);
 
     if (get_gen_toc() == TOC_ON){
-        fprintf(fptoc, "\n%d.%d %s ---------- PAGE %d\n", 
-                            i, j, s, get_page_no());
+        fprintf(fptoc, "\n%d.%d %s ----------", i, j,s);
+        printPageNumber(fptoc);
         fflush(fptoc);
   }
   

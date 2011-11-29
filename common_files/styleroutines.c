@@ -190,24 +190,24 @@ char* get_page_no_CROMAN2(){
     return str;
 }
 
-void printPageNumber()
+void printPageNumber(FILE* outputFile)
 {
-    fprintf(fpout, "(style %d)PAGE NUMBER: ", DST.page_style);
+    /* fprintf(fpout, "(style %d)PAGE NUMBER: ", DST.page_style); */
     if (DST.page_style == ARABIC2)
         {
-            fprintf(fpout, "(%d)\n", get_page_no());
+            fprintf(outputFile, "PAGE (%d)\n", get_page_no());
         }
     if (DST.page_style == LALPH2)
         {
-            fprintf(fpout, "(%c)\n", get_page_no_LALPH2()); 
+            fprintf(outputFile, "PAGE (%c)\n", get_page_no_LALPH2()); 
         }
     if (DST.page_style == CALPH2){
-        fprintf(fpout, "(%c)\n", get_page_no_CALPH2());
+        fprintf(outputFile, "PAGE (%c)\n", get_page_no_CALPH2());
     }
     if (DST.page_style == LROMAN2){
-        fprintf(fpout, "(%s)\n", get_page_no_LROMAN2());
+        fprintf(outputFile, "PAGE (%s)\n", get_page_no_LROMAN2());
     } 
     if(DST.page_style == CROMAN2){
-        fprintf(fpout, "(%s)\n", get_page_no_CROMAN2());
+        fprintf(outputFile, "PAGE (%s)\n", get_page_no_CROMAN2());
     }
 }

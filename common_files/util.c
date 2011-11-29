@@ -34,7 +34,7 @@ void  incr_lines_so_far()
             if(get_page_no() > 0) 
                 {                    
                     fprintf(stdout, "\n\n\n\nPUT PAGE NUMBER HERE!!!!!!!\n\n");
-                    printPageNumber();                    
+                    printPageNumber(fpout);                    
                 }
             
             int discard = inc_page_no();
