@@ -3,14 +3,17 @@
 1 Introduction
 
 A text processor is a very useful tool, 
-since it allows us to develop     
-     formatted documentsthat are e
-asy to read. 
+since it allows us to develop formatted 
+documents <IT> that are easy to read. 
 
 
+1.1 Legal Latex Commands
 
-
-
-
- This is <IT>after t
-he</IT> big vertical space
+ </IT> <RM> We have seen that there 
+are many different Latex commands, that 
+can be used in many different ways. Howe
+ver, sometimes, we wish to use a charact
+er to mean itself, and override its Late
+x interpretation. For example, to use cu
+rly braces, we employ the backslash a se
+t of integers. </RM> 

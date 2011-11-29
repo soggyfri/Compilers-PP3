@@ -301,6 +301,9 @@ fptoc = fopen("test/latextoc","w");
 init_lines_so_far();
 init_sec_ctr();
 init_output_page();
+ init_font_style();
 
 yyparse();
+
+ set_font(get_font());
 }

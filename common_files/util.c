@@ -69,6 +69,12 @@ void  init_sec_ctr()
   DST.subsect_counter = 1;
 }
 
+void init_font_style()
+{
+    DST.current_font = 0;
+}
+
+
 void  incr_sec_ctr()
 {
   DST.section_counter++;
@@ -134,6 +140,14 @@ int   s;
 
 void set_font(int f)
 {
+    switch(get_font())
+        {
+        case RM: if (f==IT) generate_formatted_text(" </RM> <IT> "); else generate_formatted_text(" </RM> "); break;
+        case IT: if(f==RM) generate_formatted_text(" </IT> <RM> "); else generate_formatted_text(" </IT> ");  break;  
+        default: if(f==RM) generate_formatted_text(" <RM> ");
+            else generate_formatted_text(" <IT> ");                   
+        }
+    
     DST.current_font = f;
 }
 

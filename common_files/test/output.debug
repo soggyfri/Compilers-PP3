@@ -1,8 +1,8 @@
  \begin 
  {document} 
  \pagenumbering 
- {roman} 
- \roman 
+ {arabic} 
+ \arabic 
  { 
  1 
  } 
@@ -27,14 +27,13 @@ DEBUG: INCR LINE NUMBER (0), Page_no = 1
 DEBUG: INCR LINE NUMBER (1), Page_no = 1 
 DEBUG: INCR LINE NUMBER (2), Page_no = 1 
 DEBUG: INCR LINE NUMBER (3), Page_no = 1 
-I A 
+ A 
 ws-- --ws
  text 
 ws-- --ws
  processor 
 ws-- --ws
  is 
-ws-- --ws
  a 
 ws-- --ws
  very 
@@ -53,33 +52,17 @@ ws-- --ws
 ws-- --ws
  to 
  develop 
-ws-- --ws
- \hspace 
-START GEN_FOR_TEXT (A text processor is a very useful tool, since it allows us to develop)
-DEBUG: INCR LINE NUMBER (4), Page_no = 1 
- { 
- 10 
-START GEN_FOR_TEXT ( )
-START GEN_FOR_TEXT ( )
-START GEN_FOR_TEXT ( )
-START GEN_FOR_TEXT ( )
-START GEN_FOR_TEXT ( )
-START GEN_FOR_TEXT ( )
-DEBUG: INCR LINE NUMBER (5), Page_no = 1 
-START GEN_FOR_TEXT ( )
-START GEN_FOR_TEXT ( )
-START GEN_FOR_TEXT ( )
-START GEN_FOR_TEXT ( )
- } 
-ws-- --ws
+ws--  --ws
  formatted 
 ws-- --ws
  documents 
 ws-- 
-
 --ws
  \it 
-START GEN_FOR_TEXT (formatted documents)
+START GEN_FOR_TEXT (A text processor is a very useful tool, since it allows us to develop formatted documents)
+DEBUG: INCR LINE NUMBER (4), Page_no = 1 
+DEBUG: INCR LINE NUMBER (5), Page_no = 1 
+START GEN_FOR_TEXT ( <IT> )
  that 
 ws-- --ws
  are 
@@ -93,54 +76,129 @@ ws--
 
 --ws
 DEBUG: INCR LINE NUMBER (6), Page_no = 1 
- \vspace 
+ \subsection 
 START GEN_FOR_TEXT (that are easy to read. 
 
 )
 DEBUG: INCR LINE NUMBER (7), Page_no = 1 
  { 
- 7 
+ Legal 
+ws-- --ws
+ Latex 
+ws-- --ws
+ Commands 
+ } 
 DEBUG: INCR LINE NUMBER (8), Page_no = 1 
 DEBUG: INCR LINE NUMBER (9), Page_no = 1 
 DEBUG: INCR LINE NUMBER (10), Page_no = 1 
 DEBUG: INCR LINE NUMBER (11), Page_no = 1 
-DEBUG: INCR LINE NUMBER (12), Page_no = 1 
-DEBUG: INCR LINE NUMBER (13), Page_no = 1 
-DEBUG: INCR LINE NUMBER (14), Page_no = 1 
- } 
-ws--
-
---ws
-DEBUG: INCR LINE NUMBER (15), Page_no = 1 
- This 
+ \rm 
+START GEN_FOR_TEXT ( </IT> <RM> )
+ We 
 ws-- --ws
- is 
+ have 
 ws-- --ws
- { 
-START GEN_FOR_TEXT (
-
- This is)
- \it 
+ seen 
 ws-- --ws
- after 
+ that 
+ws-- --ws
+ there 
+ws-- --ws
+ are 
+ws-- --ws
+ many 
+ws-- --ws
+ different 
+ws-- --ws
+ Latex 
+ws-- --ws
+ commands, 
+ws-- --ws
+ that 
+ws-- --ws
+ can 
+ws-- --ws
+ be 
+ws-- --ws
+ used 
+ in 
+ws-- --ws
+ many 
+ws-- --ws
+ different 
+ws-- --ws
+ ways. 
+ws--  --ws
+ However, 
+ws-- --ws
+ sometimes, 
+ws-- --ws
+ we 
+ws-- --ws
+ wish 
+ws-- --ws
+ to 
+ws-- --ws
+ use 
+ws-- --ws
+ a 
+ws-- --ws
+ character 
+ws-- --ws
+ to 
+ mean 
+ws-- --ws
+ itself, 
+ws-- --ws
+ and 
+ws-- --ws
+ override 
+ws-- --ws
+ its 
+ws-- --ws
+ Latex 
+ws-- --ws
+ interpretation. 
+ws--  --ws
+ For 
+ws-- --ws
+ example, 
+ws-- --ws
+ to 
+ws-- --ws
+ use 
+ curly 
+ws-- --ws
+ braces, 
+ws-- --ws
+ we 
+ws-- --ws
+ employ 
 ws-- --ws
  the 
 ws-- --ws
- } 
-START GEN_FOR_TEXT ( <IT>)
-START GEN_FOR_TEXT (after the)
-DEBUG: INCR LINE NUMBER (16), Page_no = 1 
-START GEN_FOR_TEXT (</IT> )
+ backslash 
 ws-- --ws
- big 
+ a 
 ws-- --ws
- vertical 
+ set 
 ws-- --ws
- space 
+ of 
+ws-- --ws
+ integers. 
 ws--
+
 
 
 --ws
  \end 
-START GEN_FOR_TEXT (big vertical space)
+START GEN_FOR_TEXT (We have seen that there are many different Latex commands, that can be used in many different ways. However, sometimes, we wish to use a character to mean itself, and override its Latex interpretation. For example, to use curly braces, we employ the backslash a set of integers.)
+DEBUG: INCR LINE NUMBER (12), Page_no = 1 
+DEBUG: INCR LINE NUMBER (13), Page_no = 1 
+DEBUG: INCR LINE NUMBER (14), Page_no = 1 
+DEBUG: INCR LINE NUMBER (15), Page_no = 1 
+DEBUG: INCR LINE NUMBER (16), Page_no = 1 
+DEBUG: INCR LINE NUMBER (17), Page_no = 1 
+DEBUG: INCR LINE NUMBER (18), Page_no = 1 
  {document} 
+START GEN_FOR_TEXT ( </RM> )
