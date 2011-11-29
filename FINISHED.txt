@@ -1,14 +1,15 @@
-Section/Subsection/TOC
-Horizontal/Vertical Spacing
+Section/Subsection/TOC -fri
+Horizontal/Vertical Spacing - fri
+Page Number/Styles -alex
+Italics/ Roman -fri
 
 
 WORK ON--
-Page Number/Styles -fri
-Italics/ Roman -fri
+Line spacing/Single-Double-Tripple - fri
 Right Justification -alex 
 
 
 Unfinished-----
-Line spacing/Single-Double-Tripple
+
 Paragraph/No indent
 begin/end single blocks
