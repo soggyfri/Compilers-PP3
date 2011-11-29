@@ -49,7 +49,7 @@ void generate_formatted_text(char *s)
             if(char_count < OUT_WIDTH)
                 {
                     if(isprint(s[i])) fprintf(fpout, "%c", s[i]);
-                    if(P_DEBUG) fprintf(stdout, "Char Cound: %d\n", char_count);
+                    /* if(P_DEBUG) fprintf(stdout, "Char Cound: %d\n", char_count); */
                     i++;
                     char_count++;
                 }
@@ -60,7 +60,7 @@ void generate_formatted_text(char *s)
                     if(isprint(s[i])) fprintf(fpout, "%c", s[i]);
                     i++;
                     char_count++;
-                    if(P_DEBUG) fprintf(stdout, "%c", s[i]);
+                    /* if(P_DEBUG) fprintf(stdout, "%c", s[i]); */
                 }
         }
     /* fprintf(fpout, "\n"); */
