@@ -520,8 +520,8 @@ static const yytype_uint16 yyrline[] =
      160,   162,   166,   167,   170,   172,   176,   178,   182,   184,
      188,   191,   194,   195,   196,   199,   200,   201,   204,   205,
      208,   211,   216,   223,   229,   233,   240,   241,   242,   243,
-     244,   248,   247,   255,   256,   257,   258,   259,   263,   262,
-     268,   267,   275,   276,   279,   280,   281,   284,   287
+     244,   248,   247,   256,   257,   258,   259,   260,   264,   263,
+     269,   268,   276,   277,   280,   281,   282,   285,   288
 };
 #endif
 
@@ -1788,13 +1788,14 @@ yyreduce:
     {
 		      
                       set_page_no(yytext[0]);
+                      set_starting_page_no(yytext[0]);
                     ;}
     break;
 
   case 88:
 
 /* Line 1455 of yacc.c  */
-#line 263 "latexp3c.y"
+#line 264 "latexp3c.y"
     {                      
                         generate_spacing(VSPACE, yytext);
                     ;}
@@ -1803,7 +1804,7 @@ yyreduce:
   case 90:
 
 /* Line 1455 of yacc.c  */
-#line 268 "latexp3c.y"
+#line 269 "latexp3c.y"
     {
                         generate_spacing(HSPACE, yytext);
                     ;}
@@ -1812,21 +1813,21 @@ yyreduce:
   case 92:
 
 /* Line 1455 of yacc.c  */
-#line 275 "latexp3c.y"
+#line 276 "latexp3c.y"
     { set_font(RM); ;}
     break;
 
   case 93:
 
 /* Line 1455 of yacc.c  */
-#line 276 "latexp3c.y"
+#line 277 "latexp3c.y"
     { set_font(IT); ;}
     break;
 
 
 
 /* Line 1455 of yacc.c  */
-#line 1830 "latexp3c.tab.c"
+#line 1831 "latexp3c.tab.c"
       default: break;
     }
   YY_SYMBOL_PRINT ("-> $$ =", yyr1[yyn], &yyval, &yyloc);
@@ -2038,7 +2039,7 @@ yyreturn:
 
 
 /* Line 1675 of yacc.c  */
-#line 289 "latexp3c.y"
+#line 290 "latexp3c.y"
 
 
 yyerror(){}

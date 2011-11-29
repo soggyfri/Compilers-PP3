@@ -11,8 +11,11 @@ FILE *fptoc;
 char  line[OUT_WIDTH + 1];
 int   lines_so_far;
 int   total_pages;
+
 char  tempBuf[BUF_SIZE + 1];
 int char_count;
+
+int starting_page_number;
 
 
 void  init_lines_so_far()
@@ -24,11 +27,13 @@ void  incr_lines_so_far()
 {
     fprintf(stdout, "DEBUG: INCR LINE NUMBER (%d), Page_no = %d \n", lines_so_far, get_page_no());
     lines_so_far++;
-    if(lines_so_far > LINES_PER_PAGE*get_page_no())
+    int start_number = (starting_page_number == 0 ? 1 : starting_page_number);
+    
+    if((lines_so_far * start_number) > LINES_PER_PAGE*get_page_no())
         {
             if(get_page_no() > 0) 
                 {                    
-                    /* fprintf(fpout, "\n\n\n\nPUT PAGE NUMBER HERE!!!!!!!\n\n");          */
+                    fprintf(stdout, "\n\n\n\nPUT PAGE NUMBER HERE!!!!!!!\n\n");
                     printPageNumber();                    
                 }
             
@@ -101,6 +106,12 @@ char  p;
 /* fprintf(stdout, "DEBUG: SET PAGE NUMBER\n"); */
   DST.page_no_counter = p - '0';
 }
+void set_starting_page_no(p)
+     char p;
+{
+    starting_page_number = p - '0';    
+}
+
 
 int   get_page_no() /* need this p? */
 {

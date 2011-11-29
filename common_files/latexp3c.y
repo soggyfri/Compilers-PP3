@@ -248,6 +248,7 @@ pagenuminit      :  style1  LCURLYB  WORD
                     {
 		      
                       set_page_no(yytext[0]);
+                      set_starting_page_no(yytext[0]);
                     }
                     RCURLYB
                  ;
