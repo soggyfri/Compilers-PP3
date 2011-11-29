@@ -36,46 +36,36 @@ void  generate_subsec_header(int i, int j, char *s)
   
 }
 
-void  generate_formatted_text(char *s)
+void generate_formatted_text(char *s)
 {
-int slen = strlen(s);
-int i, j, k, r;
-int llen;
+    int slen = strlen(s);
+    int i;
+    int char_count = 0;
+    fprintf(stdout, "START GEN_FOR_TEXT (%s)\n", s); 
+    fprintf(fpout, "\n");
 
-for (i = 0; i <= slen; )
-  {
-   for (j = 0; ((j < OUT_WIDTH) && (i <= slen)); i++, j++)
-       line[j] = s[i];
-
-   if (i <= slen)
-     {
-       if ((line[j-1] != ' ') && (s[i] !=' '))
-         {
-           for (k = j-1; line[k] != ' '; k--)
-             ;
-           i = i - (j - k - 1);
-           j = k;
-         }
-       for ( ; s[i] == ' '; i++) 
-         ;
-     }
-
-   line[j] = '\0';
-
-   llen = strlen(line);
-   
-   if (i <= slen)
-     {
-       fprintf(fpout, "\n%s", line);
-       fflush(fpout);
-     }
-   else
-     {
-       for(r = 0; r <= llen; r++)
-         s[r] = line[r];  /* includes backslash 0 */
-     }
-  }
+    for(i=0; i <=slen;)
+        {
+            if(char_count < OUT_WIDTH)
+                {
+                    if(isprint(s[i])) fprintf(fpout, "%c", s[i]);
+                    if(P_DEBUG) fprintf(stdout, "%c", s[i]);
+                    i++;
+                    char_count++;
+                }
+            else
+                {
+                    char_count = 0;
+                    fprintf(fpout, "\n");
+                    fprintf(fpout, "%c", s[i]);
+                    i++;
+                    char_count++;
+                    if(P_DEBUG) fprintf(stdout, "%c", s[i]);
+                }
+        }
+    fprintf(fpout, "\n");
 }
+
 
 
 void generate_spacing(int type, char *amount)
@@ -90,7 +80,7 @@ void generate_spacing(int type, char *amount)
 
 void print_vert_space(int spacing)
 {
-    if(P_DEBUG) fprintf(fpout, "DEBUG: PRINT VERT SPACE\n");
+    /* if(P_DEBUG) fprintf(fpout, " DEBUG: PRINT VERT SPACE\n"); */
     int i;
     for(i = 0; i < spacing; i++)
         {
@@ -102,7 +92,7 @@ void print_vert_space(int spacing)
 
 void print_hor_space(int spacing)
 {
-    if(P_DEBUG) fprintf(fpout, "DEBUG: HOR SPACE\n");
+    /* if(P_DEBUG) fprintf(fpout, " DEBUG: HOR SPACE\n"); */
     /* char *buf = (char *)malloc((spacing+1)*sizeof(char)); */
     /* memset(buf, 64, sizeof(buf)); */
     /* generate_formatted_text(buf);    */
@@ -114,5 +104,13 @@ void print_hor_space(int spacing)
     for(i =0; i<spacing; i++)
         {
             fprintf(fpout, "_");
+            
         }
+}
+
+void debug_print(char *s)
+{
+    fprintf(stdout, "---------DEBUG PRINT----------\n");
+    fprintf(stdout, "%s\n", s);
+    fprintf(stdout, "---------DEBUG PRINT----------\n");
 }

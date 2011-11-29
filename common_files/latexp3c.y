@@ -53,11 +53,11 @@ mainbody         :  mainbody  mainoption
 mainoption       :  textoption
                     {
                       generate_formatted_text($1);
-                      if(P_DEBUG){
-                          fprintf(stdout, "---------------------------------------\n");
-                          fprintf(stdout, "DEBUG - GENERATE_FORMATTED_TEXT:\n %s\n", $1);
-                          fprintf(stdout, "---------------------------------------\n");
-                      }
+                      /* if(P_DEBUG){ */
+                      /*     fprintf(stdout, "---------------------------------------\n"); */
+                      /*     fprintf(stdout, "DEBUG - GENERATE_FORMATTED_TEXT:\n %s\n", $1); */
+                      /*     fprintf(stdout, "---------------------------------------\n"); */
+                      /* } */
                     }
                  |  commentoption
                  |  latexoptions
@@ -67,10 +67,12 @@ textoption       :  textoption  wsorword
                     {
                       strcat($$, " ");
                       strcat($$, $2);
+                      
                     }
                  |  wsorword
                     {
                       strcpy($$, $1);
+                     
                     }
                  ;
 
@@ -81,6 +83,11 @@ wsorword         :  WS
                  |  WORD
                     {
                       strcpy($$, yytext);
+                       /* if(P_DEBUG) */
+                       /*    { */
+                       /*        /\* fri_write_text($$); *\/ */
+                       /*        fprintf(stdout, "DEBUG: WSORWORD: %s\n", $$); */
+                       /*    } */
                     }
                  ;
 
@@ -91,7 +98,16 @@ latexoptions     :  backsoptions
                  |  LCURLYB  curlyboptions  RCURLYB
                  ;
 
-curlyboptions    :  fonts  textoption
+curlyboptions    :  RM  textoption
+                        {
+                            fprintf(stdout, "TEMP FONT ROMAN");
+                            debug_print( $2 );
+                        }
+                 | IT textoption
+                        {
+                            fprintf(stdout, "TEMP FONT ITALICS");
+                            debug_print($2);
+                        }
                  ;
 
 backsoptions     :  beginendopts
@@ -216,10 +232,11 @@ linespacing      :  RENEW  LCURLYB  BASELINES  RCURLYB
 pagenumbers      :  PAGENUM  style2
                     {
                       set_page_style($2);
+                      fprintf(stdout, "PAGENUMBER %d\n", $2);
                     }
                  ;
 
-style2           :  ARABIC2
+style2           :  ARABIC2 
                  |  LROMAN2 
                  |  CROMAN2 
                  |  LALPH2
@@ -254,8 +271,8 @@ spacing          :  VSPACE LCURLYB  WORD
                  ;
 
 
-fonts            :  RM  
-                 |  IT
+fonts            :  RM { set_font(RM); } 
+                 |  IT { set_font(IT); }
                  ;
 
 specialchar      :  SPECCHAR  
