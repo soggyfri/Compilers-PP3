@@ -27,9 +27,9 @@ void  incr_lines_so_far()
 {
     fprintf(stdout, "DEBUG: INCR LINE NUMBER (%d), Page_no = %d \n", lines_so_far, get_page_no());
     lines_so_far++;
-    int start_number = (starting_page_number == 0 ? 1 : starting_page_number);
+    int mul_number = (get_page_no() - starting_page_number < 1 ? 1 : get_page_no() - starting_page_number);
     
-    if((lines_so_far * start_number) > LINES_PER_PAGE*get_page_no())
+    if((lines_so_far) % ( LINES_PER_PAGE) == 0)
         {
             if(get_page_no() > 0) 
                 {                    

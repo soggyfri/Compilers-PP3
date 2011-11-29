@@ -575,18 +575,18 @@ DEBUG: INCR LINE NUMBER (36), Page_no = 4
 DEBUG: INCR LINE NUMBER (37), Page_no = 4 
 DEBUG: INCR LINE NUMBER (38), Page_no = 4 
 DEBUG: INCR LINE NUMBER (39), Page_no = 4 
- } 
-ws--
-
---ws
-DEBUG: INCR LINE NUMBER (40), Page_no = 4 
 
 
 
 
 PUT PAGE NUMBER HERE!!!!!!!
 
-iv A 
+iv } 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (40), Page_no = 5 
+ A 
 ws-- --ws
  text 
 ws-- --ws
@@ -750,25 +750,19 @@ ws--
 
 --ws
 DEBUG: INCR LINE NUMBER (50), Page_no = 5 
-
-
-
-
-PUT PAGE NUMBER HERE!!!!!!!
-
-v \subsection 
+ \subsection 
 START GEN_FOR_TEXT (
 
  We have seen that there are many different Latex commands, that can be used in many different ways. However, sometimes, we wish to use a character to mean itself, and override its Latex interpretation. For example, to use curly braces, we employ the backslash a set of integers. 
 
 )
-DEBUG: INCR LINE NUMBER (51), Page_no = 6 
-DEBUG: INCR LINE NUMBER (52), Page_no = 6 
-DEBUG: INCR LINE NUMBER (53), Page_no = 6 
-DEBUG: INCR LINE NUMBER (54), Page_no = 6 
-DEBUG: INCR LINE NUMBER (55), Page_no = 6 
-DEBUG: INCR LINE NUMBER (56), Page_no = 6 
-DEBUG: INCR LINE NUMBER (57), Page_no = 6 
+DEBUG: INCR LINE NUMBER (51), Page_no = 5 
+DEBUG: INCR LINE NUMBER (52), Page_no = 5 
+DEBUG: INCR LINE NUMBER (53), Page_no = 5 
+DEBUG: INCR LINE NUMBER (54), Page_no = 5 
+DEBUG: INCR LINE NUMBER (55), Page_no = 5 
+DEBUG: INCR LINE NUMBER (56), Page_no = 5 
+DEBUG: INCR LINE NUMBER (57), Page_no = 5 
  { 
  Again 
 ws-- --ws
@@ -778,20 +772,14 @@ ws-- --ws
 ws-- --ws
  Commands 
  } 
-DEBUG: INCR LINE NUMBER (58), Page_no = 6 
-DEBUG: INCR LINE NUMBER (59), Page_no = 6 
-DEBUG: INCR LINE NUMBER (60), Page_no = 6 
-
-
-
-
-PUT PAGE NUMBER HERE!!!!!!!
-
-viDEBUG: INCR LINE NUMBER (61), Page_no = 7 
+DEBUG: INCR LINE NUMBER (58), Page_no = 5 
+DEBUG: INCR LINE NUMBER (59), Page_no = 5 
+DEBUG: INCR LINE NUMBER (60), Page_no = 5 
+DEBUG: INCR LINE NUMBER (61), Page_no = 5 
 ws--
 
 --ws
-DEBUG: INCR LINE NUMBER (62), Page_no = 7 
+DEBUG: INCR LINE NUMBER (62), Page_no = 5 
  We 
 ws-- --ws
  have 
@@ -887,27 +875,21 @@ ws-- --ws
 ws--
 
 --ws
-DEBUG: INCR LINE NUMBER (63), Page_no = 7 
+DEBUG: INCR LINE NUMBER (63), Page_no = 5 
  \subsection 
 START GEN_FOR_TEXT (
 
  We have seen that there are many different Latex commands, that can be used in many different ways. However, sometimes, we wish to use a character to mean itself, and override its Latex interpretation. For example, to use curly braces, we employ the backslash a set of integers. 
 
 )
-DEBUG: INCR LINE NUMBER (64), Page_no = 7 
-DEBUG: INCR LINE NUMBER (65), Page_no = 7 
-DEBUG: INCR LINE NUMBER (66), Page_no = 7 
-DEBUG: INCR LINE NUMBER (67), Page_no = 7 
-DEBUG: INCR LINE NUMBER (68), Page_no = 7 
-DEBUG: INCR LINE NUMBER (69), Page_no = 7 
-DEBUG: INCR LINE NUMBER (70), Page_no = 7 
-
-
-
-
-PUT PAGE NUMBER HERE!!!!!!!
-
-vii { 
+DEBUG: INCR LINE NUMBER (64), Page_no = 5 
+DEBUG: INCR LINE NUMBER (65), Page_no = 5 
+DEBUG: INCR LINE NUMBER (66), Page_no = 5 
+DEBUG: INCR LINE NUMBER (67), Page_no = 5 
+DEBUG: INCR LINE NUMBER (68), Page_no = 5 
+DEBUG: INCR LINE NUMBER (69), Page_no = 5 
+DEBUG: INCR LINE NUMBER (70), Page_no = 5 
+ { 
  Yet 
 ws-- --ws
  Some 
@@ -920,14 +902,14 @@ ws-- --ws
 ws-- --ws
  Commands 
  } 
-DEBUG: INCR LINE NUMBER (71), Page_no = 8 
-DEBUG: INCR LINE NUMBER (72), Page_no = 8 
-DEBUG: INCR LINE NUMBER (73), Page_no = 8 
-DEBUG: INCR LINE NUMBER (74), Page_no = 8 
+DEBUG: INCR LINE NUMBER (71), Page_no = 5 
+DEBUG: INCR LINE NUMBER (72), Page_no = 5 
+DEBUG: INCR LINE NUMBER (73), Page_no = 5 
+DEBUG: INCR LINE NUMBER (74), Page_no = 5 
 ws--
 
 --ws
-DEBUG: INCR LINE NUMBER (75), Page_no = 8 
+DEBUG: INCR LINE NUMBER (75), Page_no = 5 
  \begin 
 START GEN_FOR_TEXT (
 
@@ -1031,7 +1013,7 @@ single or verb
 ws--
 
 --ws
-DEBUG: INCR LINE NUMBER (76), Page_no = 8 
+DEBUG: INCR LINE NUMBER (76), Page_no = 5 
  \section 
 START GEN_FOR_TEXT (
 
@@ -1041,20 +1023,20 @@ START GEN_FOR_TEXT (
 ws-- --ws
  Latex 
  } 
-DEBUG: INCR LINE NUMBER (77), Page_no = 8 
-DEBUG: INCR LINE NUMBER (78), Page_no = 8 
-DEBUG: INCR LINE NUMBER (79), Page_no = 8 
-DEBUG: INCR LINE NUMBER (80), Page_no = 8 
+DEBUG: INCR LINE NUMBER (77), Page_no = 5 
+DEBUG: INCR LINE NUMBER (78), Page_no = 5 
+DEBUG: INCR LINE NUMBER (79), Page_no = 5 
 
 
 
 
 PUT PAGE NUMBER HERE!!!!!!!
 
-viiiws--
+vDEBUG: INCR LINE NUMBER (80), Page_no = 6 
+ws--
 
 --ws
-DEBUG: INCR LINE NUMBER (81), Page_no = 9 
+DEBUG: INCR LINE NUMBER (81), Page_no = 6 
  Finally, 
 ws-- --ws
  there 
@@ -1065,7 +1047,7 @@ ws-- --ws
 START GEN_FOR_TEXT (
 
  Finally, there are)
-DEBUG: INCR LINE NUMBER (82), Page_no = 9 
+DEBUG: INCR LINE NUMBER (82), Page_no = 6 
  \it 
 ws-- --ws
  many 
@@ -1151,16 +1133,16 @@ ws-- --ws
 ws--
 
 --ws
-DEBUG: INCR LINE NUMBER (83), Page_no = 9 
+DEBUG: INCR LINE NUMBER (83), Page_no = 6 
  \it 
 START GEN_FOR_TEXT (commands that involve begin end blocks, that establish an environment. These blocks behave in a similar fashion to begin end blocks in a programming language, since they set a scope. We have discussed a number of examples. 
 
 )
-DEBUG: INCR LINE NUMBER (84), Page_no = 9 
-DEBUG: INCR LINE NUMBER (85), Page_no = 9 
-DEBUG: INCR LINE NUMBER (86), Page_no = 9 
-DEBUG: INCR LINE NUMBER (87), Page_no = 9 
-DEBUG: INCR LINE NUMBER (88), Page_no = 9 
+DEBUG: INCR LINE NUMBER (84), Page_no = 6 
+DEBUG: INCR LINE NUMBER (85), Page_no = 6 
+DEBUG: INCR LINE NUMBER (86), Page_no = 6 
+DEBUG: INCR LINE NUMBER (87), Page_no = 6 
+DEBUG: INCR LINE NUMBER (88), Page_no = 6 
  It 
 ws-- --ws
  is 
@@ -1209,20 +1191,14 @@ ws-- --ws
  environments. 
  \rm 
 START GEN_FOR_TEXT (It is important to note, even at this early stage, that lists may be created within lists, allowing the nesting of blocks and environments.)
-DEBUG: INCR LINE NUMBER (89), Page_no = 9 
-DEBUG: INCR LINE NUMBER (90), Page_no = 9 
-
-
-
-
-PUT PAGE NUMBER HERE!!!!!!!
-
-ixDEBUG: INCR LINE NUMBER (91), Page_no = 10 
-DEBUG: INCR LINE NUMBER (92), Page_no = 10 
+DEBUG: INCR LINE NUMBER (89), Page_no = 6 
+DEBUG: INCR LINE NUMBER (90), Page_no = 6 
+DEBUG: INCR LINE NUMBER (91), Page_no = 6 
+DEBUG: INCR LINE NUMBER (92), Page_no = 6 
 ws--
 
 --ws
-DEBUG: INCR LINE NUMBER (93), Page_no = 10 
+DEBUG: INCR LINE NUMBER (93), Page_no = 6 
  It 
 ws-- --ws
  is 
@@ -1255,15 +1231,15 @@ ws-- --ws
 ws--
 
 --ws
-DEBUG: INCR LINE NUMBER (94), Page_no = 10 
+DEBUG: INCR LINE NUMBER (94), Page_no = 6 
  \subsection 
 START GEN_FOR_TEXT (
 
  It is important to note, even at this early stage, that lists may be created 
 
 )
-DEBUG: INCR LINE NUMBER (95), Page_no = 10 
-DEBUG: INCR LINE NUMBER (96), Page_no = 10 
+DEBUG: INCR LINE NUMBER (95), Page_no = 6 
+DEBUG: INCR LINE NUMBER (96), Page_no = 6 
  { 
  Check 
 ws-- --ws
@@ -1271,20 +1247,14 @@ ws-- --ws
 ws-- --ws
  Out 
  } 
-DEBUG: INCR LINE NUMBER (97), Page_no = 10 
-DEBUG: INCR LINE NUMBER (98), Page_no = 10 
-DEBUG: INCR LINE NUMBER (99), Page_no = 10 
-DEBUG: INCR LINE NUMBER (100), Page_no = 10 
-
-
-
-
-PUT PAGE NUMBER HERE!!!!!!!
-
-xws--
+DEBUG: INCR LINE NUMBER (97), Page_no = 6 
+DEBUG: INCR LINE NUMBER (98), Page_no = 6 
+DEBUG: INCR LINE NUMBER (99), Page_no = 6 
+DEBUG: INCR LINE NUMBER (100), Page_no = 6 
+ws--
 
 --ws
-DEBUG: INCR LINE NUMBER (101), Page_no = 11 
+DEBUG: INCR LINE NUMBER (101), Page_no = 6 
  Finally, 
 ws-- --ws
  there 
@@ -1295,7 +1265,7 @@ ws-- --ws
 START GEN_FOR_TEXT (
 
  Finally, there are)
-DEBUG: INCR LINE NUMBER (102), Page_no = 11 
+DEBUG: INCR LINE NUMBER (102), Page_no = 6 
  \it 
 ws-- --ws
  many 
@@ -1381,16 +1351,16 @@ ws-- --ws
 ws--
 
 --ws
-DEBUG: INCR LINE NUMBER (103), Page_no = 11 
+DEBUG: INCR LINE NUMBER (103), Page_no = 6 
  \subsection 
 START GEN_FOR_TEXT (commands that involve begin end blocks, that establish an environment. These blocks behave in a similar fashion to begin end blocks in a programming language, since they set a scope. We have discussed a number of examples. 
 
 )
-DEBUG: INCR LINE NUMBER (104), Page_no = 11 
-DEBUG: INCR LINE NUMBER (105), Page_no = 11 
-DEBUG: INCR LINE NUMBER (106), Page_no = 11 
-DEBUG: INCR LINE NUMBER (107), Page_no = 11 
-DEBUG: INCR LINE NUMBER (108), Page_no = 11 
+DEBUG: INCR LINE NUMBER (104), Page_no = 6 
+DEBUG: INCR LINE NUMBER (105), Page_no = 6 
+DEBUG: INCR LINE NUMBER (106), Page_no = 6 
+DEBUG: INCR LINE NUMBER (107), Page_no = 6 
+DEBUG: INCR LINE NUMBER (108), Page_no = 6 
  { 
  Check 
 ws-- --ws
@@ -1402,20 +1372,14 @@ ws-- --ws
 ws-- --ws
  2 
  } 
-DEBUG: INCR LINE NUMBER (109), Page_no = 11 
-DEBUG: INCR LINE NUMBER (110), Page_no = 11 
-
-
-
-
-PUT PAGE NUMBER HERE!!!!!!!
-
-xiDEBUG: INCR LINE NUMBER (111), Page_no = 12 
-DEBUG: INCR LINE NUMBER (112), Page_no = 12 
+DEBUG: INCR LINE NUMBER (109), Page_no = 6 
+DEBUG: INCR LINE NUMBER (110), Page_no = 6 
+DEBUG: INCR LINE NUMBER (111), Page_no = 6 
+DEBUG: INCR LINE NUMBER (112), Page_no = 6 
 ws--
 
 --ws
-DEBUG: INCR LINE NUMBER (113), Page_no = 12 
+DEBUG: INCR LINE NUMBER (113), Page_no = 6 
  Finally, 
 ws-- --ws
  there 
@@ -1426,7 +1390,7 @@ ws-- --ws
 START GEN_FOR_TEXT (
 
  Finally, there are)
-DEBUG: INCR LINE NUMBER (114), Page_no = 12 
+DEBUG: INCR LINE NUMBER (114), Page_no = 6 
  \it 
 ws-- --ws
  many 
@@ -1512,37 +1476,37 @@ ws-- --ws
 ws--
 
 --ws
-DEBUG: INCR LINE NUMBER (115), Page_no = 12 
+DEBUG: INCR LINE NUMBER (115), Page_no = 6 
  \section 
 START GEN_FOR_TEXT (commands that involve begin end blocks, that establish an environment. These blocks behave in a similar fashion to begin end blocks in a programming language, since they set a scope. We have discussed a number of examples. 
 
 )
-DEBUG: INCR LINE NUMBER (116), Page_no = 12 
-DEBUG: INCR LINE NUMBER (117), Page_no = 12 
-DEBUG: INCR LINE NUMBER (118), Page_no = 12 
-DEBUG: INCR LINE NUMBER (119), Page_no = 12 
-DEBUG: INCR LINE NUMBER (120), Page_no = 12 
+DEBUG: INCR LINE NUMBER (116), Page_no = 6 
+DEBUG: INCR LINE NUMBER (117), Page_no = 6 
+DEBUG: INCR LINE NUMBER (118), Page_no = 6 
+DEBUG: INCR LINE NUMBER (119), Page_no = 6 
 
 
 
 
 PUT PAGE NUMBER HERE!!!!!!!
 
-xii { 
+viDEBUG: INCR LINE NUMBER (120), Page_no = 7 
+ { 
  What 
 ws-- --ws
  about 
 ws-- --ws
  this? 
  } 
-DEBUG: INCR LINE NUMBER (121), Page_no = 13 
-DEBUG: INCR LINE NUMBER (122), Page_no = 13 
-DEBUG: INCR LINE NUMBER (123), Page_no = 13 
-DEBUG: INCR LINE NUMBER (124), Page_no = 13 
+DEBUG: INCR LINE NUMBER (121), Page_no = 7 
+DEBUG: INCR LINE NUMBER (122), Page_no = 7 
+DEBUG: INCR LINE NUMBER (123), Page_no = 7 
+DEBUG: INCR LINE NUMBER (124), Page_no = 7 
 ws--
 
 --ws
-DEBUG: INCR LINE NUMBER (125), Page_no = 13 
+DEBUG: INCR LINE NUMBER (125), Page_no = 7 
  When 
 ws-- --ws
  things 
@@ -1563,15 +1527,15 @@ ws-- --ws
 ws--
 
 --ws
-DEBUG: INCR LINE NUMBER (126), Page_no = 13 
+DEBUG: INCR LINE NUMBER (126), Page_no = 7 
  \section 
 START GEN_FOR_TEXT (
 
  When things are switched back is everything still ok? 
 
 )
-DEBUG: INCR LINE NUMBER (127), Page_no = 13 
-DEBUG: INCR LINE NUMBER (128), Page_no = 13 
+DEBUG: INCR LINE NUMBER (127), Page_no = 7 
+DEBUG: INCR LINE NUMBER (128), Page_no = 7 
  { 
  What 
 ws-- --ws
@@ -1579,20 +1543,14 @@ ws-- --ws
 ws-- --ws
  this? 
  } 
-DEBUG: INCR LINE NUMBER (129), Page_no = 13 
-DEBUG: INCR LINE NUMBER (130), Page_no = 13 
-
-
-
-
-PUT PAGE NUMBER HERE!!!!!!!
-
-xiiiDEBUG: INCR LINE NUMBER (131), Page_no = 14 
-DEBUG: INCR LINE NUMBER (132), Page_no = 14 
+DEBUG: INCR LINE NUMBER (129), Page_no = 7 
+DEBUG: INCR LINE NUMBER (130), Page_no = 7 
+DEBUG: INCR LINE NUMBER (131), Page_no = 7 
+DEBUG: INCR LINE NUMBER (132), Page_no = 7 
 ws--
 
 --ws
-DEBUG: INCR LINE NUMBER (133), Page_no = 14 
+DEBUG: INCR LINE NUMBER (133), Page_no = 7 
  When 
 ws-- --ws
  things 
@@ -1613,14 +1571,14 @@ ws-- --ws
 ws--
 
 --ws
-DEBUG: INCR LINE NUMBER (134), Page_no = 14 
+DEBUG: INCR LINE NUMBER (134), Page_no = 7 
  \section 
 START GEN_FOR_TEXT (
 
  When things are switched back is everything still ok? 
 
 )
-DEBUG: INCR LINE NUMBER (135), Page_no = 14 
+DEBUG: INCR LINE NUMBER (135), Page_no = 7 
  { 
  What 
 ws-- --ws
@@ -1628,64 +1586,14 @@ ws-- --ws
 ws-- --ws
  this? 
  } 
-DEBUG: INCR LINE NUMBER (136), Page_no = 14 
-DEBUG: INCR LINE NUMBER (137), Page_no = 14 
-DEBUG: INCR LINE NUMBER (138), Page_no = 14 
-DEBUG: INCR LINE NUMBER (139), Page_no = 14 
+DEBUG: INCR LINE NUMBER (136), Page_no = 7 
+DEBUG: INCR LINE NUMBER (137), Page_no = 7 
+DEBUG: INCR LINE NUMBER (138), Page_no = 7 
+DEBUG: INCR LINE NUMBER (139), Page_no = 7 
 ws--
 
 --ws
-DEBUG: INCR LINE NUMBER (140), Page_no = 14 
-
-
-
-
-PUT PAGE NUMBER HERE!!!!!!!
-
-xiv When 
-ws-- --ws
- things 
-ws-- --ws
- are 
-ws-- --ws
- switched 
-ws-- --ws
- back 
-ws-- --ws
- is 
-ws-- --ws
- everything 
-ws-- --ws
- still 
-ws-- --ws
- ok? 
-ws--
-
---ws
-DEBUG: INCR LINE NUMBER (141), Page_no = 15 
- \section 
-START GEN_FOR_TEXT (
-
- When things are switched back is everything still ok? 
-
-)
-DEBUG: INCR LINE NUMBER (142), Page_no = 15 
-DEBUG: INCR LINE NUMBER (143), Page_no = 15 
- { 
- What 
-ws-- --ws
- about 
-ws-- --ws
- this? 
- } 
-DEBUG: INCR LINE NUMBER (144), Page_no = 15 
-DEBUG: INCR LINE NUMBER (145), Page_no = 15 
-DEBUG: INCR LINE NUMBER (146), Page_no = 15 
-DEBUG: INCR LINE NUMBER (147), Page_no = 15 
-ws--
-
---ws
-DEBUG: INCR LINE NUMBER (148), Page_no = 15 
+DEBUG: INCR LINE NUMBER (140), Page_no = 7 
  When 
 ws-- --ws
  things 
@@ -1706,35 +1614,30 @@ ws-- --ws
 ws--
 
 --ws
-DEBUG: INCR LINE NUMBER (149), Page_no = 15 
+DEBUG: INCR LINE NUMBER (141), Page_no = 7 
  \section 
 START GEN_FOR_TEXT (
 
  When things are switched back is everything still ok? 
 
 )
-DEBUG: INCR LINE NUMBER (150), Page_no = 15 
-
-
-
-
-PUT PAGE NUMBER HERE!!!!!!!
-
-xv { 
+DEBUG: INCR LINE NUMBER (142), Page_no = 7 
+DEBUG: INCR LINE NUMBER (143), Page_no = 7 
+ { 
  What 
 ws-- --ws
  about 
 ws-- --ws
  this? 
  } 
-DEBUG: INCR LINE NUMBER (151), Page_no = 16 
-DEBUG: INCR LINE NUMBER (152), Page_no = 16 
-DEBUG: INCR LINE NUMBER (153), Page_no = 16 
-DEBUG: INCR LINE NUMBER (154), Page_no = 16 
+DEBUG: INCR LINE NUMBER (144), Page_no = 7 
+DEBUG: INCR LINE NUMBER (145), Page_no = 7 
+DEBUG: INCR LINE NUMBER (146), Page_no = 7 
+DEBUG: INCR LINE NUMBER (147), Page_no = 7 
 ws--
 
 --ws
-DEBUG: INCR LINE NUMBER (155), Page_no = 16 
+DEBUG: INCR LINE NUMBER (148), Page_no = 7 
  When 
 ws-- --ws
  things 
@@ -1755,15 +1658,14 @@ ws-- --ws
 ws--
 
 --ws
-DEBUG: INCR LINE NUMBER (156), Page_no = 16 
+DEBUG: INCR LINE NUMBER (149), Page_no = 7 
  \section 
 START GEN_FOR_TEXT (
 
  When things are switched back is everything still ok? 
 
 )
-DEBUG: INCR LINE NUMBER (157), Page_no = 16 
-DEBUG: INCR LINE NUMBER (158), Page_no = 16 
+DEBUG: INCR LINE NUMBER (150), Page_no = 7 
  { 
  What 
 ws-- --ws
@@ -1771,20 +1673,14 @@ ws-- --ws
 ws-- --ws
  this? 
  } 
-DEBUG: INCR LINE NUMBER (159), Page_no = 16 
-DEBUG: INCR LINE NUMBER (160), Page_no = 16 
-
-
-
-
-PUT PAGE NUMBER HERE!!!!!!!
-
-xviDEBUG: INCR LINE NUMBER (161), Page_no = 17 
-DEBUG: INCR LINE NUMBER (162), Page_no = 17 
+DEBUG: INCR LINE NUMBER (151), Page_no = 7 
+DEBUG: INCR LINE NUMBER (152), Page_no = 7 
+DEBUG: INCR LINE NUMBER (153), Page_no = 7 
+DEBUG: INCR LINE NUMBER (154), Page_no = 7 
 ws--
 
 --ws
-DEBUG: INCR LINE NUMBER (163), Page_no = 17 
+DEBUG: INCR LINE NUMBER (155), Page_no = 7 
  When 
 ws-- --ws
  things 
@@ -1805,14 +1701,15 @@ ws-- --ws
 ws--
 
 --ws
-DEBUG: INCR LINE NUMBER (164), Page_no = 17 
+DEBUG: INCR LINE NUMBER (156), Page_no = 7 
  \section 
 START GEN_FOR_TEXT (
 
  When things are switched back is everything still ok? 
 
 )
-DEBUG: INCR LINE NUMBER (165), Page_no = 17 
+DEBUG: INCR LINE NUMBER (157), Page_no = 7 
+DEBUG: INCR LINE NUMBER (158), Page_no = 7 
  { 
  What 
 ws-- --ws
@@ -1820,21 +1717,21 @@ ws-- --ws
 ws-- --ws
  this? 
  } 
-DEBUG: INCR LINE NUMBER (166), Page_no = 17 
-DEBUG: INCR LINE NUMBER (167), Page_no = 17 
-DEBUG: INCR LINE NUMBER (168), Page_no = 17 
-DEBUG: INCR LINE NUMBER (169), Page_no = 17 
-ws--
-
---ws
-DEBUG: INCR LINE NUMBER (170), Page_no = 17 
+DEBUG: INCR LINE NUMBER (159), Page_no = 7 
 
 
 
 
 PUT PAGE NUMBER HERE!!!!!!!
 
-xvii When 
+viiDEBUG: INCR LINE NUMBER (160), Page_no = 8 
+DEBUG: INCR LINE NUMBER (161), Page_no = 8 
+DEBUG: INCR LINE NUMBER (162), Page_no = 8 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (163), Page_no = 8 
+ When 
 ws-- --ws
  things 
 ws-- --ws
@@ -1854,15 +1751,58 @@ ws-- --ws
 ws--
 
 --ws
-DEBUG: INCR LINE NUMBER (171), Page_no = 18 
+DEBUG: INCR LINE NUMBER (164), Page_no = 8 
  \section 
 START GEN_FOR_TEXT (
 
  When things are switched back is everything still ok? 
 
 )
-DEBUG: INCR LINE NUMBER (172), Page_no = 18 
-DEBUG: INCR LINE NUMBER (173), Page_no = 18 
+DEBUG: INCR LINE NUMBER (165), Page_no = 8 
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this? 
+ } 
+DEBUG: INCR LINE NUMBER (166), Page_no = 8 
+DEBUG: INCR LINE NUMBER (167), Page_no = 8 
+DEBUG: INCR LINE NUMBER (168), Page_no = 8 
+DEBUG: INCR LINE NUMBER (169), Page_no = 8 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (170), Page_no = 8 
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (171), Page_no = 8 
+ \section 
+START GEN_FOR_TEXT (
+
+ When things are switched back is everything still ok? 
+
+)
+DEBUG: INCR LINE NUMBER (172), Page_no = 8 
+DEBUG: INCR LINE NUMBER (173), Page_no = 8 
  { 
  Goes 
 ws-- --ws
@@ -1876,5 +1816,39 @@ ws-- --ws
 ws-- --ws
  this? 
  } 
-DEBUG: INCR LINE NUMBER (174), Page_no = 18 
-DEBUG: INCR LINE NUMBER (175), Page_no = 18 
+DEBUG: INCR LINE NUMBER (174), Page_no = 8 
+DEBUG: INCR LINE NUMBER (175), Page_no = 8 
+DEBUG: INCR LINE NUMBER (176), Page_no = 8 
+DEBUG: INCR LINE NUMBER (177), Page_no = 8 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (178), Page_no = 8 
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+DEBUG: INCR LINE NUMBER (179), Page_no = 8 
+ \end 
+START GEN_FOR_TEXT (
+
+ When things are switched back is everything still ok? 
+
+)
+DEBU

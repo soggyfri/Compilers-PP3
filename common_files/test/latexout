@@ -40,7 +40,6 @@ asy to read.
 
 1.2 Legal Latex Commands
 
-(style 304)PAGE NUMBER: (v)
  We have seen that the
 re are many different Latex commands, th
 at can be used in many different ways. H
@@ -52,7 +51,6 @@ atex interpretation. For example, to use
 
 1.3 Again Legal Latex Commands
 
-(style 304)PAGE NUMBER: (vi)
  We have seen tha
 t there are many different Latex command
 s, that can be used in many different wa
@@ -60,7 +58,6 @@ ys. However, sometimes, we wish to use a
  character to mean itself, and override 
 its Latex interpretation. For example, t
 o use curly braces, we employ the backsl
-(style 304)PAGE NUMBER: (vii)
 ash a set of integers. 
 
 1.4 Yet Some More Legal Latex Commands
@@ -69,7 +66,7 @@ ash a set of integers.
 
 2 Using Latex
 
-(style 304)PAGE NUMBER: (viii)
+(style 304)PAGE NUMBER: (v)
  Final
 ly, there arecommands that involve begi
 n end blocks, that establish an environm
@@ -78,7 +75,6 @@ shion to begin end blocks in a programmi
 ng language, since they set a scope. We 
 have discussed a number of examples. 
 It is important to note, even at this ea
-(style 304)PAGE NUMBER: (ix)
 rly stage, that lists may be created wit
 hin lists, allowing the nesting of block
 s and environments. It is important t
@@ -87,7 +83,6 @@ ists may be created
 
 2.1 Check this Out
 
-(style 304)PAGE NUMBER: (x)
  Finally, there
  arecommands that involve begin end blo
 cks, that establish an environment. Thes
@@ -98,14 +93,13 @@ ussed a number of examples.
 
 2.2 Check this Out Part 2
 
-(style 304)PAGE NUMBER: (xi)
  Finall
 y, there arecommands that involve begin
  end blocks, that establish an environme
 nt. These blocks behave in a similar fas
 hion to begin end blocks in a programmin
+(style 304)PAGE NUMBER: (vi)
 g language, since they set a scope. We h
-(style 304)PAGE NUMBER: (xii)
 ave discussed a number of examples. 
 
 3 What about this?
@@ -116,13 +110,11 @@ thing still ok?
 
 4 What about this?
 
-(style 304)PAGE NUMBER: (xiii)
  When things are sw
 itched back is everything still ok? 
 
 5 What about this?
 
-(style 304)PAGE NUMBER: (xiv)
 
  When things are switched back is every
 thing still ok? 
@@ -130,7 +122,6 @@ thing still ok?
 6 What about this?
 
  When things are sw
-(style 304)PAGE NUMBER: (xv)
 itched back is everything still ok? 
 
 7 What about this?
@@ -141,13 +132,12 @@ thing still ok?
 
 8 What about this?
 
-(style 304)PAGE NUMBER: (xvi)
+(style 304)PAGE NUMBER: (vii)
  When things are sw
 itched back is everything still ok? 
 
 9 What about this?
 
-(style 304)PAGE NUMBER: (xvii)
 
  When things are switched back is every
 thing still ok? 
