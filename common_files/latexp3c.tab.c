@@ -80,11 +80,12 @@ int ws_flag = 0;
 #include "lex.yy.c"
 #include "util.c"
 #include "generate.c"
+#include "styleroutines.c"
 
 
 
 /* Line 189 of yacc.c  */
-#line 88 "latexp3c.tab.c"
+#line 89 "latexp3c.tab.c"
 
 /* Enabling traces.  */
 #ifndef YYDEBUG
@@ -171,7 +172,7 @@ typedef union YYSTYPE
 {
 
 /* Line 214 of yacc.c  */
-#line 18 "latexp3c.y"
+#line 19 "latexp3c.y"
 
       char   trans[BUF_SIZE+1];
       int    val;
@@ -179,7 +180,7 @@ typedef union YYSTYPE
 
 
 /* Line 214 of yacc.c  */
-#line 183 "latexp3c.tab.c"
+#line 184 "latexp3c.tab.c"
 } YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
@@ -191,7 +192,7 @@ typedef union YYSTYPE
 
 
 /* Line 264 of yacc.c  */
-#line 195 "latexp3c.tab.c"
+#line 196 "latexp3c.tab.c"
 
 #ifdef short
 # undef short
@@ -511,16 +512,16 @@ static const yytype_int8 yyrhs[] =
 /* YYRLINE[YYN] -- source line where rule number YYN was defined.  */
 static const yytype_uint16 yyrline[] =
 {
-       0,    40,    40,    43,    46,    49,    50,    53,    62,    63,
-      66,    72,    79,    83,    94,    97,    98,   101,   106,   113,
-     114,   115,   116,   117,   118,   119,   120,   121,   122,   123,
-     126,   129,   130,   131,   132,   133,   134,   135,   138,   139,
-     142,   143,   144,   145,   146,   147,   150,   151,   153,   155,
-     159,   161,   165,   166,   169,   171,   175,   177,   181,   183,
-     187,   190,   193,   194,   195,   198,   199,   200,   203,   204,
-     207,   210,   215,   222,   228,   232,   239,   240,   241,   242,
-     243,   247,   246,   254,   255,   256,   257,   258,   262,   261,
-     267,   266,   274,   275,   278,   279,   280,   283,   286
+       0,    41,    41,    44,    47,    50,    51,    54,    63,    64,
+      67,    73,    80,    84,    95,    98,    99,   102,   107,   114,
+     115,   116,   117,   118,   119,   120,   121,   122,   123,   124,
+     127,   130,   131,   132,   133,   134,   135,   136,   139,   140,
+     143,   144,   145,   146,   147,   148,   151,   152,   154,   156,
+     160,   162,   166,   167,   170,   172,   176,   178,   182,   184,
+     188,   191,   194,   195,   196,   199,   200,   201,   204,   205,
+     208,   211,   216,   223,   229,   233,   240,   241,   242,   243,
+     244,   248,   247,   255,   256,   257,   258,   259,   263,   262,
+     268,   267,   275,   276,   279,   280,   281,   284,   287
 };
 #endif
 
@@ -1540,7 +1541,7 @@ yyreduce:
         case 7:
 
 /* Line 1455 of yacc.c  */
-#line 54 "latexp3c.y"
+#line 55 "latexp3c.y"
     {
                       generate_formatted_text((yyvsp[(1) - (1)].trans));
                       /* if(P_DEBUG){ */
@@ -1554,7 +1555,7 @@ yyreduce:
   case 10:
 
 /* Line 1455 of yacc.c  */
-#line 67 "latexp3c.y"
+#line 68 "latexp3c.y"
     {
                       strcat((yyval.trans), " ");
                       strcat((yyval.trans), (yyvsp[(2) - (2)].trans));
@@ -1565,7 +1566,7 @@ yyreduce:
   case 11:
 
 /* Line 1455 of yacc.c  */
-#line 73 "latexp3c.y"
+#line 74 "latexp3c.y"
     {
                       strcpy((yyval.trans), (yyvsp[(1) - (1)].trans));
                      
@@ -1575,7 +1576,7 @@ yyreduce:
   case 12:
 
 /* Line 1455 of yacc.c  */
-#line 80 "latexp3c.y"
+#line 81 "latexp3c.y"
     {
                       strcpy((yyval.trans), yytext);
                     ;}
@@ -1584,7 +1585,7 @@ yyreduce:
   case 13:
 
 /* Line 1455 of yacc.c  */
-#line 84 "latexp3c.y"
+#line 85 "latexp3c.y"
     {
                       strcpy((yyval.trans), yytext);
                        /* if(P_DEBUG) */
@@ -1598,7 +1599,7 @@ yyreduce:
   case 17:
 
 /* Line 1455 of yacc.c  */
-#line 102 "latexp3c.y"
+#line 103 "latexp3c.y"
     {
                             fprintf(stdout, "TEMP FONT ROMAN");
                             debug_print( (yyvsp[(2) - (2)].trans) );
@@ -1608,7 +1609,7 @@ yyreduce:
   case 18:
 
 /* Line 1455 of yacc.c  */
-#line 107 "latexp3c.y"
+#line 108 "latexp3c.y"
     {
                             fprintf(stdout, "TEMP FONT ITALICS");
                             debug_print((yyvsp[(2) - (2)].trans));
@@ -1618,98 +1619,98 @@ yyreduce:
   case 32:
 
 /* Line 1455 of yacc.c  */
-#line 130 "latexp3c.y"
+#line 131 "latexp3c.y"
     {ws_flag=1;;}
     break;
 
   case 41:
 
 /* Line 1455 of yacc.c  */
-#line 143 "latexp3c.y"
+#line 144 "latexp3c.y"
     {ws_flag=0;;}
     break;
 
   case 47:
 
 /* Line 1455 of yacc.c  */
-#line 152 "latexp3c.y"
+#line 153 "latexp3c.y"
     {printf("single or verb\n");;}
     break;
 
   case 48:
 
 /* Line 1455 of yacc.c  */
-#line 154 "latexp3c.y"
+#line 155 "latexp3c.y"
     {printf("center or tabular\n");;}
     break;
 
   case 49:
 
 /* Line 1455 of yacc.c  */
-#line 156 "latexp3c.y"
+#line 157 "latexp3c.y"
     {printf("item or enumerate\n");;}
     break;
 
   case 50:
 
 /* Line 1455 of yacc.c  */
-#line 160 "latexp3c.y"
+#line 161 "latexp3c.y"
     {printf("listblockA\n");;}
     break;
 
   case 51:
 
 /* Line 1455 of yacc.c  */
-#line 162 "latexp3c.y"
+#line 163 "latexp3c.y"
     {printf("listblockB\n");;}
     break;
 
   case 54:
 
 /* Line 1455 of yacc.c  */
-#line 170 "latexp3c.y"
+#line 171 "latexp3c.y"
     {printf("entrylistA\n");;}
     break;
 
   case 55:
 
 /* Line 1455 of yacc.c  */
-#line 172 "latexp3c.y"
+#line 173 "latexp3c.y"
     {printf("entrylistB\n");;}
     break;
 
   case 56:
 
 /* Line 1455 of yacc.c  */
-#line 176 "latexp3c.y"
+#line 177 "latexp3c.y"
     {printf("anentryA\n");;}
     break;
 
   case 57:
 
 /* Line 1455 of yacc.c  */
-#line 178 "latexp3c.y"
+#line 179 "latexp3c.y"
     {printf("anentryB\n");;}
     break;
 
   case 58:
 
 /* Line 1455 of yacc.c  */
-#line 182 "latexp3c.y"
+#line 183 "latexp3c.y"
     {printf("entryA\n");;}
     break;
 
   case 59:
 
 /* Line 1455 of yacc.c  */
-#line 184 "latexp3c.y"
+#line 185 "latexp3c.y"
     {printf("entryB\n");;}
     break;
 
   case 71:
 
 /* Line 1455 of yacc.c  */
-#line 211 "latexp3c.y"
+#line 212 "latexp3c.y"
     {
                       generate_sec_header(get_sec_ctr(), (yyvsp[(3) - (4)].trans));
                       incr_sec_ctr();
@@ -1719,7 +1720,7 @@ yyreduce:
   case 72:
 
 /* Line 1455 of yacc.c  */
-#line 216 "latexp3c.y"
+#line 217 "latexp3c.y"
     {
                       generate_subsec_header(get_sec_ctr() -1, get_subsec_ctr(), (yyvsp[(3) - (4)].trans));
                       incr_subsec_ctr();
@@ -1729,7 +1730,7 @@ yyreduce:
   case 73:
 
 /* Line 1455 of yacc.c  */
-#line 223 "latexp3c.y"
+#line 224 "latexp3c.y"
     {
                       set_gen_toc();
                     ;}
@@ -1738,17 +1739,52 @@ yyreduce:
   case 75:
 
 /* Line 1455 of yacc.c  */
-#line 233 "latexp3c.y"
+#line 234 "latexp3c.y"
     {
-                      set_page_style((yyvsp[(2) - (2)].val));
-                      fprintf(stdout, "PAGENUMBER %d\n", (yyvsp[(2) - (2)].val));
+                      /* set_page_style($2); */
+                      /* fprintf(stdout, "PAGENUMBER %d\n", $2); */
                     ;}
+    break;
+
+  case 76:
+
+/* Line 1455 of yacc.c  */
+#line 240 "latexp3c.y"
+    { set_page_style(ARABIC2); ;}
+    break;
+
+  case 77:
+
+/* Line 1455 of yacc.c  */
+#line 241 "latexp3c.y"
+    { set_page_style(LROMAN2); ;}
+    break;
+
+  case 78:
+
+/* Line 1455 of yacc.c  */
+#line 242 "latexp3c.y"
+    { set_page_style(CROMAN2); ;}
+    break;
+
+  case 79:
+
+/* Line 1455 of yacc.c  */
+#line 243 "latexp3c.y"
+    { set_page_style(LALPH2); ;}
+    break;
+
+  case 80:
+
+/* Line 1455 of yacc.c  */
+#line 244 "latexp3c.y"
+    { set_page_style(CALPH2); ;}
     break;
 
   case 81:
 
 /* Line 1455 of yacc.c  */
-#line 247 "latexp3c.y"
+#line 248 "latexp3c.y"
     {
 		      
                       set_page_no(yytext[0]);
@@ -1758,7 +1794,7 @@ yyreduce:
   case 88:
 
 /* Line 1455 of yacc.c  */
-#line 262 "latexp3c.y"
+#line 263 "latexp3c.y"
     {                      
                         generate_spacing(VSPACE, yytext);
                     ;}
@@ -1767,7 +1803,7 @@ yyreduce:
   case 90:
 
 /* Line 1455 of yacc.c  */
-#line 267 "latexp3c.y"
+#line 268 "latexp3c.y"
     {
                         generate_spacing(HSPACE, yytext);
                     ;}
@@ -1776,21 +1812,21 @@ yyreduce:
   case 92:
 
 /* Line 1455 of yacc.c  */
-#line 274 "latexp3c.y"
+#line 275 "latexp3c.y"
     { set_font(RM); ;}
     break;
 
   case 93:
 
 /* Line 1455 of yacc.c  */
-#line 275 "latexp3c.y"
+#line 276 "latexp3c.y"
     { set_font(IT); ;}
     break;
 
 
 
 /* Line 1455 of yacc.c  */
-#line 1794 "latexp3c.tab.c"
+#line 1830 "latexp3c.tab.c"
       default: break;
     }
   YY_SYMBOL_PRINT ("-> $$ =", yyr1[yyn], &yyval, &yyloc);
@@ -2002,7 +2038,7 @@ yyreturn:
 
 
 /* Line 1675 of yacc.c  */
-#line 288 "latexp3c.y"
+#line 289 "latexp3c.y"
 
 
 yyerror(){}

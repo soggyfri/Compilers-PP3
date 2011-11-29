@@ -10,6 +10,7 @@ int ws_flag = 0;
 #include "lex.yy.c"
 #include "util.c"
 #include "generate.c"
+#include "styleroutines.c"
 
 %}
 %defines
@@ -231,16 +232,16 @@ linespacing      :  RENEW  LCURLYB  BASELINES  RCURLYB
 
 pagenumbers      :  PAGENUM  style2
                     {
-                      set_page_style($2);
-                      fprintf(stdout, "PAGENUMBER %d\n", $2);
+                      /* set_page_style($2); */
+                      /* fprintf(stdout, "PAGENUMBER %d\n", $2); */
                     }
                  ;
 
-style2           :  ARABIC2 
-                 |  LROMAN2 
-                 |  CROMAN2 
-                 |  LALPH2
-                 |  CALPH2
+style2           :  ARABIC2 { set_page_style(ARABIC2); }
+                 |  LROMAN2 { set_page_style(LROMAN2); }
+                 |  CROMAN2 { set_page_style(CROMAN2); }
+                 |  LALPH2  { set_page_style(LALPH2); }
+                 |  CALPH2  { set_page_style(CALPH2); }
                  ;
 
 pagenuminit      :  style1  LCURLYB  WORD  

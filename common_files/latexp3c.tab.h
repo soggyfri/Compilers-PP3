@@ -99,7 +99,7 @@ typedef union YYSTYPE
 {
 
 /* Line 1676 of yacc.c  */
-#line 18 "latexp3c.y"
+#line 19 "latexp3c.y"
 
       char   trans[BUF_SIZE+1];
       int    val;

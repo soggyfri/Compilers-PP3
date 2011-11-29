@@ -11,7 +11,7 @@ init_output_page()
 
 void  generate_sec_header(int i,char* s)
 {
-    if(P_DEBUG) fprintf(stdout, "DEBUG: generate_sec_header\n");
+    /* if(P_DEBUG) fprintf(stdout, "DEBUG: generate_sec_header\n"); */
     fprintf(fpout, "\n\n%d %s\n\n", i, s);
     int k;
     for(k=0; k<4; k++)
@@ -19,7 +19,7 @@ void  generate_sec_header(int i,char* s)
     fflush(fpout);
 
 	if (get_gen_toc() == TOC_ON){
-      if(P_DEBUG) fprintf(stdout, "DEBUG: PRINT TOC TO FILE!!\n");
+      /* if(P_DEBUG) fprintf(stdout, "DEBUG: PRINT TOC TO FILE!!\n"); */
    		fprintf(fptoc, "\n%d %s ---------- PAGE %d\n", 
                             i, s, get_page_no());
       fflush(fptoc);
@@ -28,7 +28,7 @@ void  generate_sec_header(int i,char* s)
 
 void  generate_subsec_header(int i, int j, char *s)
 {
-    if(P_DEBUG) fprintf(stdout, "DEBUG: generate_subsec_header\n");
+    /* if(P_DEBUG) fprintf(stdout, "DEBUG: generate_subsec_header\n"); */
     fprintf(fpout, "\n\n%d.%d %s\n\n", i, j, s);
     int k;
     for(k=0; k<4; k++)
@@ -110,6 +110,6 @@ void print_hor_space(int spacing)
 void debug_print(char *s)
 {
     fprintf(stdout, "---------DEBUG PRINT----------\n");
-    fprintf(stdout, "%s\n", s);
+    fprintf(stdout, "%s\n", s); //TODO: printing wrong because int to string convertion?
     fprintf(stdout, "---------DEBUG PRINT----------\n");
 }

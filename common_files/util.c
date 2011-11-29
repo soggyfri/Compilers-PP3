@@ -26,9 +26,12 @@ void  incr_lines_so_far()
     lines_so_far++;
     if(lines_so_far > LINES_PER_PAGE*get_page_no())
         {
-            if(get_page_no() > 0)
-                fprintf(fpout, "\n\n\n\nPUT PAGE NUMBER HERE!!!!!!!\n\n");         
-
+            if(get_page_no() > 0) 
+                {                    
+                    /* fprintf(fpout, "\n\n\n\nPUT PAGE NUMBER HERE!!!!!!!\n\n");          */
+                    printPageNumber();                    
+                }
+            
             int discard = inc_page_no();
         }
 }
