@@ -12,6 +12,8 @@ char  line[OUT_WIDTH + 1];
 int   lines_so_far;
 int   total_pages;
 char  tempBuf[BUF_SIZE + 1];
+int char_count;
+
 
 void  init_lines_so_far()
 {

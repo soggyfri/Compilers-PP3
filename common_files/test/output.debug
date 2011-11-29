@@ -428,17 +428,74 @@ Reducing stack by rule 9 (line 66):
 -> $$ = nterm textoption ()
 Stack now 0 3 28
 Entering state 30
+Reading a token: Next token is token HSPACE ()
+Reducing stack by rule 6 (line 53):
+   $1 = nterm textoption ()
+-> $$ = nterm mainoption ()
+Stack now 0 3 28
+Entering state 73
+Reducing stack by rule 4 (line 49):
+   $1 = nterm mainbody ()
+   $2 = nterm mainoption ()
+-> $$ = nterm mainbody ()
+Stack now 0 3
+Entering state 28
+Next token is token HSPACE ()
+Shifting token HSPACE ()
+Entering state 23
+Reading a token: Next token is token LCURLYB ()
+Shifting token LCURLYB ()
+Entering state 69
+Reading a token: Next token is token WORD ()
+Shifting token WORD ()
+Entering state 96
+Reducing stack by rule 89 (line 267):
+-> $$ = nterm $@3 ()
+Stack now 0 3 28 23 69 96
+Entering state 123
+Reading a token: Next token is token RCURLYB ()
+Shifting token RCURLYB ()
+Entering state 141
+Reducing stack by rule 90 (line 266):
+   $1 = token HSPACE ()
+   $2 = token LCURLYB ()
+   $3 = token WORD ()
+   $4 = nterm $@3 ()
+   $5 = token RCURLYB ()
+-> $$ = nterm spacing ()
+Stack now 0 3 28
+Entering state 42
+Reducing stack by rule 24 (line 119):
+   $1 = nterm spacing ()
+-> $$ = nterm backsoptions ()
+Stack now 0 3 28
+Entering state 34
+Reducing stack by rule 14 (line 97):
+   $1 = nterm backsoptions ()
+-> $$ = nterm latexoptions ()
+Stack now 0 3 28
+Entering state 33
+Reducing stack by rule 8 (line 63):
+   $1 = nterm latexoptions ()
+-> $$ = nterm mainoption ()
+Stack now 0 3 28
+Entering state 73
+Reducing stack by rule 4 (line 49):
+   $1 = nterm mainbody ()
+   $2 = nterm mainoption ()
+-> $$ = nterm mainbody ()
+Stack now 0 3
+Entering state 28
 Reading a token: Next token is token WORD ()
 Shifting token WORD ()
 Entering state 9
 Reducing stack by rule 12 (line 83):
    $1 = token WORD ()
 -> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 66):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
+Stack now 0 3 28
+Entering state 31
+Reducing stack by rule 10 (line 72):
+   $1 = nterm wsorword ()
 -> $$ = nterm textoption ()
 Stack now 0 3 28
 Entering state 30
