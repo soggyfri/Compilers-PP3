@@ -8,8 +8,9 @@
 
 This is an example of text that would be transformed into a paragraph in
 latex.  Blank lines between text in the input cause a new paragraph to be 
-generated.  
+generated.
 
+\noindent
 When the blank line occurs after a section, no indentation of the paragraph
 is performed.  However, all other blanks, would result in a five space 
 indent of the paragraph.

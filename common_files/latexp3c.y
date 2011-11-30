@@ -131,7 +131,7 @@ beginendopts     :  LBEGIN  begcmds  beginblock  endbegin
 
 begcmds          :  CENTER  
                  |  VERBATIM  {ws_flag=1;}
-                 |  SINGLE    { print_newline(); set_single_line_spacing(1);}
+                 |  SINGLE    { print_newline();print_newline(); set_single_line_spacing(1);}
                  |  ITEMIZE  
                  |  ENUMERATE 
                  |  TABLE  begtableopts
@@ -144,7 +144,7 @@ endbegin         :  END  endcmds
 
 endcmds          :  CENTER  
                  |  VERBATIM  {ws_flag=0;}
-                 |  SINGLE  { print_newline();set_line_spacing( restore_line_spacing());}
+                 |  SINGLE  { print_newline();print_newline(); set_line_spacing( restore_line_spacing());}
                  |  ITEMIZE  
                  |  ENUMERATE 
                  |  TABULAR
@@ -288,7 +288,7 @@ specialchar      :  SPECCHAR
                  |  RCURLYB
                  ;
 
-nonewpara        :  NOINDENT { no_indent = 1; }
+nonewpara        :  NOINDENT { no_indent = 1; debug_print("NO INDENT-DEBUG PRINT-Y");}
                  ;
 
 reference        :  REF  LCURLYB  WORD  RCURLYB

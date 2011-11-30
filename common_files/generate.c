@@ -50,27 +50,24 @@ void generate_formatted_text(char *s)
     int slen = strlen(s);
     int i;
     fprintf(stdout, "START GEN_FOR_TEXT (%s)\n", s);
-    
     if(no_indent == 1)
         {
-            no_indent = 0;         
+            no_indent = 0;
         }
     else
-        {            
+        {                            
             fprintf(fpout, "     ");
             char_count += char_count + 5;
         }
 
+
     for(i=0; i <=slen;)
-        {
-            /* if(s[i] == '\n' && s[i-1] == ' ') */
-            /*     { */
-            /*         fprintf(stdout, "\n\nDEBUG! FOUND PARAGRAPH BREAK!!\n\n"); */
-            /*     } */
+        {            
+           
             if(char_count < OUT_WIDTH)
                 {
                     if(isprint(s[i])) fprintf(fpout, "%c", s[i]);
-                    /* if(P_DEBUG) fprintf(stdout, "Char Cound: %d\n", char_count); */
+                    if(P_DEBUG) fprintf(stdout, "Char Cound: %d\n", char_count);
                     i++;
                     char_count++;
                 }
@@ -83,6 +80,14 @@ void generate_formatted_text(char *s)
                     i++;
                     char_count++;
                     /* if(P_DEBUG) fprintf(stdout, "%c", s[i]); */
+                }
+
+             if(s[i] == '\n' && s[i-1] == '\n' & i > 1)
+                {
+                    fprintf(stdout, "\n\nPARA_BREAK! \n\n");
+                    print_newline(); print_newline();
+                    char_count = 0;
+                                        
                 }
         }
     // print_newline(); //Paragraph seperator for next chunk of text

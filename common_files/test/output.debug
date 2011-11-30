@@ -1,1521 +1,643 @@
-Starting parse
-Entering state 0
-Reading a token: Next token is token LBEGIN ()
-Shifting token LBEGIN ()
-Entering state 1
-Reading a token: Next token is token DOCUMENT ()
-Shifting token DOCUMENT ()
-Entering state 4
-Reducing stack by rule 2 (line 44):
-   $1 = token LBEGIN ()
-   $2 = token DOCUMENT ()
--> $$ = nterm startdoc ()
-Stack now 0
-Entering state 3
-Reading a token: Next token is token PAGENUM ()
-Shifting token PAGENUM ()
-Entering state 16
-Reading a token: Next token is token LROMAN2 ()
-Shifting token LROMAN2 ()
-Entering state 63
-Reducing stack by rule 77 (line 247):
-   $1 = token LROMAN2 ()
--> $$ = nterm style2 ()
-Stack now 0 3 16
-Entering state 67
-Reducing stack by rule 75 (line 239):
-   $1 = token PAGENUM ()
-   $2 = nterm style2 ()
--> $$ = nterm pagenumbers ()
-Stack now 0 3
-Entering state 39
-Reducing stack by rule 22 (line 120):
-   $1 = nterm pagenumbers ()
--> $$ = nterm backsoptions ()
-Stack now 0 3
-Entering state 34
-Reducing stack by rule 14 (line 98):
-   $1 = nterm backsoptions ()
--> $$ = nterm latexoptions ()
-Stack now 0 3
-Entering state 33
-Reducing stack by rule 8 (line 64):
-   $1 = nterm latexoptions ()
--> $$ = nterm mainoption ()
-Stack now 0 3
-Entering state 29
-Reducing stack by rule 5 (line 51):
-   $1 = nterm mainoption ()
--> $$ = nterm mainbody ()
-Stack now 0 3
-Entering state 28
-Reading a token: Next token is token LROMAN1 ()
-Shifting token LROMAN1 ()
-Entering state 18
-Reducing stack by rule 84 (line 263):
-   $1 = token LROMAN1 ()
--> $$ = nterm style1 ()
-Stack now 0 3 28
-Entering state 41
-Reading a token: Next token is token LCURLYB ()
-Shifting token LCURLYB ()
-Entering state 75
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 99
-Reducing stack by rule 81 (line 254):
--> $$ = nterm $@2 ()
-Stack now 0 3 28 41 75 99
-Entering state 125
-Reading a token: Next token is token RCURLYB ()
-Shifting token RCURLYB ()
-Entering state 142
-Reducing stack by rule 82 (line 253):
-   $1 = nterm style1 ()
-   $2 = token LCURLYB ()
-   $3 = token WORD ()
-   $4 = nterm $@2 ()
-   $5 = token RCURLYB ()
--> $$ = nterm pagenuminit ()
-Stack now 0 3 28
-Entering state 40
-Reducing stack by rule 23 (line 121):
-   $1 = nterm pagenuminit ()
--> $$ = nterm backsoptions ()
-Stack now 0 3 28
-Entering state 34
-Reducing stack by rule 14 (line 98):
-   $1 = nterm backsoptions ()
--> $$ = nterm latexoptions ()
-Stack now 0 3 28
-Entering state 33
-Reducing stack by rule 8 (line 64):
-   $1 = nterm latexoptions ()
--> $$ = nterm mainoption ()
-Stack now 0 3 28
-Entering state 73
-Reducing stack by rule 4 (line 50):
-   $1 = nterm mainbody ()
-   $2 = nterm mainoption ()
--> $$ = nterm mainbody ()
-Stack now 0 3
-Entering state 28
-Reading a token: Next token is token RENEW ()
-Shifting token RENEW ()
-Entering state 15
-Reading a token: Next token is token LCURLYB ()
-Shifting token LCURLYB ()
-Entering state 61
-Reading a token: Next token is token BASELINES ()
-Shifting token BASELINES ()
-Entering state 94
-Reading a token: Next token is token RCURLYB ()
-Shifting token RCURLYB ()
-Entering state 121
-Reading a token: Next token is token LCURLYB ()
-Shifting token LCURLYB ()
-Entering state 139
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 145
-Reducing stack by rule 73 (line 233):
--> $$ = nterm $@1 ()
-Stack now 0 3 28 15 61 94 121 139 145
-Entering state 148
-Reading a token: Next token is token RCURLYB ()
-Shifting token RCURLYB ()
-Entering state 153
-Reducing stack by rule 74 (line 231):
-   $1 = token RENEW ()
-   $2 = token LCURLYB ()
-   $3 = token BASELINES ()
-   $4 = token RCURLYB ()
-   $5 = token LCURLYB ()
-   $6 = token WORD ()
-   $7 = nterm $@1 ()
-   $8 = token RCURLYB ()
--> $$ = nterm linespacing ()
-Stack now 0 3 28
-Entering state 38
-Reducing stack by rule 21 (line 119):
-   $1 = nterm linespacing ()
--> $$ = nterm backsoptions ()
-Stack now 0 3 28
-Entering state 34
-Reducing stack by rule 14 (line 98):
-   $1 = nterm backsoptions ()
--> $$ = nterm latexoptions ()
-Stack now 0 3 28
-Entering state 33
-Reducing stack by rule 8 (line 64):
-   $1 = nterm latexoptions ()
--> $$ = nterm mainoption ()
-Stack now 0 3 28
-Entering state 73
-Reducing stack by rule 4 (line 50):
-   $1 = nterm mainbody ()
-   $2 = nterm mainoption ()
--> $$ = nterm mainbody ()
-Stack now 0 3
-Entering state 28
-Reading a token: Next token is token TABOCON ()
-Shifting token TABOCON ()
-Entering state 14
-Reducing stack by rule 72 (line 225):
-   $1 = token TABOCON ()
--> $$ = nterm tableofcont ()
-Stack now 0 3 28
-Entering state 37
-Reducing stack by rule 20 (line 118):
-   $1 = nterm tableofcont ()
--> $$ = nterm backsoptions ()
-Stack now 0 3 28
-Entering state 34
-Reducing stack by rule 14 (line 98):
-   $1 = nterm backsoptions ()
--> $$ = nterm latexoptions ()
-Stack now 0 3 28
-Entering state 33
-Reducing stack by rule 8 (line 64):
-   $1 = nterm latexoptions ()
--> $$ = nterm mainoption ()
-Stack now 0 3 28
-Entering state 73
-Reducing stack by rule 4 (line 50):
-   $1 = nterm mainbody ()
-   $2 = nterm mainoption ()
--> $$ = nterm mainbody ()
-Stack now 0 3
-Entering state 28
-Reading a token: Next token is token NOINDENT ()
-Shifting token NOINDENT ()
-Entering state 26
-Reducing stack by rule 97 (line 291):
-   $1 = token NOINDENT ()
--> $$ = nterm nonewpara ()
-Stack now 0 3 28
-Entering state 45
-Reducing stack by rule 27 (line 125):
-   $1 = nterm nonewpara ()
--> $$ = nterm backsoptions ()
-Stack now 0 3 28
-Entering state 34
-Reducing stack by rule 14 (line 98):
-   $1 = nterm backsoptions ()
--> $$ = nterm latexoptions ()
-Stack now 0 3 28
-Entering state 33
-Reducing stack by rule 8 (line 64):
-   $1 = nterm latexoptions ()
--> $$ = nterm mainoption ()
-Stack now 0 3 28
-Entering state 73
-Reducing stack by rule 4 (line 50):
-   $1 = nterm mainbody ()
-   $2 = nterm mainoption ()
--> $$ = nterm mainbody ()
-Stack now 0 3
-Entering state 28
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28
-Entering state 31
-Reducing stack by rule 10 (line 73):
-   $1 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token LBEGIN ()
-Reducing stack by rule 6 (line 54):
-   $1 = nterm textoption ()
--> $$ = nterm mainoption ()
-Stack now 0 3 28
-Entering state 73
-Reducing stack by rule 4 (line 50):
-   $1 = nterm mainbody ()
-   $2 = nterm mainoption ()
--> $$ = nterm mainbody ()
-Stack now 0 3
-Entering state 28
-Next token is token LBEGIN ()
-Shifting token LBEGIN ()
-Entering state 6
-Reading a token: Next token is token SINGLE ()
-Shifting token SINGLE ()
-Entering state 49
-Reducing stack by rule 32 (line 134):
-   $1 = token SINGLE ()
--> $$ = nterm begcmds ()
-Stack now 0 3 28 6
-Entering state 54
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 6 54
-Entering state 31
-Reducing stack by rule 10 (line 73):
-   $1 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28 6 54
-Entering state 81
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 6 54 81
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28 6 54
-Entering state 81
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 6 54 81
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28 6 54
-Entering state 81
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 6 54 81
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28 6 54
-Entering state 81
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 6 54 81
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28 6 54
-Entering state 81
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 6 54 81
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28 6 54
-Entering state 81
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 6 54 81
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28 6 54
-Entering state 81
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 6 54 81
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28 6 54
-Entering state 81
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 6 54 81
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28 6 54
-Entering state 81
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 6 54 81
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28 6 54
-Entering state 81
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 6 54 81
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28 6 54
-Entering state 81
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 6 54 81
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28 6 54
-Entering state 81
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 6 54 81
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28 6 54
-Entering state 81
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 6 54 81
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28 6 54
-Entering state 81
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 6 54 81
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28 6 54
-Entering state 81
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 6 54 81
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28 6 54
-Entering state 81
-Reading a token: Next token is token END ()
-Reducing stack by rule 46 (line 154):
-   $1 = nterm textoption ()
--> $$ = nterm beginblock ()
-Stack now 0 3 28 6 54
-Entering state 83
-Next token is token END ()
-Shifting token END ()
-Entering state 106
-Reading a token: Next token is token SINGLE ()
-Shifting token SINGLE ()
-Entering state 130
-Reducing stack by rule 41 (line 147):
-   $1 = token SINGLE ()
--> $$ = nterm endcmds ()
-Stack now 0 3 28 6 54 83 106
-Entering state 134
-Reducing stack by rule 37 (line 141):
-   $1 = token END ()
-   $2 = nterm endcmds ()
--> $$ = nterm endbegin ()
-Stack now 0 3 28 6 54 83
-Entering state 109
-Reducing stack by rule 29 (line 129):
-   $1 = token LBEGIN ()
-   $2 = nterm begcmds ()
-   $3 = nterm beginblock ()
-   $4 = nterm endbegin ()
--> $$ = nterm beginendopts ()
-Stack now 0 3 28
-Entering state 35
-Reducing stack by rule 18 (line 116):
-   $1 = nterm beginendopts ()
--> $$ = nterm backsoptions ()
-Stack now 0 3 28
-Entering state 34
-Reducing stack by rule 14 (line 98):
-   $1 = nterm backsoptions ()
--> $$ = nterm latexoptions ()
-Stack now 0 3 28
-Entering state 33
-Reducing stack by rule 8 (line 64):
-   $1 = nterm latexoptions ()
--> $$ = nterm mainoption ()
-Stack now 0 3 28
-Entering state 73
-Reducing stack by rule 4 (line 50):
-   $1 = nterm mainbody ()
-   $2 = nterm mainoption ()
--> $$ = nterm mainbody ()
-Stack now 0 3
-Entering state 28
-Reading a token: Next token is token WS ()
-Shifting token WS ()
-Entering state 10
-Reducing stack by rule 11 (line 80):
-   $1 = token WS ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28
-Entering state 31
-Reducing stack by rule 10 (line 73):
-   $1 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token IT ()
-Reducing stack by rule 6 (line 54):
-   $1 = nterm textoption ()
--> $$ = nterm mainoption ()
-Stack now 0 3 28
-Entering state 73
-Reducing stack by rule 4 (line 50):
-   $1 = nterm mainbody ()
-   $2 = nterm mainoption ()
--> $$ = nterm mainbody ()
-Stack now 0 3
-Entering state 28
-Next token is token IT ()
-Shifting token IT ()
-Entering state 25
-Reducing stack by rule 93 (line 283):
-   $1 = token IT ()
--> $$ = nterm fonts ()
-Stack now 0 3 28
-Entering state 43
-Reducing stack by rule 25 (line 123):
-   $1 = nterm fonts ()
--> $$ = nterm backsoptions ()
-Stack now 0 3 28
-Entering state 34
-Reducing stack by rule 14 (line 98):
-   $1 = nterm backsoptions ()
--> $$ = nterm latexoptions ()
-Stack now 0 3 28
-Entering state 33
-Reducing stack by rule 8 (line 64):
-   $1 = nterm latexoptions ()
--> $$ = nterm mainoption ()
-Stack now 0 3 28
-Entering state 73
-Reducing stack by rule 4 (line 50):
-   $1 = nterm mainbody ()
-   $2 = nterm mainoption ()
--> $$ = nterm mainbody ()
-Stack now 0 3
-Entering state 28
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28
-Entering state 31
-Reducing stack by rule 10 (line 73):
-   $1 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WS ()
-Shifting token WS ()
-Entering state 10
-Reducing stack by rule 11 (line 80):
-   $1 = token WS ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token NOINDENT ()
-Reducing stack by rule 6 (line 54):
-   $1 = nterm textoption ()
--> $$ = nterm mainoption ()
-Stack now 0 3 28
-Entering state 73
-Reducing stack by rule 4 (line 50):
-   $1 = nterm mainbody ()
-   $2 = nterm mainoption ()
--> $$ = nterm mainbody ()
-Stack now 0 3
-Entering state 28
-Next token is token NOINDENT ()
-Shifting token NOINDENT ()
-Entering state 26
-Reducing stack by rule 97 (line 291):
-   $1 = token NOINDENT ()
--> $$ = nterm nonewpara ()
-Stack now 0 3 28
-Entering state 45
-Reducing stack by rule 27 (line 125):
-   $1 = nterm nonewpara ()
--> $$ = nterm backsoptions ()
-Stack now 0 3 28
-Entering state 34
-Reducing stack by rule 14 (line 98):
-   $1 = nterm backsoptions ()
--> $$ = nterm latexoptions ()
-Stack now 0 3 28
-Entering state 33
-Reducing stack by rule 8 (line 64):
-   $1 = nterm latexoptions ()
--> $$ = nterm mainoption ()
-Stack now 0 3 28
-Entering state 73
-Reducing stack by rule 4 (line 50):
-   $1 = nterm mainbody ()
-   $2 = nterm mainoption ()
--> $$ = nterm mainbody ()
-Stack now 0 3
-Entering state 28
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28
-Entering state 31
-Reducing stack by rule 10 (line 73):
-   $1 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WS ()
-Shifting token WS ()
-Entering state 10
-Reducing stack by rule 11 (line 80):
-   $1 = token WS ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token SECTION ()
-Reducing stack by rule 6 (line 54):
-   $1 = nterm textoption ()
--> $$ = nterm mainoption ()
-Stack now 0 3 28
-Entering state 73
-Reducing stack by rule 4 (line 50):
-   $1 = nterm mainbody ()
-   $2 = nterm mainoption ()
--> $$ = nterm mainbody ()
-Stack now 0 3
-Entering state 28
-Next token is token SECTION ()
-Shifting token SECTION ()
-Entering state 12
-Reading a token: Next token is token LCURLYB ()
-Shifting token LCURLYB ()
-Entering state 59
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 12 59
-Entering state 31
-Reducing stack by rule 10 (line 73):
-   $1 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28 12 59
-Entering state 92
-Reading a token: Next token is token RCURLYB ()
-Shifting token RCURLYB ()
-Entering state 119
-Reducing stack by rule 70 (line 213):
-   $1 = token SECTION ()
-   $2 = token LCURLYB ()
-   $3 = nterm textoption ()
-   $4 = token RCURLYB ()
--> $$ = nterm sectionoptions ()
-Stack now 0 3 28
-Entering state 36
-Reducing stack by rule 19 (line 117):
-   $1 = nterm sectionoptions ()
--> $$ = nterm backsoptions ()
-Stack now 0 3 28
-Entering state 34
-Reducing stack by rule 14 (line 98):
-   $1 = nterm backsoptions ()
--> $$ = nterm latexoptions ()
-Stack now 0 3 28
-Entering state 33
-Reducing stack by rule 8 (line 64):
-   $1 = nterm latexoptions ()
--> $$ = nterm mainoption ()
-Stack now 0 3 28
-Entering state 73
-Reducing stack by rule 4 (line 50):
-   $1 = nterm mainbody ()
-   $2 = nterm mainoption ()
--> $$ = nterm mainbody ()
-Stack now 0 3
-Entering state 28
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28
-Entering state 31
-Reducing stack by rule 10 (line 73):
-   $1 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token LCURLYB ()
-Reducing stack by rule 6 (line 54):
-   $1 = nterm textoption ()
--> $$ = nterm mainoption ()
-Stack now 0 3 28
-Entering state 73
-Reducing stack by rule 4 (line 50):
-   $1 = nterm mainbody ()
-   $2 = nterm mainoption ()
--> $$ = nterm mainbody ()
-Stack now 0 3
-Entering state 28
-Next token is token LCURLYB ()
-Shifting token LCURLYB ()
-Entering state 7
-Reading a token: Next token is token IT ()
-Shifting token IT ()
-Entering state 56
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 7 56
-Entering state 31
-Reducing stack by rule 10 (line 73):
-   $1 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28 7 56
-Entering state 90
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 7 56 90
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28 7 56
-Entering state 90
-Reading a token: Next token is token RCURLYB ()
-Reducing stack by rule 17 (line 108):
-   $1 = token IT ()
-   $2 = nterm textoption ()
--> $$ = nterm curlyboptions ()
-Stack now 0 3 28 7
-Entering state 57
-Next token is token RCURLYB ()
-Shifting token RCURLYB ()
-Entering state 91
-Reducing stack by rule 15 (line 99):
-   $1 = token LCURLYB ()
-   $2 = nterm curlyboptions ()
-   $3 = token RCURLYB ()
--> $$ = nterm latexoptions ()
-Stack now 0 3 28
-Entering state 33
-Reducing stack by rule 8 (line 64):
-   $1 = nterm latexoptions ()
--> $$ = nterm mainoption ()
-Stack now 0 3 28
-Entering state 73
-Reducing stack by rule 4 (line 50):
-   $1 = nterm mainbody ()
-   $2 = nterm mainoption ()
--> $$ = nterm mainbody ()
-Stack now 0 3
-Entering state 28
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28
-Entering state 31
-Reducing stack by rule 10 (line 73):
-   $1 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token WORD ()
-Shifting token WORD ()
-Entering state 9
-Reducing stack by rule 12 (line 84):
-   $1 = token WORD ()
--> $$ = nterm wsorword ()
-Stack now 0 3 28 30
-Entering state 74
-Reducing stack by rule 9 (line 67):
-   $1 = nterm textoption ()
-   $2 = nterm wsorword ()
--> $$ = nterm textoption ()
-Stack now 0 3 28
-Entering state 30
-Reading a token: Next token is token END ()
-Reducing stack by rule 6 (line 54):
-   $1 = nterm textoption ()
--> $$ = nterm mainoption ()
-Stack now 0 3 28
-Entering state 73
-Reducing stack by rule 4 (line 50):
-   $1 = nterm mainbody ()
-   $2 = nterm mainoption ()
--> $$ = nterm mainbody ()
-Stack now 0 3
-Entering state 28
-Next token is token END ()
-Shifting token END ()
-Entering state 71
-Reading a token: Next token is token DOCUMENT ()
-Shifting token DOCUMENT ()
-Entering state 98
-Reducing stack by rule 3 (line 47):
-   $1 = token END ()
-   $2 = token DOCUMENT ()
--> $$ = nterm enddoc ()
-Stack now 0 3 28
-Entering state 72
-Reducing stack by rule 1 (line 41):
-   $1 = nterm startdoc ()
-   $2 = nterm mainbody ()
-   $3 = nterm enddoc ()
--> $$ = nterm latexstatement ()
-Stack now 0
-Entering state 2
-Reading a token: Now at end of input.
-Shifting token $end ()
-Entering state 5
-Stack now 0 2 5
-Cleanup: popping token $end ()
-Cleanup: popping nterm latexstatement ()
+ \begin 
+ {document} 
+ \pagenumbering 
+ {roman} 
+ \roman 
+ { 
+ 1 
+ } 
+ws-- 
+--ws
+ \renewcommand 
+ { 
+ \baselinestretch 
+ } 
+ { 
+ 2 
+LINE SPACING = 2
+ } 
+ \tableofcontents 
+ws--     
+
+--ws
+ \noindent 
+---------DEBUG PRINT----------
+NO INDENT-DEBUG PRINT-Y
+---------DEBUG PRINT----------
+ This 
+ws-- --ws
+ is 
+ws-- --ws
+ an 
+ws-- --ws
+ example 
+ws-- --ws
+ with 
+ws-- --ws
+ hopefully 
+ws-- --ws
+ multiple 
+ws-- --ws
+ lines, 
+ws-- 
+--ws
+ so 
+ws-- --ws
+ that 
+ws-- --ws
+ we 
+ws-- --ws
+ can 
+ws-- --ws
+ see 
+ws-- --ws
+ that 
+ws-- --ws
+ single 
+ws-- --ws
+ block 
+ws-- --ws
+ works!!! 
+ws--
+
+--ws
+ \begin 
+START GEN_FOR_TEXT (This is an example with hopefully multiple lines, so that we can see that single block works!!! 
+
+)
+Char Cound: 0
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+
+
+PARA_BREAK! 
+
+Char Cound: 0
+Char Cound: 1
+ {single} 
+SINGLE LINE SPACING = 1
+ A 
+ws-- --ws
+ text 
+ws-- --ws
+ processor 
+ws-- --ws
+ is 
+ws-- --ws
+ a 
+ws-- --ws
+ very 
+ws-- --ws
+ useful 
+ws--  --ws
+ tool, 
+ws-- --ws
+ since 
+ws-- --ws
+ it 
+ws-- --ws
+ allows 
+ws-- --ws
+ us 
+ws-- --ws
+ to 
+ develop 
+ws-- --ws
+ formatted 
+ws-- --ws
+ documents 
+ws-- 
+--ws
+ \end 
+START GEN_FOR_TEXT (A text processor is a very useful tool, since it allows us to develop formatted documents)
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+ {single} 
+LINE SPACING = 2
+ws--
+
+--ws
+ \it 
+START GEN_FOR_TEXT (
+
+)
+Char Cound: 1
+Char Cound: 2
+START GEN_FOR_TEXT ( <IT> )
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+ This 
+ws-- --ws
+ font 
+ws-- --ws
+ should 
+ws-- --ws
+ be 
+ws-- --ws
+ in 
+ws-- --ws
+ italics, 
+ws-- --ws
+ and 
+ws-- --ws
+ the 
+ws-- --ws
+ paragraph 
+ws-- --ws
+ should 
+ws-- --ws
+ have 
+ indents 
+ws-- --ws
+ in 
+ws-- --ws
+ it. 
+ws-- --ws
+ But 
+ws-- --ws
+ the 
+ws-- --ws
+ next 
+ws-- --ws
+ one 
+ws-- --ws
+ should 
+ws-- --ws
+ not! 
+ws--
+
+--ws
+ \noindent 
+START GEN_FOR_TEXT (This font should be in italics, and the paragraph should have indents in it. But the next one should not! 
+
+)
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+
+
+PARA_BREAK! 
+
+Char Cound: 0
+Char Cound: 1
+---------DEBUG PRINT----------
+NO INDENT-DEBUG PRINT-Y
+---------DEBUG PRINT----------
+ This 
+ws-- --ws
+ paragraph 
+ws-- --ws
+ should 
+ws-- --ws
+ not 
+ws-- --ws
+ have 
+ws-- --ws
+ an 
+ws-- --ws
+ indent 
+ws-- --ws
+ in 
+ws-- --ws
+ it!!! 
+ws--
+
+--ws
+ \section 
+START GEN_FOR_TEXT (This paragraph should not have an indent in it!!! 
+
+)
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+
+
+PARA_BREAK! 
+
+Char Cound: 0
+Char Cound: 1
+ { 
+ Introduction 
+ } 
+i This 
+ws-- --ws
+ is 
+ws-- --ws
+ { 
+START GEN_FOR_TEXT (This is)
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+ \it 
+ws-- --ws
+ after 
+ws-- --ws
+ the 
+ws-- --ws
+ } 
+START GEN_FOR_TEXT ( <IT>)
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+START GEN_FOR_TEXT (after the)
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+START GEN_FOR_TEXT (</IT> )
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+ws-- --ws
+ big 
+ws-- --ws
+ vertical 
+ws-- --ws
+ space 
+ws--
+
+
+--ws
+ \end 
+START GEN_FOR_TEXT (big vertical space)
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+ {document} 
+START GEN_FOR_TEXT ( </IT> )
+
+
+
+
+PUT PAGE NUMBER HERE!!!!!!!
+
+iChar Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
