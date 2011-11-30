@@ -16,6 +16,7 @@ char  tempBuf[BUF_SIZE + 1];
 int char_count;
 
 int starting_page_number;
+int oldLineSpace = 0;
 
 
 void  init_lines_so_far()
@@ -160,6 +161,13 @@ void set_line_spacing(int space)
     DST.line_spacing = space;    
 }
 
+void set_single_line_spacing(int space)
+{
+    if(P_DEBUG) fprintf(stdout, "SINGLE LINE SPACING = %d\n", space);
+    oldLineSpace = get_line_spacing();    
+    DST.line_spacing = space;    
+}
+
 int get_line_spacing()
 {
     return DST.line_spacing;
@@ -172,3 +180,7 @@ void print_newline()
     incr_lines_so_far();    
 }
 
+int restore_line_spacing()
+{
+    return oldLineSpace;    
+}

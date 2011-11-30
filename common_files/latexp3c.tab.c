@@ -1629,7 +1629,7 @@ yyreduce:
 
 /* Line 1455 of yacc.c  */
 #line 134 "latexp3c.y"
-    { print_newline(); set_line_spacing(1);;}
+    { print_newline(); set_single_line_spacing(1);;}
     break;
 
   case 41:
@@ -1643,7 +1643,7 @@ yyreduce:
 
 /* Line 1455 of yacc.c  */
 #line 147 "latexp3c.y"
-    { print_newline();set_line_spacing(2);;}
+    { print_newline();set_line_spacing( restore_line_spacing());;}
     break;
 
   case 47:
