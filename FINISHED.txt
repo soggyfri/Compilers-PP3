@@ -8,7 +8,7 @@ WORK ON--
 
 Right Justification - alex 
 Paragraph/No indent - fri
-begin/end single blocks - alex
+begin/end single blocks - fri
 
 Unfinished-----
 

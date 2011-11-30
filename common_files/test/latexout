@@ -12,12 +12,20 @@ erformed. However, all other blanks, wou
 ld result in a five space indent of the 
 paragraph. 
 
+DEBUG! FOUND PARAGRAPH BREAK!!
+
+
+
 1.1 A Text Processor
 
  A text processor is a v
 ery useful tool, since it allows us to d
 evelop formatted documents that are easy
  to read. 
+
+DEBUG! FOUND PARAGRAPH BREAK!!
+
+
 
 1.2 Legal Latex Commands
 
@@ -29,6 +37,10 @@ er to mean itself, and override its Late
 x interpretation. For example, to use cu
 rly braces, we employ the backslash a se
 t of integers. 
+
+DEBUG! FOUND PARAGRAPH BREAK!!
+
+
 
 2 Using Latex
 

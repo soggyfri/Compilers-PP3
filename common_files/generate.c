@@ -52,7 +52,10 @@ void generate_formatted_text(char *s)
 
     for(i=0; i <=slen;)
         {
-            /* if(s[i]) */
+            /* if(s[i] == '\n' && s[i-1] == ' ') */
+            /*     { */
+            /*         fprintf(stdout, "\n\nDEBUG! FOUND PARAGRAPH BREAK!!\n\n"); */
+            /*     } */
             if(char_count < OUT_WIDTH)
                 {
                     if(isprint(s[i])) fprintf(fpout, "%c", s[i]);
