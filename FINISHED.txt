@@ -4,11 +4,11 @@ Page Number/Styles -alex
 Italics/ Roman -fri
 Line spacing/Single-Double-Tripple - fri
 
-WORK ON--
-
-Right Justification - alex 
-Paragraph/No indent - fri/alex
 begin/end single blocks - fri (test it!!)
 
-Unfinished-----
+WORK ON--
+Right Justification - alex 
+Paragraph/No indent - fri/alex
+
+
 
