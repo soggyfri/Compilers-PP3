@@ -52,6 +52,7 @@ void generate_formatted_text(char *s)
 
     for(i=0; i <=slen;)
         {
+            /* if(s[i]) */
             if(char_count < OUT_WIDTH)
                 {
                     if(isprint(s[i])) fprintf(fpout, "%c", s[i]);
