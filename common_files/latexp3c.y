@@ -35,7 +35,7 @@ int ws_flag = 0;
 %token  NEWLINE
 
 %type <trans> textoption  wsorword
-%type <val> style2 ARABIC2 LROMAN2 CROMAN2 LALPH2 CALPH2
+%type <val> style2 ARABIC2 LROMAN2 CROMAN2 LALPH2 CALPH2 
 
 %%
 latexstatement   :  startdoc  mainbody  enddoc
@@ -229,7 +229,11 @@ tableofcont      :  TABOCON
                  ;
 
 linespacing      :  RENEW  LCURLYB  BASELINES  RCURLYB
-                            LCURLYB  WORD  RCURLYB
+                            LCURLYB  WORD  
+                        {
+                            set_line_spacing(atoi(yytext));   
+                        }
+                        RCURLYB
                  ;
 
 pagenumbers      :  PAGENUM  style2
@@ -299,9 +303,9 @@ yydebug = 1;
 fpout = fopen("test/latexout","w");
 fptoc = fopen("test/latextoc","w");
 init_lines_so_far();
-init_sec_ctr();
 init_output_page();
- init_font_style();
+
+ init_DST();
 
 yyparse();
 

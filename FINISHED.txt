@@ -6,10 +6,9 @@ Italics/ Roman -fri
 
 WORK ON--
 Line spacing/Single-Double-Tripple - fri
-Right Justification -alex 
+Right Justification - alex 
+Paragraph/No indent - fri
 
 
 Unfinished-----
-
-Paragraph/No indent
 begin/end single blocks

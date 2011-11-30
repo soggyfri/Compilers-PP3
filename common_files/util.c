@@ -63,17 +63,14 @@ struct  doc_symtab
 
 struct  doc_symtab  DST;
 
-void  init_sec_ctr()
+void init_DST()
 {
-  DST.section_counter = 1;
-  DST.subsect_counter = 1;
-}
-
-void init_font_style()
-{
+    DST.line_spacing = 1;
     DST.current_font = 0;
+    DST.section_counter = 1;
+    DST.subsect_counter = 1;
+    
 }
-
 
 void  incr_sec_ctr()
 {
@@ -155,3 +152,16 @@ int get_font()
 {
     return DST.current_font;
 }
+
+void set_line_spacing(int space)
+{
+    if(P_DEBUG) fprintf(stdout, "LINE SPACING = %d\n", space);
+    
+    DST.line_spacing = space;    
+}
+
+int get_line_spacing()
+{
+    return DST.line_spacing;
+}
+

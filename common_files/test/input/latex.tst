@@ -1,7 +1,7 @@
 \begin{document}
 \pagenumbering{Roman}
 \Roman{4} 
-\renewcommand{\baselinestretch}{2}
+\renewcommand{\baselinestretch}{1}
 \tableofcontents     
 
 \section{Introduction}
