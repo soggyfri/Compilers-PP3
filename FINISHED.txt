@@ -3,12 +3,29 @@ Horizontal/Vertical Spacing - fri
 Page Number/Styles -alex
 Italics/ Roman -fri
 Line spacing/Single-Double-Tripple - fri
-
 begin/end single blocks - fri (test it!!)
 
 WORK ON--
 Right Justification - alex 
 Paragraph/No indent - fri/alex
+
+
+
+
+ADVANCED TEXT PROCESSING!!
+
+
+
+TODO:
+Itemize
+Enumerate
+Center
+Verbatim
+Tabular
+Table 
+
+Combination of blocks
+
 
 
 
