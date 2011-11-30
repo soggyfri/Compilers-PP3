@@ -2,6 +2,8 @@
 
 #include "prototypes.h"
 
+int no_indent = 0;
+
 init_output_page()
 {
 	/* fprintf(fpout, "\n\n\n\n\n"); */
@@ -48,7 +50,16 @@ void generate_formatted_text(char *s)
     int slen = strlen(s);
     int i;
     fprintf(stdout, "START GEN_FOR_TEXT (%s)\n", s);
-    /* fprintf(fpout, "\n"); */
+    
+    if(no_indent == 1)
+        {
+            no_indent = 0;         
+        }
+    else
+        {            
+            fprintf(fpout, "     ");
+            char_count += char_count + 5;
+        }
 
     for(i=0; i <=slen;)
         {
@@ -74,7 +85,8 @@ void generate_formatted_text(char *s)
                     /* if(P_DEBUG) fprintf(stdout, "%c", s[i]); */
                 }
         }
-    /* fprintf(fpout, "\n"); */
+    // print_newline(); //Paragraph seperator for next chunk of text
+
 }
 
 void print_line_spacing()

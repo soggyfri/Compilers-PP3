@@ -1849,10 +1849,17 @@ yyreduce:
     { set_font(IT); ;}
     break;
 
+  case 98:
+
+/* Line 1455 of yacc.c  */
+#line 291 "latexp3c.y"
+    { no_indent = 1; ;}
+    break;
+
 
 
 /* Line 1455 of yacc.c  */
-#line 1856 "latexp3c.tab.c"
+#line 1863 "latexp3c.tab.c"
       default: break;
     }
   YY_SYMBOL_PRINT ("-> $$ =", yyr1[yyn], &yyval, &yyloc);

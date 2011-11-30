@@ -4,21 +4,41 @@ This is an example with hopefully multip
 le lines, so that we can see that single
 
 
- block works!!! 
-A text processor is a
- very useful tool, since it allows us to
- develop formatted documents
- <IT> t
+ block works!!!
+     A t
+ext processor is a very useful tool, sin
+ce it allows us to develop formatted doc
+uments
+          
 
 
-hat are easy to read. 
+ <IT>      This font should be i
+
+
+n italics, and the paragraph should have
+
+
+ indents in it. But the next one should 
+
+
+not! This paragraph should not have a
+
+
+n indent in it!!! 
 
 1 Introduction
 
-This is <IT>a
+     
 
 
-fter the</IT> big vertical space </IT
+This is      <IT>     
 
 
-> 
+after the     </IT>      
+PAGE (i)
+
+
+big vertical space     
+
+
+ </IT> 

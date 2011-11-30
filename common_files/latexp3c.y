@@ -288,7 +288,7 @@ specialchar      :  SPECCHAR
                  |  RCURLYB
                  ;
 
-nonewpara        :  NOINDENT
+nonewpara        :  NOINDENT { no_indent = 1; }
                  ;
 
 reference        :  REF  LCURLYB  WORD  RCURLYB
