@@ -1,5 +1,14 @@
 
 * TODO generate_formatted_text
+
 ** Paragraph Detection
 
+* TODO RM/IT
+** TODO print ^h_ after
+   a character to underline
+   -> use underline instead
+   of IT
 
+
+* TODO enumarate
+** TODO go up to 9
