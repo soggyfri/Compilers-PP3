@@ -67,7 +67,7 @@ void generate_formatted_text(char *s)
             if(char_count < OUT_WIDTH)
                 {
                     if(isprint(s[i])) fprintf(fpout, "%c", s[i]);
-                    if(P_DEBUG) fprintf(stdout, "Char Cound: %d\n", char_count);
+                    if(P_DEBUG) fprintf(stdout, "Char Count: %d\n", char_count);
                     i++;
                     char_count++;
                 }
@@ -141,7 +141,7 @@ void print_hor_space(int spacing)
 
 void debug_print(char *s)
 {
-    fprintf(stdout, "---------DEBUG PRINT----------\n");
+    fprintf(stdout, "---------DEBUG RINT----------\n");
     fprintf(stdout, "%s\n", s); //TODO: printing wrong because int to string convertion?
     fprintf(stdout, "---------DEBUG PRINT----------\n");
 }
