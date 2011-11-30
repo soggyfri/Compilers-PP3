@@ -2,13 +2,13 @@ Section/Subsection/TOC -fri
 Horizontal/Vertical Spacing - fri
 Page Number/Styles -alex
 Italics/ Roman -fri
-
+Line spacing/Single-Double-Tripple - fri
 
 WORK ON--
-Line spacing/Single-Double-Tripple - fri
+
 Right Justification - alex 
 Paragraph/No indent - fri
-
+begin/end single blocks - alex
 
 Unfinished-----
-begin/end single blocks
+
