@@ -47,7 +47,7 @@ void generate_formatted_text(char *s)
 {
     int slen = strlen(s);
     int i;
-    fprintf(stdout, "START GEN_FOR_TEXT (%s)\n", s); 
+    fprintf(stdout, "START GEN_FOR_TEXT (%s)\n", s);
     /* fprintf(fpout, "\n"); */
 
     for(i=0; i <=slen;)
@@ -63,7 +63,7 @@ void generate_formatted_text(char *s)
                 {
                     char_count = 0;
                     /* fprintf(fpout, "\n%d", lines_so_far); */
-                    print_line_spacing();                    
+                    print_line_spacing();
                     if(isprint(s[i])) fprintf(fpout, "%c", s[i]);
                     i++;
                     char_count++;
@@ -118,9 +118,11 @@ void print_hor_space(int spacing)
         }
 }
 
-void debug_print(char s)
+void debug_print(char *s)
 {
     fprintf(stdout, "---------DEBUG PRINT----------\n");
-    fprintf(stdout, "%c\n", s); //TODO: printing wrong because int to string convertion?
+    fprintf(stdout, "%s\n", s); //TODO: printing wrong because int to string convertion?
     fprintf(stdout, "---------DEBUG PRINT----------\n");
 }
+
+

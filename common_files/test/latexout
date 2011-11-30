@@ -2,59 +2,46 @@
 
 1 Introduction
 
-A text processor is a very useful tool, 
+ This is an example of text that would
+ be transformed into a paragraph in late
+x. Blank lines between text in the input
+ cause a new paragraph to be generated. 
+When the blank line occurs after a secti
+on, no indentation of the paragraph is p
+erformed. However, all other blanks, wou
+ld result in a five space indent of the 
+paragraph. 
 
+1.1 A Text Processor
 
+ A text processor is a v
+ery useful tool, since it allows us to d
+evelop formatted documents that are easy
+ to read. 
 
+1.2 Legal Latex Commands
 
-since it allows us to develop formatted 
-
-
-
-
-documents <IT> that are easy to read. 
-
-
-
-
-
-
-1.1 Legal Latex Commands
-
- </IT> <RM> We have seen that there 
-
-
-
-
+ We have seen that there 
 are many different Latex commands, that 
-
-
-
-
 can be used in many different ways. Howe
-
-
-
-
 ver, sometimes, we wish to use a charact
-PAGE (1)
-
-
-
-
 er to mean itself, and override its Late
-
-
-
-
 x interpretation. For example, to use cu
-
-
-
-
 rly braces, we employ the backslash a se
+t of integers. 
 
+2 Using Latex
 
-
-
-t of integers. </RM> 
+PAGE (5)
+ <IT> Finally, the
+re are many other useful commands that i
+nvolve begin end blocks, that establish 
+an environment. These blocks behave in a
+ similar fashion to begin end blocks in 
+a programming language, since they set a
+ scope. We have discussed a number of ex
+amples. </IT> <RM> It is important to 
+note, even at this early stage, that lis
+ts may be created within lists, allowing
+ the nesting of blocks and environments.
+ </RM> 

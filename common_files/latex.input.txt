@@ -1,44 +1,18 @@
 \begin{document}
 \pagenumbering{arabic}
-\arabic{1}
-\renewcommand{\baselinestretch}{2}
-\tableofcontents
+\arabic{5} 
+\renewcommand{\baselinestretch}{1}
+\tableofcontents     
 
 \section{Introduction}
 
-Finally, there are commands that involve begin end blocks,
-that establish an environment. These blocks behave in a similar fashion to
-begin end blocks in a programming language, since they set a scope.  We
-have discussed a number of examples.
-
-Finally, there are commands that involve begin end blocks,
-that establish an environment. These blocks behave in a similar fashion to
-begin end blocks in a programming language, since they set a scope.  We
-have discussed a number of examples.
-
-Finally, there are commands that involve begin end blocks,
-that establish an environment. These blocks behave in a similar fashion to
-begin end blocks in a programming language, since they set a scope.  We
-have discussed a number of examples.
-
-Finally, there are commands that involve begin end blocks,
-that establish an environment. These blocks behave in a similar fashion to
-begin end blocks in a programming language, since they set a scope.  We
-have discussed a number of examples.
-
-Finally, there are commands that involve begin end blocks,
-that establish an environment. These blocks behave in a similar fashion to
-begin end blocks in a programming language, since they set a scope.  We
-have discussed a number of examples.
-
 This is an example of text that would be transformed into a paragraph in
 latex.  Blank lines between text in the input cause a new paragraph to be 
-generated.
+generated.  
 
 When the blank line occurs after a section, no indentation of the paragraph
 is performed.  However, all other blanks, would result in a five space 
 indent of the paragraph.
-
 
 \subsection{A Text Processor}
 
@@ -52,21 +26,14 @@ in many different ways.  However, sometimes, we wish to use a character to
 mean itself, and override its Latex interpretation.  For example, to use
 curly braces, we employ the backslash a set of integers.
 
-For example, to use
-curly braces, we employ the backslash a set of integers.
-
-Finally, there are many other useful commands that involve begin/end blocks,
-that establish an environment. These blocks behave in a similar fashion to
-begin/end blocks in a programming language, since they set a scope.  We
-have discussed a number of examples.
-
 \section{Using Latex}
 
+\it
 Finally, there are many other useful commands that involve begin/end blocks,
 that establish an environment. These blocks behave in a similar fashion to
 begin/end blocks in a programming language, since they set a scope.  We
 have discussed a number of examples.
-
+\rm
 It is important to note, even at this early stage, that lists may be created
 within lists, allowing the nesting of blocks and environments.
 \end{document}

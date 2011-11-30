@@ -309,5 +309,5 @@ init_output_page();
 
 yyparse();
 
- set_font(get_font());
+ if(get_font()) set_font(get_font());
 }
