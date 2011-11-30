@@ -1625,6 +1625,13 @@ yyreduce:
     {ws_flag=1;;}
     break;
 
+  case 33:
+
+/* Line 1455 of yacc.c  */
+#line 134 "latexp3c.y"
+    { print_newline(); set_line_spacing(1);;}
+    break;
+
   case 41:
 
 /* Line 1455 of yacc.c  */
@@ -1632,11 +1639,18 @@ yyreduce:
     {ws_flag=0;;}
     break;
 
+  case 42:
+
+/* Line 1455 of yacc.c  */
+#line 147 "latexp3c.y"
+    { print_newline();set_line_spacing(2);;}
+    break;
+
   case 47:
 
 /* Line 1455 of yacc.c  */
 #line 155 "latexp3c.y"
-    {printf("single or verb\n");;}
+    {generate_formatted_text((yyvsp[(1) - (1)].trans));;}
     break;
 
   case 48:
@@ -1838,7 +1852,7 @@ yyreduce:
 
 
 /* Line 1455 of yacc.c  */
-#line 1842 "latexp3c.tab.c"
+#line 1856 "latexp3c.tab.c"
       default: break;
     }
   YY_SYMBOL_PRINT ("-> $$ =", yyr1[yyn], &yyval, &yyloc);

@@ -25,7 +25,7 @@ void  init_lines_so_far()
 
 void  incr_lines_so_far()
 {
-    fprintf(stdout, "DEBUG: INCR LINE NUMBER (%d), Page_no = %d \n", lines_so_far, get_page_no());
+    /* fprintf(stdout, "DEBUG: INCR LINE NUMBER (%d), Page_no = %d \n", lines_so_far, get_page_no()); */
     lines_so_far++;
     int mul_number = (get_page_no() - starting_page_number < 1 ? 1 : get_page_no() - starting_page_number);
     
@@ -163,5 +163,12 @@ void set_line_spacing(int space)
 int get_line_spacing()
 {
     return DST.line_spacing;
+}
+
+
+void print_newline()
+{
+    fprintf(fpout, "\n");
+    incr_lines_so_far();    
 }
 

@@ -131,7 +131,7 @@ beginendopts     :  LBEGIN  begcmds  beginblock  endbegin
 
 begcmds          :  CENTER  
                  |  VERBATIM  {ws_flag=1;}
-                 |  SINGLE  
+                 |  SINGLE    { print_newline(); set_line_spacing(1);}
                  |  ITEMIZE  
                  |  ENUMERATE 
                  |  TABLE  begtableopts
@@ -144,7 +144,7 @@ endbegin         :  END  endcmds
 
 endcmds          :  CENTER  
                  |  VERBATIM  {ws_flag=0;}
-                 |  SINGLE  
+                 |  SINGLE  { print_newline();set_line_spacing(2);}
                  |  ITEMIZE  
                  |  ENUMERATE 
                  |  TABULAR
@@ -152,7 +152,7 @@ endcmds          :  CENTER
 
 beginblock       :  beginendopts
                  |  textoption /* FOR single or verbatim */
-                                    {printf("single or verb\n");}
+                                    {generate_formatted_text($1);}
                  |  entrylist  /* FOR center and tabular */
                                     {printf("center or tabular\n");}
                  |  listblock  /* FOR item and enumerate */

@@ -7,7 +7,7 @@ Line spacing/Single-Double-Tripple - fri
 WORK ON--
 
 Right Justification - alex 
-Paragraph/No indent - fri
+Paragraph/No indent - fri/alex
 begin/end single blocks - fri
 
 Unfinished-----
