@@ -17,3 +17,10 @@ echo
 echo "--------------------START GCC--------------------------"
 gcc -g latexp3c.tab.c -lfl
 echo "--------------------END GCC---------------------------"
+
+if [ -n "$1" ];
+then
+        echo "---------------EXECUTE TEST SCRIPT"
+        ./execution_script.sh $1
+        echo "---------------FINISHED TEST SCRIPT"
+fi

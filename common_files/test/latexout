@@ -1,38 +1,220 @@
-This is an example with hopefully multip
-
-le lines, so that we can see that single
-
- block works!!! 
-
-
-
-     A text processor is a very usef
-ul tool, since it allows us to develop f
-ormatted documents
-
-     
-
-      <IT>      
-
-This font should be in italics, and the 
-
-paragraph should have indents in it. But
-
- the next one should not! 
-
-This paragraph should not have an inde
-
-nt in it!!! 
-
 
 
 1 Introduction
 
-     This is      
+      This is an example of text that 
+would be transformed into a paragraph in
+ latex. Blank lines between text in the 
+input cause a new paragraph to be genera
+ted. This is an example of text that wou
+ld be transformed into a paragraph in la
+tex. Blank lines between text in the inp
+ut cause a new paragraph to be generated
+. This is an example of text that would 
+be transformed into a paragraph in latex
+. Blank lines between text in the input 
+cause a new paragraph to be generated. W
+hen the blank line occurs after a sectio
+n, no indentation of the paragraph is pe
+rformed. However, all other blanks, woul
+d result in a five space indent of the p
+aragraph. When the blank line occurs aft
+er a section, no indentation of the para
+graph is performed. However, all other b
+lanks, would result in a five space inde
+nt of the paragraph. 
 
-<IT>     after the     
 
-</IT>      big vertical space     
 
-PAGE (i)
- </IT> 
+     Now, its important to make sure
+ that single works correctly, and can be
+ used to change the formating with respe
+ct to the ways lines are output. In this
+ case, we are going from double to singl
+e spacing.
+
+     
+
+1.1 A Text Processor
+
+PAGE (IV)
+     
+ A text processor is a very useful too
+l, since           
+                  
+                  
+                  
+it allows us to develop formatted docume
+nts that are easy to read. 
+
+ A text processor is a very useful tool
+, since it allows us to develop formatte
+d documents that are easy to read. 
+
+
+
+
+
+
+
+
+      A text processor is a very u
+seful tool, since it allows us to develo
+p formatted documents that are easy to r
+ead. 
+
+
+
+1.2 Legal Latex Commands
+
+      We have seen that there are 
+many different Latex commands, that can 
+PAGE (V)
+be used in many different ways. However,
+ sometimes, we wish to use a character t
+o mean itself, and override its Latex in
+terpretation. For example, to use curly 
+braces, we employ the backslash a set of
+ integers. 
+
+
+
+1.3 Again Legal Latex Commands
+
+      We have seen that there are 
+many different Latex commands, that can 
+be used in many different ways. However,
+ sometimes, we wish to use a character t
+o mean itself, and override its Latex in
+terpretation. For example, to use curly 
+braces, we employ the backslash a set of
+ integers. 
+
+
+
+1.4 Yet Some More Legal Latex Commands
+
+     
+
+     We have see
+n that there are many different Latex co
+mmands, that can be used in many differe
+nt ways. However, sometimes, we wish to 
+use a character to mean itself, and over
+ride its Latex interpretation. For examp
+le, to use curly braces, we employ the b
+ackslash a set of integers.
+
+     
+PAGE (VI)
+
+
+2 Using Latex
+
+      Finally, there are     
+ <IT>     many other useful     
+</IT>      commands that involve
+ begin end blocks, that establish an env
+ironment. These blocks behave in a simil
+ar fashion to begin end blocks in a prog
+ramming language, since they set a scope
+. We have discussed a number of examples
+. 
+
+      <IT>      It 
+is important to note, even at this early
+ stage, that lists may be created within
+ lists, allowing the nesting of blocks a
+nd environments.      
+</IT> <RM>       It is im
+portant to note, even at this early stag
+e, that lists may be created 
+
+
+
+2.1 Check this Out
+
+      Finally, there are     
+ <IT>     many other useful     
+</IT>      commands that involve
+ begin end blocks, that establish an env
+ironment. These blocks behave in a simil
+ar fashion to begin end blocks in a prog
+ramming language, since they set a scope
+PAGE (VII)
+. We have discussed a number of examples
+. 
+
+
+
+2.2 Check this Out Part 2
+
+      Finally, there are     
+ <IT>     many other useful     
+</IT>      commands that involve
+ begin end blocks, that establish an env
+ironment. These blocks behave in a simil
+ar fashion to begin end blocks in a prog
+ramming language, since they set a scope
+. We have discussed a number of examples
+. 
+
+
+
+3 What about this?
+
+      When things are switched bac
+k is everything still ok? 
+
+
+
+4 What about this?
+
+      When things are switched bac
+k is everything still ok? 
+
+
+
+5 What about this?
+
+PAGE (VIII)
+      When things are switched bac
+k is everything still ok? 
+
+
+
+6 What about this?
+
+      When things are switched bac
+k is everything still ok? 
+
+
+
+7 What about this?
+
+      When things are switched bac
+k is everything still ok? 
+
+
+
+8 What about this?
+
+      When things are switched bac
+k is everything still ok? 
+
+
+
+9 What about this?
+
+      When things are switched bac
+PAGE (IX)
+k is everything still ok? 
+
+
+
+10 Goes to 10! What about this?
+
+      When things are switched bac
+k is everything still ok? 
+
+      </RM> 

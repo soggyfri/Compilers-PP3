@@ -1,10 +1,10 @@
  \begin 
  {document} 
  \pagenumbering 
- {roman} 
- \roman 
+ {Roman} 
+ \Roman 
  { 
- 1 
+ 4 
  } 
 ws-- 
 --ws
@@ -13,17 +13,20 @@ ws--
  \baselinestretch 
  } 
  { 
- 2 
-LINE SPACING = 2
+ 1 
+LINE SPACING = 1
  } 
  \tableofcontents 
 ws--     
 
 --ws
- \noindent 
----------DEBUG PRINT----------
-NO INDENT-DEBUG PRINT-Y
----------DEBUG PRINT----------
+ \section 
+ { 
+ Introduction 
+ } 
+IVws--
+
+--ws
  This 
 ws-- --ws
  is 
@@ -32,40 +35,375 @@ ws-- --ws
 ws-- --ws
  example 
 ws-- --ws
- with 
+ of 
 ws-- --ws
- hopefully 
+ text 
 ws-- --ws
- multiple 
+ that 
 ws-- --ws
- lines, 
+ would 
+ws-- --ws
+ be 
+ws-- --ws
+ transformed 
+ws-- --ws
+ into 
+ws-- --ws
+ a 
+ws-- --ws
+ paragraph 
+ws-- --ws
+ in 
+ latex. 
+ws--  --ws
+ Blank 
+ws-- --ws
+ lines 
+ws-- --ws
+ between 
+ws-- --ws
+ text 
+ws-- --ws
+ in 
+ws-- --ws
+ the 
+ws-- --ws
+ input 
+ws-- --ws
+ cause 
+ws-- --ws
+ a 
+ws-- --ws
+ new 
+ws-- --ws
+ paragraph 
+ws-- --ws
+ to 
+ws-- --ws
+ be 
 ws-- 
 --ws
- so 
+ generated. 
+ws--  --ws
+ This 
+ws-- --ws
+ is 
+ws-- --ws
+ an 
+ws-- --ws
+ example 
+ws-- --ws
+ of 
+ws-- --ws
+ text 
 ws-- --ws
  that 
 ws-- --ws
- we 
+ would 
 ws-- --ws
- can 
+ be 
 ws-- --ws
- see 
+ transformed 
+ws-- --ws
+ into 
+ws-- --ws
+ a 
+ws-- 
+--ws
+ paragraph 
+ws-- --ws
+ in 
+ws-- --ws
+ latex. 
+ws--  --ws
+ Blank 
+ws-- --ws
+ lines 
+ws-- --ws
+ between 
+ws-- --ws
+ text 
+ws-- --ws
+ in 
+ws-- --ws
+ the 
+ws-- --ws
+ input 
+ws-- --ws
+ cause 
+ws-- --ws
+ a 
+ws-- --ws
+ new 
+ws-- 
+--ws
+ paragraph 
+ws-- --ws
+ to 
+ws-- --ws
+ be 
+ws-- --ws
+ generated. 
+ws--  --ws
+ This 
+ws-- --ws
+ is 
+ws-- --ws
+ an 
+ws-- --ws
+ example 
+ws-- --ws
+ of 
+ws-- --ws
+ text 
 ws-- --ws
  that 
 ws-- --ws
- single 
+ would 
 ws-- --ws
- block 
+ be 
+ws-- 
+--ws
+ transformed 
 ws-- --ws
- works!!! 
+ into 
+ws-- --ws
+ a 
+ws-- --ws
+ paragraph 
+ws-- --ws
+ in 
+ws-- --ws
+ latex. 
+ws--  --ws
+ Blank 
+ws-- --ws
+ lines 
+ws-- --ws
+ between 
+ws-- --ws
+ text 
+ws-- --ws
+ in 
+ws-- 
+--ws
+ the 
+ws-- --ws
+ input 
+ws-- --ws
+ cause 
+ws-- --ws
+ a 
+ws-- --ws
+ new 
+ws-- --ws
+ paragraph 
+ws-- --ws
+ to 
+ws-- --ws
+ be 
+ws-- --ws
+ generated. 
+ws--  
+
+--ws
+ When 
+ws-- --ws
+ the 
+ws-- --ws
+ blank 
+ws-- --ws
+ line 
+ws-- --ws
+ occurs 
+ws-- --ws
+ after 
+ws-- --ws
+ a 
+ws-- --ws
+ section, 
+ws-- --ws
+ no 
+ws-- --ws
+ indentation 
+ws-- --ws
+ of 
+ws-- --ws
+ the 
+ws-- --ws
+ paragraph 
+ is 
+ws-- --ws
+ performed. 
+ws--  --ws
+ However, 
+ws-- --ws
+ all 
+ws-- --ws
+ other 
+ws-- --ws
+ blanks, 
+ws-- --ws
+ would 
+ws-- --ws
+ result 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ five 
+ws-- --ws
+ space 
+ws-- 
+--ws
+ indent 
+ws-- --ws
+ of 
+ws-- --ws
+ the 
+ws-- --ws
+ paragraph. 
+ When 
+ws-- --ws
+ the 
+ws-- --ws
+ blank 
+ws-- --ws
+ line 
+ws-- --ws
+ occurs 
+ws-- --ws
+ after 
+ws-- --ws
+ a 
+ws-- --ws
+ section, 
+ws-- --ws
+ no 
+ws-- --ws
+ indentation 
+ws-- --ws
+ of 
+ws-- --ws
+ the 
+ws-- --ws
+ paragraph 
+ is 
+ws-- --ws
+ performed. 
+ws--  --ws
+ However, 
+ws-- --ws
+ all 
+ws-- --ws
+ other 
+ws-- --ws
+ blanks, 
+ws-- --ws
+ would 
+ws-- --ws
+ result 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ five 
+ws-- --ws
+ space 
+ws-- 
+--ws
+ indent 
+ws-- --ws
+ of 
+ws-- --ws
+ the 
+ws-- --ws
+ paragraph. 
 ws--
 
 --ws
  \begin 
-START GEN_FOR_TEXT (This is an example with hopefully multiple lines, so that we can see that single block works!!! 
+START GEN_FOR_TEXT (
+
+ This is an example of text that would be transformed into a paragraph in latex. Blank lines between text in the input cause a new paragraph to be generated. This is an example of text that would be transformed into a paragraph in latex. Blank lines between text in the input cause a new paragraph to be generated. This is an example of text that would be transformed into a paragraph in latex. Blank lines between text in the input cause a new paragraph to be generated. When the blank line occurs after a section, no indentation of the paragraph is performed. However, all other blanks, would result in a five space indent of the paragraph. When the blank line occurs after a section, no indentation of the paragraph is performed. However, all other blanks, would result in a five space indent of the paragraph. 
 
 )
-Char Cound: 0
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
 Char Cound: 1
 Char Cound: 2
 Char Cound: 3
@@ -160,6 +498,635 @@ Char Cound: 13
 Char Cound: 14
 Char Cound: 15
 Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
 
 
 PARA_BREAK! 
@@ -168,6 +1135,306 @@ Char Cound: 0
 Char Cound: 1
  {single} 
 SINGLE LINE SPACING = 1
+ Now, 
+ws-- --ws
+ its 
+ws-- --ws
+ important 
+ws-- --ws
+ to 
+ws-- --ws
+ make 
+ws-- --ws
+ sure 
+ws-- --ws
+ that 
+ws-- --ws
+ single 
+ws-- --ws
+ works 
+ws-- --ws
+ correctly, 
+ws-- --ws
+ and 
+ws-- --ws
+ can 
+ be 
+ws-- --ws
+ used 
+ws-- --ws
+ to 
+ws-- --ws
+ change 
+ws-- --ws
+ the 
+ws-- --ws
+ formating 
+ws-- --ws
+ with 
+ws-- --ws
+ respect 
+ws-- --ws
+ to 
+ws-- --ws
+ the 
+ws-- --ws
+ ways 
+ws-- --ws
+ lines 
+ws-- --ws
+ are 
+ws-- 
+--ws
+ output. 
+ws--  --ws
+ In 
+ws-- --ws
+ this 
+ws-- --ws
+ case, 
+ws-- --ws
+ we 
+ws-- --ws
+ are 
+ws-- --ws
+ going 
+ws-- --ws
+ from 
+ws-- --ws
+ double 
+ws-- --ws
+ to 
+ws-- --ws
+ single 
+ws-- --ws
+ spacing. 
+ \end 
+START GEN_FOR_TEXT (Now, its important to make sure that single works correctly, and can be used to change the formating with respect to the ways lines are output. In this case, we are going from double to single spacing.)
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+ {single} 
+LINE SPACING = 1
+ws--
+
+--ws
+ \subsection 
+START GEN_FOR_TEXT (
+
+)
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+ { 
+ A 
+ws-- --ws
+ Text 
+ws-- --ws
+ Processor 
+ } 
+
+
+
+
+PUT PAGE NUMBER HERE!!!!!!!
+
+IVVws--
+
+--ws
  A 
 ws-- --ws
  text 
@@ -181,7 +1448,132 @@ ws-- --ws
  very 
 ws-- --ws
  useful 
-ws--  --ws
+ws-- --ws
+ tool, 
+ws-- --ws
+ since 
+ws-- --ws
+ \hspace 
+START GEN_FOR_TEXT (
+
+ A text processor is a very useful tool, since)
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+ { 
+ 10 
+START GEN_FOR_TEXT ( )
+Char Cound: 23
+Char Cound: 24
+START GEN_FOR_TEXT ( )
+Char Cound: 1
+START GEN_FOR_TEXT ( )
+Char Cound: 9
+Char Cound: 10
+START GEN_FOR_TEXT ( )
+Char Cound: 27
+Char Cound: 28
+START GEN_FOR_TEXT ( )
+Char Cound: 1
+START GEN_FOR_TEXT ( )
+Char Cound: 9
+Char Cound: 10
+START GEN_FOR_TEXT ( )
+Char Cound: 27
+Char Cound: 28
+START GEN_FOR_TEXT ( )
+Char Cound: 1
+START GEN_FOR_TEXT ( )
+Char Cound: 9
+Char Cound: 10
+START GEN_FOR_TEXT ( )
+Char Cound: 27
+Char Cound: 28
+ } 
+ws-- --ws
+ it 
+ws-- --ws
+ allows 
+ws-- --ws
+ us 
+ws-- --ws
+ to 
+ develop 
+ws-- --ws
+ formatted 
+ws-- --ws
+ documents 
+ws-- --ws
+ that 
+ws-- --ws
+ are 
+ws-- --ws
+ easy 
+ws-- --ws
+ to 
+ws-- --ws
+ read. 
+ws--
+
+--ws
+ A 
+ws-- --ws
+ text 
+ws-- --ws
+ processor 
+ws-- --ws
+ is 
+ws-- --ws
+ a 
+ws-- --ws
+ very 
+ws-- --ws
+ useful 
+ws-- --ws
  tool, 
 ws-- --ws
  since 
@@ -198,160 +1590,23 @@ ws-- --ws
  formatted 
 ws-- --ws
  documents 
-ws-- 
---ws
- \end 
-START GEN_FOR_TEXT (A text processor is a very useful tool, since it allows us to develop formatted documents)
-Char Cound: 9
-Char Cound: 10
-Char Cound: 11
-Char Cound: 12
-Char Cound: 13
-Char Cound: 14
-Char Cound: 15
-Char Cound: 16
-Char Cound: 17
-Char Cound: 18
-Char Cound: 19
-Char Cound: 20
-Char Cound: 21
-Char Cound: 22
-Char Cound: 23
-Char Cound: 24
-Char Cound: 25
-Char Cound: 26
-Char Cound: 27
-Char Cound: 28
-Char Cound: 29
-Char Cound: 30
-Char Cound: 31
-Char Cound: 32
-Char Cound: 33
-Char Cound: 34
-Char Cound: 35
-Char Cound: 36
-Char Cound: 37
-Char Cound: 38
-Char Cound: 39
-Char Cound: 1
-Char Cound: 2
-Char Cound: 3
-Char Cound: 4
-Char Cound: 5
-Char Cound: 6
-Char Cound: 7
-Char Cound: 8
-Char Cound: 9
-Char Cound: 10
-Char Cound: 11
-Char Cound: 12
-Char Cound: 13
-Char Cound: 14
-Char Cound: 15
-Char Cound: 16
-Char Cound: 17
-Char Cound: 18
-Char Cound: 19
-Char Cound: 20
-Char Cound: 21
-Char Cound: 22
-Char Cound: 23
-Char Cound: 24
-Char Cound: 25
-Char Cound: 26
-Char Cound: 27
-Char Cound: 28
-Char Cound: 29
-Char Cound: 30
-Char Cound: 31
-Char Cound: 32
-Char Cound: 33
-Char Cound: 34
-Char Cound: 35
-Char Cound: 36
-Char Cound: 37
-Char Cound: 38
-Char Cound: 39
-Char Cound: 1
-Char Cound: 2
-Char Cound: 3
-Char Cound: 4
-Char Cound: 5
-Char Cound: 6
-Char Cound: 7
-Char Cound: 8
-Char Cound: 9
-Char Cound: 10
-Char Cound: 11
-Char Cound: 12
-Char Cound: 13
-Char Cound: 14
-Char Cound: 15
-Char Cound: 16
-Char Cound: 17
-Char Cound: 18
- {single} 
-LINE SPACING = 2
+ws-- --ws
+ that 
+ws-- --ws
+ are 
+ws-- --ws
+ easy 
+ws-- --ws
+ to 
+ws-- --ws
+ read. 
 ws--
 
 --ws
- \it 
-START GEN_FOR_TEXT (
+ \vspace 
+START GEN_FOR_TEXT (it allows us to develop formatted documents that are easy to read. 
 
-)
-Char Cound: 1
-Char Cound: 2
-START GEN_FOR_TEXT ( <IT> )
-Char Cound: 11
-Char Cound: 12
-Char Cound: 13
-Char Cound: 14
-Char Cound: 15
-Char Cound: 16
-Char Cound: 17
- This 
-ws-- --ws
- font 
-ws-- --ws
- should 
-ws-- --ws
- be 
-ws-- --ws
- in 
-ws-- --ws
- italics, 
-ws-- --ws
- and 
-ws-- --ws
- the 
-ws-- --ws
- paragraph 
-ws-- --ws
- should 
-ws-- --ws
- have 
- indents 
-ws-- --ws
- in 
-ws-- --ws
- it. 
-ws-- --ws
- But 
-ws-- --ws
- the 
-ws-- --ws
- next 
-ws-- --ws
- one 
-ws-- --ws
- should 
-ws-- --ws
- not! 
-ws--
-
---ws
- \noindent 
-START GEN_FOR_TEXT (This font should be in italics, and the paragraph should have indents in it. But the next one should not! 
+ A text processor is a very useful tool, since it allows us to develop formatted documents that are easy to read. 
 
 )
 Char Cound: 1
@@ -420,86 +1675,1525 @@ Char Cound: 24
 Char Cound: 25
 Char Cound: 26
 Char Cound: 27
-Char Cound: 28
-Char Cound: 29
-Char Cound: 30
-Char Cound: 31
-Char Cound: 32
-Char Cound: 33
-Char Cound: 34
-Char Cound: 35
-Char Cound: 36
-Char Cound: 37
-Char Cound: 38
-Char Cound: 39
-Char Cound: 1
-Char Cound: 2
-Char Cound: 3
-Char Cound: 4
-Char Cound: 5
-Char Cound: 6
-Char Cound: 7
-Char Cound: 8
-Char Cound: 9
-Char Cound: 10
-Char Cound: 11
-Char Cound: 12
-Char Cound: 13
-Char Cound: 14
-Char Cound: 15
-Char Cound: 16
-Char Cound: 17
-Char Cound: 18
-Char Cound: 19
-Char Cound: 20
-Char Cound: 21
-Char Cound: 22
-Char Cound: 23
-Char Cound: 24
-Char Cound: 25
-Char Cound: 26
 
 
 PARA_BREAK! 
 
 Char Cound: 0
 Char Cound: 1
----------DEBUG PRINT----------
-NO INDENT-DEBUG PRINT-Y
----------DEBUG PRINT----------
- This 
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+
+
+PARA_BREAK! 
+
+Char Cound: 0
+Char Cound: 1
+ { 
+ 7 
+ } 
+ws--
+
+--ws
+ A 
 ws-- --ws
- paragraph 
+ text 
 ws-- --ws
- should 
+ processor 
 ws-- --ws
- not 
+ is 
+ws-- --ws
+ a 
+ws-- --ws
+ very 
+ws-- --ws
+ useful 
+ws-- --ws
+ tool, 
+ws-- --ws
+ since 
+ws-- --ws
+ it 
+ws-- --ws
+ allows 
+ws-- --ws
+ us 
+ws-- --ws
+ to 
+ develop 
+ws-- --ws
+ formatted 
+ws-- --ws
+ documents 
+ws-- --ws
+ that 
+ws-- --ws
+ are 
+ws-- --ws
+ easy 
+ws-- --ws
+ to 
+ws-- --ws
+ read. 
+ws--
+
+--ws
+ \subsection 
+START GEN_FOR_TEXT (
+
+ A text processor is a very useful tool, since it allows us to develop formatted documents that are easy to read. 
+
+)
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+
+
+PARA_BREAK! 
+
+Char Cound: 0
+Char Cound: 1
+ { 
+ Legal 
+ws-- --ws
+ Latex 
+ws-- --ws
+ Commands 
+ } 
+Vws--
+
+--ws
+ We 
 ws-- --ws
  have 
 ws-- --ws
- an 
+ seen 
 ws-- --ws
- indent 
+ that 
 ws-- --ws
+ there 
+ws-- --ws
+ are 
+ws-- --ws
+ many 
+ws-- --ws
+ different 
+ws-- --ws
+ Latex 
+ws-- --ws
+ commands, 
+ws-- --ws
+ that 
+ws-- --ws
+ can 
+ws-- --ws
+ be 
+ws-- --ws
+ used 
  in 
 ws-- --ws
- it!!! 
+ many 
+ws-- --ws
+ different 
+ws-- --ws
+ ways. 
+ws--  --ws
+ However, 
+ws-- --ws
+ sometimes, 
+ws-- --ws
+ we 
+ws-- --ws
+ wish 
+ws-- --ws
+ to 
+ws-- --ws
+ use 
+ws-- --ws
+ a 
+ws-- --ws
+ character 
+ws-- --ws
+ to 
+ mean 
+ws-- --ws
+ itself, 
+ws-- --ws
+ and 
+ws-- --ws
+ override 
+ws-- --ws
+ its 
+ws-- --ws
+ Latex 
+ws-- --ws
+ interpretation. 
+ws--  --ws
+ For 
+ws-- --ws
+ example, 
+ws-- --ws
+ to 
+ws-- --ws
+ use 
+ curly 
+ws-- --ws
+ braces, 
+ws-- --ws
+ we 
+ws-- --ws
+ employ 
+ws-- --ws
+ the 
+ws-- --ws
+ backslash 
+ws-- --ws
+ a 
+ws-- --ws
+ set 
+ws-- --ws
+ of 
+ws-- --ws
+ integers. 
+ws--
+
+--ws
+ \subsection 
+START GEN_FOR_TEXT (
+
+ We have seen that there are many different Latex commands, that can be used in many different ways. However, sometimes, we wish to use a character to mean itself, and override its Latex interpretation. For example, to use curly braces, we employ the backslash a set of integers. 
+
+)
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+
+
+
+
+PUT PAGE NUMBER HERE!!!!!!!
+
+VChar Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+
+
+PARA_BREAK! 
+
+Char Cound: 0
+Char Cound: 1
+ { 
+ Again 
+ws-- --ws
+ Legal 
+ws-- --ws
+ Latex 
+ws-- --ws
+ Commands 
+ } 
+VIws--
+
+--ws
+ We 
+ws-- --ws
+ have 
+ws-- --ws
+ seen 
+ws-- --ws
+ that 
+ws-- --ws
+ there 
+ws-- --ws
+ are 
+ws-- --ws
+ many 
+ws-- --ws
+ different 
+ws-- --ws
+ Latex 
+ws-- --ws
+ commands, 
+ws-- --ws
+ that 
+ws-- --ws
+ can 
+ws-- --ws
+ be 
+ws-- --ws
+ used 
+ in 
+ws-- --ws
+ many 
+ws-- --ws
+ different 
+ws-- --ws
+ ways. 
+ws--  --ws
+ However, 
+ws-- --ws
+ sometimes, 
+ws-- --ws
+ we 
+ws-- --ws
+ wish 
+ws-- --ws
+ to 
+ws-- --ws
+ use 
+ws-- --ws
+ a 
+ws-- --ws
+ character 
+ws-- --ws
+ to 
+ mean 
+ws-- --ws
+ itself, 
+ws-- --ws
+ and 
+ws-- --ws
+ override 
+ws-- --ws
+ its 
+ws-- --ws
+ Latex 
+ws-- --ws
+ interpretation. 
+ws--  --ws
+ For 
+ws-- --ws
+ example, 
+ws-- --ws
+ to 
+ws-- --ws
+ use 
+ curly 
+ws-- --ws
+ braces, 
+ws-- --ws
+ we 
+ws-- --ws
+ employ 
+ws-- --ws
+ the 
+ws-- --ws
+ backslash 
+ws-- --ws
+ a 
+ws-- --ws
+ set 
+ws-- --ws
+ of 
+ws-- --ws
+ integers. 
+ws--
+
+--ws
+ \subsection 
+START GEN_FOR_TEXT (
+
+ We have seen that there are many different Latex commands, that can be used in many different ways. However, sometimes, we wish to use a character to mean itself, and override its Latex interpretation. For example, to use curly braces, we employ the backslash a set of integers. 
+
+)
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+
+
+PARA_BREAK! 
+
+Char Cound: 0
+Char Cound: 1
+ { 
+ Yet 
+ws-- --ws
+ Some 
+ws-- --ws
+ More 
+ws-- --ws
+ Legal 
+ws-- --ws
+ Latex 
+ws-- --ws
+ Commands 
+ } 
+VIws--
+
+--ws
+ \begin 
+START GEN_FOR_TEXT (
+
+)
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+ {single} 
+SINGLE LINE SPACING = 1
+ We 
+ws-- --ws
+ have 
+ws-- --ws
+ seen 
+ws-- --ws
+ that 
+ws-- --ws
+ there 
+ws-- --ws
+ are 
+ws-- --ws
+ many 
+ws-- --ws
+ different 
+ws-- --ws
+ Latex 
+ws-- --ws
+ commands, 
+ws-- --ws
+ that 
+ws-- --ws
+ can 
+ws-- --ws
+ be 
+ws-- --ws
+ used 
+ in 
+ws-- --ws
+ many 
+ws-- --ws
+ different 
+ws-- --ws
+ ways. 
+ws--  --ws
+ However, 
+ws-- --ws
+ sometimes, 
+ws-- --ws
+ we 
+ws-- --ws
+ wish 
+ws-- --ws
+ to 
+ws-- --ws
+ use 
+ws-- --ws
+ a 
+ws-- --ws
+ character 
+ws-- --ws
+ to 
+ mean 
+ws-- --ws
+ itself, 
+ws-- --ws
+ and 
+ws-- --ws
+ override 
+ws-- --ws
+ its 
+ws-- --ws
+ Latex 
+ws-- --ws
+ interpretation. 
+ws--  --ws
+ For 
+ws-- --ws
+ example, 
+ws-- --ws
+ to 
+ws-- --ws
+ use 
+ curly 
+ws-- --ws
+ braces, 
+ws-- --ws
+ we 
+ws-- --ws
+ employ 
+ws-- --ws
+ the 
+ws-- --ws
+ backslash 
+ws-- --ws
+ a 
+ws-- --ws
+ set 
+ws-- --ws
+ of 
+ws-- --ws
+ integers. 
+ \end 
+START GEN_FOR_TEXT (We have seen that there are many different Latex commands, that can be used in many different ways. However, sometimes, we wish to use a character to mean itself, and override its Latex interpretation. For example, to use curly braces, we employ the backslash a set of integers.)
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+ {single} 
+LINE SPACING = 1
 ws--
 
 --ws
  \section 
-START GEN_FOR_TEXT (This paragraph should not have an indent in it!!! 
+START GEN_FOR_TEXT (
 
 )
+
+
+
+
+PUT PAGE NUMBER HERE!!!!!!!
+
+VIChar Cound: 1
 Char Cound: 2
-Char Cound: 3
-Char Cound: 4
-Char Cound: 5
-Char Cound: 6
-Char Cound: 7
-Char Cound: 8
-Char Cound: 9
-Char Cound: 10
+ { 
+ Using 
+ws-- --ws
+ Latex 
+ } 
+VIIws--
+
+--ws
+ Finally, 
+ws-- --ws
+ there 
+ws-- --ws
+ are 
+ws-- --ws
+ { 
+START GEN_FOR_TEXT (
+
+ Finally, there are)
 Char Cound: 11
 Char Cound: 12
 Char Cound: 13
@@ -522,64 +3216,21 @@ Char Cound: 29
 Char Cound: 30
 Char Cound: 31
 Char Cound: 32
-Char Cound: 33
-Char Cound: 34
-Char Cound: 35
-Char Cound: 36
-Char Cound: 37
-Char Cound: 38
-Char Cound: 39
+ \it 
+ws-- --ws
+ many 
+ws-- --ws
+ other 
+ws-- --ws
+ useful 
+ } 
+START GEN_FOR_TEXT ( <IT>)
 Char Cound: 1
 Char Cound: 2
 Char Cound: 3
 Char Cound: 4
 Char Cound: 5
-Char Cound: 6
-Char Cound: 7
-Char Cound: 8
-Char Cound: 9
-Char Cound: 10
-Char Cound: 11
-Char Cound: 12
-
-
-PARA_BREAK! 
-
-Char Cound: 0
-Char Cound: 1
- { 
- Introduction 
- } 
-i This 
-ws-- --ws
- is 
-ws-- --ws
- { 
-START GEN_FOR_TEXT (This is)
-Char Cound: 9
-Char Cound: 10
-Char Cound: 11
-Char Cound: 12
-Char Cound: 13
-Char Cound: 14
-Char Cound: 15
-Char Cound: 16
- \it 
-ws-- --ws
- after 
-ws-- --ws
- the 
-ws-- --ws
- } 
-START GEN_FOR_TEXT ( <IT>)
-Char Cound: 39
-Char Cound: 1
-Char Cound: 2
-Char Cound: 3
-Char Cound: 4
-START GEN_FOR_TEXT (after the)
-Char Cound: 15
-Char Cound: 16
+START GEN_FOR_TEXT (many other useful)
 Char Cound: 17
 Char Cound: 18
 Char Cound: 19
@@ -588,6 +3239,16 @@ Char Cound: 21
 Char Cound: 22
 Char Cound: 23
 Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
 START GEN_FOR_TEXT (</IT> )
 Char Cound: 1
 Char Cound: 2
@@ -596,17 +3257,83 @@ Char Cound: 4
 Char Cound: 5
 Char Cound: 6
 ws-- --ws
- big 
+ commands 
 ws-- --ws
- vertical 
+ that 
 ws-- --ws
- space 
+ involve 
+ws-- --ws
+ begin 
+ws-- --ws
+ end 
+ws-- --ws
+ blocks, 
+ that 
+ws-- --ws
+ establish 
+ws-- --ws
+ an 
+ws-- --ws
+ environment. 
+ws-- --ws
+ These 
+ws-- --ws
+ blocks 
+ws-- --ws
+ behave 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ similar 
+ws-- --ws
+ fashion 
+ws-- --ws
+ to 
+ begin 
+ws-- --ws
+ end 
+ws-- --ws
+ blocks 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ programming 
+ws-- --ws
+ language, 
+ws-- --ws
+ since 
+ws-- --ws
+ they 
+ws-- --ws
+ set 
+ws-- --ws
+ a 
+ws-- --ws
+ scope. 
+ws--  --ws
+ We 
+ have 
+ws-- --ws
+ discussed 
+ws-- --ws
+ a 
+ws-- --ws
+ number 
+ws-- --ws
+ of 
+ws-- --ws
+ examples. 
 ws--
 
-
 --ws
- \end 
-START GEN_FOR_TEXT (big vertical space)
+ \it 
+START GEN_FOR_TEXT (commands that involve begin end blocks, that establish an environment. These blocks behave in a similar fashion to begin end blocks in a programming language, since they set a scope. We have discussed a number of examples. 
+
+)
 Char Cound: 19
 Char Cound: 20
 Char Cound: 21
@@ -626,18 +3353,2137 @@ Char Cound: 34
 Char Cound: 35
 Char Cound: 36
 Char Cound: 37
- {document} 
-START GEN_FOR_TEXT ( </IT> )
-
-
-
-
-PUT PAGE NUMBER HERE!!!!!!!
-
-iChar Cound: 1
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
 Char Cound: 2
 Char Cound: 3
 Char Cound: 4
 Char Cound: 5
 Char Cound: 6
 Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+
+
+PARA_BREAK! 
+
+Char Cound: 0
+Char Cound: 1
+START GEN_FOR_TEXT ( <IT> )
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+ It 
+ws-- --ws
+ is 
+ws-- --ws
+ important 
+ws-- --ws
+ to 
+ws-- --ws
+ note, 
+ws-- --ws
+ even 
+ws-- --ws
+ at 
+ws-- --ws
+ this 
+ws-- --ws
+ early 
+ws-- --ws
+ stage, 
+ws-- --ws
+ that 
+ws-- --ws
+ lists 
+ws-- --ws
+ may 
+ws-- --ws
+ be 
+ws-- --ws
+ created 
+ within 
+ws-- --ws
+ lists, 
+ws-- --ws
+ allowing 
+ws-- --ws
+ the 
+ws-- --ws
+ nesting 
+ws-- --ws
+ of 
+ws-- --ws
+ blocks 
+ws-- --ws
+ and 
+ws-- --ws
+ environments. 
+ \rm 
+START GEN_FOR_TEXT (It is important to note, even at this early stage, that lists may be created within lists, allowing the nesting of blocks and environments.)
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+START GEN_FOR_TEXT ( </IT> <RM> )
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+ws--
+
+--ws
+ It 
+ws-- --ws
+ is 
+ws-- --ws
+ important 
+ws-- --ws
+ to 
+ws-- --ws
+ note, 
+ws-- --ws
+ even 
+ws-- --ws
+ at 
+ws-- --ws
+ this 
+ws-- --ws
+ early 
+ws-- --ws
+ stage, 
+ws-- --ws
+ that 
+ws-- --ws
+ lists 
+ws-- --ws
+ may 
+ws-- --ws
+ be 
+ws-- --ws
+ created 
+ws--
+
+--ws
+ \subsection 
+START GEN_FOR_TEXT (
+
+ It is important to note, even at this early stage, that lists may be created 
+
+)
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+
+
+PARA_BREAK! 
+
+Char Cound: 0
+Char Cound: 1
+ { 
+ Check 
+ws-- --ws
+ this 
+ws-- --ws
+ Out 
+ } 
+VIIws--
+
+--ws
+ Finally, 
+ws-- --ws
+ there 
+ws-- --ws
+ are 
+ws-- --ws
+ { 
+START GEN_FOR_TEXT (
+
+ Finally, there are)
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+ \it 
+ws-- --ws
+ many 
+ws-- --ws
+ other 
+ws-- --ws
+ useful 
+ } 
+START GEN_FOR_TEXT ( <IT>)
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+START GEN_FOR_TEXT (many other useful)
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+START GEN_FOR_TEXT (</IT> )
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+ws-- --ws
+ commands 
+ws-- --ws
+ that 
+ws-- --ws
+ involve 
+ws-- --ws
+ begin 
+ws-- --ws
+ end 
+ws-- --ws
+ blocks, 
+ that 
+ws-- --ws
+ establish 
+ws-- --ws
+ an 
+ws-- --ws
+ environment. 
+ws-- --ws
+ These 
+ws-- --ws
+ blocks 
+ws-- --ws
+ behave 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ similar 
+ws-- --ws
+ fashion 
+ws-- --ws
+ to 
+ begin 
+ws-- --ws
+ end 
+ws-- --ws
+ blocks 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ programming 
+ws-- --ws
+ language, 
+ws-- --ws
+ since 
+ws-- --ws
+ they 
+ws-- --ws
+ set 
+ws-- --ws
+ a 
+ws-- --ws
+ scope. 
+ws--  --ws
+ We 
+ have 
+ws-- --ws
+ discussed 
+ws-- --ws
+ a 
+ws-- --ws
+ number 
+ws-- --ws
+ of 
+ws-- --ws
+ examples. 
+ws--
+
+--ws
+ \subsection 
+START GEN_FOR_TEXT (commands that involve begin end blocks, that establish an environment. These blocks behave in a similar fashion to begin end blocks in a programming language, since they set a scope. We have discussed a number of examples. 
+
+)
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+
+
+
+
+PUT PAGE NUMBER HERE!!!!!!!
+
+VIIChar Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+
+
+PARA_BREAK! 
+
+Char Cound: 0
+Char Cound: 1
+ { 
+ Check 
+ws-- --ws
+ this 
+ws-- --ws
+ Out 
+ws-- --ws
+ Part 
+ws-- --ws
+ 2 
+ } 
+VIIIws--
+
+--ws
+ Finally, 
+ws-- --ws
+ there 
+ws-- --ws
+ are 
+ws-- --ws
+ { 
+START GEN_FOR_TEXT (
+
+ Finally, there are)
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+ \it 
+ws-- --ws
+ many 
+ws-- --ws
+ other 
+ws-- --ws
+ useful 
+ } 
+START GEN_FOR_TEXT ( <IT>)
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+START GEN_FOR_TEXT (many other useful)
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+START GEN_FOR_TEXT (</IT> )
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+ws-- --ws
+ commands 
+ws-- --ws
+ that 
+ws-- --ws
+ involve 
+ws-- --ws
+ begin 
+ws-- --ws
+ end 
+ws-- --ws
+ blocks, 
+ that 
+ws-- --ws
+ establish 
+ws-- --ws
+ an 
+ws-- --ws
+ environment. 
+ws-- --ws
+ These 
+ws-- --ws
+ blocks 
+ws-- --ws
+ behave 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ similar 
+ws-- --ws
+ fashion 
+ws-- --ws
+ to 
+ begin 
+ws-- --ws
+ end 
+ws-- --ws
+ blocks 
+ws-- --ws
+ in 
+ws-- --ws
+ a 
+ws-- --ws
+ programming 
+ws-- --ws
+ language, 
+ws-- --ws
+ since 
+ws-- --ws
+ they 
+ws-- --ws
+ set 
+ws-- --ws
+ a 
+ws-- --ws
+ scope. 
+ws--  --ws
+ We 
+ have 
+ws-- --ws
+ discussed 
+ws-- --ws
+ a 
+ws-- --ws
+ number 
+ws-- --ws
+ of 
+ws-- --ws
+ examples. 
+ws--
+
+--ws
+ \section 
+START GEN_FOR_TEXT (commands that involve begin end blocks, that establish an environment. These blocks behave in a similar fashion to begin end blocks in a programming language, since they set a scope. We have discussed a number of examples. 
+
+)
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+
+
+PARA_BREAK! 
+
+Char Cound: 0
+Char Cound: 1
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this? 
+ } 
+VIIIws--
+
+--ws
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+ \section 
+START GEN_FOR_TEXT (
+
+ When things are switched back is everything still ok? 
+
+)
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+
+
+PARA_BREAK! 
+
+Char Cound: 0
+Char Cound: 1
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this? 
+ } 
+VIIIws--
+
+--ws
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+ \section 
+START GEN_FOR_TEXT (
+
+ When things are switched back is everything still ok? 
+
+)
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+
+
+PARA_BREAK! 
+
+Char Cound: 0
+Char Cound: 1
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this? 
+ } 
+
+
+
+
+PUT PAGE NUMBER HERE!!!!!!!
+
+VIIIIXws--
+
+--ws
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+ \section 
+START GEN_FOR_TEXT (
+
+ When things are switched back is everything still ok? 
+
+)
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+
+
+PARA_BREAK! 
+
+Char Cound: 0
+Char Cound: 1
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this? 
+ } 
+IXws--
+
+--ws
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+ \section 
+START GEN_FOR_TEXT (
+
+ When things are switched back is everything still ok? 
+
+)
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+
+
+PARA_BREAK! 
+
+Char Cound: 0
+Char Cound: 1
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this? 
+ } 
+IXws--
+
+--ws
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+ \section 
+START GEN_FOR_TEXT (
+
+ When things are switched back is everything still ok? 
+
+)
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+
+
+PARA_BREAK! 
+
+Char Cound: 0
+Char Cound: 1
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this? 
+ } 
+IXws--
+
+--ws
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+ \section 
+START GEN_FOR_TEXT (
+
+ When things are switched back is everything still ok? 
+
+)
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+
+
+PARA_BREAK! 
+
+Char Cound: 0
+Char Cound: 1
+ { 
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this? 
+ } 
+IXws--
+
+--ws
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+ \section 
+START GEN_FOR_TEXT (
+
+ When things are switched back is everything still ok? 
+
+)
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+
+
+
+
+PUT PAGE NUMBER HERE!!!!!!!
+
+IXChar Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+
+
+PARA_BREAK! 
+
+Char Cound: 0
+Char Cound: 1
+ { 
+ Goes 
+ws-- --ws
+ to 
+ws-- --ws
+ 10! 
+ws-- --ws
+ What 
+ws-- --ws
+ about 
+ws-- --ws
+ this? 
+ } 
+Xws--
+
+--ws
+ When 
+ws-- --ws
+ things 
+ws-- --ws
+ are 
+ws-- --ws
+ switched 
+ws-- --ws
+ back 
+ws-- --ws
+ is 
+ws-- --ws
+ everything 
+ws-- --ws
+ still 
+ws-- --ws
+ ok? 
+ws--
+
+--ws
+ \end 
+START GEN_FOR_TEXT (
+
+ When things are switched back is everything still ok? 
+
+)
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+Char Cound: 27
+Char Cound: 28
+Char Cound: 29
+Char Cound: 30
+Char Cound: 31
+Char Cound: 32
+Char Cound: 33
+Char Cound: 34
+Char Cound: 35
+Char Cound: 36
+Char Cound: 37
+Char Cound: 38
+Char Cound: 39
+Char Cound: 1
+Char Cound: 2
+Char Cound: 3
+Char Cound: 4
+Char Cound: 5
+Char Cound: 6
+Char Cound: 7
+Char Cound: 8
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
+Char Cound: 17
+Char Cound: 18
+Char Cound: 19
+Char Cound: 20
+Char Cound: 21
+Char Cound: 22
+Char Cound: 23
+Char Cound: 24
+Char Cound: 25
+Char Cound: 26
+
+
+PARA_BREAK! 
+
+Char Cound: 0
+Char Cound: 1
+ {document} 
+START GEN_FOR_TEXT ( </RM> )
+Char Cound: 9
+Char Cound: 10
+Char Cound: 11
+Char Cound: 12
+Char Cound: 13
+Char Cound: 14
+Char Cound: 15
+Char Cound: 16
