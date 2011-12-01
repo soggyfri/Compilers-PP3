@@ -159,13 +159,13 @@ beginblock       :  beginendopts
                                         { printf("DEBUG:: item and enumerate"); }
                  ;
 
-listblock        :  listblock  anitem 
-                 {if(enumerate_block && !itemize_block ){ current_enumarate_number++; debug_print("DEBUG: LISTBLOCK anitem");} }
-                 |  anitem
-                 {if(enumerate_block && !itemize_block ){ current_enumarate_number++; debug_print("DEBUG: LISTBLOCK");} }
+listblock        :  listblock  anitem           
+                 |  anitem                
                  ;
 
-anitem           :  ITEM  textoption { debug_print("DEBUG:: ANITEM"); print_list_enumerate($2);}
+anitem           :  ITEM  textoption { debug_print("DEBUG: ITEM TEXTOPTION");
+     if(enumerate_block && !itemize_block ){ current_enumarate_number++; debug_print("DEBUG: ANITEM");}
+     print_list_enumerate($2);}
                  |  beginendopts
                  ;
 

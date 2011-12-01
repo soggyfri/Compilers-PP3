@@ -9,11 +9,23 @@
    -> use underline instead
    of IT
 
-** TODO spacing is messed up with curly brace rm/it handling
+** TODO Glitch in output spacing with curly brace rm/it 
+
+-------Advanced 
 
 * TODO enumarate
 ** TODO go up to 9
+** TODO printing is broken, char_count incremented, when it should not be.
+** TODO current_enumerate_number incremented when, it shouldn't be (listblock anitem rule?)
 
 
 * working on
   enumarate block (nested enumarate)
+
+
+
+
+
+
+
+
