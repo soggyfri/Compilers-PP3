@@ -180,7 +180,7 @@ void print_list_enumerate(char* s)
             for(i = 0; i <= enumerate_block; i++)
                 {
                     fprintf(fpout, "%d.",nested_enumerate_count[i]);
-                    char_count+= char_count+2;
+                    char_count += 2;
                 }
             fprintf(fpout, " ");
             char_count++;
