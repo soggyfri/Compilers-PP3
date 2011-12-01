@@ -132,7 +132,7 @@ beginendopts     :  LBEGIN  begcmds  beginblock  endbegin
 begcmds          :  CENTER  
                  |  VERBATIM  {ws_flag=1;}
                  |  SINGLE    { print_newline();print_newline(); set_single_line_spacing(1);}
-                 |  ITEMIZE  
+|  ITEMIZE  {itemize_block = 1;}
                  |  ENUMERATE 
                  |  TABLE  begtableopts
                  |  TABULAR  begtabularopts
@@ -145,7 +145,7 @@ endbegin         :  END  endcmds
 endcmds          :  CENTER  
                  |  VERBATIM  {ws_flag=0;}
                  |  SINGLE  { print_newline();print_newline(); set_line_spacing( restore_line_spacing());}
-                 |  ITEMIZE  
+|  ITEMIZE  { itemize_block = 0; }
                  |  ENUMERATE 
                  |  TABULAR
                  ;
@@ -165,7 +165,7 @@ listblock        :  listblock  anitem
                                     {printf("listblockB\n");}
                  ;
 
-anitem           :  ITEM  textoption
+anitem           :  ITEM  textoption {fprintf(fpout, "-  "); generate_formatted_text($2);print_line_spacing(); }
                  |  beginendopts
                  ;
 

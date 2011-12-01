@@ -3,6 +3,7 @@
 #include "prototypes.h"
 
 int no_indent = 0;
+int itemize_block = 0;
 
 init_output_page()
 {
@@ -50,14 +51,9 @@ void generate_formatted_text(char *s)
     int slen = strlen(s);
     int i;
     fprintf(stdout, "START GEN_FOR_TEXT (%s)\n", s);
-    if(no_indent == 1)
+    if(itemize_block )
         {
-            no_indent = 0;
-        }
-    else
-        {                            
-            fprintf(fpout, "     ");
-            char_count += char_count + 5;
+            char_count = 2;
         }
 
 
@@ -67,7 +63,7 @@ void generate_formatted_text(char *s)
             if(char_count < OUT_WIDTH)
                 {
                     if(isprint(s[i])) fprintf(fpout, "%c", s[i]);
-                    if(P_DEBUG) fprintf(stdout, "Char Count: %d\n", char_count);
+                    /* if(P_DEBUG) fprintf(stdout, "Char Count: %d\n", char_count); */
                     i++;
                     char_count++;
                 }
@@ -75,7 +71,7 @@ void generate_formatted_text(char *s)
                 {
                     char_count = 0;
                     /* fprintf(fpout, "\n%d", lines_so_far); */
-                    print_line_spacing();
+                    if(!itemize_block) {print_line_spacing(); } else { fprintf(fpout, "\n   "); char_count = 3; }
                     if(isprint(s[i])) fprintf(fpout, "%c", s[i]);
                     i++;
                     char_count++;
