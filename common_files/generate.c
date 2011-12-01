@@ -55,15 +55,15 @@ void generate_formatted_text(char *s)
     int slen = strlen(s);
     int i;
     fprintf(stdout, "START GEN_FOR_TEXT (%s)\n", s);
-    if(itemize_block )
-        {
-            char_count = 2;
-        }
+    /* if(itemize_block ) */
+    /*     { */
+    /*         char_count = 2; */
+    /*     } */
 
 
     for(i=0; i <=slen;)
         {            
-           
+            fprintf(stdout, "\nDEBUG:: CHAR COUND = %d is [%c]\n", char_count, s[i]);
             if(char_count < OUT_WIDTH)
                 {
                     if(isprint(s[i])) fprintf(fpout, "%c", s[i]);
@@ -74,9 +74,25 @@ void generate_formatted_text(char *s)
             else
                 {
                     char_count = 0;
-                    /* fprintf(fpout, "\n%d", lines_so_far); */
-                    if(!itemize_block) {print_line_spacing(); } else { fprintf(fpout, "\n   "); char_count = 3; }
-                    /* if(enumerate_block) { */
+                    
+                    if(itemize_block) 
+                        { //inside item block
+                            fprintf(fpout, "\n   "); char_count = 3;                         
+                        } 
+                    else if (enumerate_block >= 0)
+                        {//inside enumerate block
+                            int enum_start_space;
+                            print_line_spacing();
+                            for(enum_start_space = 0; enum_start_space <= enumerate_block; enum_start_space++)
+                                {
+                                    fprintf(fpout,"  ");
+                                }
+                        }
+                    else 
+                        { //not inside any advanced blocks
+                            print_line_spacing(); 
+                        }
+                    if(enumerate_block >= 0) { debug_print("INSIDE ENU in GEN_TEXT");}
                     if(isprint(s[i])) fprintf(fpout, "%c", s[i]);
                     i++;
                     char_count++;
@@ -151,17 +167,23 @@ void print_list_enumerate(char* s)
 {
     if(itemize_block)
         {
-            fprintf(fpout, "-  "); generate_formatted_text(s);print_line_spacing();
+            fprintf(fpout, "-  "); 
+            char_count = 2;
+            generate_formatted_text(s);
+            print_line_spacing(); 
         }
     else if (enumerate_block >= 0)
         {
             /* fprintf(fpout, "DEBUG %d", nested_enumerate_count[0]); */
             int i;
+            char_count = 0;
             for(i = 0; i <= enumerate_block; i++)
                 {
                     fprintf(fpout, "%d.",nested_enumerate_count[i]);
+                    char_count+= char_count+2;
                 }
             fprintf(fpout, " ");
+            char_count++;
             debug_print(s);
             generate_formatted_text(s); 
             print_line_spacing();
