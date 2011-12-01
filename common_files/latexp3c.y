@@ -133,7 +133,7 @@ begcmds          :  CENTER
                  |  VERBATIM  {ws_flag=1;}
                  |  SINGLE    { print_newline();print_newline(); set_single_line_spacing(1);}
 |  ITEMIZE  {itemize_block = 1;}
-                 |  ENUMERATE 
+|  ENUMERATE { enumerate_block = 1; fprintf(stdout, "DEBUG: ENUMERATE BLOCK START!!\n");}
                  |  TABLE  begtableopts
                  |  TABULAR  begtabularopts
                  ;
@@ -146,7 +146,7 @@ endcmds          :  CENTER
                  |  VERBATIM  {ws_flag=0;}
                  |  SINGLE  { print_newline();print_newline(); set_line_spacing( restore_line_spacing());}
 |  ITEMIZE  { itemize_block = 0; }
-                 |  ENUMERATE 
+|  ENUMERATE { enumerate_block=0; fprintf(stdout, "DEBUG: ENUMERATE BLOCK END!!\n");}
                  |  TABULAR
                  ;
 
@@ -156,16 +156,16 @@ beginblock       :  beginendopts
                  |  entrylist  /* FOR center and tabular */
                                     {printf("center or tabular\n");}
                  |  listblock  /* FOR item and enumerate */
-                                    {printf("item or enumerate\n");}
+                                        { printf("DEBUG:: item and enumerate"); }
                  ;
 
-listblock        :  listblock  anitem
-                                    {printf("listblockA\n");}
+listblock        :  listblock  anitem 
+                 {if(enumerate_block){ current_enumarate_number++; debug_print("DEBUG: LISTBLOCK anitem");} }
                  |  anitem
-                                    {printf("listblockB\n");}
+                 {if(enumerate_block){ current_enumarate_number++; debug_print("DEBUG: LISTBLOCK");} }
                  ;
 
-anitem           :  ITEM  textoption {fprintf(fpout, "-  "); generate_formatted_text($2);print_line_spacing(); }
+anitem           :  ITEM  textoption { debug_print("DEBUG:: ANITEM"); print_list_enumerate($2);}
                  |  beginendopts
                  ;
 

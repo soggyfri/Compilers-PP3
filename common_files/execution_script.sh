@@ -1,6 +1,6 @@
 #!/bin/sh
 
-./a.out < $1 1> test/output.debug;
+./a.out < $1 2> test/output.debug;
 echo "--------------------INPUT FILE---------------------";
 echo " ";
 
