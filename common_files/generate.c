@@ -4,8 +4,10 @@
 
 int no_indent = 0;
 int itemize_block = 0;
-int enumerate_block = 0;
+int enumerate_block = -1;
 int current_enumarate_number = 0;
+
+int nested_enumerate_count[10];
 
 init_output_page()
 {
@@ -140,11 +142,10 @@ void print_hor_space(int spacing)
 
 void debug_print(char *s)
 {
-    fprintf(stdout, "---------DEBUG PRINT----------\n");
+    fprintf(stdout, "---------DEBUG PRINT START--------\n");
     fprintf(stdout, "%s\n", s); //TODO: printing wrong because int to string convertion?
-    fprintf(stdout, "---------DEBUG PRINT----------\n");
+    fprintf(stdout, "---------DEBUG PRINT END----------\n");
 }
-
 
 void print_list_enumerate(char* s)
 {
@@ -152,8 +153,17 @@ void print_list_enumerate(char* s)
         {
             fprintf(fpout, "-  "); generate_formatted_text(s);print_line_spacing();
         }
-    else if (enumerate_block)
+    else if (enumerate_block >= 0)
         {
-            fprintf(fpout, "%d. ", current_enumarate_number); generate_formatted_text(s); print_line_spacing();
+            /* fprintf(fpout, "DEBUG %d", nested_enumerate_count[0]); */
+            int i;
+            for(i = 0; i <= enumerate_block; i++)
+                {
+                    fprintf(fpout, "%d.",nested_enumerate_count[i]);
+                }
+            fprintf(fpout, " ");
+            debug_print(s);
+            generate_formatted_text(s); 
+            print_line_spacing();
         }
 }

@@ -133,7 +133,10 @@ begcmds          :  CENTER
                  |  VERBATIM  {ws_flag=1;}
                  |  SINGLE    { print_newline();print_newline(); set_single_line_spacing(1);}
 |  ITEMIZE  {itemize_block = 1;}
-|  ENUMERATE { enumerate_block = 1; fprintf(stdout, "DEBUG: ENUMERATE BLOCK START!!\n");}
+|  ENUMERATE { enumerate_block++;
+     nested_enumerate_count[enumerate_block] = 0;
+     fprintf(stdout, "DEBUG: ENUMERATE BLOCK START nest(%d)!!\n", enumerate_block);
+   }
                  |  TABLE  begtableopts
                  |  TABULAR  begtabularopts
                  ;
@@ -146,7 +149,8 @@ endcmds          :  CENTER
                  |  VERBATIM  {ws_flag=0;}
                  |  SINGLE  { print_newline();print_newline(); set_line_spacing( restore_line_spacing());}
 |  ITEMIZE  { itemize_block = 0; }
-|  ENUMERATE { enumerate_block=0; current_enumarate_number=0; fprintf(stdout, "DEBUG: ENUMERATE BLOCK END!!\n");}
+|  ENUMERATE { enumerate_block--; 
+     fprintf(stdout, "DEBUG: ENUMERATE BLOCK END nest(%d)!!\n", enumerate_block);}
                  |  TABULAR
                  ;
 
@@ -163,8 +167,8 @@ listblock        :  listblock  anitem
                  |  anitem                
                  ;
 
-anitem           :  ITEM  textoption { debug_print("DEBUG: ITEM TEXTOPTION");
-     if(enumerate_block && !itemize_block ){ current_enumarate_number++; debug_print("DEBUG: ANITEM");}
+anitem           :  ITEM  textoption { 
+    if(( enumerate_block >= 0) && !itemize_block ){ nested_enumerate_count[enumerate_block]++;}
      print_list_enumerate($2);}
                  |  beginendopts
                  ;
