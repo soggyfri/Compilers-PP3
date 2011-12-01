@@ -63,7 +63,7 @@ void generate_formatted_text(char *s)
 
     for(i=0; i <=slen;)
         {            
-            fprintf(stdout, "\nDEBUG:: CHAR COUND = %d is [%c]\n", char_count, s[i]);
+            /* fprintf(stdout, "\nDEBUG:: CHAR COUND = %d is [%c]\n", char_count, s[i]); */
             if(char_count < OUT_WIDTH)
                 {
                     if(isprint(s[i])) fprintf(fpout, "%c", s[i]);
@@ -188,4 +188,11 @@ void print_list_enumerate(char* s)
             generate_formatted_text(s); 
             print_line_spacing();
         }
+}
+
+
+void print_table_column(char* s)
+{
+    generate_formatted_text(s);
+    fprintf(fpout, "  ");
 }

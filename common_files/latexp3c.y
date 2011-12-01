@@ -179,21 +179,21 @@ anitem           :  ITEM  textoption
                  ;
 
 entrylist        :  entrylist  anentry
-                                    {printf("entrylistA\n");}
+                                    {print_newline();}
                  |  anentry
-                                    {printf("entrylistB\n");}
+                                    {print_newline();}
                  ;
 
 anentry          :  entry  DBLBS
-                                    {printf("anentryA\n");}
+                                    {printf("anentryA\n")}
                  |  beginendopts
                                     {printf("anentryB\n");}
                  ;
 
 entry            :  entry  SPECCHAR  textoption
-                                    {printf("entryA\n");}
+                                    {print_table_column($3);}
                  |  textoption
-                                    {printf("entryB\n");}
+                                    {print_table_column($1);}
                  ;
 
 begtableopts     :  LSQRB  position  RSQRB
@@ -297,7 +297,7 @@ specialchar      :  SPECCHAR
                  |  RCURLYB
                  ;
 
-nonewpara        :  NOINDENT { no_indent = 1; debug_print("NO INDENT-DEBUG PRINT-Y");}
+nonewpara        :  NOINDENT { no_indent = 1; }
                  ;
 
 reference        :  REF  LCURLYB  WORD  RCURLYB
