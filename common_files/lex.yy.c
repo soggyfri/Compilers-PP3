@@ -1101,7 +1101,7 @@ YY_RULE_SETUP
 case 44:
 YY_RULE_SETUP
 #line 57 "latex.l"
-{printf(" %s \n", yytext);return(COLS);}
+{printf(" %s \n", yytext); static_tabular_column_count = strlen(yytext);  return(COLS);}
 	YY_BREAK
 case 45:
 YY_RULE_SETUP
@@ -1122,7 +1122,7 @@ case 48:
 /* rule 48 can match eol */
 YY_RULE_SETUP
 #line 65 "latex.l"
-{printf("ws--%s--ws\n", yytext);
+{/*printf("ws--%s--ws\n", yytext); */
                          if ((strcmp(yytext, "\n\n") == 0) && (ws_flag == 0)){
                             incr_lines_so_far();return(WS);}
                          else if (ws_flag == 1){ return(WS);}}

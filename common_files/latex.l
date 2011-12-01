@@ -54,7 +54,7 @@ cols            (r|l|c)*
 "b"			{printf(" %s \n", yytext);return(B);}
 "h"			{printf(" %s \n", yytext);return(H);}
 "t"			{printf(" %s \n", yytext);return(T);}
-{cols}                  {printf(" %s \n", yytext);return(COLS);}
+{cols}                  {printf(" %s \n", yytext); static_tabular_column_count = strlen(yytext);  return(COLS);}
 "{"			{printf(" %s \n", yytext);return(LCURLYB);}
 "}"			{printf(" %s \n", yytext);return(RCURLYB);}
 
@@ -62,7 +62,7 @@ cols            (r|l|c)*
 
 {word}			{printf(" %s \n", yytext);return(WORD);}
 
-{ws}			{printf("ws--%s--ws\n", yytext);
+{ws}			{/*printf("ws--%s--ws\n", yytext); */
                          if ((strcmp(yytext, "\n\n") == 0) && (ws_flag == 0)){
                             incr_lines_so_far();return(WS);}
                          else if (ws_flag == 1){ return(WS);}}

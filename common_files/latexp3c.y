@@ -132,13 +132,19 @@ beginendopts     :  LBEGIN  begcmds  beginblock  endbegin
 begcmds          :  CENTER  
                  |  VERBATIM  {ws_flag=1;}
                  |  SINGLE    { print_newline();print_newline(); set_single_line_spacing(1);}
-|  ITEMIZE  {itemize_block = 1;}
-|  ENUMERATE { enumerate_block++;
-     nested_enumerate_count[enumerate_block] = 0;
-     fprintf(stdout, "DEBUG: ENUMERATE BLOCK START nest(%d)!!\n", enumerate_block);
-   }
+                 |  ITEMIZE  {itemize_block = 1;}
+                 |  ENUMERATE
+                     { 
+                       enumerate_block++;
+                       nested_enumerate_count[enumerate_block] = 0;
+                       fprintf(stdout, "DEBUG: ENUMERATE BLOCK START nest(%d)!!\n", enumerate_block);
+                     }
                  |  TABLE  begtableopts
-                 |  TABULAR  begtabularopts
+                 |  TABULAR  begtabularopts 
+                    {
+                    tabular_row_count=-1; 
+                    tabular_column_count=-1;
+                    }
                  ;
 
 endbegin         :  END  endcmds
@@ -154,14 +160,18 @@ endcmds          :  CENTER
                   enumerate_block--; 
                   fprintf(stdout, "DEBUG: ENUMERATE BLOCK END nest(%d)!!\n", enumerate_block);
                   }
-                 |  TABULAR
+                 |  TABULAR 
+                    { 
+                      print_table();
+                      fprintf(stdout, "DEBUG: TABULAR BLOCK END)!!\n")
+                    }
                  ;
 
 beginblock       :  beginendopts
                  |  textoption /* FOR single or verbatim */
                                     {generate_formatted_text($1);}
                  |  entrylist  /* FOR center and tabular */
-                                    {printf("center or tabular\n");}
+                                    { }
                  |  listblock  /* FOR item and enumerate */
                                         { printf("DEBUG:: item and enumerate"); }
                  ;
@@ -179,9 +189,15 @@ anitem           :  ITEM  textoption
                  ;
 
 entrylist        :  entrylist  anentry
-                                    {print_newline();}
+                                    {
+                                    tabular_row_count++; 
+                                    tabular_column_count=-1;
+                                    }
                  |  anentry
-                                    {print_newline();}
+                                    {
+                                    tabular_row_count++; 
+                                    tabular_column_count=-1;
+                                    }
                  ;
 
 anentry          :  entry  DBLBS
@@ -191,9 +207,13 @@ anentry          :  entry  DBLBS
                  ;
 
 entry            :  entry  SPECCHAR  textoption
-                                    {print_table_column($3);}
+                                    {tabular_column_count++; store_table_column($3);}
                  |  textoption
-                                    {print_table_column($1);}
+                                    {
+                                    if(tabular_row_count < 0) tabular_row_count=0;
+                                    tabular_column_count++; 
+                                    store_table_column($1);
+                                    }
                  ;
 
 begtableopts     :  LSQRB  position  RSQRB

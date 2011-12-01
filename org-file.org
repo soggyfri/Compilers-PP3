@@ -19,11 +19,13 @@
 ** TODO current_enumerate_number incremented when, it shouldn't be (listblock anitem rule?)
 
 
+
 * TODO Tabular block
 ** TODO align column entries.. compute the longest column?
    allocate space to hold all elements temporarily 
    strlen(entry) -> keep the highest one :: do this for each row
    in entry rule -> send $1 to function then in endcmds -> call function to print table
+
 ** TODO fix char_count when printing columns
 
 

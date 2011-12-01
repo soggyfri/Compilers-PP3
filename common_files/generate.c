@@ -3,11 +3,16 @@
 #include "prototypes.h"
 
 int no_indent = 0;
+
 int itemize_block = 0;
 int enumerate_block = -1;
-int current_enumarate_number = 0;
-
 int nested_enumerate_count[10];
+
+#define TABLE_STRING_SIZE 200
+char tabular_data[20][20][TABLE_STRING_SIZE];
+int tabular_row_count = -1;
+int tabular_column_count = -1;
+int static_tabular_column_count = 0;
 
 init_output_page()
 {
@@ -55,19 +60,14 @@ void generate_formatted_text(char *s)
     int slen = strlen(s);
     int i;
     fprintf(stdout, "START GEN_FOR_TEXT (%s)\n", s);
-    /* if(itemize_block ) */
-    /*     { */
-    /*         char_count = 2; */
-    /*     } */
 
 
     for(i=0; i <=slen;)
         {            
-            /* fprintf(stdout, "\nDEBUG:: CHAR COUND = %d is [%c]\n", char_count, s[i]); */
+            /* /\* fprintf(stdout, "\nDEBUG:: CHAR COUND = %d is [%c]\n", char_count, s[i]); *\/ */
             if(char_count < OUT_WIDTH)
                 {
                     if(isprint(s[i])) fprintf(fpout, "%c", s[i]);
-                    /* if(P_DEBUG) fprintf(stdout, "Char Count: %d\n", char_count); */
                     i++;
                     char_count++;
                 }
@@ -96,7 +96,6 @@ void generate_formatted_text(char *s)
                     if(isprint(s[i])) fprintf(fpout, "%c", s[i]);
                     i++;
                     char_count++;
-                    /* if(P_DEBUG) fprintf(stdout, "%c", s[i]); */
                 }
 
              if(s[i] == '\n' && s[i-1] == '\n' & i > 1)
@@ -191,8 +190,43 @@ void print_list_enumerate(char* s)
 }
 
 
-void print_table_column(char* s)
+void store_table_column(char* s)
 {
-    generate_formatted_text(s);
-    fprintf(fpout, "  ");
+    int i;
+    for(i=0; i<TABLE_STRING_SIZE && i<strlen(s); i++)
+        {
+            tabular_data[tabular_row_count][tabular_column_count][i] = *(s+i);
+        }
+    tabular_data[tabular_row_count][tabular_column_count][i] = 0; 
+    fprintf(stdout, "SET:: [%d][%d] = (%s) :: org string = (%s)\n", 
+            tabular_row_count, tabular_column_count, tabular_data[tabular_row_count][tabular_column_count]
+            , s);
+    fflush(stdout);
+}
+
+void print_table()
+{
+    //find the longest column
+    int i, j;
+    int longest_entry = 0;
+    fprintf(stdout, "max row/column = [%d][%d]\n", tabular_row_count, static_tabular_column_count);
+    for(i=0; i<tabular_row_count; i++){
+        for(j=0; j<static_tabular_column_count; j++)
+            {
+                fprintf(stdout, "ACCESS [%d][%d] = ", i,j);
+                fflush(stdout);
+                fprintf(stdout, "%s\n",tabular_data[i][j]);
+                fflush(stdout);
+                int length =  strlen(tabular_data[i][j]);
+                fprintf(fpout, "DATA: (%s)\n", tabular_data[i][j]);
+                fflush(fpout);
+                if(length > longest_entry)
+                    {
+                        fprintf(stdout, "DEBUG: Found longest_entry (%s)\n", tabular_data[i][j]);
+                        longest_entry = length;
+                    }
+            }
+    }
+
+    //now print the table
 }
