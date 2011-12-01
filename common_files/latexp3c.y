@@ -148,9 +148,12 @@ endbegin         :  END  endcmds
 endcmds          :  CENTER  
                  |  VERBATIM  {ws_flag=0;}
                  |  SINGLE  { print_newline();print_newline(); set_line_spacing( restore_line_spacing());}
-|  ITEMIZE  { itemize_block = 0; }
-|  ENUMERATE { enumerate_block--; 
-     fprintf(stdout, "DEBUG: ENUMERATE BLOCK END nest(%d)!!\n", enumerate_block);}
+                 |  ITEMIZE  { itemize_block = 0; }
+                 |  ENUMERATE 
+                 {
+                  enumerate_block--; 
+                  fprintf(stdout, "DEBUG: ENUMERATE BLOCK END nest(%d)!!\n", enumerate_block);
+                  }
                  |  TABULAR
                  ;
 
@@ -167,9 +170,11 @@ listblock        :  listblock  anitem
                  |  anitem                
                  ;
 
-anitem           :  ITEM  textoption { 
-    if(( enumerate_block >= 0) && !itemize_block ){ nested_enumerate_count[enumerate_block]++;}
-     print_list_enumerate($2);}
+anitem           :  ITEM  textoption 
+                 { 
+                 if(( enumerate_block >= 0) && !itemize_block ){ nested_enumerate_count[enumerate_block]++;}
+                 print_list_enumerate($2);
+                 }
                  |  beginendopts
                  ;
 
