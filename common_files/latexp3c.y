@@ -146,7 +146,7 @@ endcmds          :  CENTER
                  |  VERBATIM  {ws_flag=0;}
                  |  SINGLE  { print_newline();print_newline(); set_line_spacing( restore_line_spacing());}
 |  ITEMIZE  { itemize_block = 0; }
-|  ENUMERATE { enumerate_block=0; fprintf(stdout, "DEBUG: ENUMERATE BLOCK END!!\n");}
+|  ENUMERATE { enumerate_block=0; current_enumarate_number=0; fprintf(stdout, "DEBUG: ENUMERATE BLOCK END!!\n");}
                  |  TABULAR
                  ;
 
@@ -160,9 +160,9 @@ beginblock       :  beginendopts
                  ;
 
 listblock        :  listblock  anitem 
-                 {if(enumerate_block){ current_enumarate_number++; debug_print("DEBUG: LISTBLOCK anitem");} }
+                 {if(enumerate_block && !itemize_block ){ current_enumarate_number++; debug_print("DEBUG: LISTBLOCK anitem");} }
                  |  anitem
-                 {if(enumerate_block){ current_enumarate_number++; debug_print("DEBUG: LISTBLOCK");} }
+                 {if(enumerate_block && !itemize_block ){ current_enumarate_number++; debug_print("DEBUG: LISTBLOCK");} }
                  ;
 
 anitem           :  ITEM  textoption { debug_print("DEBUG:: ANITEM"); print_list_enumerate($2);}

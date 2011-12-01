@@ -4,15 +4,16 @@
 ** Paragraph Detection
 
 * TODO RM/IT
-** TODO print ^h_ after
+** DONE print ^h_ after
    a character to underline
    -> use underline instead
    of IT
 
+** TODO spacing is messed up with curly brace rm/it handling
 
 * TODO enumarate
 ** TODO go up to 9
 
 
 * working on
-  enumarate block
+  enumarate block (nested enumarate)
