@@ -233,7 +233,7 @@ void print_table()
     filler[0] = 0;
    
     /* fprintf(fpout, "TE%sST\n", filler); */
-    
+    char_count = 0;
     for(i=0; i<tabular_row_count; i++){
         for(j=0; j<static_tabular_column_count; j++)
             {
