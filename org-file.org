@@ -21,12 +21,15 @@
 
 
 * TODO Tabular block
-** TODO align column entries.. compute the longest column?
+** DONE align column entries.. compute the longest column?
    allocate space to hold all elements temporarily 
    strlen(entry) -> keep the highest one :: do this for each row
    in entry rule -> send $1 to function then in endcmds -> call function to print table
 
-** TODO fix char_count when printing columns
+** DONE fix char_count when printing columns
+
+** TODO fix linewraping when row is longer than 40 chars
+
 
 
 * working on

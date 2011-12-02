@@ -193,11 +193,11 @@ void print_list_enumerate(char* s)
 void store_table_column(char* s)
 {
     int i;
-    for(i=0; i<TABLE_STRING_SIZE && i<strlen(s); i++)
+    for(i=0; i<TABLE_STRING_SIZE && i< (strlen(s) + 1); i++)
         {
             tabular_data[tabular_row_count][tabular_column_count][i] = *(s+i);
         }
-    tabular_data[tabular_row_count][tabular_column_count][i] = 0; 
+    /* tabular_data[tabular_row_count][tabular_column_count][i] = 0;  */
     fprintf(stdout, "SET:: [%d][%d] = (%s) :: org string = (%s)\n", 
             tabular_row_count, tabular_column_count, tabular_data[tabular_row_count][tabular_column_count]
             , s);
@@ -218,7 +218,7 @@ void print_table()
                 fprintf(stdout, "%s\n",tabular_data[i][j]);
                 fflush(stdout);
                 int length =  strlen(tabular_data[i][j]);
-                fprintf(fpout, "DATA: (%s)\n", tabular_data[i][j]);
+                /* fprintf(fpout, "DATA: (%s)\n", tabular_data[i][j]); */
                 fflush(fpout);
                 if(length > longest_entry)
                     {
@@ -229,4 +229,26 @@ void print_table()
     }
 
     //now print the table
+    char filler[10*longest_entry];
+    filler[0] = 0;
+   
+    /* fprintf(fpout, "TE%sST\n", filler); */
+    
+    for(i=0; i<tabular_row_count; i++){
+        for(j=0; j<static_tabular_column_count; j++)
+            {
+                int length = strlen(tabular_data[i][j]);
+                int filler = longest_entry - length;
+                fprintf(stdout, "FILLER:: (%d)--, data=(%s)\n", filler, tabular_data[i][j]);
+
+                generate_formatted_text(tabular_data[i][j]);
+                int k;
+                for(k=0; k <=filler; k++)
+                    generate_formatted_text(" ");
+                
+            }
+        print_line_spacing();
+        char_count = 0;
+    }
+    print_line_spacing();
 }
