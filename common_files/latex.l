@@ -4,7 +4,7 @@
 #include "prototypes.h"
 %}
 ws		[ \t\n]+
-punc            (\.|\,|\!|\?)
+punc            (\.|\,|\!|\?|\/|\')
 word		({punc}|[a-zA-Z0-9])*
 special         (\%|\_|\&|\$|\#)
 cols            (r|l|c)*

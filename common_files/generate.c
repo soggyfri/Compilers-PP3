@@ -3,6 +3,7 @@
 #include "prototypes.h"
 
 int no_indent = 0;
+int center_block = 0;
 int itemize_block = 0;
 int enumerate_block = 0;
 int current_enumarate_number = 0;
@@ -45,52 +46,56 @@ void  generate_subsec_header(int i, int j, char *s)
         printPageNumber(fptoc);
         fflush(fptoc);
   }
-  
 }
 
 void generate_formatted_text(char *s)
 {
     int slen = strlen(s);
     int i;
+    int j;
+    int k;
     fprintf(stdout, "START GEN_FOR_TEXT (%s)\n", s);
-    if(itemize_block )
-        {
-            char_count = 2;
-        }
 
-
+    if (center_block == 1){
+         int center = (int)((OUT_WIDTH - slen)/2);
+         for (j=0; j < center ; j++ )
+            {
+             fprintf(fpout, " ");
+            }
+       }
     for(i=0; i <=slen;)
-        {            
-           
+        {           
             if(char_count < OUT_WIDTH)
-                {
+                {  
                     if(isprint(s[i])) fprintf(fpout, "%c", s[i]);
-                    /* if(P_DEBUG) fprintf(stdout, "Char Count: %d\n", char_count); */
                     i++;
                     char_count++;
                 }
             else
-                {
+                {    
+                    k = OUT_WIDTH  - slen;
                     char_count = 0;
-                    /* fprintf(fpout, "\n%d", lines_so_far); */
-                    if(!itemize_block) {print_line_spacing(); } else { fprintf(fpout, "\n   "); char_count = 3; }
-                    /* if(enumerate_block) { */
+		    print_line_spacing();
+                    if (center_block == 1){
+                    int center = (int)((OUT_WIDTH - k)/2);
+                    for (j=0; j < center ; j++ )
+                    {
+                    fprintf(fpout, " ");
+                    }
+                    
                     if(isprint(s[i])) fprintf(fpout, "%c", s[i]);
                     i++;
                     char_count++;
-                    /* if(P_DEBUG) fprintf(stdout, "%c", s[i]); */
+                  }
                 }
-
              if(s[i] == '\n' && s[i-1] == '\n' & i > 1)
                 {
                     fprintf(stdout, "\n\nPARA_BREAK! \n\n");
                     print_newline(); print_newline();
-                    char_count = 0;
-                                        
+                    char_count = 0;                     
                 }
-        }
-    // print_newline(); //Paragraph seperator for next chunk of text
 
+        }
 }
 
 void print_line_spacing()

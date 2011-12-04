@@ -104,6 +104,8 @@ curlyboptions    :  RM  textoption
                             generate_formatted_text(" <RM>");
                             generate_formatted_text($2);
                             generate_formatted_text("</RM> ");
+			    print_newline();
+			    print_newline();
                         }
                  | IT textoption
                         {
@@ -129,11 +131,11 @@ backsoptions     :  beginendopts
 beginendopts     :  LBEGIN  begcmds  beginblock  endbegin  
                  ;
 
-begcmds          :  CENTER  
-                 |  VERBATIM  {ws_flag=1;}
-                 |  SINGLE    { print_newline();print_newline(); set_single_line_spacing(1);}
-|  ITEMIZE  {itemize_block = 1;}
-|  ENUMERATE { enumerate_block = 1; fprintf(stdout, "DEBUG: ENUMERATE BLOCK START!!\n");}
+begcmds          :  CENTER    {center_block=1;}
+                 |  VERBATIM  {verb_block = 1;}
+                 |  SINGLE    {print_newline();print_newline(); set_single_line_spacing(1);}
+		 |  ITEMIZE   {itemize_block = 1;}
+		 |  ENUMERATE {enumerate_block = 1; fprintf(stdout, "DEBUG: ENUMERATE BLOCK START!!\n");}
                  |  TABLE  begtableopts
                  |  TABULAR  begtabularopts
                  ;
@@ -142,11 +144,11 @@ endbegin         :  END  endcmds
                  |  endtableopts  TABLE  
                  ;
 
-endcmds          :  CENTER  
-                 |  VERBATIM  {ws_flag=0;}
-                 |  SINGLE  { print_newline();print_newline(); set_line_spacing( restore_line_spacing());}
-|  ITEMIZE  { itemize_block = 0; }
-|  ENUMERATE { enumerate_block=0; fprintf(stdout, "DEBUG: ENUMERATE BLOCK END!!\n");}
+endcmds          :  CENTER    {center_block=0;}
+                 |  VERBATIM  {verb_block =0;}
+                 |  SINGLE    {print_newline();print_newline(); set_line_spacing( restore_line_spacing());}
+		 |  ITEMIZE   {itemize_block = 0; }
+		 |  ENUMERATE { enumerate_block=0; fprintf(stdout, "DEBUG: ENUMERATE BLOCK END!!\n");}
                  |  TABULAR
                  ;
 
@@ -176,15 +178,15 @@ entrylist        :  entrylist  anentry
                  ;
 
 anentry          :  entry  DBLBS
-                                    {printf("anentryA\n");}
+                                    {printf("anentryA\n"); print_newline(); print_newline();} //----beguin block----
                  |  beginendopts
                                     {printf("anentryB\n");}
                  ;
 
 entry            :  entry  SPECCHAR  textoption
-                                    {printf("entryA\n");}
-                 |  textoption
-                                    {printf("entryB\n");}
+                                    {printf("entryA\n");}  //----beguin block----
+                 |  textoption 
+                                    {printf("entryB\n");generate_formatted_text($1);}
                  ;
 
 begtableopts     :  LSQRB  position  RSQRB
