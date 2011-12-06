@@ -3,9 +3,10 @@
 #include "prototypes.h"
 
 int no_indent = 0;
-
+int center_block = 0;
 int itemize_block = 0;
 int enumerate_block = -1;
+
 int nested_enumerate_count[10];
 
 #define TABLE_STRING_SIZE 200
@@ -60,13 +61,25 @@ void generate_formatted_text(char *s)
 {
     int slen = strlen(s);
     int i;
+    int j;
+    int k;
+    int p = 0;
     fprintf(stdout, "START GEN_FOR_TEXT (%s)\n", s);
 
+    if( center_block == 1)
+        {
+            int center = (int) ((OUT_WIDTH - slen)/2);
+            for(j=0; j<center; j++)
+                {
+                    fprintf(fpout, " ");
+                    p = char_count++;
+                }
+        }
 
     for(i=0; i <=slen;)
         {            
             /* /\* fprintf(stdout, "\nDEBUG:: CHAR COUND = %d is [%c]\n", char_count, s[i]); *\/ */
-            if(char_count < OUT_WIDTH)
+            if((char_count-p) < OUT_WIDTH)
                 {
                     if(isprint(s[i])) fprintf(fpout, "%c", s[i]);
                     i++;
@@ -75,7 +88,8 @@ void generate_formatted_text(char *s)
             else
                 {
                     char_count = 0;
-                    
+                    k = OUT_WIDTH - slen;
+                    print_line_spacing();
                     if(itemize_block) 
                         { //inside item block
                             fprintf(fpout, "\n   "); char_count = 3;                         
@@ -87,6 +101,14 @@ void generate_formatted_text(char *s)
                             for(enum_start_space = 0; enum_start_space <= enumerate_block; enum_start_space++)
                                 {
                                     fprintf(fpout,"  ");
+                                }
+                        }
+                    else if (center_block == 1)
+                        {
+                            int center = (int)((OUT_WIDTH -k)/2);
+                            for(j=0; j<  center; j++)
+                                {
+                                    fprintf(fpout, " ");
                                 }
                         }
                     else 

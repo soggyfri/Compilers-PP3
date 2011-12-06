@@ -129,7 +129,7 @@ backsoptions     :  beginendopts
 beginendopts     :  LBEGIN  begcmds  beginblock  endbegin  
                  ;
 
-begcmds          :  CENTER  
+begcmds          :  CENTER  { center_block = 1; }
                  |  VERBATIM  {ws_flag=1;}
                  |  SINGLE    { print_newline();print_newline(); set_single_line_spacing(1);}
                  |  ITEMIZE  {itemize_block = 1;}
@@ -151,7 +151,7 @@ endbegin         :  END  endcmds
                  |  endtableopts  TABLE  
                  ;
 
-endcmds          :  CENTER  
+endcmds          :  CENTER  { center_block = 0; }
                  |  VERBATIM  {ws_flag=0;}
                  |  SINGLE  { print_newline();print_newline(); set_line_spacing( restore_line_spacing());}
                  |  ITEMIZE  { itemize_block = 0; }
@@ -201,7 +201,7 @@ entrylist        :  entrylist  anentry
                  ;
 
 anentry          :  entry  DBLBS
-                                    {printf("anentryA\n")}
+{printf("anentryA\n"); print_newline(); print_newline();}
                  |  beginendopts
                                     {printf("anentryB\n");}
                  ;
@@ -210,9 +210,15 @@ entry            :  entry  SPECCHAR  textoption
                                     {tabular_column_count++; store_table_column($3);}
                  |  textoption
                                     {
-                                    if(tabular_row_count < 0) tabular_row_count=0;
-                                    tabular_column_count++; 
-                                    store_table_column($1);
+                                        if(center_block == 1){
+                                            generate_formatted_text($1);
+                                        }
+                                        else if(itemize_block)
+                                            {
+                                                if (tabular_row_count < 0) tabular_row_count=0;
+                                                tabular_column_count++; 
+                                                store_table_column($1);
+                                            }
                                     }
                  ;
 
@@ -317,7 +323,7 @@ specialchar      :  SPECCHAR
                  |  RCURLYB
                  ;
 
-nonewpara        :  NOINDENT { no_indent = 1; }
+nonewpara        :  NOINDENT { no_indent = 0; }
                  ;
 
 reference        :  REF  LCURLYB  WORD  RCURLYB
