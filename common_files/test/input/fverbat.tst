@@ -24,7 +24,35 @@ indent of the paragraph.
 \begin{single}
 Now, its important to make sure that single works correctly, and can
 be used to change the formating with respect to the ways lines are 
+
+\begin{enumerate}
+\item Single is for Single spacing
+\item Verbatim allows text that matches the what you see is what you get mode
+\item Itemize uses ticks to indicate items
+\item Center allows a block to be centered
+\end{enumerate}
+
+SOME TEXT GOES HERE
+
+\begin{enumerate}
+\item Single is for Single spacing
+\begin{itemize}
+\item Single is for Single spacing.  A nested itemize
+\item Verbatim allows text that matches the what you see is what you get mode
+\item Itemize uses ticks to indicate items
+\item Center allows a block to be centered
+\end{itemize}
+\item Verbatim allows text that matches the what you see is what you get mode
+\item Itemize uses ticks to indicate items
+\begin{enumerate}
+\item Single is for Single spacing. A second level of enums!!!!
+\item Center allows a block to be centered
+\end{enumerate}
+\item Center allows a block to be centered
+\end{enumerate}
+
 output.  In this case, we are going from double to single spacing.
+
 \end{single}
 
 \subsection{A Text Processor}
@@ -35,7 +63,7 @@ develop formatted documents that are easy to read.
 A text processor is a very useful tool, since it allows us to
 develop formatted documents that are easy to read.
 
-\vspace{7}
+\vspace{10}
 
 A text processor is a very useful tool, since it allows us to
 develop formatted documents that are easy to read.
@@ -56,12 +84,14 @@ curly braces, we employ the backslash a set of integers.
 
 \subsection{Yet Some More Legal Latex Commands}
 
-\begin{single}
 We have seen that there are many different Latex commands, that can be used
+
+\begin{single}
 in many different ways.  However, sometimes, we wish to use a character to
 mean itself, and override its Latex interpretation.  For example, to use
-curly braces, we employ the backslash a set of integers.
 \end{single}
+
+curly braces, we employ the backslash a set of integers.
 
 \section{Using Latex}
 

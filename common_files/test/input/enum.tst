@@ -1,7 +1,7 @@
 \begin{document}
 \pagenumbering{roman} 
 \roman{7} 
-\renewcommand{\baselinestretch}{1}
+\renewcommand{\baselinestretch}{3}
 
 A block of a enumerate within a single environment should change the spacing
 from its triple default.

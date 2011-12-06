@@ -3,13 +3,9 @@
 \arabic{5} 
 \renewcommand{\baselinestretch}{2}
 
-dont work if it is first.. need to add IT by itself in
-test options, but that adds s/r errors. it is centered.
-
-\it
-test
-
-{\rm test itemize but roman don't work works too!}
+A Basic file that checks to see if the centering command works
+correctly.  Note that the double backslash should indicate what
+should be centered and how it is centered.
 
 \begin{center}
 Single is for Single spacing\\
