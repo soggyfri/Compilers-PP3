@@ -16,6 +16,7 @@ int tabular_row_count = -1;
 int tabular_column_count = -1;
 int static_tabular_column_count = 0;
 int longest_entry_column[20];
+char column_allignment_info[20];
 
 init_output_page()
 {
@@ -79,12 +80,15 @@ void generate_formatted_text(char *s)
 
     for(i=0; i <=slen;)
         {            
-            fprintf(stdout, "\nDEBUG:: CHAR COUND = %d is [%c]\n", char_count, s[i]);
+            /* fprintf(stdout, "\nDEBUG:: CHAR COUND = %d is [%c]\n", char_count, s[i]); */
             if((char_count-p) < OUT_WIDTH)
                 {
-                    if(isprint(s[i])) fprintf(fpout, "%c", s[i]);
-                    i++;
-                    char_count++;
+                    if(isprint(s[i]))
+                        {
+                            fprintf(fpout, "%c", s[i]);                         
+                            char_count++;
+                        }
+                       i++;
                 }
             else
                 {
@@ -122,7 +126,7 @@ void generate_formatted_text(char *s)
                     char_count++;
                 }
 
-             if(s[i] == '\n' && s[i-1] == '\n' && i > 1)
+             if(i >= 1 && s[i] == '\n' && s[i-1] == '\n' )
                 {
                     fprintf(stdout, "\n\nPARA_BREAK! \n\n");
                     print_newline(); print_newline();
@@ -228,6 +232,17 @@ void store_table_column(char* s)
     fflush(stdout);
 }
 
+void set_row_alignment(char* s)
+{
+    int i = strlen(s);
+    int k;
+    for(k = 0; k < i; k++)
+        column_allignment_info[k] = s[k];
+
+    for(k=0;k<i;k++)
+        fprintf(stdout, "FOUND ROW ALIGN %c\n", column_allignment_info[k]);
+}
+
 void print_table()
 {
     //find the longest column
@@ -276,12 +291,42 @@ void print_table()
             {
                 int length = strlen(tabular_data[i][j]);
                 int filler = longest_entry_column[j] - length;
-                fprintf(stdout, "FILLER:: (%d)--, data=(%s)\n", filler, tabular_data[i][j]);
+                
 
+                //align the columns
+                if(column_allignment_info[j] == 'r')
+                    {
+                        int k;
+                        for(k=0; k <=filler; k++)
+                            generate_formatted_text(" ");
+                        
+                    }
+                else if( column_allignment_info[j] == 'c')
+                    {
+                        int k;
+                        for(k=0; k <=filler/2; k++)
+                            generate_formatted_text(" ");
+
+                    }
+                   
+                fprintf(stdout, "FILLER::(%d) DATA::(%s)\n", filler, tabular_data[i][j]);
                 generate_formatted_text(tabular_data[i][j]);
-                int k;
-                for(k=0; k <=filler; k++)
-                    generate_formatted_text(" ");
+                
+                if( column_allignment_info[j] == 'c')
+                    {
+                        int k;
+                        for(k=0; k <=filler/2; k++)
+                            generate_formatted_text(" ");
+
+                    }
+                else if (column_allignment_info[j] == 'l')
+                    {
+                        
+                        int k;
+                        for(k=0; k <=filler; k++)
+                            generate_formatted_text(" ");
+                    }
+
                 
             }
         print_line_spacing();

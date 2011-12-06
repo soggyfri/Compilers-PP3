@@ -1,7 +1,7 @@
 \begin{document}
 \pagenumbering{Roman} 
 \Roman{1} 
-\renewcommand{\baselinestretch}{3}
+\renewcommand{\baselinestretch}{1}
 
 Checking that a simple verbatim works correctly!
 

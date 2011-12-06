@@ -227,7 +227,7 @@ entry            :  entry  SPECCHAR  textoption
 begtableopts     :  LSQRB  position  RSQRB
                  ;
                  
-begtabularopts   :  LCURLYB  COLS  RCURLYB
+begtabularopts   :  LCURLYB  COLS {set_row_alignment(yytext); } RCURLYB
                  ;
 
 position         :  H  
