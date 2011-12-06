@@ -6,6 +6,7 @@ int no_indent = 0;
 int center_block = 0;
 int itemize_block = 0;
 int enumerate_block = -1;
+int tabular_block = 0;
 
 int nested_enumerate_count[10];
 
@@ -234,6 +235,7 @@ void print_table()
     int longest_entry = 0;
     
     fprintf(stdout, "max row/column = [%d][%d]\n", tabular_row_count, static_tabular_column_count);
+    fflush(stdout);
     for(j=0; j<static_tabular_column_count; j++){
         for(i=0; i<tabular_row_count; i++)
             {

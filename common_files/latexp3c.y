@@ -142,8 +142,9 @@ begcmds          :  CENTER  { center_block = 1; }
                  |  TABLE  begtableopts
                  |  TABULAR  begtabularopts 
                     {
-                    tabular_row_count=-1; 
-                    tabular_column_count=-1;
+                        tabular_block = 1;
+                        tabular_row_count=-1; 
+                        tabular_column_count=-1;
                     }
                  ;
 
@@ -163,6 +164,7 @@ endcmds          :  CENTER  { center_block = 0; }
                  |  TABULAR 
                     { 
                       print_table();
+                      tabular_block = 0;
                       fprintf(stdout, "DEBUG: TABULAR BLOCK END)!!\n")
                     }
                  ;
@@ -207,13 +209,13 @@ anentry          :  entry  DBLBS
                  ;
 
 entry            :  entry  SPECCHAR  textoption
-                                    {tabular_column_count++; store_table_column($3);}
+{if(tabular_block ) {tabular_column_count++; store_table_column($3);}}
                  |  textoption
                                     {
                                         if(center_block == 1){
                                             generate_formatted_text($1);
                                         }
-                                        else if(itemize_block)
+                                        else if(tabular_block)
                                             {
                                                 if (tabular_row_count < 0) tabular_row_count=0;
                                                 tabular_column_count++; 

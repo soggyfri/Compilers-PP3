@@ -32,7 +32,7 @@
 
 
 
-** TODO keep spacing between each column.. add only enough space to align columns!
+** DONE keep spacing between each column.. add only enough space to align columns!
 
 * working on
   Tabular Block
