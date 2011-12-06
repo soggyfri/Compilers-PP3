@@ -176,6 +176,7 @@ int get_line_spacing()
 
 void print_newline()
 {
+    /* if(P_DEBUG) debug_print("DEBUG: Printing New line"); */
     fprintf(fpout, "\n");
     incr_lines_so_far();    
 }

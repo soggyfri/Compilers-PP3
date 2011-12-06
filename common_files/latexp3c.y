@@ -203,7 +203,7 @@ entrylist        :  entrylist  anentry
                  ;
 
 anentry          :  entry  DBLBS
-{printf("anentryA\n"); print_newline(); print_newline();}
+{printf("anentryA\n"); if(center_block){ print_newline(); print_newline();}}
                  |  beginendopts
                                     {printf("anentryB\n");}
                  ;
