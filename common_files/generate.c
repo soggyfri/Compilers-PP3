@@ -13,6 +13,7 @@ char tabular_data[20][20][TABLE_STRING_SIZE];
 int tabular_row_count = -1;
 int tabular_column_count = -1;
 int static_tabular_column_count = 0;
+int longest_entry_column[20];
 
 init_output_page()
 {
@@ -209,9 +210,10 @@ void print_table()
     //find the longest column
     int i, j;
     int longest_entry = 0;
+    
     fprintf(stdout, "max row/column = [%d][%d]\n", tabular_row_count, static_tabular_column_count);
-    for(i=0; i<tabular_row_count; i++){
-        for(j=0; j<static_tabular_column_count; j++)
+    for(j=0; j<static_tabular_column_count; j++){
+        for(i=0; i<tabular_row_count; i++)
             {
                 fprintf(stdout, "ACCESS [%d][%d] = ", i,j);
                 fflush(stdout);
@@ -226,7 +228,18 @@ void print_table()
                         longest_entry = length;
                     }
             }
+
+        //put the longest entry for this column here in an array
+        longest_entry_column[j] = longest_entry;
+        longest_entry = 0;
     }
+    /* int k; */
+    /* for(k = 0; k < static_tabular_column_count; k++) */
+    /*     { */
+    /*         fprintf(stdout, "DEBUG-ARRAY-index[%d]: Longest=%d\n",k, longest_entry_column[k]); */
+    /*     } */
+
+    
 
     //now print the table
     char filler[10*longest_entry];
@@ -238,7 +251,7 @@ void print_table()
         for(j=0; j<static_tabular_column_count; j++)
             {
                 int length = strlen(tabular_data[i][j]);
-                int filler = longest_entry - length;
+                int filler = longest_entry_column[j] - length;
                 fprintf(stdout, "FILLER:: (%d)--, data=(%s)\n", filler, tabular_data[i][j]);
 
                 generate_formatted_text(tabular_data[i][j]);
