@@ -3,7 +3,7 @@
 What happens when there are no page numbers???
 
 \begin{table}[h]
-\begin{tabular}{r c l}
+\begin{tabular}{rcl}
 No. & XXXX & XX\\
 One & XX & YY\\
 TwoTwo & ZZ & CC\\
@@ -15,7 +15,7 @@ TwoTwo & ZZ & CC\\
 Will this table float to the top of the next page?
 
 \begin{table}[t]
-\begin{tabular}{r r}
+\begin{tabular}{rr}
 XXXXXXX & XX\\
 XX & YYYYYYY\\
 \end{tabular}
@@ -23,7 +23,7 @@ XX & YYYYYYY\\
 \end{table}
 
 \begin{table}[h]
-\begin{tabular}{c c c}
+\begin{tabular}{ccc}
 No  & XXXX & XX\\
 OneTwo & XX & YYYY\\
 Very Long Entry & ZZ & CC\\
