@@ -132,7 +132,7 @@ beginendopts     :  LBEGIN  begcmds  beginblock  endbegin
                  ;
 
 begcmds          :  CENTER    {center_block=1;}
-                 |  VERBATIM  {verb_block = 1;}
+                 |  VERBATIM  {}
                  |  SINGLE    {print_newline();print_newline(); set_single_line_spacing(1);}
 		 |  ITEMIZE   {itemize_block = 1;}
 		 |  ENUMERATE {enumerate_block = 1; fprintf(stdout, "DEBUG: ENUMERATE BLOCK START!!\n");}
@@ -145,7 +145,7 @@ endbegin         :  END  endcmds
                  ;
 
 endcmds          :  CENTER    {center_block=0;}
-                 |  VERBATIM  {verb_block =0;}
+                 |  VERBATIM  {}
                  |  SINGLE    {print_newline();print_newline(); set_line_spacing( restore_line_spacing());}
 		 |  ITEMIZE   {itemize_block = 0; }
 		 |  ENUMERATE { enumerate_block=0; fprintf(stdout, "DEBUG: ENUMERATE BLOCK END!!\n");}

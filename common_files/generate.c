@@ -54,6 +54,7 @@ void generate_formatted_text(char *s)
     int i;
     int j;
     int k;
+    int p = 0;
     fprintf(stdout, "START GEN_FOR_TEXT (%s)\n", s);
 
     if (center_block == 1){
@@ -61,16 +62,18 @@ void generate_formatted_text(char *s)
          for (j=0; j < center ; j++ )
             {
              fprintf(fpout, " ");
+             p = char_count++;
             }
        }
     for(i=0; i <=slen;)
-        {           
-            if(char_count < OUT_WIDTH)
-                {  
+        {       
+          if((char_count - p) < OUT_WIDTH)
+            {  
                     if(isprint(s[i])) fprintf(fpout, "%c", s[i]);
                     i++;
                     char_count++;
-                }
+            }
+
             else
                 {    
                     k = OUT_WIDTH  - slen;
