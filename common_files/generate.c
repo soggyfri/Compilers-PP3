@@ -79,7 +79,7 @@ void generate_formatted_text(char *s)
 
     for(i=0; i <=slen;)
         {            
-            /* /\* fprintf(stdout, "\nDEBUG:: CHAR COUND = %d is [%c]\n", char_count, s[i]); *\/ */
+            fprintf(stdout, "\nDEBUG:: CHAR COUND = %d is [%c]\n", char_count, s[i]);
             if((char_count-p) < OUT_WIDTH)
                 {
                     if(isprint(s[i])) fprintf(fpout, "%c", s[i]);
@@ -90,7 +90,7 @@ void generate_formatted_text(char *s)
                 {
                     char_count = 0;
                     k = OUT_WIDTH - slen;
-                    print_line_spacing();
+                    print_line_spacing(); 
                     if(itemize_block) 
                         { //inside item block
                             fprintf(fpout, "\n   "); char_count = 3;                         
@@ -122,7 +122,7 @@ void generate_formatted_text(char *s)
                     char_count++;
                 }
 
-             if(s[i] == '\n' && s[i-1] == '\n' & i > 1)
+             if(s[i] == '\n' && s[i-1] == '\n' && i > 1)
                 {
                     fprintf(stdout, "\n\nPARA_BREAK! \n\n");
                     print_newline(); print_newline();

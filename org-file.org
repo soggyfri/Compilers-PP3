@@ -31,8 +31,10 @@
 ** TODO fix linewraping when row is longer than 40 chars
 
 
-
 ** DONE keep spacing between each column.. add only enough space to align columns!
+
+
+** TODO Fix justification for columns
 
 * working on
   Tabular Block
