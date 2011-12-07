@@ -129,7 +129,7 @@ backsoptions     :  beginendopts
 beginendopts     :  LBEGIN  begcmds  beginblock  endbegin  
                  ;
 
-begcmds          :  CENTER  { center_block = 1; }
+begcmds          :  CENTER  { center_block = 1; if(!nested_table) nested_table=1; }
                  |  VERBATIM  {ws_flag=1;}
                  |  SINGLE    { print_newline();print_newline(); set_single_line_spacing(1);}
                  |  ITEMIZE  {itemize_block = 1;}
@@ -139,7 +139,7 @@ begcmds          :  CENTER  { center_block = 1; }
                        nested_enumerate_count[enumerate_block] = 0;
                        fprintf(stdout, "DEBUG: ENUMERATE BLOCK START nest(%d)!!\n", enumerate_block);
                      }
-                 |  TABLE  begtableopts
+|  TABLE  begtableopts { nested_table = 0; }
                  |  TABULAR  begtabularopts 
                     {
                         tabular_block = 1;
@@ -159,13 +159,17 @@ endcmds          :  CENTER  { center_block = 0; }
                  |  ENUMERATE 
                  {
                   enumerate_block--; 
-                  fprintf(stdout, "DEBUG: ENUMERATE BLOCK END nest(%d)!!\n", enumerate_block);
+                  /* fprintf(stdout, "DEBUG: ENUMERATE BLOCK END nest(%d)!!\n", enumerate_block); */
+                  print_newline();
+                  char_count = 0;
                   }
                  |  TABULAR 
                     { 
-                      print_table();
-                      tabular_block = 0;
-                      fprintf(stdout, "DEBUG: TABULAR BLOCK END)!!\n")
+                        if(!nested_table){
+                            print_table();
+                            tabular_block = 0;
+                            fprintf(stdout, "DEBUG: TABULAR BLOCK END)!!\n");
+                          }
                     }
                  ;
 

@@ -17,6 +17,7 @@ int tabular_column_count = -1;
 int static_tabular_column_count = 0;
 int longest_entry_column[20];
 char column_allignment_info[20];
+int nested_table = 0;
 
 init_output_page()
 {
@@ -90,7 +91,7 @@ void generate_formatted_text(char *s)
                         }
                        i++;
                 }
-            else
+            else //start a new line
                 {
                     char_count = 0;
                     k = OUT_WIDTH - slen;
@@ -106,6 +107,7 @@ void generate_formatted_text(char *s)
                             for(enum_start_space = 0; enum_start_space <= enumerate_block; enum_start_space++)
                                 {
                                     fprintf(fpout,"  ");
+                                    char_count++;
                                 }
                         }
                     else if (center_block == 1)
@@ -114,19 +116,23 @@ void generate_formatted_text(char *s)
                             for(j=0; j<  center; j++)
                                 {
                                     fprintf(fpout, " ");
+                                    char_count++;
                                 }
                         }
                     else 
                         { //not inside any advanced blocks
                             print_line_spacing(); 
                         }
-                    if(enumerate_block >= 0) { debug_print("INSIDE ENU in GEN_TEXT");}
-                    if(isprint(s[i])) fprintf(fpout, "%c", s[i]);
+
+                    if(isprint(s[i])) {
+                        fprintf(fpout, "%c", s[i]);
+                        char_count++;
+                    }
                     i++;
-                    char_count++;
+
                 }
 
-             if(i >= 1 && s[i] == '\n' && s[i-1] == '\n' )
+             if(i > 1 && s[i] == '\n' && s[i-1] == '\n' )
                 {
                     fprintf(stdout, "\n\nPARA_BREAK! \n\n");
                     print_newline(); print_newline();
@@ -249,7 +255,7 @@ void print_table()
     int i, j;
     int longest_entry = 0;
     
-    fprintf(stdout, "max row/column = [%d][%d]\n", tabular_row_count, static_tabular_column_count);
+    fprintf(stdout, "MAX [row][column] = [%d][%d]\n", tabular_row_count, static_tabular_column_count);
     fflush(stdout);
     for(j=0; j<static_tabular_column_count; j++){
         for(i=0; i<tabular_row_count; i++)
