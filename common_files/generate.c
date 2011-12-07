@@ -7,6 +7,7 @@ int center_block = 0;
 int itemize_block = 0;
 int enumerate_block = -1;
 int tabular_block = 0;
+int verbatium_block = 0;
 
 int nested_enumerate_count[10];
 
@@ -62,6 +63,27 @@ void  generate_subsec_header(int i, int j, char *s)
   
 }
 
+void print_verbatium(char* s)
+{
+    char_count = 0;
+    int i;
+    fprintf(stdout, "START PRINT_VERB (%s)\n", s);
+    for(i=0; i<strlen(s); i++)
+        {
+            if(char_count < OUT_WIDTH)
+                {
+                    fprintf(fpout, "%c", s[i]);
+                    char_count++;
+                }
+            else 
+                {
+                    char_count = 0;
+                    print_newline();
+                    fprintf(fpout, "%c", s[i]);
+                }
+        }
+}
+
 void generate_formatted_text(char *s)
 {
     int slen = strlen(s);
@@ -79,7 +101,7 @@ void generate_formatted_text(char *s)
   /*       } */
   /* else{ no_indent = 0; } */
            
-
+    if( verbatium_block) { print_verbatium(s); return;}
     if( center_block == 1)
         {
             int center = (int) ((OUT_WIDTH - slen)/2);

@@ -20,7 +20,8 @@ echo "--------------------END GCC---------------------------"
 
 if [ -n "$1" ];
 then
-        echo "---------------EXECUTE TEST SCRIPT"
+        echo "---------------[HIT ENTER TO EXECUTE $1]"
+        read dummy_var;
         ./execution_script.sh $1
         echo "---------------FINISHED TEST SCRIPT"
 fi

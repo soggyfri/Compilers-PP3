@@ -129,15 +129,17 @@ backsoptions     :  beginendopts
 beginendopts     :  LBEGIN  begcmds  beginblock  endbegin  
                  ;
 
-begcmds          :  CENTER  { center_block = 1; if(!nested_table) nested_table=1; }
-                 |  VERBATIM  {ws_flag=1;}
-                 |  SINGLE    { print_newline();print_newline(); set_single_line_spacing(1);}
-                 |  ITEMIZE  {itemize_block = 1;}
+begcmds          :  CENTER  { center_block = 1; if(!nested_table) nested_table=1; print_newline(); }
+                 |  VERBATIM  {ws_flag=1; verbatium_block = 1; print_newline();}
+                 |  SINGLE    { print_newline();print_newline(); set_single_line_spacing(1); print_newline();}
+                 |  ITEMIZE  {itemize_block = 1; print_newline();}
                  |  ENUMERATE
                      { 
+                       
                        enumerate_block++;
                        nested_enumerate_count[enumerate_block] = 0;
                        fprintf(stdout, "DEBUG: ENUMERATE BLOCK START nest(%d)!!\n", enumerate_block);
+                       print_newline();
                      }
                  |  TABLE  begtableopts { nested_table = 0; }
                  |  TABULAR  begtabularopts 
@@ -145,6 +147,7 @@ begcmds          :  CENTER  { center_block = 1; if(!nested_table) nested_table=1
                         tabular_block = 1;
                         tabular_row_count=-1; 
                         tabular_column_count=-1;
+                        print_newline();
                     }
                  ;
 
@@ -153,7 +156,7 @@ endbegin         :  END  endcmds
                  ;
 
 endcmds          :  CENTER  { center_block = 0; char_count=0;}
-                 |  VERBATIM  {ws_flag=0;}
+                 |  VERBATIM  {ws_flag=0; verbatium_block = 0; print_newline(); print_newline();char_count=0}
                  |  SINGLE  { print_newline();print_newline(); set_line_spacing( restore_line_spacing());char_count=0}
                  |  ITEMIZE  { itemize_block = 0; char_count = 0;}
                  |  ENUMERATE 
