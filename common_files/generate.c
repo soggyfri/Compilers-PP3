@@ -71,6 +71,15 @@ void generate_formatted_text(char *s)
     int p = 0;
     fprintf(stdout, "START GEN_FOR_TEXT (%s)\n", s);
 
+  if(!no_indent)
+        {                            
+            fprintf(fpout, "     ");
+            char_count += 5;
+            no_indent = 0;
+        }
+  else{ no_indent = 0; }
+           
+
     if( center_block == 1)
         {
             int center = (int) ((OUT_WIDTH - slen)/2);
@@ -95,6 +104,8 @@ void generate_formatted_text(char *s)
                 }
             else //start a new line
                 {
+              
+                    
                     char_count = 0;
                     k = OUT_WIDTH - slen;
                     //print_line_spacing(); 
@@ -126,7 +137,7 @@ void generate_formatted_text(char *s)
                             print_line_spacing();
                         }
 
-                    if(isprint(s[i])) {
+                    if(isprint(s[i]) && s[i] != ' ') {
                         fprintf(fpout, "%c", s[i]);
                         char_count++;
                     }
@@ -138,8 +149,7 @@ void generate_formatted_text(char *s)
                 {
                     fprintf(stdout, "\n\nPARA_BREAK! \n\n");
                     print_newline(); print_newline();
-                    char_count = 0;
-                                        
+                    char_count = 0;                                        
                 }
         }
     // print_newline(); //Paragraph seperator for next chunk of text
