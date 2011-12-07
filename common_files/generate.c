@@ -71,13 +71,13 @@ void generate_formatted_text(char *s)
     int p = 0;
     fprintf(stdout, "START GEN_FOR_TEXT (%s)\n", s);
 
-  if(!no_indent)
-        {                            
-            fprintf(fpout, "     ");
-            char_count += 5;
-            no_indent = 0;
-        }
-  else{ no_indent = 0; }
+  /* if(!no_indent) */
+  /*       {                             */
+  /*           fprintf(fpout, "     "); */
+  /*           char_count += 5; */
+  /*           no_indent = 0; */
+  /*       } */
+  /* else{ no_indent = 0; } */
            
 
     if( center_block == 1)
