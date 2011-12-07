@@ -20,9 +20,9 @@ Center allows a block to be centered\\
 Now, make sure that double spacing is active again!
 
 \begin{center}
-Single is for spacing
+Single is for spacing\\
 Verbatim allows text as is\\
-Itemize has ticks for items
+Itemize has ticks for items\\
 Center is for centering\\
 \end{center}
 

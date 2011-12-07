@@ -28,7 +28,7 @@ void  incr_lines_so_far()
 {
     /* fprintf(stdout, "DEBUG: INCR LINE NUMBER (%d), Page_no = %d \n", lines_so_far, get_page_no()); */
     lines_so_far++;
-    int mul_number = (get_page_no() - starting_page_number < 1 ? 1 : get_page_no() - starting_page_number);
+    /* int mul_number = (get_page_no() - starting_page_number < 1 ? 1 : get_page_no() - starting_page_number); */
     
     if((lines_so_far) % ( LINES_PER_PAGE) == 0)
         {
@@ -101,6 +101,7 @@ int   get_gen_toc()
 
 void  set_gen_toc()
 {
+    debug_print("GENERATE TOC");
   DST.generate_toc = 1;
 }
 

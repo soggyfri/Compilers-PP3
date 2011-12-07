@@ -152,10 +152,10 @@ endbegin         :  END  endcmds
                  |  endtableopts  TABLE  
                  ;
 
-endcmds          :  CENTER  { center_block = 0; }
+endcmds          :  CENTER  { center_block = 0; char_count=0;}
                  |  VERBATIM  {ws_flag=0;}
-                 |  SINGLE  { print_newline();print_newline(); set_line_spacing( restore_line_spacing());}
-                 |  ITEMIZE  { itemize_block = 0; }
+                 |  SINGLE  { print_newline();print_newline(); set_line_spacing( restore_line_spacing());char_count=0}
+                 |  ITEMIZE  { itemize_block = 0; char_count = 0;}
                  |  ENUMERATE 
                  {
                   enumerate_block--; 
@@ -194,7 +194,7 @@ anitem           :  ITEM  textoption
                  |  beginendopts
                  ;
 
-entrylist        :  entrylist  anentry
+entrylist        :  entrylist  anentry 
                                     {
                                     tabular_row_count++; 
                                     tabular_column_count=-1;

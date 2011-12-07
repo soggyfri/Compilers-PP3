@@ -886,7 +886,7 @@ case 1:
 /* rule 1 can match eol */
 YY_RULE_SETUP
 #line 13 "latex.l"
-{/*incr_lines_so_far();*/}
+{/*incr_lines_so_far();*/} 
 	YY_BREAK
 case 2:
 YY_RULE_SETUP

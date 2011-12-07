@@ -1,8 +1,8 @@
 \begin{document}
 \pagenumbering{arabic}
-\arabic{5} 
+\arabic{5}
 \renewcommand{\baselinestretch}{2}
-\tableofcontents     
+\tableofcontents
 
 \section{Introduction}
 

@@ -97,7 +97,7 @@ void generate_formatted_text(char *s)
                 {
                     char_count = 0;
                     k = OUT_WIDTH - slen;
-                    print_line_spacing(); 
+                    //print_line_spacing(); 
                     if(itemize_block) 
                         { //inside item block
                             fprintf(fpout, "\n   "); char_count = 3;                         
@@ -123,7 +123,7 @@ void generate_formatted_text(char *s)
                         }
                     else 
                         { //not inside any advanced blocks
-                            print_line_spacing(); 
+                            print_line_spacing();
                         }
 
                     if(isprint(s[i])) {
@@ -150,7 +150,7 @@ void print_line_spacing()
 {
     int i;
     int space = get_line_spacing();
-    for(i=0; i < space; i++)
+    for(i=0; i < space ; i++)
         {
             fprintf(fpout, "\n");
             incr_lines_so_far();
