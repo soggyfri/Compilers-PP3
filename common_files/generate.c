@@ -18,6 +18,8 @@ int static_tabular_column_count = 0;
 int longest_entry_column[20];
 char column_allignment_info[20];
 int nested_table = 0;
+//int table_caption = 0;
+//char* table_caption_text;
 
 init_output_page()
 {
@@ -238,6 +240,15 @@ void store_table_column(char* s)
     fflush(stdout);
 }
 
+void print_table_caption(char* s)
+{
+    generate_formatted_text("CAPTION: ( ");
+    generate_formatted_text(s);
+    generate_formatted_text(" )");
+    print_line_spacing();
+    
+}
+
 void set_row_alignment(char* s)
 {
     int i = strlen(s);
@@ -338,5 +349,6 @@ void print_table()
         print_line_spacing();
         char_count = 0;
     }
+    
     print_line_spacing();
 }

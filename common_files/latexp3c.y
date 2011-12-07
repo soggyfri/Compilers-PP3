@@ -139,9 +139,9 @@ begcmds          :  CENTER  { center_block = 1; if(!nested_table) nested_table=1
                        nested_enumerate_count[enumerate_block] = 0;
                        fprintf(stdout, "DEBUG: ENUMERATE BLOCK START nest(%d)!!\n", enumerate_block);
                      }
-|  TABLE  begtableopts { nested_table = 0; }
+                 |  TABLE  begtableopts { nested_table = 0; }
                  |  TABULAR  begtabularopts 
-                    {
+                    {                        
                         tabular_block = 1;
                         tabular_row_count=-1; 
                         tabular_column_count=-1;
@@ -240,7 +240,7 @@ position         :  H
                  ;
 
 endtableopts     :  END
-                 |  CAPTION  LCURLYB  textoption  RCURLYB  captionrest
+                 |  CAPTION  LCURLYB  textoption  RCURLYB  captionrest { print_table_caption($3); }
                  |  labelrest 
                  ;
 
