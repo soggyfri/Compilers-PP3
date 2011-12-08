@@ -1,3 +1,8 @@
+/* Alex Martienz: This file holds functions 
+   to return number in different format.
+   We use this to print page numbers
+*/
+
 /*  changes retruns the numbers to ALPH */
 char get_page_no_LALPH2()
 {
@@ -190,6 +195,7 @@ char* get_page_no_LROMAN2(){
     return str;
 }
 
+//print the page number
 void printPageNumber(FILE* outputFile)
 {
     /* fprintf(fpout, "(style %d)PAGE NUMBER: ", DST.page_style); */

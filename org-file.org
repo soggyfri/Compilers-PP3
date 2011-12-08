@@ -19,7 +19,6 @@
 ** TODO current_enumerate_number incremented when, it shouldn't be (listblock anitem rule?)
 
 
-
 * TODO Tabular block
 ** DONE align column entries.. compute the longest column?
    allocate space to hold all elements temporarily 
@@ -28,16 +27,22 @@
 
 ** DONE fix char_count when printing columns
 
-** TODO fix linewraping when row is longer than 40 chars
+** DONE fix linewraping when row is longer than 40 chars
 
 
 ** DONE keep spacing between each column.. add only enough space to align columns!
 
 
-** TODO Fix justification for columns
+** DONE Fix justification for columns
+
+
+* TODO Type/Error checking
+
+** TODO 
+
 
 * working on
-  Tabular Block
+  Type/Error Checking
 
 
 
