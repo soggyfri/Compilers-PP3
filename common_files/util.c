@@ -186,3 +186,19 @@ int restore_line_spacing()
 {
     return oldLineSpace;    
 }
+
+void print_error(int blockNumber)
+{
+    switch (blockNumber) {
+        case 1: fprintf(fpout, "ERROR: CENTER BLOCK DOES NOT HAVE A MATCHING BEGIN");break;
+        case 2: fprintf(fpout, "ERROR: ITEM BLOCK DOES NOT HAVE A MATCHING BEGIN");break;
+        case 3: fprintf(fpout, "ERROR: ENUMERATE BLOCK DOES NOT HAVE A MATCHING BEGIN");break;
+        case 4: fprintf(fpout, "ERROR: TABULAR BLOCK DOES NOT HAVE A MATCHING BEGIN");break;
+        case 5: fprintf(fpout, "ERROR: VERBATIUM BLOCK DOES NOT HAVE A MATCHING BEGIN");break;
+        case 6: fprintf(fpout, "ERROR: SINGLE BLOCK DOES NOT HAVE A MATCHING BEGIN");break;            
+        }
+    fflush(fpout);
+    fflush(fptoc);
+    fflush(stdout);
+    exit(EXIT_FAILURE);
+}

@@ -13,6 +13,9 @@ int enumerate_block = -1;
 int tabular_block = 0;
 int verbatium_block = 0;
 
+
+int current_block = 0; //1= cent, 2=item, 3=enumerate, 4=tabular, 5=verbatium, 6=single
+
 int nested_enumerate_count[10];
 
 //These block of variables all hold information
