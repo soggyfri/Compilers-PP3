@@ -1,0 +1,90 @@
+The second part of the semester project 
+focuses on gaining experience with lex f
+lex and yacc bison , coupled with contin
+ued design and redesign skills for conte
+xt free grammars CFGs . The second part 
+of the project is divided into two major
+tasks, and is worth a total of 50 points
+
+1. Revising the common grammar to remove
+  the shift or reduce and rule not reduce
+  d conflicts. These corrections are made
+  to the yacc or bison file, and the resu
+  lt must be tested extensively for diffe
+  rent input latex documents. This task i
+  s worth 35 points.
+2. Using your result grammar of the firs
+  t task, redesign the common grammar to 
+  support the recognition of verbatim blo
+  cks and also nested blocks. That is, re
+  call that the different blocks itemize,
+  enumerate, single, etc. can also be nes
+  ted to yield different combinations of 
+  formatted text. Again, test your result
+  using yacc.bison to demonstrate that th
+  e grammar revisions for these two chang
+  es work correctly. This task is worth 1
+  5 points.
+
+ To serve as a common base for the proje
+ct, there is a directory that contains a
+number of important files 
+
+
+
+          latex.in          A   sample 
+  input   file. 
+          latex.l       
+    A   sample   latex   lex   file. 
+   
+       latexp2.y         A   yacc   speci
+fication   with   fprintf s   for   debug
+ging. 
+          latexp2clean.y   Equival
+ent   specification   without   the   fpr
+intfs. 
+          y2conflicts       The  
+ shift.reduce   conflicts   generated   b
+y   YACC. 
+          b2conflicts       Th
+e   shift.reduce   conflicts   generated 
+  by   BISON.
+
+ Note that intentional errors have been 
+placed in the files. Note also that the 
+grammar files contain numerous shift red
+uce errors and other problems, as will b
+e discussed in class. 
+
+ The second part of the project is due o
+n April 6, 1994. Please hand in the foll
+owing
+1. The revised yacc.bison specification 
+  for task 1. DO NOT HAND IN C files!
+2. A log file that documents the changes
+  made to the grammar to eliminate the sh
+  ift.reduce errors and other problems fo
+  r task 1. Make sure that you provide bo
+  th the original and revised grammar seg
+  ments for each change that you make! Al
+  so include any remaining shift.reduce o
+  r reduce.reduce errors, but NOT the ent
+  ire output file.
+3. The revised yacc.bison specification 
+  for task 2. DO NOT HAND IN C files!
+4. A log file that documents the changes
+  made to your grammar of task 1 in suppo
+  rt of verbatim and nested blocks. These
+  changes may occur in both the lex flex 
+  and yacc bison files! Again, provide or
+  iginal.revised segments for each change
+  , and remaining S.R or R.R errors.
+5. Test cases and test results for both 
+  tasks, clearly marked and organized.
+6. The directory location for your files
+  and detailed compilation instructions.
+
+ <IT>IMPORTANT</IT> Do not open your dir
+ectory for access by the world until 7 0
+0 p.m. on April 6. 
+

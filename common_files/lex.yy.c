@@ -1123,16 +1123,18 @@ case 48:
 YY_RULE_SETUP
 #line 65 "latex.l"
 {/*printf("ws--%s--ws\n", yytext); */
-                         if ((strcmp(yytext, "\n\n") == 0) && (ws_flag == 0)){
-                            incr_lines_so_far();return(WS);}
+                         if ((strcmp(yytext, "\n\n") == 0) && (ws_flag == 0))
+                            {                                                            
+                                incr_lines_so_far(); return(WS);
+                            }
                          else if (ws_flag == 1){ return(WS);}}
 	YY_BREAK
 case 49:
 YY_RULE_SETUP
-#line 70 "latex.l"
+#line 72 "latex.l"
 ECHO;
 	YY_BREAK
-#line 1136 "lex.yy.c"
+#line 1138 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -2130,7 +2132,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 70 "latex.l"
+#line 72 "latex.l"
 
 
 

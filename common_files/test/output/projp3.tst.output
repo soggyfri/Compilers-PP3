@@ -1,0 +1,91 @@
+The third and final part of the semester
+project focuses on the actual generation
+of formatted output from Latex input. Th
+ere are 5 tasks for this project, with t
+he divisions given to differentiate betw
+een required work point totals and bonus
+es. Note that you <IT>MUST</IT> utilize 
+the <IT>union</IT> command to redefine t
+he parsing stack in yacc bison. This pro
+ject is worth 100 points with up to 15 b
+onus points. The tasks for the project a
+re
+1. Basic Text Processing Capabilities 35
+  points total , including Section Subsec
+  tion Table of Contents 5pts , Line Spac
+  ing Single Double Triple 5pts , Page Nu
+  mbering Styles 2.5pts , Horizontal Vert
+  ical Spacing 2.5pts , Italics Roman Fon
+  ts 2.5pts , Paragraphs Noindent 2.5pts 
+  , Right Justification 10pts , and Begin
+  End Single Blocks 5pts .
+2. Advanced Text Processing capabilities
+  55 points total , including Itemize Blo
+  cks 5pts , Enumerate Blocks 5pts , Cent
+  er Blocks 5pts , Verbatim Blocks 5pts ,
+  Tabular Blocks 10pts , Table Blocks wit
+  h Refs Captions 5pts , and Relevant Com
+  binations of Blocks 20pts .
+3. Documentation, Log, Testing 10 points
+  total .
+4. Bonus A Nested Blocks within Single E
+  nvironment
+5. Bonus B Full Blown Verbatim All possi
+  ble Latex commands that are embedded in
+  a verbatim block e.g., backslash, block
+  s, etc. are ignored.
+
+ The directory <IT>home ug1 demurjs CSE2
+44.SP94 Part3</IT> contains a number of 
+important files, including 
+
+
+
+          latex.l           A   common 
+  latex   lex   file. 
+          latexp3.
+y         A   yacc   specification   wher
+e   verbatim   works. 
+          latexp3c
+ode.y     A   yacc   specification   with
+   sample   code   generation. 
+         
+ util.c            A   number   of   C   
+utility   routines. 
+          generate.c
+        A   number   of   routines   used
+   to   generate   code.
+
+Portions of these and other files will b
+e discussed in class. The third part of 
+the project is due on Monday, May 2, 199
+4. Please hand in the following
+1. The yacc bison specification for task
+  s 1, 2, and 3. DO NOT HAND IN C files! 
+  Also include copies of any relevant C f
+  iles. Make sure that these are well com
+  mented, clear, and organized.
+2. Documentation of your solution that i
+  ncludes 1 any assumptions that you make
+  regarding the output format and style o
+  f your document e.g., margins, page num
+  ber locations, handling underlining, et
+  c. 2 a log file that keeps track of all
+  of your major design steps, implementat
+  ion strategies, problems encountered wi
+  th lex yacc and their solutions, aspect
+  s of the project that were easy hard, c
+  hanges that were made to the grammar, e
+  tc. The key word is MAJOR design steps.
+  NOTE AGAIN THAT YOUR DOCUMENTATION MUST
+  BE GENERATED USING YOUR LATEX COMPILER!
+  !!!
+3. Test cases and test results for all t
+  asks, clearly marked and organized.
+4. The directory location for your files
+  and detailed compilation instructions.
+
+ <IT>IMPORTANT</IT> Do not open your dir
+ectory for access by the world until 7 0
+0 p.m. on May 2. 
+

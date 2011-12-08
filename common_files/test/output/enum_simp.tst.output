@@ -1,0 +1,42 @@
+ A block of a enumerate within a single 
+environment should change the spacing fr
+om it triple default. 
+
+
+1. Single is for Single spacing
+2. Verbatim allows text that matches the
+  what you see is what you get mode
+
+2.1. first level nesting
+
+2.1.1. second level nesting
+
+2.1.1.1. third level nesting
+2.1.1.2. another item
+2.1.1.3. last third item
+
+2.1.1.3.1. forth level nesting
+2.1.1.3.2. forth second item
+
+2.1.1.3.2.1. gawd another nest
+
+2.1.1.3.2.1.1. omg wtf.. so many
+
+2.1.1.3.2.1.1.1. two more
+
+2.1.1.3.2.1.1.1.1. one more
+
+2.1.1.3.2.1.1.1.1.1. 9th and last nest
+
+
+
+
+
+
+
+
+
+PAGE (vii)
+3. Itemize uses ticks to indicate items
+4. Center allows a block to be centered
+

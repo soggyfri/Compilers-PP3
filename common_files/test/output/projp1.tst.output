@@ -1,0 +1,48 @@
+ The project for the Spring 1994 Semeste
+r will focus on the design and implement
+ation of a Latex subset for text process
+ing. Specifically, this project will be 
+subdivided into three major parts.
+1. Design and develop a contex free gram
+  mar CFG for a subset of Latex.
+2. Design, implement, and test the commo
+  n CFG which I will provide to you at a 
+  later date using Lex Flex and Yacc Biso
+  n .
+3. Design, implement, and test a syntax 
+  directed translator based on part 2 tha
+  t automatically generates formatted ASC
+  II text from an input Latex source file
+  .
+
+The first part of the project is divided
+into two major tasks.
+-  Design a CFG for the project that allo
+   ws Latex programs e.g., text to be fo
+   rmatted to be recognized. This will p
+   rovide you with important language de
+   sign experience.
+-  Calculate FIRST and FOLLOW for the non
+   terminals listed below
+
+latex   statement      main   body      
+    main   option        text   option la
+tex   options        backs   options     
+ begin   end   opts     begin   block beg
+in   end   cmds       table   options    
+ 
+
+
+Neither of these tasks require you to de
+velop and or implement code. <IT>This is
+a design project!!!</IT> The first part 
+of the project is worth 50 points. 
+
+ To provide a background for the semeste
+r project, a detailed overview of the La
+tex subset that youll be implementing ha
+s been attached. An electronic copy can 
+be found in
+
+              demurjs   CSE244   SP94
+

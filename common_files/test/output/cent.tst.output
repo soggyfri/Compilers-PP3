@@ -1,0 +1,19 @@
+ A Basic file that checks to see if the 
+
+centering command works correctly. Note 
+
+that the double backslash should indicat
+
+e what should be centered and how it is 
+
+centered. 
+
+
+      Single is for Single spacing
+
+  Verbatim allows text produced as is
+
+  Itemize uses ticks to indicate items
+
+  Center allows a block to be centered
+

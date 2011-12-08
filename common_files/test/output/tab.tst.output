@@ -1,0 +1,38 @@
+ What happens when there are no page num
+bers??? 
+
+
+    No. XXXX XX 
+    One  XX  YY 
+ TwoTwo  ZZ  CC 
+
+CAPTION: ( A Table of Latex Commands!! )
+
+ Will this table float to the top of the
+next page? 
+
+
+ XXXXXXX      XX
+      XX YYYYYYY
+
+CAPTION: ( A Table of Latex Commands!! )
+
+
+       No        XXXX   XX  
+     OneTwo       XX   YYYY 
+ Very Long Entry  ZZ    CC  
+
+
+
+                  Does
+
+                   A
+
+                  One
+
+                 Column
+
+                 Table
+
+              Work???????
+
