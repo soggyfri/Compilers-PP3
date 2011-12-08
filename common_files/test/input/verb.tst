@@ -1,12 +1,13 @@
 \begin{document}
 \pagenumbering{Roman} 
 \Roman{1} 
-\renewcommand{\baselinestretch}{1}
+\renewcommand{\baselinestretch}{2}
 
 Checking that a simple verbatim works correctly!
 
 \begin{verbatim}
 Single is for Single spacing
+\it
     Verbatim allows       text   that matches the
 Itemize   uses ticks to   indicate items
 Center   allows a   block to be centered

@@ -56,6 +56,56 @@ void  generate_sec_header(int i,char* s)
   }
 }
 
+//returns the number of words in the given line
+int countWords(const char *line){
+    const int len = strlen(line);
+    char buf1[100];
+    int i = 0;
+    int count = 0;
+    //skip starting whitespaces
+    while( isspace(line[i]) ) ++i;
+
+    if(i >= len) return 0; //if input was all whitespace
+
+    //check for words
+    while(i < len)
+        {
+            if(isspace(line[i]) && i+1 < len && !isspace(line[i+1])) {
+                ++count;
+            }
+            ++i;
+        }
+    return count + (len > 0 ? 1: 0);
+}
+
+char * fullJustify(char *line,char *res,const int MAX_WIDTH){
+    const int lineLength = strlen(line);
+    const int paddingAmount = MAX_WIDTH - lineLength;
+    if(paddingAmount > MAX_WIDTH/2){
+        strcpy(res,line); return res;
+    }
+    const int numOfWords = countWords(line);
+    int spacesToAddPerWord = numOfWords == 1 ? 0 : paddingAmount/(numOfWords-1);
+    int remainingSpaces = numOfWords == 1 ? : paddingAmount % (numOfWords-1);
+    const char *delim = " \t";
+    char *nextWord = strtok(line,delim);
+    while(nextWord != NULL){
+        //copy nextWord
+        strcat(res,nextWord);
+        strcat(res," ");
+        int n = spacesToAddPerWord;
+        while(n-- > 0){ 
+            strcat(res," ");
+        }
+        if(remainingSpaces > 0){ 
+            strcat(res," ");
+            --remainingSpaces; 
+        }
+        nextWord = strtok(NULL,delim);
+    }
+    return res;
+}
+
 //Prof's code
 void  generate_subsec_header(int i, int j, char *s)
 {
@@ -106,17 +156,10 @@ void generate_formatted_text(char *s)
     int k;
     int p = 0;
     fprintf(stdout, "START GEN_FOR_TEXT (%s)\n", s);
-
-  /* if(!no_indent) */
-  /*       {                             */
-  /*           fprintf(fpout, "     "); */
-  /*           char_count += 5; */
-  /*           no_indent = 0; */
-  /*       } */
-  /* else{ no_indent = 0; } */
            
     //need special function to print verbatium block
-    if( verbatium_block) { print_verbatium(s); return;}
+    //if( verbatium_block) { print_verbatium(s); return;}
+
     if( center_block == 1)
         { // center the text since were in a center block
             int center = (int) ((OUT_WIDTH - slen)/2);
@@ -127,6 +170,8 @@ void generate_formatted_text(char *s)
                 }
         }
 
+    char buffer[512];	
+
     for(i=0; i <=slen;)
         {            
             /* fprintf(stdout, "\nDEBUG:: CHAR COUND = %d is [%c]\n", char_count, s[i]); */
@@ -136,6 +181,7 @@ void generate_formatted_text(char *s)
                         { //print the character 
                             fprintf(fpout, "%c", s[i]);                         
                             char_count++;
+			    buffer[i] = s[i];
                         }
                        i++;
                 }
@@ -170,11 +216,13 @@ void generate_formatted_text(char *s)
                     else 
                         { //not inside any advanced blocks
                             print_line_spacing();
+                            /* buffer[i++]='\n'; char_count++; */
                         }
 
                     if(isprint(s[i]) && s[i] != ' ') {
                         fprintf(fpout, "%c", s[i]);
                         char_count++;
+                        buffer[i] = s[i];
                     }
                     i++;
 
@@ -184,10 +232,14 @@ void generate_formatted_text(char *s)
                 {
                     fprintf(stdout, "\n\nPARA_BREAK! \n\n");
                     print_newline(); print_newline();
-                    char_count = 0;                                        
+                    char_count  =  0 ;                                         
                 }
         }
     // print_newline(); //Paragraph seperator for next chunk of text
+    /* buffer[i]='\0'; */
+    /* char tmpBuf[512] = {0}; */
+    /* fullJustify(buffer,tmpBuf,OUT_WIDTH); */
+    /* fprintf(fpout,"%s",tmpBuf); */
 
 }
 

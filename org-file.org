@@ -38,7 +38,7 @@
 
 * TODO Type/Error checking
 
-** TODO 
+** TODO fix line spacing after verb block
 
 
 * working on

@@ -32,7 +32,7 @@ int ws_flag = 0;
 %token  LROMAN1   CROMAN1   LALPH1     CALPH1      VSPACE     HSPACE
 %token  RM        IT        NOINDENT   REF 
 %token  ARABIC2   LROMAN2   CROMAN2    LALPH2      CALPH2
-%token  NEWLINE
+%token  NEWLINE   EXITVERB
 
 %type <trans> textoption  wsorword
 %type <val> style2 ARABIC2 LROMAN2 CROMAN2 LALPH2 CALPH2 
@@ -66,7 +66,10 @@ mainoption       :  textoption
 
 textoption       :  textoption  wsorword
                     {
+                    if( ws_flag == 0) 
+                      { //Verb blocks
                       strcat($$, " ");
+                      }
                       strcat($$, $2);
                       
                     }
@@ -130,7 +133,7 @@ beginendopts     :  LBEGIN  begcmds  beginblock  endbegin
                  ;
 
 begcmds          :  CENTER  { center_block = 1; if(!nested_table) nested_table=1; print_newline();  set_current_block(1);}
-                 |  VERBATIM  {ws_flag=1; verbatium_block = 1; print_newline(); set_current_block(5);}
+                 |  VERBATIM  {ws_flag=1; set_single_line_spacing(1); set_current_block(5);}
                  |  SINGLE    { print_newline();print_newline(); 
                               set_single_line_spacing(1); print_newline(); set_current_block(6);}
                  |  ITEMIZE  {itemize_block = 1; print_newline(); set_current_block(2);}
@@ -155,10 +158,11 @@ begcmds          :  CENTER  { center_block = 1; if(!nested_table) nested_table=1
 
 endbegin         :  END  endcmds
                  |  endtableopts  TABLE  
+                 | EXITVERB { ws_flag=0; print_newline(); print_newline();}
                  ;
 
 endcmds          :  CENTER  { center_block = 0; char_count=0; if(current_block !=1) check_current_block(1); }
-                 |  VERBATIM  {ws_flag=0; verbatium_block = 0; print_newline(); print_newline();char_count=0; 
+                 |  VERBATIM  {ws_flag=0; verbatium_block = 0; set_line_spacing(restore_line_spacing()); char_count=0; 
                                if(current_block !=5) check_current_block(5);}
                  |  SINGLE  { print_newline();print_newline(); set_line_spacing( restore_line_spacing());char_count=0;
                               if(current_block !=6) check_current_block(6);}
