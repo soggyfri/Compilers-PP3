@@ -18,6 +18,10 @@ int char_count;
 int starting_page_number;
 int oldLineSpace = 0;
 
+int current_block = 0; //1= cent, 2=item, 3=enumerate, 4=tabular, 5=verbatium, 6=single
+int prev_block = 0;
+int prev_prev_block = 0;
+
 
 void  init_lines_so_far()
 {
@@ -201,4 +205,24 @@ void print_error(int blockNumber)
     fflush(fptoc);
     fflush(stdout);
     exit(EXIT_FAILURE);
+}
+
+void set_current_block(int blockNumber)
+{
+    prev_prev_block = prev_block;
+    prev_block = current_block;
+    current_block = blockNumber;
+}
+
+void check_current_block(int blockNumber)
+{
+    if(current_block != blockNumber)
+        {
+            print_error(blockNumber);
+        }
+    else if (current_block == blockNumber)
+        {
+            current_block = prev_block;
+            prev_block = prev_prev_block;
+        }
 }

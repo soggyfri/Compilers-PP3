@@ -129,13 +129,14 @@ backsoptions     :  beginendopts
 beginendopts     :  LBEGIN  begcmds  beginblock  endbegin  
                  ;
 
-begcmds          :  CENTER  { center_block = 1; if(!nested_table) nested_table=1; print_newline();  current_block = 1;}
-                 |  VERBATIM  {ws_flag=1; verbatium_block = 1; print_newline(); current_block = 5;}
-                 |  SINGLE    { print_newline();print_newline(); set_single_line_spacing(1); print_newline(); current_block = 6;}
-                 |  ITEMIZE  {itemize_block = 1; print_newline();current_block=2;}
+begcmds          :  CENTER  { center_block = 1; if(!nested_table) nested_table=1; print_newline();  set_current_block(1);}
+                 |  VERBATIM  {ws_flag=1; verbatium_block = 1; print_newline(); set_current_block(5);}
+                 |  SINGLE    { print_newline();print_newline(); 
+                              set_single_line_spacing(1); print_newline(); set_current_block(6);}
+                 |  ITEMIZE  {itemize_block = 1; print_newline(); set_current_block(2);}
                  |  ENUMERATE
                      { 
-                       current_block=3;
+                       set_current_block(3);
                        enumerate_block++;
                        nested_enumerate_count[enumerate_block] = 0;
                        fprintf(stdout, "DEBUG: ENUMERATE BLOCK START nest(%d)!!\n", enumerate_block);
@@ -148,7 +149,7 @@ begcmds          :  CENTER  { center_block = 1; if(!nested_table) nested_table=1
                         tabular_row_count=-1; 
                         tabular_column_count=-1;
                         print_newline();
-                        current_block=4;
+                        set_current_block(4);
                     }
                  ;
 
@@ -156,20 +157,20 @@ endbegin         :  END  endcmds
                  |  endtableopts  TABLE  
                  ;
 
-endcmds          :  CENTER  { center_block = 0; char_count=0; if(current_block !=1) print_error(1); }
+endcmds          :  CENTER  { center_block = 0; char_count=0; if(current_block !=1) check_current_block(1); }
                  |  VERBATIM  {ws_flag=0; verbatium_block = 0; print_newline(); print_newline();char_count=0; 
-                               if(current_block !=5) print_error(5);}
+                               if(current_block !=5) check_current_block(5);}
                  |  SINGLE  { print_newline();print_newline(); set_line_spacing( restore_line_spacing());char_count=0;
-                              if(current_block !=6) print_error(6);}
+                              if(current_block !=6) check_current_block(6);}
                  |  ITEMIZE  { itemize_block = 0; char_count = 0;
-                               if(current_block !=2) print_error(2);}
+                               if(current_block !=2) check_current_block(2);}
                  |  ENUMERATE 
                  {
                   enumerate_block--; 
                   /* fprintf(stdout, "DEBUG: ENUMERATE BLOCK END nest(%d)!!\n", enumerate_block); */
                   print_newline();
                   char_count = 0;
-                  if(current_block !=3) print_error(3);
+                  if(current_block !=3) check_current_block(3);
                   }
                  |  TABULAR 
                     { 
@@ -179,7 +180,7 @@ endcmds          :  CENTER  { center_block = 0; char_count=0; if(current_block !
                             tabular_block = 0;
                             fprintf(stdout, "DEBUG: TABULAR BLOCK END)!!\n");
                           }
-                         if(current_block !=4) print_error(4);
+                         if(current_block !=4) check_current_block(4);
                     }
                  ;
 

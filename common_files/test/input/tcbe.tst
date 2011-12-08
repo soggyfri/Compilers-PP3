@@ -14,8 +14,8 @@ Single is for Single spacing\\
 Verbatim allows text produced as is\\
 Itemize uses ticks to indicate items\\
 Center allows a block to be centered\\
-\end{single}
 \end{center}
+\end{single}
 
 Now, make sure that double spacing is active again!
 
