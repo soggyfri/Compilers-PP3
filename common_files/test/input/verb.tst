@@ -16,5 +16,13 @@ test
 \end{center}
 \end{verbatim}
 
+
 Does this start off correctly with 1 and does it reset after verbatim?
+how about now??
+
+
+\begin{center}
+test
+\end{center}
+
 \end{document}

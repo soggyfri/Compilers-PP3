@@ -1,7 +1,7 @@
 \begin{document}
 \pagenumbering{arabic} 
 \arabic{5} 
-\renewcommand{\baselinestretch}{2}
+\renewcommand{\baselinestretch}{3}
 
 This checks if all of the nestings work with single in various locations.
 A Basic file that checks to see if the centering command works
@@ -87,7 +87,7 @@ Checking that a simple verbatim works correctly!
 \begin{single}
 \begin{verbatim}
 Single is for Single spacing
-    Verbatim allows       text   that matches the
+\it    Verbatim allows       text   that matches the
 Itemize   uses ticks to   indicate items
 Center   allows a   block to be centered
 \end{verbatim}

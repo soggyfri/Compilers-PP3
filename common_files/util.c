@@ -179,6 +179,8 @@ int get_line_spacing()
 }
 
 
+
+
 void print_newline()
 {
     /* if(P_DEBUG) debug_print("DEBUG: Printing New line"); */
@@ -199,7 +201,8 @@ void print_error(int blockNumber)
         case 3: fprintf(fpout, "ERROR: ENUMERATE BLOCK DOES NOT HAVE A MATCHING BEGIN");break;
         case 4: fprintf(fpout, "ERROR: TABULAR BLOCK DOES NOT HAVE A MATCHING BEGIN");break;
         case 5: fprintf(fpout, "ERROR: VERBATIUM BLOCK DOES NOT HAVE A MATCHING BEGIN");break;
-        case 6: fprintf(fpout, "ERROR: SINGLE BLOCK DOES NOT HAVE A MATCHING BEGIN");break;            
+        case 6: fprintf(fpout, "ERROR: SINGLE BLOCK DOES NOT HAVE A MATCHING BEGIN");break;
+      default : fprintf(fpout, "ERROR: Block wasn't started");break;
         }
     fflush(fpout);
     fflush(fptoc);
@@ -209,20 +212,41 @@ void print_error(int blockNumber)
 
 void set_current_block(int blockNumber)
 {
+
     prev_prev_block = prev_block;
     prev_block = current_block;
     current_block = blockNumber;
+
+    fprintf(stdout, "DEBUG::: set_block_number = %d\n", blockNumber);
+    fprintf(stdout, "DEBUG::: prev_block = %d\n", prev_block);
 }
 
 void check_current_block(int blockNumber)
 {
+    debug_print_block("Function enter");
+    fprintf(stdout, "Function Enter with %d", blockNumber);
+    
+    if(!current_block) print_error(0); //block didn't start
+
     if(current_block != blockNumber)
         {
+            debug_print_block("Failed check");            
             print_error(blockNumber);
         }
     else if (current_block == blockNumber)
         {
             current_block = prev_block;
             prev_block = prev_prev_block;
+            prev_prev_block = 0;
+            debug_print_block("In Else if");
         }
+
+    fflush(stdout);
+}
+
+void debug_print_block(char*s)
+{
+    
+    fprintf(stdout, "\n DEBUG::: Current (%d) :: Prev (%d) :: prev_prev (%d) in %s\n", 
+            current_block, prev_block, prev_prev_block, s);
 }

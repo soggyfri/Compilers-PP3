@@ -157,8 +157,8 @@ void generate_formatted_text(char *s)
     int p = 0;
     fprintf(stdout, "START GEN_FOR_TEXT (%s)\n", s);
            
-    //need special function to print verbatium block
-    //if( verbatium_block) { print_verbatium(s); return;}
+
+    if( verbatium_block) { print_verbatium(s); return;}
 
     if( center_block == 1)
         { // center the text since were in a center block
@@ -170,7 +170,7 @@ void generate_formatted_text(char *s)
                 }
         }
 
-    char buffer[512];	
+    /* char buffer[512];	 */
 
     for(i=0; i <=slen;)
         {            
@@ -181,7 +181,7 @@ void generate_formatted_text(char *s)
                         { //print the character 
                             fprintf(fpout, "%c", s[i]);                         
                             char_count++;
-			    buffer[i] = s[i];
+			    /* buffer[i] = s[i]; */
                         }
                        i++;
                 }
@@ -216,13 +216,11 @@ void generate_formatted_text(char *s)
                     else 
                         { //not inside any advanced blocks
                             print_line_spacing();
-                            /* buffer[i++]='\n'; char_count++; */
                         }
 
                     if(isprint(s[i]) && s[i] != ' ') {
                         fprintf(fpout, "%c", s[i]);
-                        char_count++;
-                        buffer[i] = s[i];
+                        char_count++;         
                     }
                     i++;
 
@@ -235,12 +233,6 @@ void generate_formatted_text(char *s)
                     char_count  =  0 ;                                         
                 }
         }
-    // print_newline(); //Paragraph seperator for next chunk of text
-    /* buffer[i]='\0'; */
-    /* char tmpBuf[512] = {0}; */
-    /* fullJustify(buffer,tmpBuf,OUT_WIDTH); */
-    /* fprintf(fpout,"%s",tmpBuf); */
-
 }
 
 //print line spacing
