@@ -10,3 +10,4 @@ void generate_formatted_text(char *s);
 void print_line_spacing();
 void print_newline(); //in util.c
 void debug_print(char *s); //generate.c
+void debug_print_block(char*s);//util.c

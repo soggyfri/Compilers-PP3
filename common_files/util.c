@@ -202,7 +202,7 @@ void print_error(int blockNumber)
         case 4: fprintf(fpout, "ERROR: TABULAR BLOCK DOES NOT HAVE A MATCHING BEGIN");break;
         case 5: fprintf(fpout, "ERROR: VERBATIUM BLOCK DOES NOT HAVE A MATCHING BEGIN");break;
         case 6: fprintf(fpout, "ERROR: SINGLE BLOCK DOES NOT HAVE A MATCHING BEGIN");break;
-      default : fprintf(fpout, "ERROR: Block wasn't started");break;
+      default : fprintf(fpout, "ERROR: Illegal Nesting");break;
         }
     fflush(fpout);
     fflush(fptoc);
@@ -212,6 +212,18 @@ void print_error(int blockNumber)
 
 void set_current_block(int blockNumber)
 {
+
+    if(blockNumber == 5 && (prev_block != 0 || prev_block != 1))
+        {
+            print_error(0);
+        }
+
+    if(blockNumber == 4 && (prev_block != 0 || prev_block != 1))
+        {
+            print_error(0);
+        }
+
+    
 
     prev_prev_block = prev_block;
     prev_block = current_block;
