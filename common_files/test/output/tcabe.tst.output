@@ -1,0 +1,40 @@
+ Single around Itemize Enumerate Center 
+All Combos of Itemize Enumerate Up to 3 
+levels deep Center around Tabular Verbat
+im 
+
+ These are the legal singles... 
+
+
+
+
+
+1. Single is for Single spacing
+2. Center allows a block to be centered
+
+
+
+
+
+
+
+-  Itemize uses ticks to indicate items
+-  Center allows a block to be centered
+
+
+
+
+
+
+      Single is for Single spacing
+
+  Itemize uses ticks to indicate items
+
+
+
+ These are illegal Singles... 
+
+
+
+
+ERROR: Illegal Nesting

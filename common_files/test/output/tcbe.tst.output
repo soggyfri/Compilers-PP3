@@ -1,0 +1,41 @@
+ This checks if all of the nestings work
+
+with single in various locations. A Basi
+
+c file that checks to see if the centeri
+
+ng command works correctly. Note that th
+
+e double backslash should indicate what 
+
+should be centered and how it is centere
+
+d. 
+
+
+
+
+
+      Single is for Single spacing
+
+  Verbatim allows text produced as is
+
+  Itemize uses ticks to indicate items
+
+  Center allows a block to be centered
+
+
+
+ Now, make sure that double spacing is a
+
+ctive again! 
+
+
+Single is for spacing Verbatim allows te                        xt as is
+
+Itemize                          has ticks for i                         tems Center is                          for centering
+PAGE (5)
+
+
+
+ERROR: VERBATIUM BLOCK DOES NOT HAVE A MATCHING BEGIN

@@ -17,7 +17,7 @@ Will this table float to the top of the next page?
 \begin{table}[t]
 \begin{tabular}{rr}
 XXXXXXX & XX\\
-XX & \\
+XX & tt \\
 \end{tabular}
 \caption{A Table of Latex Commands!!}
 \end{table}

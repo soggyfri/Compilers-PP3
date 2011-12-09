@@ -213,14 +213,16 @@ void print_error(int blockNumber)
 void set_current_block(int blockNumber)
 {
 
-    if(blockNumber == 5 && (prev_block != 0 || prev_block != 1))
+    if(blockNumber == 5 && prev_block != 0 )
         {
-            print_error(0);
+            if( prev_block != 1)
+                print_error(0);
         }
 
-    if(blockNumber == 4 && (prev_block != 0 || prev_block != 1))
+    if(blockNumber == 4 && prev_block != 0 )
         {
-            print_error(0);
+            if( prev_block != 1)
+                print_error(0);
         }
 
     
