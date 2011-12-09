@@ -1,0 +1,276 @@
+
+
+1 Introduction
+
+ This is an example of text that would b
+
+e transformed into a paragraph in latex.
+
+Blank lines between text in the input ca
+
+use a new paragraph to be generated. Thi
+
+s is an example of text that would be tr
+
+ansformed into a paragraph in latex. Bla
+
+nk lines between text in the input cause
+
+a new paragraph to be generated. This is
+
+an example of text that would be transfo
+
+rmed into a paragraph in latex. Blank li
+
+nes between text in the input cause a ne
+
+w paragraph to be generated. When the bl
+
+ank line occurs after a section, no inde
+
+ntation of the paragraph is performed. H
+
+owever, all other blanks, would result i
+
+n a five space indent of the paragraph. 
+
+When the blank line occurs after a secti
+PAGE (5)
+
+on, no indentation of the paragraph is p
+
+erformed. However, all other blanks, wou
+
+ld result in a five space indent of the 
+
+paragraph. 
+
+
+
+
+Now, its important to make sure that sin
+gle works correctly, and can be used to 
+change the formating with respect to the
+ways lines are output. In this case, we 
+are going from double to single spacing.
+
+
+
+
+1.1 A Text Processor
+
+ A text processor is a very useful tool,
+
+since          it allows us to develop f
+
+ormatted documents that are easy to read
+
+. 
+
+ A text processor is a very useful tool,
+
+since it allows us to develop formatted 
+
+documents that are easy to read. 
+PAGE (6)
+
+
+
+
+
+
+
+
+ A text processor is a very useful tool,
+
+since it allows us to develop formatted 
+
+documents that are easy to read. 
+
+
+
+1.2 Legal Latex Commands
+
+ We have seen that there are many differ
+
+ent Latex commands, that can be used in 
+
+many different ways. However, sometimes,
+
+we wish to use a character to mean itsel
+
+f, and override its Latex interpretation
+
+. For example, to use curly braces, we e
+
+mploy the backslash a set of integers. 
+
+
+
+1.3 Again Legal Latex Commands
+
+PAGE (7)
+ We have seen that there are many differ
+
+ent Latex commands, that can be used in 
+
+many different ways. However, sometimes,
+
+we wish to use a character to mean itsel
+
+f, and override its Latex interpretation
+
+. For example, to use curly braces, we e
+
+mploy the backslash a set of integers. 
+
+
+
+1.4 Yet Some More Legal Latex Commands
+
+
+
+
+We have seen that there are many differe
+nt Latex commands, that can be used in m
+any different ways. However, sometimes, 
+we wish to use a character to mean itsel
+f, and override its Latex interpretation
+. For example, to use curly braces, we e
+mploy the backslash a set of integers.
+
+
+
+2 Using Latex
+
+ Finally, there are <IT>many other usefu
+
+PAGE (8)
+l</IT> commands that involve begin end b
+
+locks, that establish an environment. Th
+
+ese blocks behave in a similar fashion t
+
+o begin end blocks in a programming lang
+
+uage, since they set a scope. We have di
+
+scussed a number of examples. 
+
+ <IT> It is important to note, even at t
+
+his early stage, that lists may be creat
+
+ed within lists, allowing the nesting of
+
+blocks and environments. </IT> <RM>  It 
+
+is important to note, even at this early
+
+stage, that lists may be created 
+
+
+
+2.1 Check this Out
+
+ Finally, there are <IT>many other usefu
+
+l</IT> commands that involve begin end b
+
+locks, that establish an environment. Th
+
+ese blocks behave in a similar fashion t
+PAGE (9)
+
+o begin end blocks in a programming lang
+
+uage, since they set a scope. We have di
+
+scussed a number of examples. 
+
+
+
+2.2 Check this Out Part 2
+
+ Finally, there are <IT>many other usefu
+
+l</IT> commands that involve begin end b
+
+locks, that establish an environment. Th
+
+ese blocks behave in a similar fashion t
+
+o begin end blocks in a programming lang
+
+uage, since they set a scope. We have di
+
+scussed a number of examples. 
+
+
+
+3 What about this?
+
+ When things are switched back is everyt
+
+hing still ok? 
+
+
+
+4 What about this?
+
+PAGE (10)
+ When things are switched back is everyt
+
+hing still ok? 
+
+
+
+5 What about this?
+
+ When things are switched back is everyt
+
+hing still ok? 
+
+
+
+6 What about this?
+
+ When things are switched back is everyt
+
+hing still ok? 
+
+
+
+7 What about this?
+
+ When things are switched back is everyt
+
+hing still ok? 
+
+
+
+8 What about this?
+
+PAGE (11)
+ When things are switched back is everyt
+
+hing still ok? 
+
+
+
+9 What about this?
+
+ When things are switched back is everyt
+
+hing still ok? 
+
+
+
+10 Goes to 10! What about this?
+
+ When things are switched back is everyt
+
+hing still ok? 
+
+ </RM> 

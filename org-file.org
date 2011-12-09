@@ -44,7 +44,8 @@
 * working on
   Type/Error Checking
 
-
+* Test Cases
+** TODO  nblocks.tst
 
 
 

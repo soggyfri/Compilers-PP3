@@ -1,0 +1,23 @@
+
+
+1 Introduction
+
+A text processor is a very useful tool, 
+since it allows us to develop formatted 
+documents <IT> that are easy to read. 
+
+
+
+1.1 Legal Latex Commands
+
+ </IT> <RM> We have seen that there are 
+many different Latex commands, that can 
+be used in many different ways. However,
+sometimes, we wish to use a character to
+mean itself, and override its Latex inte
+rpretation. For example, to use curly br
+aces, we employ the backslash a set of i
+ntegers. 
+
+ Can we have different paragraphs with t
+he current generate </RM> 

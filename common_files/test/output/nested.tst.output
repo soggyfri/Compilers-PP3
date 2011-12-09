@@ -1,0 +1,174 @@
+ This checks if all of the nestings work
+
+
+with single in various locations. A Basi
+
+
+c file that checks to see if the centeri
+
+
+ng command works correctly. Note that th
+
+
+e double backslash should indicate what 
+
+
+should be centered and how it is centere
+
+
+d. 
+
+
+
+
+
+      Single is for Single spacing
+
+  Verbatim allows text produced as is
+
+  Itemize uses ticks to indicate items
+
+  Center allows a block to be centered
+
+
+
+ Now, make sure that double spacing is a
+
+PAGE (5)
+
+ctive again! 
+
+
+         Single is for spacing
+
+       Verbatim allows text as is
+
+      Itemize has ticks for items
+
+        Center is for centering
+
+ A block of a enumerate within a single 
+
+
+environment should change the spacing fr
+
+
+om its double default.
+
+
+
+1. Single is for Single spacing
+2. Verbatim allows text that matches the
+   what you see is what you get mode
+3. Itemize uses ticks to indicate items
+4. Center allows a block to be centered
+
+
+
+ Now, make sure that double spacing is a
+
+
+ctive again! 
+
+
+1. Single is for Single spacing
+PAGE (6)
+
+
+2. Single is for Single spacing. A secon
+
+
+  d level of enums!!!!
+
+
+3. Center allows a block to be centered
+
+
+
+ A block of a itemize within a double en
+
+
+vironment should maintain spacing! 
+
+
+-  Single is for Single spacing
+
+
+-  Verbatim allows text that matches the 
+   what you see is what you get mode
+
+
+-  Itemize uses ticks to indicate items
+
+
+ Now try a single nested block of two le
+
+
+vels with an enumerate inside! 
+
+
+
+
+
+PAGE (7)
+-  Single is for Single spacing
+
+-  Single is for Single spacing
+-  Verbatim allows text that matches the 
+   what you see is what you get mode
+-  Itemize uses ticks to indicate items
+-  Center allows a block to be centered
+
+-  Verbatim allows text that matches the 
+   what you see is what you get mode
+-  Itemize uses ticks to indicate items
+-  Center allows a block to be centered
+
+
+ Checking that a simple switch to single
+
+
+is working. In this case, upon encounter
+
+
+ing the single block, the spacing should
+
+
+be changed.
+
+
+Single is for Single spacing 
+Verbatim allows text that matches the It
+emize uses ticks to indicate items Cente
+r allows a block to be centered
+
+Notice that all of the whitepace should 
+
+
+be removed and at this point, we should 
+
+
+return to whatever the spacing had been 
+
+PAGE (8)
+
+originally set to. 
+
+ Checking that a simple verbatim works c
+
+
+orrectly! 
+
+
+
+
+
+Single is for Single spacing\it    Verba
+tim allows       text   that matches theI
+temize   uses ticks to   indicate itemsCe
+nter   allows a   block to be centered
+
+
+
+ Does this start off correctly with 1 an
+d does it reset after verbatim?

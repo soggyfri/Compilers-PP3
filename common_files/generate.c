@@ -181,7 +181,6 @@ void generate_formatted_text(char *s)
                         { //print the character 
                             fprintf(fpout, "%c", s[i]);                         
                             char_count++;
-			    /* buffer[i] = s[i]; */
                         }
                        i++;
                 }
